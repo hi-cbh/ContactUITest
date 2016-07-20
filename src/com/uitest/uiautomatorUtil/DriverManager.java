@@ -1,0 +1,163 @@
+package com.uitest.uiautomatorUtil;
+
+import android.os.RemoteException;
+
+import com.android.uiautomator.core.UiDevice;
+import com.android.uiautomator.core.UiObjectNotFoundException;
+import com.android.uiautomator.core.UiScrollable;
+import com.android.uiautomator.core.UiSelector;
+
+/**
+ * 用于页面滑动，休眠唤醒。
+ * 
+ * 日志记录：
+ * 版本                  日期                         修改者    更新内容
+ * 1.0       2016-06-04   cbh  模块重新整理
+ * 
+ */
+
+
+public class DriverManager{
+	/*
+	 * 日志记录：
+	 * 版本                  日期                         修改者    更新内容
+	 * 1.0       2016-06-04   cbh  模块重新整理
+	 * 
+	 */
+
+	/**
+	 * 右滑
+	 */
+	public static void swipeToRight() {
+		System.out.println("drag");
+		int width = UiDevice.getInstance().getDisplayWidth();
+		int height = UiDevice.getInstance().getDisplayHeight();
+		UiDevice.getInstance().swipe(width / 2, height * 4 / 5, width, height * 4 / 5, 60);
+		System.out.println("[ doing ] swipeToRight ");
+	}
+	
+	/**
+	 * 左滑
+	 */
+	public static void swipeToLeft() {
+		System.out.println("drag");
+		int width = UiDevice.getInstance().getDisplayWidth();
+		int height = UiDevice.getInstance().getDisplayHeight();
+		UiDevice.getInstance().swipe(width* 4 / 5, height * 4 / 5, width / 5, height * 4 / 5, 30);
+		System.out.println("[ doing ] swipeToRight ");
+	}
+	
+	/**
+	 * 下滑
+	 */
+	public static void swipeToDown() {
+		System.out.println("drag");
+		int width = UiDevice.getInstance().getDisplayWidth();
+		int height = UiDevice.getInstance().getDisplayHeight();
+		UiDevice.getInstance().swipe(width / 2, height / 5, width / 2, height * 4 / 5, 60);
+		System.out.println("[ doing ] swipeToDown ");
+	}
+
+	/**
+	 * 上滑
+	 */
+	public void swipeToUp() {
+		System.out.println("drag");
+		int width = UiDevice.getInstance().getDisplayWidth();
+		int height = UiDevice.getInstance().getDisplayHeight();
+		UiDevice.getInstance().swipe(width / 2, height  * 4 / 5, width / 2, height / 5, 60);
+		System.out.println("[ doing ] swipeToUp ");
+	}
+	
+
+	
+	/**
+	 * 解锁唤醒
+	 */
+	public void wakeAndUnlock() {
+		System.out.println("wakeAndUnlock");
+		try {
+			System.out.println("isScreenOn: " + UiDevice.getInstance().isScreenOn());
+			if (!UiDevice.getInstance().isScreenOn()) {
+				System.out.println("wakeUp");
+				UiDevice.getInstance().wakeUp();
+				try {
+					UiDevice.getInstance().wait(500);
+				} catch (InterruptedException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+				swipeToRight();
+			}
+			// 点击
+			UiDevice.getInstance().pressHome();
+		} catch (RemoteException e) {
+			System.out.println("不能唤醒或开锁");
+		}
+	}
+
+
+	
+	
+
+		
+	
+	/**
+	 * 水平滑动屏幕
+	 * @param num
+	 */
+	public static void switeHorizontal(int num){
+	    switeHorizontal("android.support.v4.view.ViewPager",num);
+	}
+	
+	/**
+	 * 垂直滑动屏幕
+	 * @param num
+	 */
+	public void switeVertical(String ClassName, int num){
+		System.out.println("switeVertical " + num);
+		UiScrollable scroll=new UiScrollable(new UiSelector().className(ClassName));
+	    
+	    
+    	for(int i = 0; i < num; i++){
+    		//向前滑动
+    		try {
+				scroll.scrollForward();
+				UiDevice.getInstance().wait(2000);
+			} catch (UiObjectNotFoundException e) {
+				e.printStackTrace();
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}
+	   
+	    
+	}
+	
+	/**
+	 * 水平滑动屏幕
+	 * @param num
+	 */
+	public static void switeHorizontal(String ClassName, int num){
+		System.out.println("switeVertical " + num);
+		UiScrollable scroll=new UiScrollable(new UiSelector().className(ClassName));
+	    scroll.setAsHorizontalList();
+	    
+    	for(int i = 0; i < num; i++){
+    		//向前滑动
+    		try {
+				scroll.scrollForward();
+				UiDevice.getInstance().wait(2000);
+			} catch (UiObjectNotFoundException e) {
+				e.printStackTrace();
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}
+	    scroll.setAsVerticalList();
+	    
+	}
+	
+}
