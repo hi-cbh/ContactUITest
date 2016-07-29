@@ -1,9 +1,6 @@
 package com.uitest.util;
 
 import android.net.ParseException;
-import android.os.Bundle;
-import android.os.Handler;
-import android.os.Message;
 import android.os.RemoteException;
 
 import com.android.uiautomator.core.UiDevice;

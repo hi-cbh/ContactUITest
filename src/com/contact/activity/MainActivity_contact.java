@@ -1,17 +1,9 @@
 package com.contact.activity;
 
-import org.xmlpull.v1.sax2.Driver;
-
-import android.os.RemoteException;
-
 import com.android.uiautomator.core.UiDevice;
 import com.android.uiautomator.core.UiObject;
-import com.android.uiautomator.core.UiObjectNotFoundException;
-import com.android.uiautomator.testrunner.UiAutomatorTestCase;
-import com.contact.activity.*;
 import com.uitest.uiautomatorUtil.DriverManager;
 import com.uitest.uiautomatorUtil.ElementManager;
-
 
 public class MainActivity_contact{
 /**

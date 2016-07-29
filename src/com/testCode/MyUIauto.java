@@ -12,8 +12,6 @@ import android.net.ParseException;
 import com.android.uiautomator.core.UiDevice;
 import com.android.uiautomator.core.UiObject;
 import com.android.uiautomator.core.UiObjectNotFoundException;
-import com.android.uiautomator.core.UiSelector;
-import com.android.uiautomator.testrunner.UiAutomatorTestCase;
 import com.uitest.uiautomatorUtil.TimeUtil;
 import com.uitest.util.UiAutomatorHelper;
 

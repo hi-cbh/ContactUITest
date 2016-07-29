@@ -12,7 +12,6 @@ import com.android.uiautomator.testrunner.UiAutomatorTestCase;
 
 import android.net.ParseException;
 import android.os.Bundle;
-import android.os.Handler;
 import junit.framework.AssertionFailedError;
 import junit.framework.Test;
 import junit.framework.TestListener;
