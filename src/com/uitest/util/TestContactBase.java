@@ -6,6 +6,7 @@ import android.os.RemoteException;
 import com.android.uiautomator.core.UiDevice;
 import com.android.uiautomator.core.UiObject;
 import com.android.uiautomator.core.UiObjectNotFoundException;
+import com.contact.activity.MainActivity_contact;
 import com.uitest.data.UserConfig;
 import com.uitest.uiautomatorUtil.DriverManager;
 import com.uitest.uiautomatorUtil.ElementManager;
@@ -131,7 +132,7 @@ public class TestContactBase extends TestListenerManager {
 			ElementManager.clickById("dialog_btn_positive");
 		}
 
-		//MainActivity_contact.back("tab_contacts");
+		MainActivity_contact.back("tab_contacts");
 		//backHome(2);
 		//sleep(5000);
 	}	
