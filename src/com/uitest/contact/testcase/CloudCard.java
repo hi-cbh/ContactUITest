@@ -9,11 +9,11 @@ import com.uitest.util.UiAutomatorHelper;
 
 import android.os.RemoteException;
 
-public class TestCaseContact extends TestContactBase {
+public class CloudCard extends TestContactBase {
 
 	public static void main(String[] args) {
-		String jarName = "CardEditor";
-		String testClass = "com.uitest.contact.testcase.TestCaseContact";
+		String jarName = "CloudCard";
+		String testClass = "com.uitest.contact.testcase.CloudCard";
 		String testName = "";
 		String androidId = UserConfig.androidId;
 		new UiAutomatorHelper(jarName, testClass, testName, androidId);
@@ -38,17 +38,28 @@ public class TestCaseContact extends TestContactBase {
 	}
 	
 	/**
-	 * 登录时延，和通讯录
+	 * 【测试步骤与结果】
+		1、进入【我的名片】页面，点击页面名片信息
+		2、点击右上角【编辑】按钮
+		3、进入【名片编辑】页面，弹出提示“和通讯录已停止”
 	 * @throws RemoteException
 	 */
 	public void testCase_001() throws RemoteException {
-		//点击流量充值文案
-		ElementManager.clickById("llBalance");
-		
-		//点击刷新
-		ElementManager.clickById("iab_ib_action");
+		//点击头像
+		ElementManager.clickById("avatar_im");
 		
 		sleep(5000);
+		
+		//点击编辑
+		ElementManager.clickById("iab_ib_action");
+		
+		sleep(10000);
+		
+		//点击完成
+		ElementManager.clickById("iab_tv_finish");
+		
+		sleep(5000);
+		
 		//返回
 		MainActivity_contact.back("tab_contacts");
 		
