@@ -1,0 +1,3110 @@
+Updated file C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
+Buildfile: C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 22.6.2
+ [checkenv] Installed at G:\adt-bundle-windows-x86_64-20140321\adt-bundle-windows-x86_64-20140321\sdk
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 19.0.3
+     [echo] Resolving Build Target for CardEditor...
+[getuitarget] Project Target:   Android 4.4.2
+[getuitarget] API level:        19
+     [echo] ----------
+     [echo] Creating output directories if needed...
+    [mkdir] Created dir: C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
+
+-pre-compile:
+
+compile:
+    [javac] Compiling 31 source files to C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
+    [javac] ����: [options] Դֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ŀ��ֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ҫ�����й��ѹ�ʱѡ��ľ���, ��ʹ�� -Xlint:-options��
+    [javac] ע: C:\Users\Administrator\workspace_201607\ContactUITest\src\com\beetstra\jutf7\CharsetProvider.javaʹ����δ�����򲻰�ȫ�Ĳ�����
+    [javac] ע: �й���ϸ��Ϣ, ��ʹ�� -Xlint:unchecked ���±��롣
+    [javac] 3 ������
+
+-post-compile:
+
+-dex:
+      [dex] input: C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
+      [dex] Converting compiled files and external libraries into C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes.dex...
+
+-post-dex:
+
+-jar:
+      [jar] Building jar: C:\Users\Administrator\workspace_201607\ContactUITest\bin\CardEditor.jar
+
+-post-jar:
+
+build:
+
+BUILD SUCCESSFUL
+Total time: 13 seconds
+1275 KB/s (28726 bytes in 0.022s)
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact.testcase.TestCaseContact
+
+INSTRUMENTATION_STATUS: stream=
+
+com.uitest.contact.testcase.TestCaseContact:
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: test=testCase_001
+
+INSTRUMENTATION_STATUS_CODE: 1
+
+[start] findAndOpenApp和通讯录
+
+isExistByName: 应用程序
+
+elementExist: false
+
+isExistByName: 应用程序
+
+elementExist: true
+
+clickByName: 应用程序
+
+click 和通讯录
+
+clickById: iab_title
+
+clickById: iab_title
+
+clickById: setting_layout
+
+uiobject not found
+
+clickById: setting_item_login
+
+uiobject not found
+
+clickById: btn_login_dynamic
+
+uiobject not found
+
+[start] inputTextByName: setting_new_login_mobile_et_num , input: 13427665104
+
+[start] inputText: 13427665104
+
+[end] can not find: 
+
+[start] inputTextByName: setting_new_login_mobile_et_password , input: yscs12345
+
+[start] inputText: yscs12345
+
+[end] can not find: 
+
+startime: 1970-01-01 08:41:54:320
+
+clickById: setting_new_login_mobile_btn_login
+
+uiobject not found
+
+waitForExiststById: setting_item_login_logout_text
+
+waitForExiststById: false
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact.testcase.TestCaseContact
+
+INSTRUMENTATION_STATUS: stream=
+
+Failure in testCase_001:
+
+junit.framework.AssertionFailedError: Login failed! login time more than 20s expected:<true> but was:<false>
+
+	at com.uitest.util.TestContactBase.Login(TestContactBase.java:68)
+
+	at com.uitest.contact.testcase.TestCaseContact.setUp(TestCaseContact.java:26)
+
+	at com.uitest.uiautomatorUtil.TestListenerManager.run(TestListenerManager.java:77)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.start(UiAutomatorTestRunner.java:160)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.run(UiAutomatorTestRunner.java:96)
+
+	at com.android.commands.uiautomator.RunTestCommand.run(RunTestCommand.java:91)
+
+	at com.android.commands.uiautomator.Launcher.main(Launcher.java:83)
+
+	at com.android.internal.os.RuntimeInit.nativeFinishInit(Native Method)
+
+	at com.android.internal.os.RuntimeInit.main(RuntimeInit.java:297)
+
+	at dalvik.system.NativeStart.main(Native Method)
+
+
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: stack=junit.framework.AssertionFailedError: Login failed! login time more than 20s expected:<true> but was:<false>
+
+	at com.uitest.util.TestContactBase.Login(TestContactBase.java:68)
+
+	at com.uitest.contact.testcase.TestCaseContact.setUp(TestCaseContact.java:26)
+
+	at com.uitest.uiautomatorUtil.TestListenerManager.run(TestListenerManager.java:77)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.start(UiAutomatorTestRunner.java:160)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.run(UiAutomatorTestRunner.java:96)
+
+	at com.android.commands.uiautomator.RunTestCommand.run(RunTestCommand.java:91)
+
+	at com.android.commands.uiautomator.Launcher.main(Launcher.java:83)
+
+	at com.android.internal.os.RuntimeInit.nativeFinishInit(Native Method)
+
+	at com.android.internal.os.RuntimeInit.main(RuntimeInit.java:297)
+
+	at dalvik.system.NativeStart.main(Native Method)
+
+
+
+INSTRUMENTATION_STATUS: test=testCase_001
+
+INSTRUMENTATION_STATUS_CODE: -2
+
+INSTRUMENTATION_STATUS: stream=
+
+Test results for WatcherResultPrinter=.F
+
+Time: 23.689
+
+
+
+FAILURES!!!
+
+Tests run: 1,  Failures: 1,  Errors: 0
+
+
+
+
+
+INSTRUMENTATION_STATUS_CODE: -1
+
+Updated file C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
+Buildfile: C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 22.6.2
+ [checkenv] Installed at G:\adt-bundle-windows-x86_64-20140321\adt-bundle-windows-x86_64-20140321\sdk
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 19.0.3
+     [echo] Resolving Build Target for CardEditor...
+[getuitarget] Project Target:   Android 4.4.2
+[getuitarget] API level:        19
+     [echo] ----------
+     [echo] Creating output directories if needed...
+
+-pre-compile:
+
+compile:
+
+-post-compile:
+
+-dex:
+      [dex] input: C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
+      [dex] Found Deleted Target File
+      [dex] Converting compiled files and external libraries into C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes.dex...
+
+-post-dex:
+
+-jar:
+      [jar] Building jar: C:\Users\Administrator\workspace_201607\ContactUITest\bin\CardEditor.jar
+
+-post-jar:
+
+build:
+
+BUILD SUCCESSFUL
+Total time: 3 seconds
+* daemon not running. starting it now on port 5037 *
+* daemon started successfully *
+1558 KB/s (28726 bytes in 0.018s)
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact.testcase.TestCaseContact
+
+INSTRUMENTATION_STATUS: stream=
+
+com.uitest.contact.testcase.TestCaseContact:
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: test=testCase_001
+
+INSTRUMENTATION_STATUS_CODE: 1
+
+[start] findAndOpenApp和通讯录
+
+isExistByName: 应用程序
+
+elementExist: true
+
+clickByName: 应用程序
+
+click 和通讯录
+
+clickById: iab_title
+
+clickById: iab_title
+
+clickById: setting_layout
+
+uiobject not found
+
+clickById: setting_item_login
+
+uiobject not found
+
+clickById: btn_login_dynamic
+
+uiobject not found
+
+[start] inputTextByName: setting_new_login_mobile_et_num , input: 13427665104
+
+[start] inputText: 13427665104
+
+[end] can not find: 
+
+[start] inputTextByName: setting_new_login_mobile_et_password , input: yscs12345
+
+[start] inputText: yscs12345
+
+[end] can not find: 
+
+startime: 1970-01-01 08:45:30:097
+
+clickById: setting_new_login_mobile_btn_login
+
+uiobject not found
+
+waitForExiststById: setting_item_login_logout_text
+
+waitForExiststById: false
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact.testcase.TestCaseContact
+
+INSTRUMENTATION_STATUS: stream=
+
+Failure in testCase_001:
+
+junit.framework.AssertionFailedError: Login failed! login time more than 20s expected:<true> but was:<false>
+
+	at com.uitest.util.TestContactBase.Login(TestContactBase.java:68)
+
+	at com.uitest.contact.testcase.TestCaseContact.setUp(TestCaseContact.java:26)
+
+	at com.uitest.uiautomatorUtil.TestListenerManager.run(TestListenerManager.java:77)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.start(UiAutomatorTestRunner.java:160)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.run(UiAutomatorTestRunner.java:96)
+
+	at com.android.commands.uiautomator.RunTestCommand.run(RunTestCommand.java:91)
+
+	at com.android.commands.uiautomator.Launcher.main(Launcher.java:83)
+
+	at com.android.internal.os.RuntimeInit.nativeFinishInit(Native Method)
+
+	at com.android.internal.os.RuntimeInit.main(RuntimeInit.java:297)
+
+	at dalvik.system.NativeStart.main(Native Method)
+
+
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: stack=junit.framework.AssertionFailedError: Login failed! login time more than 20s expected:<true> but was:<false>
+
+	at com.uitest.util.TestContactBase.Login(TestContactBase.java:68)
+
+	at com.uitest.contact.testcase.TestCaseContact.setUp(TestCaseContact.java:26)
+
+	at com.uitest.uiautomatorUtil.TestListenerManager.run(TestListenerManager.java:77)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.start(UiAutomatorTestRunner.java:160)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.run(UiAutomatorTestRunner.java:96)
+
+	at com.android.commands.uiautomator.RunTestCommand.run(RunTestCommand.java:91)
+
+	at com.android.commands.uiautomator.Launcher.main(Launcher.java:83)
+
+	at com.android.internal.os.RuntimeInit.nativeFinishInit(Native Method)
+
+	at com.android.internal.os.RuntimeInit.main(RuntimeInit.java:297)
+
+	at dalvik.system.NativeStart.main(Native Method)
+
+
+
+INSTRUMENTATION_STATUS: test=testCase_001
+
+INSTRUMENTATION_STATUS_CODE: -2
+
+INSTRUMENTATION_STATUS: stream=
+
+Test results for WatcherResultPrinter=.F
+
+Time: 25.202
+
+
+
+FAILURES!!!
+
+Tests run: 1,  Failures: 1,  Errors: 0
+
+
+
+
+
+INSTRUMENTATION_STATUS_CODE: -1
+
+Updated file C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
+Buildfile: C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 22.6.2
+ [checkenv] Installed at G:\adt-bundle-windows-x86_64-20140321\adt-bundle-windows-x86_64-20140321\sdk
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 19.0.3
+     [echo] Resolving Build Target for CardEditor...
+[getuitarget] Project Target:   Android 4.4.2
+[getuitarget] API level:        19
+     [echo] ----------
+     [echo] Creating output directories if needed...
+
+-pre-compile:
+
+compile:
+
+-post-compile:
+
+-dex:
+      [dex] input: C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
+      [dex] Found Deleted Target File
+      [dex] Converting compiled files and external libraries into C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes.dex...
+
+-post-dex:
+
+-jar:
+      [jar] Building jar: C:\Users\Administrator\workspace_201607\ContactUITest\bin\CardEditor.jar
+
+-post-jar:
+
+build:
+
+BUILD SUCCESSFUL
+Total time: 2 seconds
+1078 KB/s (28726 bytes in 0.026s)
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact.testcase.TestCaseContact
+
+INSTRUMENTATION_STATUS: stream=
+
+com.uitest.contact.testcase.TestCaseContact:
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: test=testCase_001
+
+INSTRUMENTATION_STATUS_CODE: 1
+
+[start] findAndOpenApp和通讯录
+
+isExistByName: 应用程序
+
+elementExist: true
+
+clickByName: 应用程序
+
+click 和通讯录
+
+clickById: iab_title
+
+clickById: iab_title
+
+clickById: setting_layout
+
+uiobject not found
+
+clickById: setting_item_login
+
+uiobject not found
+
+clickById: btn_login_dynamic
+
+uiobject not found
+
+[start] inputTextByName: setting_new_login_mobile_et_num , input: 13427665104
+
+[start] inputText: 13427665104
+
+[end] can not find: 
+
+[start] inputTextByName: setting_new_login_mobile_et_password , input: yscs12345
+
+[start] inputText: yscs12345
+
+[end] can not find: 
+
+startime: 1970-01-01 08:46:11:345
+
+clickById: setting_new_login_mobile_btn_login
+
+uiobject not found
+
+waitForExiststById: setting_item_login_logout_text
+
+waitForExiststById: false
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact.testcase.TestCaseContact
+
+INSTRUMENTATION_STATUS: stream=
+
+Failure in testCase_001:
+
+junit.framework.AssertionFailedError: Login failed! login time more than 20s expected:<true> but was:<false>
+
+	at com.uitest.util.TestContactBase.Login(TestContactBase.java:68)
+
+	at com.uitest.contact.testcase.TestCaseContact.setUp(TestCaseContact.java:26)
+
+	at com.uitest.uiautomatorUtil.TestListenerManager.run(TestListenerManager.java:77)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.start(UiAutomatorTestRunner.java:160)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.run(UiAutomatorTestRunner.java:96)
+
+	at com.android.commands.uiautomator.RunTestCommand.run(RunTestCommand.java:91)
+
+	at com.android.commands.uiautomator.Launcher.main(Launcher.java:83)
+
+	at com.android.internal.os.RuntimeInit.nativeFinishInit(Native Method)
+
+	at com.android.internal.os.RuntimeInit.main(RuntimeInit.java:297)
+
+	at dalvik.system.NativeStart.main(Native Method)
+
+
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: stack=junit.framework.AssertionFailedError: Login failed! login time more than 20s expected:<true> but was:<false>
+
+	at com.uitest.util.TestContactBase.Login(TestContactBase.java:68)
+
+	at com.uitest.contact.testcase.TestCaseContact.setUp(TestCaseContact.java:26)
+
+	at com.uitest.uiautomatorUtil.TestListenerManager.run(TestListenerManager.java:77)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.start(UiAutomatorTestRunner.java:160)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.run(UiAutomatorTestRunner.java:96)
+
+	at com.android.commands.uiautomator.RunTestCommand.run(RunTestCommand.java:91)
+
+	at com.android.commands.uiautomator.Launcher.main(Launcher.java:83)
+
+	at com.android.internal.os.RuntimeInit.nativeFinishInit(Native Method)
+
+	at com.android.internal.os.RuntimeInit.main(RuntimeInit.java:297)
+
+	at dalvik.system.NativeStart.main(Native Method)
+
+
+
+INSTRUMENTATION_STATUS: test=testCase_001
+
+INSTRUMENTATION_STATUS_CODE: -2
+
+INSTRUMENTATION_STATUS: stream=
+
+Test results for WatcherResultPrinter=.F
+
+Time: 27.069
+
+
+
+FAILURES!!!
+
+Tests run: 1,  Failures: 1,  Errors: 0
+
+
+
+
+
+INSTRUMENTATION_STATUS_CODE: -1
+
+Updated file C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
+Buildfile: C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 22.6.2
+ [checkenv] Installed at G:\adt-bundle-windows-x86_64-20140321\adt-bundle-windows-x86_64-20140321\sdk
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 19.0.3
+     [echo] Resolving Build Target for CardEditor...
+[getuitarget] Project Target:   Android 4.4.2
+[getuitarget] API level:        19
+     [echo] ----------
+     [echo] Creating output directories if needed...
+
+-pre-compile:
+
+compile:
+    [javac] Compiling 1 source file to C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
+    [javac] ����: [options] Դֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ŀ��ֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ҫ�����й��ѹ�ʱѡ��ľ���, ��ʹ�� -Xlint:-options��
+    [javac] 3 ������
+
+-post-compile:
+
+-dex:
+      [dex] input: C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
+      [dex] Found Deleted Target File
+      [dex] Converting compiled files and external libraries into C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes.dex...
+
+-post-dex:
+
+-jar:
+      [jar] Building jar: C:\Users\Administrator\workspace_201607\ContactUITest\bin\CardEditor.jar
+
+-post-jar:
+
+build:
+
+BUILD SUCCESSFUL
+Total time: 3 seconds
+3117 KB/s (28736 bytes in 0.009s)
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact.testcase.TestCaseContact
+
+INSTRUMENTATION_STATUS: stream=
+
+com.uitest.contact.testcase.TestCaseContact:
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: test=testCase_001
+
+INSTRUMENTATION_STATUS_CODE: 1
+
+[start] findAndOpenApp和通讯录
+
+isExistByName: 应用程序
+
+elementExist: false
+
+isExistByName: 应用程序
+
+elementExist: true
+
+clickByName: 应用程序
+
+click 和通讯录
+
+clickById: iab_title
+
+[start] back
+
+isExistById: tab_bar
+
+elementExist: true
+
+isExistById: iab_view
+
+elementExist: true
+
+isExistById: user_info_layout
+
+elementExist: true
+
+not rootFloor
+
+isExistById: iab_back
+
+elementExist: false
+
+notRootFloor or settingPage or searchPage
+
+isExistById: tab_bar
+
+elementExist: true
+
+isExistById: iab_view
+
+elementExist: true
+
+isExistById: user_info_layout
+
+elementExist: false
+
+rootFloor
+
+clickById: tab_contacts
+
+clickById: tab_contacts
+
+[ end ] back
+
+clickById: iab_title
+
+clickById: setting_layout
+
+clickById: setting_item_login
+
+clickById: btn_login_dynamic
+
+[start] inputTextByName: setting_new_login_mobile_et_num , input: 13427665104
+
+[start] inputText: 13427665104
+
+text len: 12
+
+[end] inputText:  , input: 13427665104
+
+[start] inputTextByName: setting_new_login_mobile_et_password , input: yscs12345
+
+[start] inputText: yscs12345
+
+text len: 0
+
+[end] inputText:  , input: yscs12345
+
+startime: 1970-01-01 08:50:14:263
+
+clickById: setting_new_login_mobile_btn_login
+
+waitForExiststById: setting_item_login_logout_text
+
+waitForExiststById: false
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact.testcase.TestCaseContact
+
+INSTRUMENTATION_STATUS: stream=
+
+Failure in testCase_001:
+
+junit.framework.AssertionFailedError: Login failed! login time more than 20s expected:<true> but was:<false>
+
+	at com.uitest.util.TestContactBase.Login(TestContactBase.java:69)
+
+	at com.uitest.contact.testcase.TestCaseContact.setUp(TestCaseContact.java:26)
+
+	at com.uitest.uiautomatorUtil.TestListenerManager.run(TestListenerManager.java:77)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.start(UiAutomatorTestRunner.java:160)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.run(UiAutomatorTestRunner.java:96)
+
+	at com.android.commands.uiautomator.RunTestCommand.run(RunTestCommand.java:91)
+
+	at com.android.commands.uiautomator.Launcher.main(Launcher.java:83)
+
+	at com.android.internal.os.RuntimeInit.nativeFinishInit(Native Method)
+
+	at com.android.internal.os.RuntimeInit.main(RuntimeInit.java:297)
+
+	at dalvik.system.NativeStart.main(Native Method)
+
+
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: stack=junit.framework.AssertionFailedError: Login failed! login time more than 20s expected:<true> but was:<false>
+
+	at com.uitest.util.TestContactBase.Login(TestContactBase.java:69)
+
+	at com.uitest.contact.testcase.TestCaseContact.setUp(TestCaseContact.java:26)
+
+	at com.uitest.uiautomatorUtil.TestListenerManager.run(TestListenerManager.java:77)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.start(UiAutomatorTestRunner.java:160)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.run(UiAutomatorTestRunner.java:96)
+
+	at com.android.commands.uiautomator.RunTestCommand.run(RunTestCommand.java:91)
+
+	at com.android.commands.uiautomator.Launcher.main(Launcher.java:83)
+
+	at com.android.internal.os.RuntimeInit.nativeFinishInit(Native Method)
+
+	at com.android.internal.os.RuntimeInit.main(RuntimeInit.java:297)
+
+	at dalvik.system.NativeStart.main(Native Method)
+
+
+
+INSTRUMENTATION_STATUS: test=testCase_001
+
+INSTRUMENTATION_STATUS_CODE: -2
+
+INSTRUMENTATION_STATUS: stream=
+
+Test results for WatcherResultPrinter=.F
+
+Time: 45.102
+
+
+
+FAILURES!!!
+
+Tests run: 1,  Failures: 1,  Errors: 0
+
+
+
+
+
+INSTRUMENTATION_STATUS_CODE: -1
+
+Updated file C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
+Buildfile: C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 22.6.2
+ [checkenv] Installed at G:\adt-bundle-windows-x86_64-20140321\adt-bundle-windows-x86_64-20140321\sdk
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 19.0.3
+     [echo] Resolving Build Target for CardEditor...
+[getuitarget] Project Target:   Android 4.4.2
+[getuitarget] API level:        19
+     [echo] ----------
+     [echo] Creating output directories if needed...
+
+-pre-compile:
+
+compile:
+
+-post-compile:
+
+-dex:
+      [dex] input: C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
+      [dex] Found Deleted Target File
+      [dex] Converting compiled files and external libraries into C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes.dex...
+
+-post-dex:
+
+-jar:
+      [jar] Building jar: C:\Users\Administrator\workspace_201607\ContactUITest\bin\CardEditor.jar
+
+-post-jar:
+
+build:
+
+BUILD SUCCESSFUL
+Total time: 4 seconds
+3507 KB/s (28736 bytes in 0.008s)
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact.testcase.TestCaseContact
+
+INSTRUMENTATION_STATUS: stream=
+
+com.uitest.contact.testcase.TestCaseContact:
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: test=testCase_001
+
+INSTRUMENTATION_STATUS_CODE: 1
+
+[start] findAndOpenApp和通讯录
+
+isExistByName: 应用程序
+
+elementExist: false
+
+isExistByName: 应用程序
+
+elementExist: true
+
+clickByName: 应用程序
+
+click 和通讯录
+
+clickById: iab_title
+
+clickById: setting_layout
+
+clickById: setting_item_login_logout_text
+
+clickById: dialog_btn_positive
+
+[start] back
+
+isExistById: tab_bar
+
+elementExist: false
+
+not rootFloor
+
+isExistById: iab_back
+
+elementExist: false
+
+notRootFloor or settingPage or searchPage
+
+isExistById: tab_bar
+
+elementExist: true
+
+isExistById: iab_view
+
+elementExist: true
+
+isExistById: user_info_layout
+
+elementExist: true
+
+not rootFloor
+
+isExistById: iab_back
+
+elementExist: false
+
+notRootFloor or settingPage or searchPage
+
+isExistById: tab_bar
+
+elementExist: true
+
+isExistById: iab_view
+
+elementExist: true
+
+isExistById: user_info_layout
+
+elementExist: false
+
+rootFloor
+
+clickById: tab_contacts
+
+clickById: tab_contacts
+
+[ end ] back
+
+clickById: iab_title
+
+clickById: setting_layout
+
+clickById: setting_item_login
+
+clickById: btn_login_dynamic
+
+[start] inputTextByName: setting_new_login_mobile_et_num , input: 13427665104
+
+[start] inputText: 13427665104
+
+text len: 12
+
+[end] inputText:  , input: 13427665104
+
+[start] inputTextByName: setting_new_login_mobile_et_password , input: yscs12345
+
+[start] inputText: yscs12345
+
+text len: 0
+
+[end] inputText:  , input: yscs12345
+
+startime: 1970-01-01 08:56:17:758
+
+clickById: setting_new_login_mobile_btn_login
+
+waitForExiststById: setting_item_login_logout_text
+
+waitForExiststById: true
+
+endtime: 1970-01-01 08:56:20:287
+
+run time: 2529
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact.testcase.TestCaseContact
+
+INSTRUMENTATION_STATUS: stream=.
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: test=testCase_001
+
+INSTRUMENTATION_STATUS_CODE: 0
+
+INSTRUMENTATION_STATUS: stream=
+
+Test results for WatcherResultPrinter=.
+
+Time: 44.365
+
+
+
+OK (1 test)
+
+
+
+
+
+INSTRUMENTATION_STATUS_CODE: -1
+
+Updated file C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
+Buildfile: C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 22.6.2
+ [checkenv] Installed at G:\adt-bundle-windows-x86_64-20140321\adt-bundle-windows-x86_64-20140321\sdk
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 19.0.3
+     [echo] Resolving Build Target for CardEditor...
+[getuitarget] Project Target:   Android 4.4.2
+[getuitarget] API level:        19
+     [echo] ----------
+     [echo] Creating output directories if needed...
+
+-pre-compile:
+
+compile:
+    [javac] Compiling 1 source file to C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
+    [javac] ����: [options] Դֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ŀ��ֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ҫ�����й��ѹ�ʱѡ��ľ���, ��ʹ�� -Xlint:-options��
+    [javac] 3 ������
+
+-post-compile:
+
+-dex:
+      [dex] input: C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
+      [dex] Found Deleted Target File
+      [dex] Converting compiled files and external libraries into C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes.dex...
+
+-post-dex:
+
+-jar:
+      [jar] Building jar: C:\Users\Administrator\workspace_201607\ContactUITest\bin\CardEditor.jar
+
+-post-jar:
+
+build:
+
+BUILD SUCCESSFUL
+Total time: 3 seconds
+1755 KB/s (28756 bytes in 0.016s)
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact.testcase.TestCaseContact
+
+INSTRUMENTATION_STATUS: stream=
+
+com.uitest.contact.testcase.TestCaseContact:
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: test=testCase_001
+
+INSTRUMENTATION_STATUS_CODE: 1
+
+[start] findAndOpenApp和通讯录
+
+isExistByName: 应用程序
+
+elementExist: true
+
+clickByName: 应用程序
+
+click 和通讯录
+
+clickById: iab_title
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact.testcase.TestCaseContact
+
+INSTRUMENTATION_STATUS: stream=.
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: test=testCase_001
+
+INSTRUMENTATION_STATUS_CODE: 0
+
+INSTRUMENTATION_STATUS: stream=
+
+Test results for WatcherResultPrinter=.
+
+Time: 10.579
+
+
+
+OK (1 test)
+
+
+
+
+
+INSTRUMENTATION_STATUS_CODE: -1
+
+Updated file C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
+Buildfile: C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 22.6.2
+ [checkenv] Installed at G:\adt-bundle-windows-x86_64-20140321\adt-bundle-windows-x86_64-20140321\sdk
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 19.0.3
+     [echo] Resolving Build Target for CardEditor...
+[getuitarget] Project Target:   Android 4.4.2
+[getuitarget] API level:        19
+     [echo] ----------
+     [echo] Creating output directories if needed...
+
+-pre-compile:
+
+compile:
+    [javac] Compiling 1 source file to C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
+    [javac] ����: [options] Դֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ŀ��ֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ҫ�����й��ѹ�ʱѡ��ľ���, ��ʹ�� -Xlint:-options��
+    [javac] 3 ������
+
+-post-compile:
+
+-dex:
+      [dex] input: C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
+      [dex] Found Deleted Target File
+      [dex] Converting compiled files and external libraries into C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes.dex...
+
+-post-dex:
+
+-jar:
+      [jar] Building jar: C:\Users\Administrator\workspace_201607\ContactUITest\bin\CardEditor.jar
+
+-post-jar:
+
+build:
+
+BUILD SUCCESSFUL
+Total time: 3 seconds
+2009 KB/s (28804 bytes in 0.014s)
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact.testcase.TestCaseContact
+
+INSTRUMENTATION_STATUS: stream=
+
+com.uitest.contact.testcase.TestCaseContact:
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: test=testCase_001
+
+INSTRUMENTATION_STATUS_CODE: 1
+
+[start] findAndOpenApp和通讯录
+
+isExistByName: 应用程序
+
+elementExist: false
+
+isExistByName: 应用程序
+
+elementExist: true
+
+clickByName: 应用程序
+
+click 和通讯录
+
+clickById: iab_title
+
+clickById: llBalance
+
+clickById: iab_ib_action
+
+[start] back
+
+isExistById: tab_bar
+
+elementExist: false
+
+not rootFloor
+
+isExistById: iab_back
+
+elementExist: false
+
+notRootFloor or settingPage or searchPage
+
+isExistById: tab_bar
+
+elementExist: true
+
+isExistById: iab_view
+
+elementExist: true
+
+isExistById: user_info_layout
+
+elementExist: true
+
+not rootFloor
+
+isExistById: iab_back
+
+elementExist: false
+
+notRootFloor or settingPage or searchPage
+
+isExistById: tab_bar
+
+elementExist: true
+
+isExistById: iab_view
+
+elementExist: true
+
+isExistById: user_info_layout
+
+elementExist: false
+
+rootFloor
+
+clickById: tab_contacts
+
+clickById: tab_contacts
+
+[ end ] back
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact.testcase.TestCaseContact
+
+INSTRUMENTATION_STATUS: stream=.
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: test=testCase_001
+
+INSTRUMENTATION_STATUS_CODE: 0
+
+INSTRUMENTATION_STATUS: stream=
+
+Test results for WatcherResultPrinter=.
+
+Time: 27.655
+
+
+
+OK (1 test)
+
+
+
+
+
+INSTRUMENTATION_STATUS_CODE: -1
+
+Updated file C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
+Buildfile: C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 22.6.2
+ [checkenv] Installed at G:\adt-bundle-windows-x86_64-20140321\adt-bundle-windows-x86_64-20140321\sdk
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 19.0.3
+     [echo] Resolving Build Target for CloudCard...
+[getuitarget] Project Target:   Android 4.4.2
+[getuitarget] API level:        19
+     [echo] ----------
+     [echo] Creating output directories if needed...
+    [mkdir] Created dir: C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
+
+-pre-compile:
+
+compile:
+    [javac] Compiling 32 source files to C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
+    [javac] ����: [options] Դֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ŀ��ֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ҫ�����й��ѹ�ʱѡ��ľ���, ��ʹ�� -Xlint:-options��
+    [javac] ע: C:\Users\Administrator\workspace_201607\ContactUITest\src\com\beetstra\jutf7\CharsetProvider.javaʹ����δ�����򲻰�ȫ�Ĳ�����
+    [javac] ע: �й���ϸ��Ϣ, ��ʹ�� -Xlint:unchecked ���±��롣
+    [javac] 3 ������
+
+-post-compile:
+
+-dex:
+      [dex] input: C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
+      [dex] Converting compiled files and external libraries into C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes.dex...
+
+-post-dex:
+
+-jar:
+      [jar] Building jar: C:\Users\Administrator\workspace_201607\ContactUITest\bin\CloudCard.jar
+
+-post-jar:
+
+build:
+
+BUILD SUCCESSFUL
+Total time: 8 seconds
+1349 KB/s (29017 bytes in 0.021s)
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact.testcase.CloudCard
+
+INSTRUMENTATION_STATUS: stream=
+
+com.uitest.contact.testcase.CloudCard:
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: test=testCase_001
+
+INSTRUMENTATION_STATUS_CODE: 1
+
+[start] findAndOpenApp和通讯录
+
+isExistByName: 应用程序
+
+elementExist: false
+
+isExistByName: 应用程序
+
+elementExist: true
+
+clickByName: 应用程序
+
+click 和通讯录
+
+clickById: iab_title
+
+clickById: avatar_im
+
+clickById: iab_ib_action
+
+uiobject not found
+
+clickById: iab_tv_finish
+
+uiobject not found
+
+[start] back
+
+isExistById: tab_bar
+
+elementExist: false
+
+not rootFloor
+
+isExistById: iab_back
+
+elementExist: false
+
+notRootFloor or settingPage or searchPage
+
+isExistById: tab_bar
+
+elementExist: false
+
+not rootFloor
+
+isExistById: iab_back
+
+elementExist: false
+
+notRootFloor or settingPage or searchPage
+
+isExistById: tab_bar
+
+elementExist: false
+
+not rootFloor
+
+isExistById: iab_back
+
+elementExist: false
+
+notRootFloor or settingPage or searchPage
+
+isExistById: tab_bar
+
+elementExist: false
+
+not rootFloor
+
+isExistById: iab_back
+
+elementExist: false
+
+notRootFloor or settingPage or searchPage
+
+isExistById: tab_bar
+
+elementExist: false
+
+not rootFloor
+
+isExistById: iab_back
+
+elementExist: false
+
+notRootFloor or settingPage or searchPage
+
+isExistById: tab_bar
+
+elementExist: false
+
+not rootFloor
+
+isExistById: iab_back
+
+elementExist: false
+
+notRootFloor or settingPage or searchPage
+
+isExistById: tab_bar
+
+elementExist: false
+
+not rootFloor
+
+isExistById: iab_back
+
+elementExist: false
+
+notRootFloor or settingPage or searchPage
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact.testcase.CloudCard
+
+INSTRUMENTATION_STATUS: stream=.
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: test=testCase_001
+
+INSTRUMENTATION_STATUS_CODE: 0
+
+INSTRUMENTATION_STATUS: stream=
+
+Test results for WatcherResultPrinter=.
+
+Time: 42.177
+
+
+
+OK (1 test)
+
+
+
+
+
+INSTRUMENTATION_STATUS_CODE: -1
+
+Updated file C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
+Buildfile: C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 22.6.2
+ [checkenv] Installed at G:\adt-bundle-windows-x86_64-20140321\adt-bundle-windows-x86_64-20140321\sdk
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 19.0.3
+     [echo] Resolving Build Target for CloudCard...
+[getuitarget] Project Target:   Android 4.4.2
+[getuitarget] API level:        19
+     [echo] ----------
+     [echo] Creating output directories if needed...
+
+-pre-compile:
+
+compile:
+    [javac] Compiling 2 source files to C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
+    [javac] ����: [options] Դֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ŀ��ֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ҫ�����й��ѹ�ʱѡ��ľ���, ��ʹ�� -Xlint:-options��
+    [javac] 3 ������
+
+-post-compile:
+
+-dex:
+      [dex] input: C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
+      [dex] Found Deleted Target File
+      [dex] Converting compiled files and external libraries into C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes.dex...
+
+-post-dex:
+
+-jar:
+      [jar] Building jar: C:\Users\Administrator\workspace_201607\ContactUITest\bin\CloudCard.jar
+
+-post-jar:
+
+build:
+
+BUILD SUCCESSFUL
+Total time: 7 seconds
+2576 KB/s (29021 bytes in 0.011s)
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact.testcase.CloudCard
+
+INSTRUMENTATION_STATUS: stream=
+
+com.uitest.contact.testcase.CloudCard:
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: test=testCase_001
+
+INSTRUMENTATION_STATUS_CODE: 1
+
+[start] findAndOpenApp和通讯录
+
+isExistByName: 应用程序
+
+elementExist: false
+
+isExistByName: 应用程序
+
+elementExist: true
+
+clickByName: 应用程序
+
+click 和通讯录
+
+clickById: iab_title
+
+clickById: avatar_im
+
+clickById: iab_ib_action
+
+clickById: iab_tv_finish
+
+[start] back
+
+isExistById: tab_bar
+
+elementExist: false
+
+not rootFloor
+
+isExistById: iab_back
+
+elementExist: false
+
+notRootFloor or settingPage or searchPage
+
+isExistById: tab_bar
+
+elementExist: false
+
+not rootFloor
+
+isExistById: iab_back
+
+elementExist: false
+
+notRootFloor or settingPage or searchPage
+
+isExistById: tab_bar
+
+elementExist: true
+
+isExistById: iab_view
+
+elementExist: true
+
+isExistById: user_info_layout
+
+elementExist: true
+
+not rootFloor
+
+isExistById: iab_back
+
+elementExist: false
+
+notRootFloor or settingPage or searchPage
+
+isExistById: tab_bar
+
+elementExist: true
+
+isExistById: iab_view
+
+elementExist: true
+
+isExistById: user_info_layout
+
+elementExist: false
+
+rootFloor
+
+clickById: tab_contacts
+
+clickById: tab_contacts
+
+[ end ] back
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact.testcase.CloudCard
+
+INSTRUMENTATION_STATUS: stream=.
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: test=testCase_001
+
+INSTRUMENTATION_STATUS_CODE: 0
+
+INSTRUMENTATION_STATUS: stream=
+
+Test results for WatcherResultPrinter=.
+
+Time: 48.617
+
+
+
+OK (1 test)
+
+
+
+
+
+INSTRUMENTATION_STATUS_CODE: -1
+
+Updated file C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
+Buildfile: C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 22.6.2
+ [checkenv] Installed at G:\adt-bundle-windows-x86_64-20140321\adt-bundle-windows-x86_64-20140321\sdk
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 19.0.3
+     [echo] Resolving Build Target for CloudCard...
+[getuitarget] Project Target:   Android 4.4.2
+[getuitarget] API level:        19
+     [echo] ----------
+     [echo] Creating output directories if needed...
+
+-pre-compile:
+
+compile:
+    [javac] Compiling 1 source file to C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
+    [javac] ����: [options] Դֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ŀ��ֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ҫ�����й��ѹ�ʱѡ��ľ���, ��ʹ�� -Xlint:-options��
+    [javac] 3 ������
+
+-post-compile:
+
+-dex:
+      [dex] input: C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
+      [dex] Found Deleted Target File
+      [dex] Converting compiled files and external libraries into C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes.dex...
+
+-post-dex:
+
+-jar:
+      [jar] Building jar: C:\Users\Administrator\workspace_201607\ContactUITest\bin\CloudCard.jar
+
+-post-jar:
+
+build:
+
+BUILD SUCCESSFUL
+Total time: 3 seconds
+2576 KB/s (29021 bytes in 0.011s)
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact.testcase.CloudCard
+
+INSTRUMENTATION_STATUS: stream=
+
+com.uitest.contact.testcase.CloudCard:
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: test=testCase_001
+
+INSTRUMENTATION_STATUS_CODE: 1
+
+[start] findAndOpenApp和通讯录
+
+isExistByName: 应用程序
+
+elementExist: false
+
+isExistByName: 应用程序
+
+elementExist: true
+
+clickByName: 应用程序
+
+click 和通讯录
+
+clickById: iab_title
+
+clickById: avatar_im
+
+clickById: iab_ib_action
+
+clickById: iab_tv_finish
+
+uiobject not found
+
+[start] back
+
+isExistById: tab_bar
+
+elementExist: false
+
+not rootFloor
+
+isExistById: iab_back
+
+elementExist: false
+
+notRootFloor or settingPage or searchPage
+
+isExistById: tab_bar
+
+elementExist: false
+
+not rootFloor
+
+isExistById: iab_back
+
+elementExist: false
+
+notRootFloor or settingPage or searchPage
+
+isExistById: tab_bar
+
+elementExist: false
+
+not rootFloor
+
+isExistById: iab_back
+
+elementExist: false
+
+notRootFloor or settingPage or searchPage
+
+isExistById: tab_bar
+
+elementExist: false
+
+not rootFloor
+
+isExistById: iab_back
+
+elementExist: false
+
+notRootFloor or settingPage or searchPage
+
+isExistById: tab_bar
+
+elementExist: false
+
+not rootFloor
+
+isExistById: iab_back
+
+elementExist: false
+
+notRootFloor or settingPage or searchPage
+
+isExistById: tab_bar
+
+elementExist: false
+
+not rootFloor
+
+isExistById: iab_back
+
+elementExist: false
+
+notRootFloor or settingPage or searchPage
+
+isExistById: tab_bar
+
+elementExist: false
+
+not rootFloor
+
+isExistById: iab_back
+
+elementExist: false
+
+notRootFloor or settingPage or searchPage
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact.testcase.CloudCard
+
+INSTRUMENTATION_STATUS: stream=.
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: test=testCase_001
+
+INSTRUMENTATION_STATUS_CODE: 0
+
+INSTRUMENTATION_STATUS: stream=
+
+Test results for WatcherResultPrinter=.
+
+Time: 41.727
+
+
+
+OK (1 test)
+
+
+
+
+
+INSTRUMENTATION_STATUS_CODE: -1
+
+Updated file C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
+Buildfile: C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 22.6.2
+ [checkenv] Installed at G:\adt-bundle-windows-x86_64-20140321\adt-bundle-windows-x86_64-20140321\sdk
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 19.0.3
+     [echo] Resolving Build Target for CloudCard...
+[getuitarget] Project Target:   Android 4.4.2
+[getuitarget] API level:        19
+     [echo] ----------
+     [echo] Creating output directories if needed...
+
+-pre-compile:
+
+compile:
+    [javac] Compiling 1 source file to C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
+    [javac] ����: [options] Դֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ŀ��ֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ҫ�����й��ѹ�ʱѡ��ľ���, ��ʹ�� -Xlint:-options��
+    [javac] 3 ������
+
+-post-compile:
+
+-dex:
+      [dex] input: C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
+      [dex] Found Deleted Target File
+      [dex] Converting compiled files and external libraries into C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes.dex...
+
+-post-dex:
+
+-jar:
+      [jar] Building jar: C:\Users\Administrator\workspace_201607\ContactUITest\bin\CloudCard.jar
+
+-post-jar:
+
+build:
+
+BUILD SUCCESSFUL
+Total time: 4 seconds
+1416 KB/s (29021 bytes in 0.020s)
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact.testcase.CloudCard
+
+INSTRUMENTATION_STATUS: stream=
+
+com.uitest.contact.testcase.CloudCard:
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: test=testCase_001
+
+INSTRUMENTATION_STATUS_CODE: 1
+
+[start] findAndOpenApp和通讯录
+
+isExistByName: 应用程序
+
+elementExist: true
+
+clickByName: 应用程序
+
+click 和通讯录
+
+clickById: iab_title
+
+clickById: avatar_im
+
+clickById: iab_ib_action
+
+uiobject not found
+
+clickById: iab_tv_finish
+
+uiobject not found
+
+[start] back
+
+isExistById: tab_bar
+
+elementExist: false
+
+not rootFloor
+
+isExistById: iab_back
+
+elementExist: true
+
+isExistById: user_info_layout
+
+elementExist: false
+
+notRootFloor or settingPage or searchPage
+
+isExistById: tab_bar
+
+elementExist: true
+
+isExistById: iab_view
+
+elementExist: true
+
+isExistById: user_info_layout
+
+elementExist: true
+
+not rootFloor
+
+isExistById: iab_back
+
+elementExist: false
+
+notRootFloor or settingPage or searchPage
+
+isExistById: tab_bar
+
+elementExist: true
+
+isExistById: iab_view
+
+elementExist: true
+
+isExistById: user_info_layout
+
+elementExist: false
+
+rootFloor
+
+clickById: tab_contacts
+
+clickById: tab_contacts
+
+[ end ] back
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact.testcase.CloudCard
+
+INSTRUMENTATION_STATUS: stream=.
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: test=testCase_001
+
+INSTRUMENTATION_STATUS_CODE: 0
+
+INSTRUMENTATION_STATUS: stream=
+
+Test results for WatcherResultPrinter=.
+
+Time: 43.723
+
+
+
+OK (1 test)
+
+
+
+
+
+INSTRUMENTATION_STATUS_CODE: -1
+
+Updated file C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
+Buildfile: C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 22.6.2
+ [checkenv] Installed at G:\adt-bundle-windows-x86_64-20140321\adt-bundle-windows-x86_64-20140321\sdk
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 19.0.3
+     [echo] Resolving Build Target for CloudCard...
+[getuitarget] Project Target:   Android 4.4.2
+[getuitarget] API level:        19
+     [echo] ----------
+     [echo] Creating output directories if needed...
+
+-pre-compile:
+
+compile:
+    [javac] Compiling 1 source file to C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
+    [javac] ����: [options] Դֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ŀ��ֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ҫ�����й��ѹ�ʱѡ��ľ���, ��ʹ�� -Xlint:-options��
+    [javac] 3 ������
+
+-post-compile:
+
+-dex:
+      [dex] input: C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
+      [dex] Found Deleted Target File
+      [dex] Converting compiled files and external libraries into C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes.dex...
+
+-post-dex:
+
+-jar:
+      [jar] Building jar: C:\Users\Administrator\workspace_201607\ContactUITest\bin\CloudCard.jar
+
+-post-jar:
+
+build:
+
+BUILD SUCCESSFUL
+Total time: 4 seconds
+1889 KB/s (29021 bytes in 0.015s)
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact.testcase.CloudCard
+
+INSTRUMENTATION_STATUS: stream=
+
+com.uitest.contact.testcase.CloudCard:
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: test=testCase_001
+
+INSTRUMENTATION_STATUS_CODE: 1
+
+[start] findAndOpenApp和通讯录
+
+isExistByName: 应用程序
+
+elementExist: false
+
+isExistByName: 应用程序
+
+elementExist: true
+
+clickByName: 应用程序
+
+click 和通讯录
+
+clickById: iab_title
+
+clickById: avatar_im
+
+clickById: iab_ib_action
+
+uiobject not found
+
+clickById: iab_tv_finish
+
+uiobject not found
+
+[start] back
+
+isExistById: tab_bar
+
+elementExist: true
+
+isExistById: iab_view
+
+elementExist: true
+
+isExistById: user_info_layout
+
+elementExist: true
+
+not rootFloor
+
+isExistById: iab_back
+
+elementExist: false
+
+notRootFloor or settingPage or searchPage
+
+isExistById: tab_bar
+
+elementExist: true
+
+isExistById: iab_view
+
+elementExist: true
+
+isExistById: user_info_layout
+
+elementExist: false
+
+rootFloor
+
+clickById: tab_contacts
+
+clickById: tab_contacts
+
+[ end ] back
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact.testcase.CloudCard
+
+INSTRUMENTATION_STATUS: stream=.
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: test=testCase_001
+
+INSTRUMENTATION_STATUS_CODE: 0
+
+INSTRUMENTATION_STATUS: stream=
+
+Test results for WatcherResultPrinter=.
+
+Time: 42.178
+
+
+
+OK (1 test)
+
+
+
+
+
+INSTRUMENTATION_STATUS_CODE: -1
+
+Updated file C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
+Buildfile: C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 22.6.2
+ [checkenv] Installed at G:\adt-bundle-windows-x86_64-20140321\adt-bundle-windows-x86_64-20140321\sdk
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 19.0.3
+     [echo] Resolving Build Target for CloudCard...
+[getuitarget] Project Target:   Android 4.4.2
+[getuitarget] API level:        19
+     [echo] ----------
+     [echo] Creating output directories if needed...
+
+-pre-compile:
+
+compile:
+    [javac] Compiling 1 source file to C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
+    [javac] ����: [options] Դֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ŀ��ֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ҫ�����й��ѹ�ʱѡ��ľ���, ��ʹ�� -Xlint:-options��
+    [javac] 3 ������
+
+-post-compile:
+
+-dex:
+      [dex] input: C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
+      [dex] Found Deleted Target File
+      [dex] Converting compiled files and external libraries into C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes.dex...
+
+-post-dex:
+
+-jar:
+      [jar] Building jar: C:\Users\Administrator\workspace_201607\ContactUITest\bin\CloudCard.jar
+
+-post-jar:
+
+build:
+
+BUILD SUCCESSFUL
+Total time: 3 seconds
+2576 KB/s (29021 bytes in 0.011s)
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact.testcase.CloudCard
+
+INSTRUMENTATION_STATUS: stream=
+
+com.uitest.contact.testcase.CloudCard:
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: test=testCase_001
+
+INSTRUMENTATION_STATUS_CODE: 1
+
+[start] findAndOpenApp和通讯录
+
+isExistByName: 应用程序
+
+elementExist: false
+
+isExistByName: 应用程序
+
+elementExist: true
+
+clickByName: 应用程序
+
+click 和通讯录
+
+clickById: iab_title
+
+clickById: avatar_im
+
+clickById: iab_ib_action
+
+uiobject not found
+
+clickById: iab_tv_finish
+
+uiobject not found
+
+[start] back
+
+isExistById: tab_bar
+
+elementExist: true
+
+isExistById: iab_view
+
+elementExist: true
+
+isExistById: user_info_layout
+
+elementExist: true
+
+not rootFloor
+
+isExistById: iab_back
+
+elementExist: false
+
+notRootFloor or settingPage or searchPage
+
+isExistById: tab_bar
+
+elementExist: true
+
+isExistById: iab_view
+
+elementExist: true
+
+isExistById: user_info_layout
+
+elementExist: false
+
+rootFloor
+
+clickById: tab_contacts
+
+clickById: tab_contacts
+
+[ end ] back
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact.testcase.CloudCard
+
+INSTRUMENTATION_STATUS: stream=.
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: test=testCase_001
+
+INSTRUMENTATION_STATUS_CODE: 0
+
+INSTRUMENTATION_STATUS: stream=
+
+Test results for WatcherResultPrinter=.
+
+Time: 42.142
+
+
+
+OK (1 test)
+
+
+
+
+
+INSTRUMENTATION_STATUS_CODE: -1
+
+Updated file C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
+Buildfile: C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 22.6.2
+ [checkenv] Installed at G:\adt-bundle-windows-x86_64-20140321\adt-bundle-windows-x86_64-20140321\sdk
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 19.0.3
+     [echo] Resolving Build Target for CloudCard...
+[getuitarget] Project Target:   Android 4.4.2
+[getuitarget] API level:        19
+     [echo] ----------
+     [echo] Creating output directories if needed...
+
+-pre-compile:
+
+compile:
+    [javac] Compiling 1 source file to C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
+    [javac] ����: [options] Դֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ŀ��ֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ҫ�����й��ѹ�ʱѡ��ľ���, ��ʹ�� -Xlint:-options��
+    [javac] 3 ������
+
+-post-compile:
+
+-dex:
+      [dex] input: C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
+      [dex] Found Deleted Target File
+      [dex] Converting compiled files and external libraries into C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes.dex...
+
+-post-dex:
+
+-jar:
+      [jar] Building jar: C:\Users\Administrator\workspace_201607\ContactUITest\bin\CloudCard.jar
+
+-post-jar:
+
+build:
+
+BUILD SUCCESSFUL
+Total time: 7 seconds
+1349 KB/s (29021 bytes in 0.021s)
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact.testcase.CloudCard
+
+INSTRUMENTATION_STATUS: stream=
+
+com.uitest.contact.testcase.CloudCard:
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: test=testCase_001
+
+INSTRUMENTATION_STATUS_CODE: 1
+
+[start] findAndOpenApp和通讯录
+
+isExistByName: 应用程序
+
+elementExist: true
+
+clickByName: 应用程序
+
+click 和通讯录
+
+clickById: iab_title
+
+clickById: avatar_im
+
+clickById: iab_ib_action
+
+uiobject not found
+
+clickById: iab_tv_finish
+
+uiobject not found
+
+[start] back
+
+isExistById: tab_bar
+
+elementExist: false
+
+not rootFloor
+
+isExistById: iab_back
+
+elementExist: false
+
+notRootFloor or settingPage or searchPage
+
+isExistById: tab_bar
+
+elementExist: true
+
+isExistById: iab_view
+
+elementExist: true
+
+isExistById: user_info_layout
+
+elementExist: true
+
+not rootFloor
+
+isExistById: iab_back
+
+elementExist: false
+
+notRootFloor or settingPage or searchPage
+
+isExistById: tab_bar
+
+elementExist: true
+
+isExistById: iab_view
+
+elementExist: true
+
+isExistById: user_info_layout
+
+elementExist: false
+
+rootFloor
+
+clickById: tab_contacts
+
+clickById: tab_contacts
+
+[ end ] back
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact.testcase.CloudCard
+
+INSTRUMENTATION_STATUS: stream=.
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: test=testCase_001
+
+INSTRUMENTATION_STATUS_CODE: 0
+
+INSTRUMENTATION_STATUS: stream=
+
+Test results for WatcherResultPrinter=.
+
+Time: 36.058
+
+
+
+OK (1 test)
+
+
+
+
+
+INSTRUMENTATION_STATUS_CODE: -1
+
+Updated file C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
+Buildfile: C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 22.6.2
+ [checkenv] Installed at G:\adt-bundle-windows-x86_64-20140321\adt-bundle-windows-x86_64-20140321\sdk
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 19.0.3
+     [echo] Resolving Build Target for CloudCard...
+[getuitarget] Project Target:   Android 4.4.2
+[getuitarget] API level:        19
+     [echo] ----------
+     [echo] Creating output directories if needed...
+
+-pre-compile:
+
+compile:
+    [javac] Compiling 1 source file to C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
+    [javac] ����: [options] Դֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ŀ��ֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ҫ�����й��ѹ�ʱѡ��ľ���, ��ʹ�� -Xlint:-options��
+    [javac] 3 ������
+
+-post-compile:
+
+-dex:
+      [dex] input: C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
+      [dex] Found Deleted Target File
+      [dex] Converting compiled files and external libraries into C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes.dex...
+
+-post-dex:
+
+-jar:
+      [jar] Building jar: C:\Users\Administrator\workspace_201607\ContactUITest\bin\CloudCard.jar
+
+-post-jar:
+
+build:
+
+BUILD SUCCESSFUL
+Total time: 3 seconds
+* daemon not running. starting it now on port 5037 *
+* daemon started successfully *
+2024 KB/s (29021 bytes in 0.014s)
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact.testcase.CloudCard
+
+INSTRUMENTATION_STATUS: stream=
+
+com.uitest.contact.testcase.CloudCard:
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: test=testCase_001
+
+INSTRUMENTATION_STATUS_CODE: 1
+
+[start] findAndOpenApp和通讯录
+
+isExistByName: 应用程序
+
+elementExist: false
+
+isExistByName: 应用程序
+
+elementExist: true
+
+clickByName: 应用程序
+
+click 和通讯录
+
+clickById: iab_title
+
+[start] back
+
+isExistById: tab_bar
+
+elementExist: true
+
+isExistById: iab_view
+
+elementExist: true
+
+isExistById: user_info_layout
+
+elementExist: true
+
+not rootFloor
+
+isExistById: iab_back
+
+elementExist: false
+
+notRootFloor or settingPage or searchPage
+
+isExistById: tab_bar
+
+elementExist: true
+
+isExistById: iab_view
+
+elementExist: true
+
+isExistById: user_info_layout
+
+elementExist: false
+
+rootFloor
+
+clickById: tab_contacts
+
+clickById: tab_contacts
+
+[ end ] back
+
+clickById: iab_title
+
+[start] back
+
+isExistById: tab_bar
+
+elementExist: true
+
+isExistById: iab_view
+
+elementExist: true
+
+isExistById: user_info_layout
+
+elementExist: true
+
+not rootFloor
+
+isExistById: iab_back
+
+elementExist: false
+
+notRootFloor or settingPage or searchPage
+
+isExistById: tab_bar
+
+elementExist: true
+
+isExistById: iab_view
+
+elementExist: true
+
+isExistById: user_info_layout
+
+elementExist: false
+
+rootFloor
+
+clickById: tab_contacts
+
+clickById: tab_contacts
+
+[ end ] back
+
+clickById: iab_title
+
+clickById: setting_layout
+
+clickById: setting_item_login
+
+clickById: btn_login_dynamic
+
+[start] inputTextByName: setting_new_login_mobile_et_num , input: 13427665104
+
+[start] inputText: 13427665104
+
+text len: 12
+
+[end] inputText:  , input: 13427665104
+
+[start] inputTextByName: setting_new_login_mobile_et_password , input: yscs12345
+
+[start] inputText: yscs12345
+
+text len: 0
+
+[end] inputText:  , input: yscs12345
+
+startime: 1970-01-01 11:41:46:449
+
+clickById: setting_new_login_mobile_btn_login
+
+waitForExiststById: setting_item_login_logout_text
+
+waitForExiststById: true
+
+endtime: 1970-01-01 11:41:48:396
+
+run time: 1947
+
+clickById: avatar_im
+
+uiobject not found
+
+clickById: iab_ib_action
+
+clickById: iab_tv_finish
+
+[start] back
+
+isExistById: tab_bar
+
+elementExist: false
+
+not rootFloor
+
+isExistById: iab_back
+
+elementExist: false
+
+notRootFloor or settingPage or searchPage
+
+isExistById: tab_bar
+
+elementExist: true
+
+isExistById: iab_view
+
+elementExist: true
+
+isExistById: user_info_layout
+
+elementExist: false
+
+rootFloor
+
+clickById: tab_contacts
+
+clickById: tab_contacts
+
+[ end ] back
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact.testcase.CloudCard
+
+INSTRUMENTATION_STATUS: stream=.
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: test=testCase_001
+
+INSTRUMENTATION_STATUS_CODE: 0
+
+INSTRUMENTATION_STATUS: stream=
+
+Test results for WatcherResultPrinter=.
+
+Time: 82.34
+
+
+
+OK (1 test)
+
+
+
+
+
+INSTRUMENTATION_STATUS_CODE: -1
+
+Updated file C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
+Buildfile: C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 22.6.2
+ [checkenv] Installed at G:\adt-bundle-windows-x86_64-20140321\adt-bundle-windows-x86_64-20140321\sdk
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 19.0.3
+     [echo] Resolving Build Target for CloudCard...
+[getuitarget] Project Target:   Android 4.4.2
+[getuitarget] API level:        19
+     [echo] ----------
+     [echo] Creating output directories if needed...
+
+-pre-compile:
+
+compile:
+    [javac] Compiling 1 source file to C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
+    [javac] ����: [options] Դֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ŀ��ֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ҫ�����й��ѹ�ʱѡ��ľ���, ��ʹ�� -Xlint:-options��
+    [javac] 3 ������
+
+-post-compile:
+
+-dex:
+      [dex] input: C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
+      [dex] Found Deleted Target File
+      [dex] Converting compiled files and external libraries into C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes.dex...
+
+-post-dex:
+
+-jar:
+      [jar] Building jar: C:\Users\Administrator\workspace_201607\ContactUITest\bin\CloudCard.jar
+
+-post-jar:
+
+build:
+
+BUILD SUCCESSFUL
+Total time: 4 seconds
+3542 KB/s (29021 bytes in 0.008s)
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact.testcase.CloudCard
+
+INSTRUMENTATION_STATUS: stream=
+
+com.uitest.contact.testcase.CloudCard:
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: test=testCase_001
+
+INSTRUMENTATION_STATUS_CODE: 1
+
+[start] findAndOpenApp和通讯录
+
+isExistByName: 应用程序
+
+elementExist: false
+
+isExistByName: 应用程序
+
+elementExist: true
+
+clickByName: 应用程序
+
+click 和通讯录
+
+clickById: iab_title
+
+clickById: avatar_im
+
+clickById: iab_ib_action
+
+clickById: iab_tv_finish
+
+[start] back
+
+isExistById: tab_bar
+
+elementExist: false
+
+not rootFloor
+
+isExistById: iab_back
+
+elementExist: false
+
+notRootFloor or settingPage or searchPage
+
+isExistById: tab_bar
+
+elementExist: true
+
+isExistById: iab_view
+
+elementExist: true
+
+isExistById: user_info_layout
+
+elementExist: true
+
+not rootFloor
+
+isExistById: iab_back
+
+elementExist: false
+
+notRootFloor or settingPage or searchPage
+
+isExistById: tab_bar
+
+elementExist: true
+
+isExistById: iab_view
+
+elementExist: true
+
+isExistById: user_info_layout
+
+elementExist: false
+
+rootFloor
+
+clickById: tab_contacts
+
+clickById: tab_contacts
+
+[ end ] back
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact.testcase.CloudCard
+
+INSTRUMENTATION_STATUS: stream=.
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: test=testCase_001
+
+INSTRUMENTATION_STATUS_CODE: 0
+
+INSTRUMENTATION_STATUS: stream=
+
+Test results for WatcherResultPrinter=.
+
+Time: 44.765
+
+
+
+OK (1 test)
+
+
+
+
+
+INSTRUMENTATION_STATUS_CODE: -1
+
+Updated file C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
+Buildfile: C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 22.6.2
+ [checkenv] Installed at G:\adt-bundle-windows-x86_64-20140321\adt-bundle-windows-x86_64-20140321\sdk
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 19.0.3
+     [echo] Resolving Build Target for CloudCard...
+[getuitarget] Project Target:   Android 4.4.2
+[getuitarget] API level:        19
+     [echo] ----------
+     [echo] Creating output directories if needed...
+
+-pre-compile:
+
+compile:
+    [javac] Compiling 1 source file to C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
+    [javac] ����: [options] Դֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ŀ��ֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ҫ�����й��ѹ�ʱѡ��ľ���, ��ʹ�� -Xlint:-options��
+    [javac] 3 ������
+
+-post-compile:
+
+-dex:
+      [dex] input: C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
+      [dex] Found Deleted Target File
+      [dex] Converting compiled files and external libraries into C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes.dex...
+
+-post-dex:
+
+-jar:
+      [jar] Building jar: C:\Users\Administrator\workspace_201607\ContactUITest\bin\CloudCard.jar
+
+-post-jar:
+
+build:
+
+BUILD SUCCESSFUL
+Total time: 3 seconds
+2834 KB/s (29021 bytes in 0.010s)
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact.testcase.CloudCard
+
+INSTRUMENTATION_STATUS: stream=
+
+com.uitest.contact.testcase.CloudCard:
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: test=testCase_001
+
+INSTRUMENTATION_STATUS_CODE: 1
+
+[start] findAndOpenApp和通讯录
+
+isExistByName: 应用程序
+
+elementExist: false
+
+isExistByName: 应用程序
+
+elementExist: true
+
+clickByName: 应用程序
+
+click 和通讯录
+
+clickById: iab_title
+
+clickById: avatar_im
+
+clickById: iab_ib_action
+
+clickById: iab_tv_finish
+
+uiobject not found
+
+[start] back
+
+isExistById: tab_bar
+
+elementExist: false
+
+not rootFloor
+
+isExistById: iab_back
+
+elementExist: false
+
+notRootFloor or settingPage or searchPage
+
+isExistById: tab_bar
+
+elementExist: false
+
+not rootFloor
+
+isExistById: iab_back
+
+elementExist: false
+
+notRootFloor or settingPage or searchPage
+
+isExistById: tab_bar
+
+elementExist: false
+
+not rootFloor
+
+isExistById: iab_back
+
+elementExist: false
+
+notRootFloor or settingPage or searchPage
+
+isExistById: tab_bar
+
+elementExist: true
+
+isExistById: iab_view
+
+elementExist: true
+
+isExistById: user_info_layout
+
+elementExist: true
+
+not rootFloor
+
+isExistById: iab_back
+
+elementExist: false
+
+notRootFloor or settingPage or searchPage
+
+isExistById: tab_bar
+
+elementExist: true
+
+isExistById: iab_view
+
+elementExist: true
+
+isExistById: user_info_layout
+
+elementExist: false
+
+rootFloor
+
+clickById: tab_contacts
+
+clickById: tab_contacts
+
+[ end ] back
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact.testcase.CloudCard
+
+INSTRUMENTATION_STATUS: stream=.
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: test=testCase_001
+
+INSTRUMENTATION_STATUS_CODE: 0
+
+INSTRUMENTATION_STATUS: stream=
+
+Test results for WatcherResultPrinter=.
+
+Time: 49.993
+
+
+
+OK (1 test)
+
+
+
+
+
+INSTRUMENTATION_STATUS_CODE: -1
+
