@@ -12,10 +12,12 @@ import android.net.ParseException;
 import com.android.uiautomator.core.UiDevice;
 import com.android.uiautomator.core.UiObject;
 import com.android.uiautomator.core.UiObjectNotFoundException;
+import com.android.uiautomator.testrunner.UiAutomatorTestCase;
+import com.uitest.uiautomatorUtil.ImageManager;
 import com.uitest.uiautomatorUtil.TimeUtil;
 import com.uitest.util.UiAutomatorHelper;
 
-public class MyUIauto {
+public class MyUIauto extends UiAutomatorTestCase{
 	
 	
 	private static final String TAG = "MyUIauto";
@@ -23,8 +25,8 @@ public class MyUIauto {
 	public static void main(String[] args) {
 		String jarName = "MyUIauto";
 		String testClass = "com.testCode.MyUIauto";
-		String testName = "";
-		String androidId = "1";
+		String testName = "testImage";
+		String androidId = "2";
 		new UiAutomatorHelper(jarName, testClass, testName, androidId);
 	}
 	
@@ -74,6 +76,14 @@ public class MyUIauto {
 //			System.out.println("找不到内容：" + bl+", runTime: " + runtime);
 //		}
 	}
+	
+	public void testImage(){
+		ImageManager.snapshot("testImage", "有点水印");
+	}
+	
+	
+	
+	
 	
 	/**
 	 * 检测通知栏中是否含有某些字段。

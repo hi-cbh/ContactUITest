@@ -1,8 +1,12 @@
 package com.uitest.contact.testcase;
 
 
+import java.io.File;
+
+import com.android.uiautomator.core.UiDevice;
 import com.contact.activity.MainActivity_contact;
 import com.uitest.data.UserConfig;
+import com.uitest.uiautomatorUtil.AssertUtil;
 import com.uitest.uiautomatorUtil.ElementManager;
 import com.uitest.util.TestContactBase;
 import com.uitest.util.UiAutomatorHelper;
@@ -63,7 +67,8 @@ public class CloudCard extends TestContactBase {
 		//返回
 		MainActivity_contact.back("tab_contacts");
 		
-		
+
+		AssertUtil.Myassert("运行失败", ElementManager.isExistById("iab_title"), "CloudCard");	
 	}
 
 	@Override

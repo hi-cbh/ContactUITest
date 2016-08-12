@@ -7,11 +7,16 @@ import com.uitest.util.UiAutomatorHelper;
 
 import android.os.RemoteException;
 
-public class TestContactCase extends TestContactBase {
+/**
+ * 和通讯录登录用例
+ * @author Administrator
+ *
+ */
+public class ContactLoginTime extends TestContactBase {
 
 	public static void main(String[] args) {
-		String jarName = "LoginTime";
-		String testClass = "com.uitest.contact.testcase.TestContactCase";
+		String jarName = "ContactLoginTime";
+		String testClass = "com.uitest.contact.testcase.ContactLoginTime";
 		String testName = "";
 		String androidId = UserConfig.androidId;
 		new UiAutomatorHelper(jarName, testClass, testName, androidId);

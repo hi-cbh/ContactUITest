@@ -1,7 +1,7 @@
 package com.uitest.contact.testcase;
 
 
-import junit.framework.Assert;
+
 
 import com.contact.activity.MainActivity_contact;
 import com.uitest.data.UserConfig;
@@ -61,6 +61,8 @@ public class CardEditor extends TestContactBase {
 		MainActivity_contact.back("tab_contacts");
 		
 		
+		
+		assertEquals("", true, false);
 	}
 
 	@Override
