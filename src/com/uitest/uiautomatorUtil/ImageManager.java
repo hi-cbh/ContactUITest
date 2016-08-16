@@ -48,7 +48,8 @@ public class ImageManager {
 	public static void saveBitMapToSdcard(Bitmap bitmap,String newName){
 		FileOutputStream out=null;
 		try {
-			out=new FileOutputStream("/mnt/sdcard/"+newName+".jpg");
+			
+			out=new FileOutputStream(UserConfig.savePicPath + newName);
 			if(out!=null){
 				bitmap.compress(Bitmap.CompressFormat.JPEG, 90, out);
 				out.close();
@@ -74,8 +75,8 @@ public class ImageManager {
 	
 	/**
 	 * 截图并添加水印
-	 * @param testCasename
-	 * @param text
+	 * @param testCasename   用例名称
+	 * @param text           写入的内容
 	 */
 	public static void snapshot(String testCasename, String text){
 		
@@ -87,7 +88,7 @@ public class ImageManager {
 		String tmpPic = "tmpPic.jpg"; 
 		//文件名
 		String filename = testCasename + "_" + TimeUtil.getCurrentSysTimeUnsigned() + ".jpg";
-		
+		//System.out.println("file name: " + filename);
 		screenshotAndDrawText(currentPath + tmpPic, filename, text);
 
 
@@ -102,8 +103,10 @@ public class ImageManager {
 	 */
 	public static void screenshotAndDrawText(String path,String imageName,String text){
         File file=new File(path);
+        //System.out.println("path: " + path);
         //截图
         UiDevice.getInstance().takeScreenshot(file);
+        //UiDevice.getInstance().takeScreenshot(file, 0.1f, 1);
         //转为bitmap类型
         Bitmap bitmap=BitmapFactory.decodeFile(path);
         //添加水印
@@ -129,7 +132,7 @@ public class ImageManager {
         canvans.drawBitmap(bitmap, 0,0, paint);
         //画笔颜色
         paint.setColor(Color.parseColor("#FF0000"));
-        paint.setTextSize(30);
+        paint.setTextSize(40);
         canvans.drawText(text, 20, y+55, paint);
         canvans.save(Canvas.ALL_SAVE_FLAG);
         canvans.restore();

@@ -160,4 +160,25 @@ public class DriverManager{
 	    
 	}
 	
+	/**
+	 * 点击物理返回键
+	 */
+	public static void pressBack(){
+		UiDevice.getInstance().pressBack();
+	}
+	
+	/**
+	 * 点击物理Home
+	 */
+	public static void pressHome(){
+		UiDevice.getInstance().pressHome();
+	}
+	
+	/**
+	 * 点击物理菜单
+	 */
+	public static void pressMenu(){
+		UiDevice.getInstance().pressMenu();
+	}
+	
 }

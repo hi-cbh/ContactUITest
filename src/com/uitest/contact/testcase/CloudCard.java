@@ -3,10 +3,13 @@ package com.uitest.contact.testcase;
 
 import java.io.File;
 
+import junit.framework.Assert;
+
 import com.android.uiautomator.core.UiDevice;
 import com.contact.activity.MainActivity_contact;
 import com.uitest.data.UserConfig;
 import com.uitest.uiautomatorUtil.AssertUtil;
+import com.uitest.uiautomatorUtil.DriverManager;
 import com.uitest.uiautomatorUtil.ElementManager;
 import com.uitest.util.TestContactBase;
 import com.uitest.util.UiAutomatorHelper;
@@ -18,7 +21,7 @@ public class CloudCard extends TestContactBase {
 	public static void main(String[] args) {
 		String jarName = "CloudCard";
 		String testClass = "com.uitest.contact.testcase.CloudCard";
-		String testName = "";
+		String testName = "testDemo";
 		String androidId = UserConfig.androidId;
 		new UiAutomatorHelper(jarName, testClass, testName, androidId);
 	}
@@ -26,18 +29,18 @@ public class CloudCard extends TestContactBase {
 	@Override
 	protected void setUp() throws Exception {
 		super.setUp();
-		openContact();
-		
-		// 点击和通讯录
-		ElementManager.clickById("iab_title");
-		//判断是否为登录状态，否，登录账号
-		if(!isLoginState()){
-			//返回
-			MainActivity_contact.back("tab_contacts");
-			//退出
-			Logout();
-			Login(UserConfig.LoginName,UserConfig.LoginPwd);
-		}
+//		openContact();
+//		
+//		// 点击和通讯录
+//		ElementManager.clickById("iab_title");
+//		//判断是否为登录状态，否，登录账号
+//		if(!isLoginState()){
+//			//返回
+//			MainActivity_contact.back("tab_contacts");
+//			//退出
+//			Logout();
+//			Login(UserConfig.LoginName,UserConfig.LoginPwd);
+//		}
 		
 	}
 	
@@ -67,10 +70,65 @@ public class CloudCard extends TestContactBase {
 		//返回
 		MainActivity_contact.back("tab_contacts");
 		
-
-		AssertUtil.Myassert("运行失败", ElementManager.isExistById("iab_title"), "CloudCard");	
+		//判断
+		AssertUtil.Myassert("云名片运行期间发生错误", ElementManager.isExistById("iab_title"), "CloudCard");	
 	}
-
+	
+	/**
+	 *  1、本地联系人有3000人以上，安装后，进入联系人整理页，页面显示整理中，点击返回。
+	 *	2、画面卡住后，点击物理返回按无反应。
+	 *	3、等待15秒左右，弹出和通讯录已停止。
+	 *	【预期结果】
+	 *	整理中点击返回，弹出提示
+	 * @throws RemoteException
+	 */
+	public void testDemo_002()throws RemoteException{
+		
+		System.out.println("testCase_002........");
+		
+		//返回
+		MainActivity_contact.back("tab_contacts");
+		
+		//点击更多按钮
+		ElementManager.clickById("iab_ib_more");
+		
+		//点击联系人整理
+		ElementManager.clickByName("联系人整理");
+		
+		
+		for(int i = 0; i <=2; i++)
+		{
+			if(ElementManager.isExistById("iab_back_area")){
+				DriverManager.pressBack();
+			}
+			sleep(1000);
+		}
+		
+		
+		//放弃
+		if(ElementManager.isExistById("dialog_btn_positive"))
+		{
+			ElementManager.clickById("dialog_btn_positive");
+		}
+		
+		//返回
+		MainActivity_contact.back("tab_contacts");
+		
+		
+		//判断
+		AssertUtil.Myassert("联系人整理运行期间发生错误", ElementManager.isExistById("iab_title1"), "ContactOrganize");	
+		
+	}
+	
+	public void testDemo(){
+		System.out.println("testDemo.......");
+		
+		
+		Assert.assertEquals("testdemo", false, true);
+	}
+	
+	
+	
 	@Override
 	protected void tearDown() throws Exception {
 		super.tearDown();
