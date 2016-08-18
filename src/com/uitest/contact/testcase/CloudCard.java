@@ -1,13 +1,9 @@
 package com.uitest.contact.testcase;
 
-
-import java.io.File;
-
 import junit.framework.Assert;
-
-import com.android.uiautomator.core.UiDevice;
 import com.contact.activity.MainActivity_contact;
 import com.uitest.data.UserConfig;
+import com.uitest.log.MyLogcatHelper;
 import com.uitest.uiautomatorUtil.AssertUtil;
 import com.uitest.uiautomatorUtil.DriverManager;
 import com.uitest.uiautomatorUtil.ElementManager;
@@ -21,7 +17,7 @@ public class CloudCard extends TestContactBase {
 	public static void main(String[] args) {
 		String jarName = "CloudCard";
 		String testClass = "com.uitest.contact.testcase.CloudCard";
-		String testName = "testDemo";
+		String testName = "testDemo_002";
 		String androidId = UserConfig.androidId;
 		new UiAutomatorHelper(jarName, testClass, testName, androidId);
 	}
@@ -29,18 +25,18 @@ public class CloudCard extends TestContactBase {
 	@Override
 	protected void setUp() throws Exception {
 		super.setUp();
-//		openContact();
-//		
-//		// 点击和通讯录
-//		ElementManager.clickById("iab_title");
-//		//判断是否为登录状态，否，登录账号
-//		if(!isLoginState()){
-//			//返回
-//			MainActivity_contact.back("tab_contacts");
-//			//退出
-//			Logout();
-//			Login(UserConfig.LoginName,UserConfig.LoginPwd);
-//		}
+		openContact();
+		
+		// 点击和通讯录
+		ElementManager.clickById("iab_title");
+		//判断是否为登录状态，否，登录账号
+		if(!isLoginState()){
+			//返回
+			MainActivity_contact.back("tab_contacts");
+			//退出
+			Logout();
+			Login(UserConfig.LoginName,UserConfig.LoginPwd);
+		}
 		
 	}
 	
@@ -86,6 +82,9 @@ public class CloudCard extends TestContactBase {
 		
 		System.out.println("testCase_002........");
 		
+		MyLogcatHelper  mylog = new MyLogcatHelper();
+		mylog.start();
+		
 		//返回
 		MainActivity_contact.back("tab_contacts");
 		
@@ -117,6 +116,9 @@ public class CloudCard extends TestContactBase {
 		
 		//判断
 		AssertUtil.Myassert("联系人整理运行期间发生错误", ElementManager.isExistById("iab_title1"), "ContactOrganize");	
+		
+		mylog.stop();
+		
 		
 	}
 	

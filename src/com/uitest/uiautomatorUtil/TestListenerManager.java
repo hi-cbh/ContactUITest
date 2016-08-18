@@ -7,6 +7,7 @@ import java.io.PrintStream;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
+
 import com.android.uiautomator.core.UiDevice;
 import com.android.uiautomator.testrunner.UiAutomatorTestCase;
 
@@ -146,6 +147,7 @@ public class TestListenerManager extends UiAutomatorTestCase{
 		public void startTest(Test arg0) {
 			startTime=TimeUtil.getCurrentSysTimeLog();
 			FileManager.saveFile("Start Time:"+startTime, ft);
+			
 		}
 	}
 	
