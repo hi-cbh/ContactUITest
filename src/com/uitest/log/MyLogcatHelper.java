@@ -8,16 +8,26 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 
+/**
+ * 系统运行日志截取（logcat）
+ * 
+ * 
+ * 日志记录：
+ * 版本                  日期                                   修改者            更新内容
+ * 1.0       2016-08-19   cbh     创建并修改
+ * 
+ */
 public class MyLogcatHelper {
 
-	private static LogcatHelper INSTANCE = null;
+	
 	private static String PATH_LOGCAT;
 	private LogDumper mLogDumper = null;
 	private int mPId;
 
-	public MyLogcatHelper() {
-
+	public MyLogcatHelper(String path) {
+		PATH_LOGCAT = path;
 		mPId = android.os.Process.myPid();
+		System.out.println("run PId: "+mPId);
 	}
 
 	public void start() {
@@ -45,12 +55,41 @@ public class MyLogcatHelper {
 		public LogDumper(String pid) {
 			mPID = pid;
 			try {
-				out = new FileOutputStream(new File("/mnt/sdcard/logc",
-						"log.txt"));
+				//out = new FileOutputStream(new File("/mnt/sdcard/logc","log.txt"));
+				out = new FileOutputStream(new File(PATH_LOGCAT));
 			} catch (FileNotFoundException e) {
 
 				e.printStackTrace();
 			}
+			
+			/**
+			 * 
+			 * 日志等级：*:v , *:d , *:w , *:e , *:f , *:s
+			 * 
+			 * 显示当前mPID程序的 E和W等级的日志.
+			 * 说明：
+			 * 
+			 * Verbose，啰嗦模式，最低级别的信息，不过滤地输出所有调试信息，包括VERBOSE、DEBUG、INFO、WARN、ERROR级别
+			 * 
+			 * Debug，调试模式，一些调试信息通过该模式输出，输出信息包括输出DEBUG、INFO、WARN、ERROR级别
+			 * 
+			 * Info，信息模式，输出信息包括输出INFO、WARN、ERROR级别。
+			 *
+			 * Warn，警告模式，输出信息包括输出WARN、ERROR级别。
+			 * 
+			 * Error，错误模式，输出信息包括输出ERROR级别
+			 * 
+			 * */
+
+			// cmds = "logcat *:e *:w | grep \"(" + mPID + ")\"";
+			// cmds = "logcat  | grep \"(" + mPID + ")\"";//打印所有日志信息
+			// cmds = "logcat -s way";//打印标签过滤信息
+			
+			cmds = "logcat *:e *:i | grep \"(" + mPID + ")\"";
+			
+			
+			
+			
 		}
 
 		public void stopLogs() {
@@ -62,11 +101,11 @@ public class MyLogcatHelper {
 
 			String line = null;
 			try {
-				logcatProc = Runtime.getRuntime().exec("logcat");
+				logcatProc = Runtime.getRuntime().exec(cmds);
 				mReader = new BufferedReader(new InputStreamReader(
 						logcatProc.getInputStream()), 1024);
 
-				while ((line = mReader.readLine()) != null) {
+				while (mRunning && (line = mReader.readLine()) != null) {
 					if (!mRunning) {
 						break;
 					}

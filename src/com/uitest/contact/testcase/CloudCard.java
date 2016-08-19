@@ -81,10 +81,7 @@ public class CloudCard extends TestContactBase {
 	public void testDemo_002()throws RemoteException{
 		
 		System.out.println("testCase_002........");
-		
-		MyLogcatHelper  mylog = new MyLogcatHelper();
-		mylog.start();
-		
+
 		//返回
 		MainActivity_contact.back("tab_contacts");
 		
@@ -115,9 +112,7 @@ public class CloudCard extends TestContactBase {
 		
 		
 		//判断
-		AssertUtil.Myassert("联系人整理运行期间发生错误", ElementManager.isExistById("iab_title1"), "ContactOrganize");	
-		
-		mylog.stop();
+		AssertUtil.Myassert("联系人整理运行期间发生错误", ElementManager.isExistById("iab_title"), "ContactOrganize");	
 		
 		
 	}

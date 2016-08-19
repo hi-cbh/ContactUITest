@@ -2,9 +2,9 @@ package com.uitest.data;
 
 public class UserConfig {
 
-	public static String saveRootPath = "/mnt/sdcard/AppTestReport";
-	//public static String savePicPath = "/mnt/sdcard/AppTestReport/pic/";
-	public static String savePicPath = "/mnt/sdcard/AppTestReportPic/";
+	public static String saveRootPath = "/mnt/sdcard/AppTestReport/";    //运行记录及app日志
+	public static String savePicPath = "/mnt/sdcard/AppTestReportPic/"; //运行错误时截图
+	public static String saveLogPath = "/mnt/sdcard/AppTestReportLog/"; //系统运行日志
 	
 	//登录账号
 	public static String LoginName = "13427665104";

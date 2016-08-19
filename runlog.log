@@ -12,69 +12,35 @@ Buildfile: C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
 [getuitarget] API level:        19
      [echo] ----------
      [echo] Creating output directories if needed...
-    [mkdir] Created dir: C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
 
 -pre-compile:
 
 compile:
-    [javac] Compiling 36 source files to C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
+    [javac] Compiling 3 source files to C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
     [javac] ����: [options] Դֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
     [javac] ����: [options] Ŀ��ֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
     [javac] ����: [options] Ҫ�����й��ѹ�ʱѡ��ľ���, ��ʹ�� -Xlint:-options��
-    [javac] C:\Users\Administrator\workspace_201607\ContactUITest\src\pers\traveler\log\LogScan.java:3: ����: �����org.apache.log4j������
-    [javac] import org.apache.log4j.Logger;
-    [javac]                        ^
-    [javac] C:\Users\Administrator\workspace_201607\ContactUITest\src\pers\traveler\log\LogScan.java:4: ����: �����org.apache.log4j������
-    [javac] import org.apache.log4j.PropertyConfigurator;
-    [javac]                        ^
-    [javac] C:\Users\Administrator\workspace_201607\ContactUITest\src\pers\traveler\log\Log.java:3: ����: �����org.apache.log4j������
-    [javac] import org.apache.log4j.Logger;
-    [javac]                        ^
-    [javac] C:\Users\Administrator\workspace_201607\ContactUITest\src\pers\traveler\log\Log.java:4: ����: �����org.apache.log4j������
-    [javac] import org.apache.log4j.PropertyConfigurator;
-    [javac]                        ^
-    [javac] C:\Users\Administrator\workspace_201607\ContactUITest\src\pers\traveler\log\Log.java:14: ����: �Ҳ�������
-    [javac]     private static Logger logger;
-    [javac]                    ^
-    [javac]   ����:   �� Logger
-    [javac]   λ��: �� Log
-    [javac] C:\Users\Administrator\workspace_201607\ContactUITest\src\pers\traveler\log\LogScan.java:47: ����: �Ҳ�������
-    [javac]             Logger logger = Logger.getLogger("app_log");
-    [javac]             ^
-    [javac]   ����:   �� Logger
-    [javac]   λ��: �� LogScan
-    [javac] C:\Users\Administrator\workspace_201607\ContactUITest\src\pers\traveler\log\LogScan.java:47: ����: �Ҳ�������
-    [javac]             Logger logger = Logger.getLogger("app_log");
-    [javac]                             ^
-    [javac]   ����:   ���� Logger
-    [javac]   λ��: �� LogScan
-    [javac] C:\Users\Administrator\workspace_201607\ContactUITest\src\pers\traveler\log\LogScan.java:54: ����: �Ҳ�������
-    [javac]             PropertyConfigurator.configure(new File(filePath).getAbsolutePath());
-    [javac]             ^
-    [javac]   ����:   ���� PropertyConfigurator
-    [javac]   λ��: �� LogScan
-    [javac] C:\Users\Administrator\workspace_201607\ContactUITest\src\pers\traveler\log\Log.java:19: ����: �Ҳ�������
-    [javac]         logger = Logger.getLogger("sys_log");
-    [javac]                  ^
-    [javac]   ����:   ���� Logger
-    [javac]   λ��: �� Log
-    [javac] C:\Users\Administrator\workspace_201607\ContactUITest\src\pers\traveler\log\Log.java:20: ����: �Ҳ�������
-    [javac]         PropertyConfigurator.configure(new File(filePath).getAbsolutePath());
-    [javac]         ^
-    [javac]   ����:   ���� PropertyConfigurator
-    [javac]   λ��: �� Log
-    [javac] ע: C:\Users\Administrator\workspace_201607\ContactUITest\src\com\beetstra\jutf7\CharsetProvider.javaʹ����δ�����򲻰�ȫ�Ĳ�����
-    [javac] ע: �й���ϸ��Ϣ, ��ʹ�� -Xlint:unchecked ���±��롣
-    [javac] 10 ������
     [javac] 3 ������
 
-BUILD FAILED
-G:\adt-bundle-windows-x86_64-20140321\adt-bundle-windows-x86_64-20140321\sdk\tools\ant\uibuild.xml:183: Compile failed; see the compiler error output for details.
+-post-compile:
 
-Total time: 13 seconds
-* daemon not running. starting it now on port 5037 *
-* daemon started successfully *
-cannot stat 'C:\Users\Administrator\workspace_201607\ContactUITest\bin\CloudCard.jar': No such file or directory
+-dex:
+      [dex] input: C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
+      [dex] Found Deleted Target File
+      [dex] Converting compiled files and external libraries into C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes.dex...
+
+-post-dex:
+
+-jar:
+      [jar] Building jar: C:\Users\Administrator\workspace_201607\ContactUITest\bin\CloudCard.jar
+
+-post-jar:
+
+build:
+
+BUILD SUCCESSFUL
+Total time: 4 seconds
+2255 KB/s (34640 bytes in 0.015s)
 INSTRUMENTATION_STATUS: current=1
 
 INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
@@ -87,11 +53,181 @@ com.uitest.contact.testcase.CloudCard:
 
 INSTRUMENTATION_STATUS: numtests=1
 
-INSTRUMENTATION_STATUS: test=testDemo
+INSTRUMENTATION_STATUS: test=testDemo_002
 
 INSTRUMENTATION_STATUS_CODE: 1
 
-testDemo.......
+startTest: testDemo_002(com.uitest.contact.testcase.CloudCard)
+
+[start] findAndOpenApp和通讯录
+
+isExistByName: 应用程序
+
+elementExist: true
+
+clickByName: 应用程序
+
+click 和通讯录
+
+clickById: iab_title
+
+testCase_002........
+
+run PId: 8833
+
+[start] back
+
+isExistById: tab_bar
+
+elementExist: true
+
+isExistById: iab_view
+
+elementExist: true
+
+isExistById: user_info_layout
+
+elementExist: true
+
+not rootFloor
+
+isExistById: iab_back
+
+elementExist: false
+
+notRootFloor or settingPage or searchPage
+
+isExistById: tab_bar
+
+elementExist: true
+
+isExistById: iab_view
+
+elementExist: true
+
+isExistById: user_info_layout
+
+elementExist: false
+
+rootFloor
+
+clickById: tab_contacts
+
+clickById: tab_contacts
+
+[ end ] back
+
+clickById: iab_ib_more
+
+clickByName: 联系人整理
+
+isExistById: iab_back_area
+
+elementExist: false
+
+isExistById: iab_back_area
+
+elementExist: true
+
+isExistById: iab_back_area
+
+elementExist: true
+
+isExistById: dialog_btn_positive
+
+elementExist: false
+
+[start] back
+
+isExistById: tab_bar
+
+elementExist: false
+
+not rootFloor
+
+isExistById: iab_back
+
+elementExist: false
+
+notRootFloor or settingPage or searchPage
+
+isExistById: tab_bar
+
+elementExist: false
+
+not rootFloor
+
+isExistById: iab_back
+
+elementExist: false
+
+notRootFloor or settingPage or searchPage
+
+isExistById: tab_bar
+
+elementExist: false
+
+not rootFloor
+
+isExistById: iab_back
+
+elementExist: false
+
+notRootFloor or settingPage or searchPage
+
+isExistById: tab_bar
+
+elementExist: false
+
+not rootFloor
+
+isExistById: iab_back
+
+elementExist: false
+
+notRootFloor or settingPage or searchPage
+
+isExistById: tab_bar
+
+elementExist: false
+
+not rootFloor
+
+isExistById: iab_back
+
+elementExist: false
+
+notRootFloor or settingPage or searchPage
+
+isExistById: tab_bar
+
+elementExist: false
+
+not rootFloor
+
+isExistById: iab_back
+
+elementExist: false
+
+notRootFloor or settingPage or searchPage
+
+isExistById: tab_bar
+
+elementExist: false
+
+not rootFloor
+
+isExistById: iab_back
+
+elementExist: false
+
+notRootFloor or settingPage or searchPage
+
+isExistById: iab_title
+
+elementExist: false
+
+snapshot
 
 INSTRUMENTATION_STATUS: current=1
 
@@ -101,15 +237,17 @@ INSTRUMENTATION_STATUS: class=com.uitest.contact.testcase.CloudCard
 
 INSTRUMENTATION_STATUS: stream=
 
-Failure in testDemo:
+Failure in testDemo_002:
 
-junit.framework.AssertionFailedError: testdemo expected:<false> but was:<true>
+junit.framework.AssertionFailedError: 联系人整理运行期间发生错误 expected:<false> but was:<true>
 
-	at com.uitest.contact.testcase.CloudCard.testDemo(CloudCard.java:127)
+	at com.uitest.uiautomatorUtil.AssertUtil.Myassert(AssertUtil.java:33)
+
+	at com.uitest.contact.testcase.CloudCard.testDemo_002(CloudCard.java:118)
 
 	at java.lang.reflect.Method.invokeNative(Native Method)
 
-	at com.uitest.uiautomatorUtil.TestListenerManager.run(TestListenerManager.java:77)
+	at com.uitest.uiautomatorUtil.TestListenerManager.run(TestListenerManager.java:79)
 
 	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.start(UiAutomatorTestRunner.java:160)
 
@@ -129,13 +267,15 @@ junit.framework.AssertionFailedError: testdemo expected:<false> but was:<true>
 
 INSTRUMENTATION_STATUS: numtests=1
 
-INSTRUMENTATION_STATUS: stack=junit.framework.AssertionFailedError: testdemo expected:<false> but was:<true>
+INSTRUMENTATION_STATUS: stack=junit.framework.AssertionFailedError: 联系人整理运行期间发生错误 expected:<false> but was:<true>
 
-	at com.uitest.contact.testcase.CloudCard.testDemo(CloudCard.java:127)
+	at com.uitest.uiautomatorUtil.AssertUtil.Myassert(AssertUtil.java:33)
+
+	at com.uitest.contact.testcase.CloudCard.testDemo_002(CloudCard.java:118)
 
 	at java.lang.reflect.Method.invokeNative(Native Method)
 
-	at com.uitest.uiautomatorUtil.TestListenerManager.run(TestListenerManager.java:77)
+	at com.uitest.uiautomatorUtil.TestListenerManager.run(TestListenerManager.java:79)
 
 	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.start(UiAutomatorTestRunner.java:160)
 
@@ -153,7 +293,7 @@ INSTRUMENTATION_STATUS: stack=junit.framework.AssertionFailedError: testdemo exp
 
 
 
-INSTRUMENTATION_STATUS: test=testDemo
+INSTRUMENTATION_STATUS: test=testDemo_002
 
 INSTRUMENTATION_STATUS_CODE: -2
 
@@ -161,7 +301,7 @@ INSTRUMENTATION_STATUS: stream=
 
 Test results for WatcherResultPrinter=.F
 
-Time: 2.315
+Time: 40.28
 
 
 
@@ -184,299 +324,7 @@ Buildfile: C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
 
 -build-setup:
 [getbuildtools] Using latest Build Tools: 19.0.3
-     [echo] Resolving Build Target for Test_wechat...
-[getuitarget] Project Target:   Android 4.4.2
-[getuitarget] API level:        19
-     [echo] ----------
-     [echo] Creating output directories if needed...
-
--pre-compile:
-
-compile:
-    [javac] Compiling 35 source files to C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
-    [javac] ����: [options] Դֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
-    [javac] ����: [options] Ŀ��ֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
-    [javac] ����: [options] Ҫ�����й��ѹ�ʱѡ��ľ���, ��ʹ�� -Xlint:-options��
-    [javac] ע: C:\Users\Administrator\workspace_201607\ContactUITest\src\com\beetstra\jutf7\CharsetProvider.javaʹ����δ�����򲻰�ȫ�Ĳ�����
-    [javac] ע: �й���ϸ��Ϣ, ��ʹ�� -Xlint:unchecked ���±��롣
-    [javac] 3 ������
-
--post-compile:
-
--dex:
-      [dex] input: C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
-      [dex] Converting compiled files and external libraries into C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes.dex...
-
--post-dex:
-
--jar:
-      [jar] Building jar: C:\Users\Administrator\workspace_201607\ContactUITest\bin\Test_wechat.jar
-
--post-jar:
-
-build:
-
-BUILD SUCCESSFUL
-Total time: 7 seconds
-3399 KB/s (31331 bytes in 0.009s)
-INSTRUMENTATION_STATUS: current=1
-
-INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
-
-INSTRUMENTATION_STATUS: class=com.uitest.contact.testcase.Test_wechat
-
-INSTRUMENTATION_STATUS: stream=
-
-com.uitest.contact.testcase.Test_wechat:
-
-INSTRUMENTATION_STATUS: numtests=1
-
-INSTRUMENTATION_STATUS: test=testDemo
-
-INSTRUMENTATION_STATUS_CODE: 1
-
-9:40:4639:click type:2001 content:和通讯录
-
-9:40:4855:click type:2001 content:设置
-
-9:40:49630:click type:2001 content:通话设置
-
-9:40:50853:TakeScreen: 9_40_50_不通过.jpg
-
-INSTRUMENTATION_STATUS: current=1
-
-INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
-
-INSTRUMENTATION_STATUS: class=com.uitest.contact.testcase.Test_wechat
-
-INSTRUMENTATION_STATUS: stream=.
-
-INSTRUMENTATION_STATUS: numtests=1
-
-INSTRUMENTATION_STATUS: test=testDemo
-
-INSTRUMENTATION_STATUS_CODE: 0
-
-INSTRUMENTATION_STATUS: stream=
-
-Test results for WatcherResultPrinter=.
-
-Time: 8.985
-
-
-
-OK (1 test)
-
-
-
-
-
-INSTRUMENTATION_STATUS_CODE: -1
-
-Updated file C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
-Buildfile: C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
-
--check-env:
- [checkenv] Android SDK Tools Revision 22.6.2
- [checkenv] Installed at G:\adt-bundle-windows-x86_64-20140321\adt-bundle-windows-x86_64-20140321\sdk
-
--build-setup:
-[getbuildtools] Using latest Build Tools: 19.0.3
-     [echo] Resolving Build Target for Test_wechat...
-[getuitarget] Project Target:   Android 4.4.2
-[getuitarget] API level:        19
-     [echo] ----------
-     [echo] Creating output directories if needed...
-
--pre-compile:
-
-compile:
-    [javac] Compiling 1 source file to C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
-    [javac] ����: [options] Դֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
-    [javac] ����: [options] Ŀ��ֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
-    [javac] ����: [options] Ҫ�����й��ѹ�ʱѡ��ľ���, ��ʹ�� -Xlint:-options��
-    [javac] 3 ������
-
--post-compile:
-
--dex:
-      [dex] input: C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
-      [dex] Found Deleted Target File
-      [dex] Converting compiled files and external libraries into C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes.dex...
-
--post-dex:
-
--jar:
-      [jar] Building jar: C:\Users\Administrator\workspace_201607\ContactUITest\bin\Test_wechat.jar
-
--post-jar:
-
-build:
-
-BUILD SUCCESSFUL
-Total time: 3 seconds
-5099 KB/s (31331 bytes in 0.006s)
-INSTRUMENTATION_STATUS: current=1
-
-INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
-
-INSTRUMENTATION_STATUS: class=com.uitest.contact.testcase.Test_wechat
-
-INSTRUMENTATION_STATUS: stream=
-
-com.uitest.contact.testcase.Test_wechat:
-
-INSTRUMENTATION_STATUS: numtests=1
-
-INSTRUMENTATION_STATUS: test=testDemo
-
-INSTRUMENTATION_STATUS_CODE: 1
-
-9:42:25711:click type:2001 content:和通讯录
-
-9:42:27309:click type:2001 content:设置
-
-9:42:2955:click type:2001 content:通话设置
-
-9:42:3087:通过
-
-INSTRUMENTATION_STATUS: current=1
-
-INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
-
-INSTRUMENTATION_STATUS: class=com.uitest.contact.testcase.Test_wechat
-
-INSTRUMENTATION_STATUS: stream=.
-
-INSTRUMENTATION_STATUS: numtests=1
-
-INSTRUMENTATION_STATUS: test=testDemo
-
-INSTRUMENTATION_STATUS_CODE: 0
-
-INSTRUMENTATION_STATUS: stream=
-
-Test results for WatcherResultPrinter=.
-
-Time: 7.924
-
-
-
-OK (1 test)
-
-
-
-
-
-INSTRUMENTATION_STATUS_CODE: -1
-
-Updated file C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
-Buildfile: C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
-
--check-env:
- [checkenv] Android SDK Tools Revision 22.6.2
- [checkenv] Installed at G:\adt-bundle-windows-x86_64-20140321\adt-bundle-windows-x86_64-20140321\sdk
-
--build-setup:
-[getbuildtools] Using latest Build Tools: 19.0.3
-     [echo] Resolving Build Target for Test_wechat...
-[getuitarget] Project Target:   Android 4.4.2
-[getuitarget] API level:        19
-     [echo] ----------
-     [echo] Creating output directories if needed...
-
--pre-compile:
-
-compile:
-    [javac] Compiling 1 source file to C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
-    [javac] ����: [options] Դֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
-    [javac] ����: [options] Ŀ��ֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
-    [javac] ����: [options] Ҫ�����й��ѹ�ʱѡ��ľ���, ��ʹ�� -Xlint:-options��
-    [javac] 3 ������
-
--post-compile:
-
--dex:
-      [dex] input: C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
-      [dex] Found Deleted Target File
-      [dex] Converting compiled files and external libraries into C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes.dex...
-
--post-dex:
-
--jar:
-      [jar] Building jar: C:\Users\Administrator\workspace_201607\ContactUITest\bin\Test_wechat.jar
-
--post-jar:
-
-build:
-
-BUILD SUCCESSFUL
-Total time: 4 seconds
-2351 KB/s (31299 bytes in 0.013s)
-INSTRUMENTATION_STATUS: current=1
-
-INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
-
-INSTRUMENTATION_STATUS: class=com.uitest.contact.testcase.Test_wechat
-
-INSTRUMENTATION_STATUS: stream=
-
-com.uitest.contact.testcase.Test_wechat:
-
-INSTRUMENTATION_STATUS: numtests=1
-
-INSTRUMENTATION_STATUS: test=testDemo
-
-INSTRUMENTATION_STATUS_CODE: 1
-
-10:16:47:click type:2001 content:和通讯录
-
-10:16:48:click type:2001 content:设置
-
-10:16:49:click type:2001 content:通话设置
-
-10:16:50:通过
-
-INSTRUMENTATION_STATUS: current=1
-
-INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
-
-INSTRUMENTATION_STATUS: class=com.uitest.contact.testcase.Test_wechat
-
-INSTRUMENTATION_STATUS: stream=.
-
-INSTRUMENTATION_STATUS: numtests=1
-
-INSTRUMENTATION_STATUS: test=testDemo
-
-INSTRUMENTATION_STATUS_CODE: 0
-
-INSTRUMENTATION_STATUS: stream=
-
-Test results for WatcherResultPrinter=.
-
-Time: 7.058
-
-
-
-OK (1 test)
-
-
-
-
-
-INSTRUMENTATION_STATUS_CODE: -1
-
-Updated file C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
-Buildfile: C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
-
--check-env:
- [checkenv] Android SDK Tools Revision 22.6.2
- [checkenv] Installed at G:\adt-bundle-windows-x86_64-20140321\adt-bundle-windows-x86_64-20140321\sdk
-
--build-setup:
-[getbuildtools] Using latest Build Tools: 19.0.3
-     [echo] Resolving Build Target for Test_wechat...
+     [echo] Resolving Build Target for CloudCard...
 [getuitarget] Project Target:   Android 4.4.2
 [getuitarget] API level:        19
      [echo] ----------
@@ -501,7 +349,7 @@ compile:
 -post-dex:
 
 -jar:
-      [jar] Building jar: C:\Users\Administrator\workspace_201607\ContactUITest\bin\Test_wechat.jar
+      [jar] Building jar: C:\Users\Administrator\workspace_201607\ContactUITest\bin\CloudCard.jar
 
 -post-jar:
 
@@ -509,40 +357,160 @@ build:
 
 BUILD SUCCESSFUL
 Total time: 4 seconds
-2358 KB/s (31403 bytes in 0.013s)
+2115 KB/s (34666 bytes in 0.016s)
+run PId: 9830
+
 INSTRUMENTATION_STATUS: current=1
 
 INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
 
-INSTRUMENTATION_STATUS: class=com.uitest.contact.testcase.Test_wechat
+INSTRUMENTATION_STATUS: class=com.uitest.contact.testcase.CloudCard
 
 INSTRUMENTATION_STATUS: stream=
 
-com.uitest.contact.testcase.Test_wechat:
+com.uitest.contact.testcase.CloudCard:
 
 INSTRUMENTATION_STATUS: numtests=1
 
-INSTRUMENTATION_STATUS: test=testDemo
+INSTRUMENTATION_STATUS: test=testDemo_002
 
 INSTRUMENTATION_STATUS_CODE: 1
 
-10:37:38:click type:2001 content:和通讯录
+startTest: testDemo_002(com.uitest.contact.testcase.CloudCard)
 
-10:37:41:click type:2001 content:通话设置
+[start] findAndOpenApp和通讯录
 
-10:37:42:通过
+isExistByName: 应用程序
+
+elementExist: false
+
+isExistByName: 应用程序
+
+elementExist: true
+
+clickByName: 应用程序
+
+drag
+
+[ doing ] swipeToRight 
+
+click 和通讯录
+
+clickById: iab_title
+
+testCase_002........
+
+[start] back
+
+isExistById: tab_bar
+
+elementExist: true
+
+isExistById: iab_view
+
+elementExist: true
+
+isExistById: user_info_layout
+
+elementExist: true
+
+not rootFloor
+
+isExistById: iab_back
+
+elementExist: false
+
+notRootFloor or settingPage or searchPage
+
+isExistById: tab_bar
+
+elementExist: true
+
+isExistById: iab_view
+
+elementExist: true
+
+isExistById: user_info_layout
+
+elementExist: false
+
+rootFloor
+
+clickById: tab_contacts
+
+clickById: tab_contacts
+
+[ end ] back
+
+clickById: iab_ib_more
+
+clickByName: 联系人整理
+
+isExistById: iab_back_area
+
+elementExist: false
+
+isExistById: iab_back_area
+
+elementExist: true
+
+isExistById: iab_back_area
+
+elementExist: true
+
+isExistById: dialog_btn_positive
+
+elementExist: false
+
+[start] back
+
+isExistById: tab_bar
+
+elementExist: false
+
+not rootFloor
+
+isExistById: iab_back
+
+elementExist: false
+
+notRootFloor or settingPage or searchPage
+
+isExistById: tab_bar
+
+elementExist: true
+
+isExistById: iab_view
+
+elementExist: true
+
+isExistById: user_info_layout
+
+elementExist: false
+
+rootFloor
+
+clickById: tab_contacts
+
+clickById: tab_contacts
+
+[ end ] back
+
+isExistById: iab_title
+
+elementExist: true
 
 INSTRUMENTATION_STATUS: current=1
 
 INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
 
-INSTRUMENTATION_STATUS: class=com.uitest.contact.testcase.Test_wechat
+INSTRUMENTATION_STATUS: class=com.uitest.contact.testcase.CloudCard
 
 INSTRUMENTATION_STATUS: stream=.
 
 INSTRUMENTATION_STATUS: numtests=1
 
-INSTRUMENTATION_STATUS: test=testDemo
+INSTRUMENTATION_STATUS: test=testDemo_002
 
 INSTRUMENTATION_STATUS_CODE: 0
 
@@ -550,7 +518,7 @@ INSTRUMENTATION_STATUS: stream=
 
 Test results for WatcherResultPrinter=.
 
-Time: 6.94
+Time: 36.889
 
 
 
@@ -571,1400 +539,7 @@ Buildfile: C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
 
 -build-setup:
 [getbuildtools] Using latest Build Tools: 19.0.3
-     [echo] Resolving Build Target for Test_wechat...
-[getuitarget] Project Target:   Android 4.4.2
-[getuitarget] API level:        19
-     [echo] ----------
-     [echo] Creating output directories if needed...
-
--pre-compile:
-
-compile:
-    [javac] Compiling 2 source files to C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
-    [javac] ����: [options] Դֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
-    [javac] ����: [options] Ŀ��ֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
-    [javac] ����: [options] Ҫ�����й��ѹ�ʱѡ��ľ���, ��ʹ�� -Xlint:-options��
-    [javac] 3 ������
-
--post-compile:
-
--dex:
-      [dex] input: C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
-      [dex] Found Deleted Target File
-      [dex] Converting compiled files and external libraries into C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes.dex...
-
--post-dex:
-
--jar:
-      [jar] Building jar: C:\Users\Administrator\workspace_201607\ContactUITest\bin\Test_wechat.jar
-
--post-jar:
-
-build:
-
-BUILD SUCCESSFUL
-Total time: 4 seconds
-3077 KB/s (31515 bytes in 0.010s)
-INSTRUMENTATION_STATUS: current=1
-
-INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
-
-INSTRUMENTATION_STATUS: class=com.uitest.contact.testcase.Test_wechat
-
-INSTRUMENTATION_STATUS: stream=
-
-com.uitest.contact.testcase.Test_wechat:
-
-INSTRUMENTATION_STATUS: numtests=1
-
-INSTRUMENTATION_STATUS: test=testDemo
-
-INSTRUMENTATION_STATUS_CODE: 1
-
-11:26:1:click type:2001 content:和通讯录
-
-11:26:4:click type:2001 content:通话设置
-
-11:26:5:通过
-
-INSTRUMENTATION_STATUS: current=1
-
-INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
-
-INSTRUMENTATION_STATUS: class=com.uitest.contact.testcase.Test_wechat
-
-INSTRUMENTATION_STATUS: stream=.
-
-INSTRUMENTATION_STATUS: numtests=1
-
-INSTRUMENTATION_STATUS: test=testDemo
-
-INSTRUMENTATION_STATUS_CODE: 0
-
-INSTRUMENTATION_STATUS: stream=
-
-Test results for WatcherResultPrinter=.
-
-Time: 6.869
-
-
-
-OK (1 test)
-
-
-
-
-
-INSTRUMENTATION_STATUS_CODE: -1
-
-Updated file C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
-Buildfile: C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
-
--check-env:
- [checkenv] Android SDK Tools Revision 22.6.2
- [checkenv] Installed at G:\adt-bundle-windows-x86_64-20140321\adt-bundle-windows-x86_64-20140321\sdk
-
--build-setup:
-[getbuildtools] Using latest Build Tools: 19.0.3
-     [echo] Resolving Build Target for Test_wechat...
-[getuitarget] Project Target:   Android 4.4.2
-[getuitarget] API level:        19
-     [echo] ----------
-     [echo] Creating output directories if needed...
-
--pre-compile:
-
-compile:
-
--post-compile:
-
--dex:
-      [dex] input: C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
-      [dex] Found Deleted Target File
-      [dex] Converting compiled files and external libraries into C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes.dex...
-
--post-dex:
-
--jar:
-      [jar] Building jar: C:\Users\Administrator\workspace_201607\ContactUITest\bin\Test_wechat.jar
-
--post-jar:
-
-build:
-
-BUILD SUCCESSFUL
-Total time: 3 seconds
-2198 KB/s (31515 bytes in 0.014s)
-INSTRUMENTATION_STATUS: current=1
-
-INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
-
-INSTRUMENTATION_STATUS: class=com.uitest.contact.testcase.Test_wechat
-
-INSTRUMENTATION_STATUS: stream=
-
-com.uitest.contact.testcase.Test_wechat:
-
-INSTRUMENTATION_STATUS: numtests=1
-
-INSTRUMENTATION_STATUS: test=testDemo
-
-INSTRUMENTATION_STATUS_CODE: 1
-
-11:26:20:click type:2001 content:和通讯录
-
-11:26:23:click type:2001 content:通话设置
-
-11:26:24:通过
-
-INSTRUMENTATION_STATUS: current=1
-
-INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
-
-INSTRUMENTATION_STATUS: class=com.uitest.contact.testcase.Test_wechat
-
-INSTRUMENTATION_STATUS: stream=.
-
-INSTRUMENTATION_STATUS: numtests=1
-
-INSTRUMENTATION_STATUS: test=testDemo
-
-INSTRUMENTATION_STATUS_CODE: 0
-
-INSTRUMENTATION_STATUS: stream=
-
-Test results for WatcherResultPrinter=.
-
-Time: 7.094
-
-
-
-OK (1 test)
-
-
-
-
-
-INSTRUMENTATION_STATUS_CODE: -1
-
-Updated file C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
-Buildfile: C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
-
--check-env:
- [checkenv] Android SDK Tools Revision 22.6.2
- [checkenv] Installed at G:\adt-bundle-windows-x86_64-20140321\adt-bundle-windows-x86_64-20140321\sdk
-
--build-setup:
-[getbuildtools] Using latest Build Tools: 19.0.3
-     [echo] Resolving Build Target for Test_wechat...
-[getuitarget] Project Target:   Android 4.4.2
-[getuitarget] API level:        19
-     [echo] ----------
-     [echo] Creating output directories if needed...
-
--pre-compile:
-
-compile:
-    [javac] Compiling 1 source file to C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
-    [javac] ����: [options] Դֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
-    [javac] ����: [options] Ŀ��ֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
-    [javac] ����: [options] Ҫ�����й��ѹ�ʱѡ��ľ���, ��ʹ�� -Xlint:-options��
-    [javac] 3 ������
-
--post-compile:
-
--dex:
-      [dex] input: C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
-      [dex] Found Deleted Target File
-      [dex] Converting compiled files and external libraries into C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes.dex...
-
--post-dex:
-
--jar:
-      [jar] Building jar: C:\Users\Administrator\workspace_201607\ContactUITest\bin\Test_wechat.jar
-
--post-jar:
-
-build:
-
-BUILD SUCCESSFUL
-Total time: 5 seconds
-3848 KB/s (31524 bytes in 0.008s)
-INSTRUMENTATION_STATUS: current=1
-
-INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
-
-INSTRUMENTATION_STATUS: class=com.uitest.contact.testcase.Test_wechat
-
-INSTRUMENTATION_STATUS: stream=
-
-com.uitest.contact.testcase.Test_wechat:
-
-INSTRUMENTATION_STATUS: numtests=1
-
-INSTRUMENTATION_STATUS: test=testDemo
-
-INSTRUMENTATION_STATUS_CODE: 1
-
-11:31:8:click type:2001 content:和通讯录
-
-11:31:10:click type:2001 content:通话设置
-
-11:31:11:通过
-
-INSTRUMENTATION_STATUS: current=1
-
-INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
-
-INSTRUMENTATION_STATUS: class=com.uitest.contact.testcase.Test_wechat
-
-INSTRUMENTATION_STATUS: stream=.
-
-INSTRUMENTATION_STATUS: numtests=1
-
-INSTRUMENTATION_STATUS: test=testDemo
-
-INSTRUMENTATION_STATUS_CODE: 0
-
-INSTRUMENTATION_STATUS: stream=
-
-Test results for WatcherResultPrinter=.
-
-Time: 6.617
-
-
-
-OK (1 test)
-
-
-
-
-
-INSTRUMENTATION_STATUS_CODE: -1
-
-Updated file C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
-Buildfile: C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
-
--check-env:
- [checkenv] Android SDK Tools Revision 22.6.2
- [checkenv] Installed at G:\adt-bundle-windows-x86_64-20140321\adt-bundle-windows-x86_64-20140321\sdk
-
--build-setup:
-[getbuildtools] Using latest Build Tools: 19.0.3
-     [echo] Resolving Build Target for TestCatchLog...
-[getuitarget] Project Target:   Android 4.4.2
-[getuitarget] API level:        19
-     [echo] ----------
-     [echo] Creating output directories if needed...
-
--pre-compile:
-
-compile:
-    [javac] Compiling 4 source files to C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
-    [javac] ����: [options] Դֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
-    [javac] ����: [options] Ŀ��ֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
-    [javac] ����: [options] Ҫ�����й��ѹ�ʱѡ��ľ���, ��ʹ�� -Xlint:-options��
-    [javac] 3 ������
-
--post-compile:
-
--dex:
-      [dex] input: C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
-      [dex] Found Deleted Target File
-      [dex] Converting compiled files and external libraries into C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes.dex...
-
--post-dex:
-
--jar:
-      [jar] Building jar: C:\Users\Administrator\workspace_201607\ContactUITest\bin\TestCatchLog.jar
-
--post-jar:
-
-build:
-
-BUILD SUCCESSFUL
-Total time: 5 seconds
-3925 KB/s (32160 bytes in 0.008s)
-INSTRUMENTATION_STATUS: current=1
-
-INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
-
-INSTRUMENTATION_STATUS: class=com.testCode.TestCatchLog
-
-INSTRUMENTATION_STATUS: stream=
-
-com.testCode.TestCatchLog:
-
-INSTRUMENTATION_STATUS: numtests=1
-
-INSTRUMENTATION_STATUS: test=testDemo
-
-INSTRUMENTATION_STATUS_CODE: 1
-
-start.......
-
-end.......
-
-INSTRUMENTATION_STATUS: current=1
-
-INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
-
-INSTRUMENTATION_STATUS: class=com.testCode.TestCatchLog
-
-INSTRUMENTATION_STATUS: stream=.
-
-INSTRUMENTATION_STATUS: numtests=1
-
-INSTRUMENTATION_STATUS: test=testDemo
-
-INSTRUMENTATION_STATUS_CODE: 0
-
-INSTRUMENTATION_STATUS: stream=
-
-Test results for WatcherResultPrinter=.
-
-Time: 7.342
-
-
-
-OK (1 test)
-
-
-
-
-
-INSTRUMENTATION_STATUS_CODE: -1
-
-Updated file C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
-Buildfile: C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
-
--check-env:
- [checkenv] Android SDK Tools Revision 22.6.2
- [checkenv] Installed at G:\adt-bundle-windows-x86_64-20140321\adt-bundle-windows-x86_64-20140321\sdk
-
--build-setup:
-[getbuildtools] Using latest Build Tools: 19.0.3
-     [echo] Resolving Build Target for TestCatchLog...
-[getuitarget] Project Target:   Android 4.4.2
-[getuitarget] API level:        19
-     [echo] ----------
-     [echo] Creating output directories if needed...
-
--pre-compile:
-
-compile:
-    [javac] Compiling 1 source file to C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
-    [javac] ����: [options] Դֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
-    [javac] ����: [options] Ŀ��ֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
-    [javac] ����: [options] Ҫ�����й��ѹ�ʱѡ��ľ���, ��ʹ�� -Xlint:-options��
-    [javac] 3 ������
-
--post-compile:
-
--dex:
-      [dex] input: C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
-      [dex] Found Deleted Target File
-      [dex] Converting compiled files and external libraries into C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes.dex...
-
--post-dex:
-
--jar:
-      [jar] Building jar: C:\Users\Administrator\workspace_201607\ContactUITest\bin\TestCatchLog.jar
-
--post-jar:
-
-build:
-
-BUILD SUCCESSFUL
-Total time: 4 seconds
-2616 KB/s (32154 bytes in 0.012s)
-INSTRUMENTATION_STATUS: current=1
-
-INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
-
-INSTRUMENTATION_STATUS: class=com.testCode.TestCatchLog
-
-INSTRUMENTATION_STATUS: stream=
-
-com.testCode.TestCatchLog:
-
-INSTRUMENTATION_STATUS: numtests=1
-
-INSTRUMENTATION_STATUS: test=testDemo
-
-INSTRUMENTATION_STATUS_CODE: 1
-
-start.......
-
-end.......
-
-INSTRUMENTATION_STATUS: current=1
-
-INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
-
-INSTRUMENTATION_STATUS: class=com.testCode.TestCatchLog
-
-INSTRUMENTATION_STATUS: stream=.
-
-INSTRUMENTATION_STATUS: numtests=1
-
-INSTRUMENTATION_STATUS: test=testDemo
-
-INSTRUMENTATION_STATUS_CODE: 0
-
-INSTRUMENTATION_STATUS: stream=
-
-Test results for WatcherResultPrinter=.
-
-Time: 6.471
-
-
-
-OK (1 test)
-
-
-
-
-
-INSTRUMENTATION_STATUS_CODE: -1
-
-Updated file C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
-Buildfile: C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
-
--check-env:
- [checkenv] Android SDK Tools Revision 22.6.2
- [checkenv] Installed at G:\adt-bundle-windows-x86_64-20140321\adt-bundle-windows-x86_64-20140321\sdk
-
--build-setup:
-[getbuildtools] Using latest Build Tools: 19.0.3
-     [echo] Resolving Build Target for TestCatchLog...
-[getuitarget] Project Target:   Android 4.4.2
-[getuitarget] API level:        19
-     [echo] ----------
-     [echo] Creating output directories if needed...
-
--pre-compile:
-
-compile:
-    [javac] Compiling 1 source file to C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
-    [javac] ����: [options] Դֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
-    [javac] ����: [options] Ŀ��ֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
-    [javac] ����: [options] Ҫ�����й��ѹ�ʱѡ��ľ���, ��ʹ�� -Xlint:-options��
-    [javac] 3 ������
-
--post-compile:
-
--dex:
-      [dex] input: C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
-      [dex] Found Deleted Target File
-      [dex] Converting compiled files and external libraries into C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes.dex...
-
--post-dex:
-
--jar:
-      [jar] Building jar: C:\Users\Administrator\workspace_201607\ContactUITest\bin\TestCatchLog.jar
-
--post-jar:
-
-build:
-
-BUILD SUCCESSFUL
-Total time: 3 seconds
-2242 KB/s (32147 bytes in 0.014s)
-INSTRUMENTATION_STATUS: current=1
-
-INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
-
-INSTRUMENTATION_STATUS: class=com.testCode.TestCatchLog
-
-INSTRUMENTATION_STATUS: stream=
-
-com.testCode.TestCatchLog:
-
-INSTRUMENTATION_STATUS: numtests=1
-
-INSTRUMENTATION_STATUS: test=testDemo
-
-INSTRUMENTATION_STATUS_CODE: 1
-
-start.......
-
-end.......
-
-INSTRUMENTATION_STATUS: current=1
-
-INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
-
-INSTRUMENTATION_STATUS: class=com.testCode.TestCatchLog
-
-INSTRUMENTATION_STATUS: stream=.
-
-INSTRUMENTATION_STATUS: numtests=1
-
-INSTRUMENTATION_STATUS: test=testDemo
-
-INSTRUMENTATION_STATUS_CODE: 0
-
-INSTRUMENTATION_STATUS: stream=
-
-Test results for WatcherResultPrinter=.
-
-Time: 6.503
-
-
-
-OK (1 test)
-
-
-
-
-
-INSTRUMENTATION_STATUS_CODE: -1
-
-Updated file C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
-Buildfile: C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
-
--check-env:
- [checkenv] Android SDK Tools Revision 22.6.2
- [checkenv] Installed at G:\adt-bundle-windows-x86_64-20140321\adt-bundle-windows-x86_64-20140321\sdk
-
--build-setup:
-[getbuildtools] Using latest Build Tools: 19.0.3
-     [echo] Resolving Build Target for TestCatchLog...
-[getuitarget] Project Target:   Android 4.4.2
-[getuitarget] API level:        19
-     [echo] ----------
-     [echo] Creating output directories if needed...
-
--pre-compile:
-
-compile:
-    [javac] Compiling 1 source file to C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
-    [javac] ����: [options] Դֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
-    [javac] ����: [options] Ŀ��ֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
-    [javac] ����: [options] Ҫ�����й��ѹ�ʱѡ��ľ���, ��ʹ�� -Xlint:-options��
-    [javac] 3 ������
-
--post-compile:
-
--dex:
-      [dex] input: C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
-      [dex] Found Deleted Target File
-      [dex] Converting compiled files and external libraries into C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes.dex...
-
--post-dex:
-
--jar:
-      [jar] Building jar: C:\Users\Administrator\workspace_201607\ContactUITest\bin\TestCatchLog.jar
-
--post-jar:
-
-build:
-
-BUILD SUCCESSFUL
-Total time: 3 seconds
-2242 KB/s (32149 bytes in 0.014s)
-INSTRUMENTATION_STATUS: current=1
-
-INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
-
-INSTRUMENTATION_STATUS: class=com.testCode.TestCatchLog
-
-INSTRUMENTATION_STATUS: stream=
-
-com.testCode.TestCatchLog:
-
-INSTRUMENTATION_STATUS: numtests=1
-
-INSTRUMENTATION_STATUS: test=testDemo
-
-INSTRUMENTATION_STATUS_CODE: 1
-
-start.......
-
-end.......
-
-INSTRUMENTATION_STATUS: current=1
-
-INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
-
-INSTRUMENTATION_STATUS: class=com.testCode.TestCatchLog
-
-INSTRUMENTATION_STATUS: stream=.
-
-INSTRUMENTATION_STATUS: numtests=1
-
-INSTRUMENTATION_STATUS: test=testDemo
-
-INSTRUMENTATION_STATUS_CODE: 0
-
-INSTRUMENTATION_STATUS: stream=
-
-Test results for WatcherResultPrinter=.
-
-Time: 7.297
-
-
-
-OK (1 test)
-
-
-
-
-
-INSTRUMENTATION_STATUS_CODE: -1
-
-Updated file C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
-Buildfile: C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
-
--check-env:
- [checkenv] Android SDK Tools Revision 22.6.2
- [checkenv] Installed at G:\adt-bundle-windows-x86_64-20140321\adt-bundle-windows-x86_64-20140321\sdk
-
--build-setup:
-[getbuildtools] Using latest Build Tools: 19.0.3
-     [echo] Resolving Build Target for TestCatchLog...
-[getuitarget] Project Target:   Android 4.4.2
-[getuitarget] API level:        19
-     [echo] ----------
-     [echo] Creating output directories if needed...
-
--pre-compile:
-
-compile:
-    [javac] Compiling 1 source file to C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
-    [javac] ����: [options] Դֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
-    [javac] ����: [options] Ŀ��ֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
-    [javac] ����: [options] Ҫ�����й��ѹ�ʱѡ��ľ���, ��ʹ�� -Xlint:-options��
-    [javac] 3 ������
-
--post-compile:
-
--dex:
-      [dex] input: C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
-      [dex] Found Deleted Target File
-      [dex] Converting compiled files and external libraries into C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes.dex...
-
--post-dex:
-
--jar:
-      [jar] Building jar: C:\Users\Administrator\workspace_201607\ContactUITest\bin\TestCatchLog.jar
-
--post-jar:
-
-build:
-
-BUILD SUCCESSFUL
-Total time: 3 seconds
-3923 KB/s (32139 bytes in 0.008s)
-INSTRUMENTATION_STATUS: current=1
-
-INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
-
-INSTRUMENTATION_STATUS: class=com.testCode.TestCatchLog
-
-INSTRUMENTATION_STATUS: stream=
-
-com.testCode.TestCatchLog:
-
-INSTRUMENTATION_STATUS: numtests=1
-
-INSTRUMENTATION_STATUS: test=testDemo
-
-INSTRUMENTATION_STATUS_CODE: 1
-
-start.......
-
-end.......
-
-INSTRUMENTATION_STATUS: current=1
-
-INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
-
-INSTRUMENTATION_STATUS: class=com.testCode.TestCatchLog
-
-INSTRUMENTATION_STATUS: stream=.
-
-INSTRUMENTATION_STATUS: numtests=1
-
-INSTRUMENTATION_STATUS: test=testDemo
-
-INSTRUMENTATION_STATUS_CODE: 0
-
-INSTRUMENTATION_STATUS: stream=
-
-Test results for WatcherResultPrinter=.
-
-Time: 7.241
-
-
-
-OK (1 test)
-
-
-
-
-
-INSTRUMENTATION_STATUS_CODE: -1
-
-Updated file C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
-Buildfile: C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
-
--check-env:
- [checkenv] Android SDK Tools Revision 22.6.2
- [checkenv] Installed at G:\adt-bundle-windows-x86_64-20140321\adt-bundle-windows-x86_64-20140321\sdk
-
--build-setup:
-[getbuildtools] Using latest Build Tools: 19.0.3
-     [echo] Resolving Build Target for TestCatchLog...
-[getuitarget] Project Target:   Android 4.4.2
-[getuitarget] API level:        19
-     [echo] ----------
-     [echo] Creating output directories if needed...
-
--pre-compile:
-
-compile:
-    [javac] Compiling 1 source file to C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
-    [javac] ����: [options] Դֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
-    [javac] ����: [options] Ŀ��ֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
-    [javac] ����: [options] Ҫ�����й��ѹ�ʱѡ��ľ���, ��ʹ�� -Xlint:-options��
-    [javac] 3 ������
-
--post-compile:
-
--dex:
-      [dex] input: C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
-      [dex] Found Deleted Target File
-      [dex] Converting compiled files and external libraries into C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes.dex...
-
--post-dex:
-
--jar:
-      [jar] Building jar: C:\Users\Administrator\workspace_201607\ContactUITest\bin\TestCatchLog.jar
-
--post-jar:
-
-build:
-
-BUILD SUCCESSFUL
-Total time: 3 seconds
-1493 KB/s (32124 bytes in 0.021s)
-INSTRUMENTATION_STATUS: current=1
-
-INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
-
-INSTRUMENTATION_STATUS: class=com.testCode.TestCatchLog
-
-INSTRUMENTATION_STATUS: stream=
-
-com.testCode.TestCatchLog:
-
-INSTRUMENTATION_STATUS: numtests=1
-
-INSTRUMENTATION_STATUS: test=testDemo
-
-INSTRUMENTATION_STATUS_CODE: 1
-
-start.......
-
-end.......
-
-INSTRUMENTATION_STATUS: current=1
-
-INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
-
-INSTRUMENTATION_STATUS: class=com.testCode.TestCatchLog
-
-INSTRUMENTATION_STATUS: stream=.
-
-INSTRUMENTATION_STATUS: numtests=1
-
-INSTRUMENTATION_STATUS: test=testDemo
-
-INSTRUMENTATION_STATUS_CODE: 0
-
-INSTRUMENTATION_STATUS: stream=
-
-Test results for WatcherResultPrinter=.
-
-Time: 1.667
-
-
-
-OK (1 test)
-
-
-
-
-
-INSTRUMENTATION_STATUS_CODE: -1
-
-Updated file C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
-Buildfile: C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
-
--check-env:
- [checkenv] Android SDK Tools Revision 22.6.2
- [checkenv] Installed at G:\adt-bundle-windows-x86_64-20140321\adt-bundle-windows-x86_64-20140321\sdk
-
--build-setup:
-[getbuildtools] Using latest Build Tools: 19.0.3
-     [echo] Resolving Build Target for TestCatchLog...
-[getuitarget] Project Target:   Android 4.4.2
-[getuitarget] API level:        19
-     [echo] ----------
-     [echo] Creating output directories if needed...
-
--pre-compile:
-
-compile:
-    [javac] Compiling 1 source file to C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
-    [javac] ����: [options] Դֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
-    [javac] ����: [options] Ŀ��ֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
-    [javac] ����: [options] Ҫ�����й��ѹ�ʱѡ��ľ���, ��ʹ�� -Xlint:-options��
-    [javac] 3 ������
-
--post-compile:
-
--dex:
-      [dex] input: C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
-      [dex] Found Deleted Target File
-      [dex] Converting compiled files and external libraries into C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes.dex...
-
--post-dex:
-
--jar:
-      [jar] Building jar: C:\Users\Administrator\workspace_201607\ContactUITest\bin\TestCatchLog.jar
-
--post-jar:
-
-build:
-
-BUILD SUCCESSFUL
-Total time: 3 seconds
-* daemon not running. starting it now on port 5037 *
-* daemon started successfully *
-2415 KB/s (32151 bytes in 0.013s)
-INSTRUMENTATION_STATUS: current=1
-
-INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
-
-INSTRUMENTATION_STATUS: class=com.testCode.TestCatchLog
-
-INSTRUMENTATION_STATUS: stream=
-
-com.testCode.TestCatchLog:
-
-INSTRUMENTATION_STATUS: numtests=1
-
-INSTRUMENTATION_STATUS: test=testDemo
-
-INSTRUMENTATION_STATUS_CODE: 1
-
-start.......
-
-end.......
-
-INSTRUMENTATION_STATUS: current=1
-
-INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
-
-INSTRUMENTATION_STATUS: class=com.testCode.TestCatchLog
-
-INSTRUMENTATION_STATUS: stream=.
-
-INSTRUMENTATION_STATUS: numtests=1
-
-INSTRUMENTATION_STATUS: test=testDemo
-
-INSTRUMENTATION_STATUS_CODE: 0
-
-INSTRUMENTATION_STATUS: stream=
-
-Test results for WatcherResultPrinter=.
-
-Time: 0.891
-
-
-
-OK (1 test)
-
-
-
-
-
-INSTRUMENTATION_STATUS_CODE: -1
-
-Updated file C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
-Buildfile: C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
-
--check-env:
- [checkenv] Android SDK Tools Revision 22.6.2
- [checkenv] Installed at G:\adt-bundle-windows-x86_64-20140321\adt-bundle-windows-x86_64-20140321\sdk
-
--build-setup:
-[getbuildtools] Using latest Build Tools: 19.0.3
-     [echo] Resolving Build Target for TestCatchLog...
-[getuitarget] Project Target:   Android 4.4.2
-[getuitarget] API level:        19
-     [echo] ----------
-     [echo] Creating output directories if needed...
-
--pre-compile:
-
-compile:
-    [javac] Compiling 1 source file to C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
-    [javac] ����: [options] Դֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
-    [javac] ����: [options] Ŀ��ֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
-    [javac] ����: [options] Ҫ�����й��ѹ�ʱѡ��ľ���, ��ʹ�� -Xlint:-options��
-    [javac] 3 ������
-
--post-compile:
-
--dex:
-      [dex] input: C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
-      [dex] Found Deleted Target File
-      [dex] Converting compiled files and external libraries into C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes.dex...
-
--post-dex:
-
--jar:
-      [jar] Building jar: C:\Users\Administrator\workspace_201607\ContactUITest\bin\TestCatchLog.jar
-
--post-jar:
-
-build:
-
-BUILD SUCCESSFUL
-Total time: 4 seconds
-2093 KB/s (32161 bytes in 0.015s)
-INSTRUMENTATION_STATUS: current=1
-
-INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
-
-INSTRUMENTATION_STATUS: class=com.testCode.TestCatchLog
-
-INSTRUMENTATION_STATUS: stream=
-
-com.testCode.TestCatchLog:
-
-INSTRUMENTATION_STATUS: numtests=1
-
-INSTRUMENTATION_STATUS: test=testDemo
-
-INSTRUMENTATION_STATUS_CODE: 1
-
-start.......
-
-end.......
-
-INSTRUMENTATION_STATUS: current=1
-
-INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
-
-INSTRUMENTATION_STATUS: class=com.testCode.TestCatchLog
-
-INSTRUMENTATION_STATUS: stream=.
-
-INSTRUMENTATION_STATUS: numtests=1
-
-INSTRUMENTATION_STATUS: test=testDemo
-
-INSTRUMENTATION_STATUS_CODE: 0
-
-INSTRUMENTATION_STATUS: stream=
-
-Test results for WatcherResultPrinter=.
-
-Time: 0.924
-
-
-
-OK (1 test)
-
-
-
-
-
-INSTRUMENTATION_STATUS_CODE: -1
-
-Updated file C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
-Buildfile: C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
-
--check-env:
- [checkenv] Android SDK Tools Revision 22.6.2
- [checkenv] Installed at G:\adt-bundle-windows-x86_64-20140321\adt-bundle-windows-x86_64-20140321\sdk
-
--build-setup:
-[getbuildtools] Using latest Build Tools: 19.0.3
-     [echo] Resolving Build Target for TestCatchLog...
-[getuitarget] Project Target:   Android 4.4.2
-[getuitarget] API level:        19
-     [echo] ----------
-     [echo] Creating output directories if needed...
-
--pre-compile:
-
-compile:
-    [javac] Compiling 1 source file to C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
-    [javac] ����: [options] Դֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
-    [javac] ����: [options] Ŀ��ֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
-    [javac] ����: [options] Ҫ�����й��ѹ�ʱѡ��ľ���, ��ʹ�� -Xlint:-options��
-    [javac] 3 ������
-
--post-compile:
-
--dex:
-      [dex] input: C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
-      [dex] Found Deleted Target File
-      [dex] Converting compiled files and external libraries into C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes.dex...
-
--post-dex:
-
--jar:
-      [jar] Building jar: C:\Users\Administrator\workspace_201607\ContactUITest\bin\TestCatchLog.jar
-
--post-jar:
-
-build:
-
-BUILD SUCCESSFUL
-Total time: 3 seconds
-2618 KB/s (32177 bytes in 0.012s)
-INSTRUMENTATION_STATUS: current=1
-
-INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
-
-INSTRUMENTATION_STATUS: class=com.testCode.TestCatchLog
-
-INSTRUMENTATION_STATUS: stream=
-
-com.testCode.TestCatchLog:
-
-INSTRUMENTATION_STATUS: numtests=1
-
-INSTRUMENTATION_STATUS: test=testDemo
-
-INSTRUMENTATION_STATUS_CODE: 1
-
-start.......
-
-end.......
-
-INSTRUMENTATION_STATUS: current=1
-
-INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
-
-INSTRUMENTATION_STATUS: class=com.testCode.TestCatchLog
-
-INSTRUMENTATION_STATUS: stream=.
-
-INSTRUMENTATION_STATUS: numtests=1
-
-INSTRUMENTATION_STATUS: test=testDemo
-
-INSTRUMENTATION_STATUS_CODE: 0
-
-INSTRUMENTATION_STATUS: stream=
-
-Test results for WatcherResultPrinter=.
-
-Time: 5.8
-
-
-
-OK (1 test)
-
-
-
-
-
-INSTRUMENTATION_STATUS_CODE: -1
-
-Updated file C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
-Buildfile: C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
-
--check-env:
- [checkenv] Android SDK Tools Revision 22.6.2
- [checkenv] Installed at G:\adt-bundle-windows-x86_64-20140321\adt-bundle-windows-x86_64-20140321\sdk
-
--build-setup:
-[getbuildtools] Using latest Build Tools: 19.0.3
-     [echo] Resolving Build Target for TestCatchLog...
-[getuitarget] Project Target:   Android 4.4.2
-[getuitarget] API level:        19
-     [echo] ----------
-     [echo] Creating output directories if needed...
-
--pre-compile:
-
-compile:
-    [javac] Compiling 1 source file to C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
-    [javac] ����: [options] Դֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
-    [javac] ����: [options] Ŀ��ֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
-    [javac] ����: [options] Ҫ�����й��ѹ�ʱѡ��ľ���, ��ʹ�� -Xlint:-options��
-    [javac] 3 ������
-
--post-compile:
-
--dex:
-      [dex] input: C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
-      [dex] Found Deleted Target File
-      [dex] Converting compiled files and external libraries into C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes.dex...
-
--post-dex:
-
--jar:
-      [jar] Building jar: C:\Users\Administrator\workspace_201607\ContactUITest\bin\TestCatchLog.jar
-
--post-jar:
-
-build:
-
-BUILD SUCCESSFUL
-Total time: 4 seconds
-2620 KB/s (32200 bytes in 0.012s)
-INSTRUMENTATION_STATUS: current=1
-
-INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
-
-INSTRUMENTATION_STATUS: class=com.testCode.TestCatchLog
-
-INSTRUMENTATION_STATUS: stream=
-
-com.testCode.TestCatchLog:
-
-INSTRUMENTATION_STATUS: numtests=1
-
-INSTRUMENTATION_STATUS: test=testDemo
-
-INSTRUMENTATION_STATUS_CODE: 1
-
-start.......
-
-end.......
-
-INSTRUMENTATION_STATUS: current=1
-
-INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
-
-INSTRUMENTATION_STATUS: class=com.testCode.TestCatchLog
-
-INSTRUMENTATION_STATUS: stream=.
-
-INSTRUMENTATION_STATUS: numtests=1
-
-INSTRUMENTATION_STATUS: test=testDemo
-
-INSTRUMENTATION_STATUS_CODE: 0
-
-INSTRUMENTATION_STATUS: stream=
-
-Test results for WatcherResultPrinter=.
-
-Time: 11.392
-
-
-
-OK (1 test)
-
-
-
-
-
-INSTRUMENTATION_STATUS_CODE: -1
-
-Updated file C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
-Buildfile: C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
-
--check-env:
- [checkenv] Android SDK Tools Revision 22.6.2
- [checkenv] Installed at G:\adt-bundle-windows-x86_64-20140321\adt-bundle-windows-x86_64-20140321\sdk
-
--build-setup:
-[getbuildtools] Using latest Build Tools: 19.0.3
-     [echo] Resolving Build Target for TestCatchLog...
-[getuitarget] Project Target:   Android 4.4.2
-[getuitarget] API level:        19
-     [echo] ----------
-     [echo] Creating output directories if needed...
-
--pre-compile:
-
-compile:
-
--post-compile:
-
--dex:
-      [dex] input: C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
-      [dex] Found Deleted Target File
-      [dex] Converting compiled files and external libraries into C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes.dex...
-
--post-dex:
-
--jar:
-      [jar] Building jar: C:\Users\Administrator\workspace_201607\ContactUITest\bin\TestCatchLog.jar
-
--post-jar:
-
-build:
-
-BUILD SUCCESSFUL
-Total time: 3 seconds
-1965 KB/s (32200 bytes in 0.016s)
-INSTRUMENTATION_STATUS: current=1
-
-INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
-
-INSTRUMENTATION_STATUS: class=com.testCode.TestCatchLog
-
-INSTRUMENTATION_STATUS: stream=
-
-com.testCode.TestCatchLog:
-
-INSTRUMENTATION_STATUS: numtests=1
-
-INSTRUMENTATION_STATUS: test=testDemo
-
-INSTRUMENTATION_STATUS_CODE: 1
-
-start.......
-
-end.......
-
-INSTRUMENTATION_STATUS: current=1
-
-INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
-
-INSTRUMENTATION_STATUS: class=com.testCode.TestCatchLog
-
-INSTRUMENTATION_STATUS: stream=.
-
-INSTRUMENTATION_STATUS: numtests=1
-
-INSTRUMENTATION_STATUS: test=testDemo
-
-INSTRUMENTATION_STATUS_CODE: 0
-
-INSTRUMENTATION_STATUS: stream=
-
-Test results for WatcherResultPrinter=.
-
-Time: 11.465
-
-
-
-OK (1 test)
-
-
-
-
-
-INSTRUMENTATION_STATUS_CODE: -1
-
-Updated file C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
-Buildfile: C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
-
--check-env:
- [checkenv] Android SDK Tools Revision 22.6.2
- [checkenv] Installed at G:\adt-bundle-windows-x86_64-20140321\adt-bundle-windows-x86_64-20140321\sdk
-
--build-setup:
-[getbuildtools] Using latest Build Tools: 19.0.3
-     [echo] Resolving Build Target for TestCatchLog...
-[getuitarget] Project Target:   Android 4.4.2
-[getuitarget] API level:        19
-     [echo] ----------
-     [echo] Creating output directories if needed...
-
--pre-compile:
-
-compile:
-    [javac] Compiling 1 source file to C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
-    [javac] ����: [options] Դֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
-    [javac] ����: [options] Ŀ��ֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
-    [javac] ����: [options] Ҫ�����й��ѹ�ʱѡ��ľ���, ��ʹ�� -Xlint:-options��
-    [javac] 3 ������
-
--post-compile:
-
--dex:
-      [dex] input: C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
-      [dex] Found Deleted Target File
-      [dex] Converting compiled files and external libraries into C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes.dex...
-
--post-dex:
-
--jar:
-      [jar] Building jar: C:\Users\Administrator\workspace_201607\ContactUITest\bin\TestCatchLog.jar
-
--post-jar:
-
-build:
-
-BUILD SUCCESSFUL
-Total time: 10 seconds
-2859 KB/s (32206 bytes in 0.011s)
-INSTRUMENTATION_STATUS: current=1
-
-INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
-
-INSTRUMENTATION_STATUS: class=com.testCode.TestCatchLog
-
-INSTRUMENTATION_STATUS: stream=
-
-com.testCode.TestCatchLog:
-
-INSTRUMENTATION_STATUS: numtests=1
-
-INSTRUMENTATION_STATUS: test=testDemo
-
-INSTRUMENTATION_STATUS_CODE: 1
-
-start.......
-
-end.......
-
-INSTRUMENTATION_STATUS: current=1
-
-INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
-
-INSTRUMENTATION_STATUS: class=com.testCode.TestCatchLog
-
-INSTRUMENTATION_STATUS: stream=.
-
-INSTRUMENTATION_STATUS: numtests=1
-
-INSTRUMENTATION_STATUS: test=testDemo
-
-INSTRUMENTATION_STATUS_CODE: 0
-
-INSTRUMENTATION_STATUS: stream=
-
-Test results for WatcherResultPrinter=.
-
-Time: 11.487
-
-
-
-OK (1 test)
-
-
-
-
-
-INSTRUMENTATION_STATUS_CODE: -1
-
-Updated file C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
-Buildfile: C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
-
--check-env:
- [checkenv] Android SDK Tools Revision 22.6.2
- [checkenv] Installed at G:\adt-bundle-windows-x86_64-20140321\adt-bundle-windows-x86_64-20140321\sdk
-
--build-setup:
-[getbuildtools] Using latest Build Tools: 19.0.3
-     [echo] Resolving Build Target for TestCatchLog...
+     [echo] Resolving Build Target for CloudCard...
 [getuitarget] Project Target:   Android 4.4.2
 [getuitarget] API level:        19
      [echo] ----------
@@ -1989,837 +564,6 @@ compile:
 -post-dex:
 
 -jar:
-      [jar] Building jar: C:\Users\Administrator\workspace_201607\ContactUITest\bin\TestCatchLog.jar
-
--post-jar:
-
-build:
-
-BUILD SUCCESSFUL
-Total time: 5 seconds
-1764 KB/s (34328 bytes in 0.019s)
-INSTRUMENTATION_STATUS: current=1
-
-INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
-
-INSTRUMENTATION_STATUS: class=com.testCode.TestCatchLog
-
-INSTRUMENTATION_STATUS: stream=
-
-com.testCode.TestCatchLog:
-
-INSTRUMENTATION_STATUS: numtests=1
-
-INSTRUMENTATION_STATUS: test=testDemo
-
-INSTRUMENTATION_STATUS_CODE: 1
-
-start.......
-
-end.......
-
-INSTRUMENTATION_STATUS: current=1
-
-INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
-
-INSTRUMENTATION_STATUS: class=com.testCode.TestCatchLog
-
-INSTRUMENTATION_STATUS: stream=.
-
-INSTRUMENTATION_STATUS: numtests=1
-
-INSTRUMENTATION_STATUS: test=testDemo
-
-INSTRUMENTATION_STATUS_CODE: 0
-
-INSTRUMENTATION_STATUS: stream=
-
-Test results for WatcherResultPrinter=.
-
-Time: 12.205
-
-
-
-OK (1 test)
-
-
-
-
-
-INSTRUMENTATION_STATUS_CODE: -1
-
-Updated file C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
-Buildfile: C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
-
--check-env:
- [checkenv] Android SDK Tools Revision 22.6.2
- [checkenv] Installed at G:\adt-bundle-windows-x86_64-20140321\adt-bundle-windows-x86_64-20140321\sdk
-
--build-setup:
-[getbuildtools] Using latest Build Tools: 19.0.3
-     [echo] Resolving Build Target for TestCatchLog...
-[getuitarget] Project Target:   Android 4.4.2
-[getuitarget] API level:        19
-     [echo] ----------
-     [echo] Creating output directories if needed...
-
--pre-compile:
-
-compile:
-    [javac] Compiling 1 source file to C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
-    [javac] ����: [options] Դֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
-    [javac] ����: [options] Ŀ��ֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
-    [javac] ����: [options] Ҫ�����й��ѹ�ʱѡ��ľ���, ��ʹ�� -Xlint:-options��
-    [javac] 3 ������
-
--post-compile:
-
--dex:
-      [dex] input: C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
-      [dex] Found Deleted Target File
-      [dex] Converting compiled files and external libraries into C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes.dex...
-
--post-dex:
-
--jar:
-      [jar] Building jar: C:\Users\Administrator\workspace_201607\ContactUITest\bin\TestCatchLog.jar
-
--post-jar:
-
-build:
-
-BUILD SUCCESSFUL
-Total time: 3 seconds
-2233 KB/s (34311 bytes in 0.015s)
-INSTRUMENTATION_STATUS: current=1
-
-INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
-
-INSTRUMENTATION_STATUS: class=com.testCode.TestCatchLog
-
-INSTRUMENTATION_STATUS: stream=
-
-com.testCode.TestCatchLog:
-
-INSTRUMENTATION_STATUS: numtests=1
-
-INSTRUMENTATION_STATUS: test=testDemo
-
-INSTRUMENTATION_STATUS_CODE: 1
-
-start.......
-
-end.......
-
-INSTRUMENTATION_STATUS: current=1
-
-INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
-
-INSTRUMENTATION_STATUS: class=com.testCode.TestCatchLog
-
-INSTRUMENTATION_STATUS: stream=.
-
-INSTRUMENTATION_STATUS: numtests=1
-
-INSTRUMENTATION_STATUS: test=testDemo
-
-INSTRUMENTATION_STATUS_CODE: 0
-
-INSTRUMENTATION_STATUS: stream=
-
-Test results for WatcherResultPrinter=.
-
-Time: 11.42
-
-
-
-OK (1 test)
-
-
-
-
-
-INSTRUMENTATION_STATUS_CODE: -1
-
-Updated file C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
-Buildfile: C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
-
--check-env:
- [checkenv] Android SDK Tools Revision 22.6.2
- [checkenv] Installed at G:\adt-bundle-windows-x86_64-20140321\adt-bundle-windows-x86_64-20140321\sdk
-
--build-setup:
-[getbuildtools] Using latest Build Tools: 19.0.3
-     [echo] Resolving Build Target for TestCatchLog...
-[getuitarget] Project Target:   Android 4.4.2
-[getuitarget] API level:        19
-     [echo] ----------
-     [echo] Creating output directories if needed...
-
--pre-compile:
-
-compile:
-    [javac] Compiling 1 source file to C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
-    [javac] ����: [options] Դֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
-    [javac] ����: [options] Ŀ��ֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
-    [javac] ����: [options] Ҫ�����й��ѹ�ʱѡ��ľ���, ��ʹ�� -Xlint:-options��
-    [javac] 3 ������
-
--post-compile:
-
--dex:
-      [dex] input: C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
-      [dex] Found Deleted Target File
-      [dex] Converting compiled files and external libraries into C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes.dex...
-
--post-dex:
-
--jar:
-      [jar] Building jar: C:\Users\Administrator\workspace_201607\ContactUITest\bin\TestCatchLog.jar
-
--post-jar:
-
-build:
-
-BUILD SUCCESSFUL
-Total time: 4 seconds
-2578 KB/s (34327 bytes in 0.013s)
-INSTRUMENTATION_STATUS: current=1
-
-INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
-
-INSTRUMENTATION_STATUS: class=com.testCode.TestCatchLog
-
-INSTRUMENTATION_STATUS: stream=
-
-com.testCode.TestCatchLog:
-
-INSTRUMENTATION_STATUS: numtests=1
-
-INSTRUMENTATION_STATUS: test=testDemo
-
-INSTRUMENTATION_STATUS_CODE: 1
-
-start.......
-
-Updated file C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
-Buildfile: C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
-
--check-env:
- [checkenv] Android SDK Tools Revision 22.6.2
- [checkenv] Installed at G:\adt-bundle-windows-x86_64-20140321\adt-bundle-windows-x86_64-20140321\sdk
-
--build-setup:
-[getbuildtools] Using latest Build Tools: 19.0.3
-     [echo] Resolving Build Target for TestCatchLog...
-[getuitarget] Project Target:   Android 4.4.2
-[getuitarget] API level:        19
-     [echo] ----------
-     [echo] Creating output directories if needed...
-
--pre-compile:
-
-compile:
-    [javac] Compiling 1 source file to C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
-    [javac] ����: [options] Դֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
-    [javac] ����: [options] Ŀ��ֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
-    [javac] ����: [options] Ҫ�����й��ѹ�ʱѡ��ľ���, ��ʹ�� -Xlint:-options��
-    [javac] 3 ������
-
--post-compile:
-
--dex:
-      [dex] input: C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
-      [dex] Found Deleted Target File
-      [dex] Converting compiled files and external libraries into C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes.dex...
-
--post-dex:
-
--jar:
-      [jar] Building jar: C:\Users\Administrator\workspace_201607\ContactUITest\bin\TestCatchLog.jar
-
--post-jar:
-
-build:
-
-BUILD SUCCESSFUL
-Total time: 3 seconds
-4192 KB/s (34341 bytes in 0.008s)
-INSTRUMENTATION_RESULT: shortMsg=java.lang.IllegalStateException
-
-INSTRUMENTATION_RESULT: longMsg=UiAutomationService android.accessibilityservice.IAccessibilityServiceClient$Stub$Proxy@436c7928already registered!
-
-INSTRUMENTATION_CODE: 0
-
-Updated file C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
-Buildfile: C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
-
--check-env:
- [checkenv] Android SDK Tools Revision 22.6.2
- [checkenv] Installed at G:\adt-bundle-windows-x86_64-20140321\adt-bundle-windows-x86_64-20140321\sdk
-
--build-setup:
-[getbuildtools] Using latest Build Tools: 19.0.3
-     [echo] Resolving Build Target for TestCatchLog...
-[getuitarget] Project Target:   Android 4.4.2
-[getuitarget] API level:        19
-     [echo] ----------
-     [echo] Creating output directories if needed...
-
--pre-compile:
-
-compile:
-    [javac] Compiling 1 source file to C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
-    [javac] ����: [options] Դֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
-    [javac] ����: [options] Ŀ��ֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
-    [javac] ����: [options] Ҫ�����й��ѹ�ʱѡ��ľ���, ��ʹ�� -Xlint:-options��
-    [javac] 3 ������
-
--post-compile:
-
--dex:
-      [dex] input: C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
-      [dex] Found Deleted Target File
-      [dex] Converting compiled files and external libraries into C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes.dex...
-
--post-dex:
-
--jar:
-      [jar] Building jar: C:\Users\Administrator\workspace_201607\ContactUITest\bin\TestCatchLog.jar
-
--post-jar:
-
-build:
-
-BUILD SUCCESSFUL
-Total time: 3 seconds
-1973 KB/s (34351 bytes in 0.017s)
-INSTRUMENTATION_STATUS: current=1
-
-INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
-
-INSTRUMENTATION_STATUS: class=com.testCode.TestCatchLog
-
-INSTRUMENTATION_STATUS: stream=
-
-com.testCode.TestCatchLog:
-
-INSTRUMENTATION_STATUS: numtests=1
-
-INSTRUMENTATION_STATUS: test=testDemo
-
-INSTRUMENTATION_STATUS_CODE: 1
-
-start.......
-
-Updated file C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
-Buildfile: C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
-
--check-env:
- [checkenv] Android SDK Tools Revision 22.6.2
- [checkenv] Installed at G:\adt-bundle-windows-x86_64-20140321\adt-bundle-windows-x86_64-20140321\sdk
-
--build-setup:
-[getbuildtools] Using latest Build Tools: 19.0.3
-     [echo] Resolving Build Target for TestCatchLog...
-[getuitarget] Project Target:   Android 4.4.2
-[getuitarget] API level:        19
-     [echo] ----------
-     [echo] Creating output directories if needed...
-
--pre-compile:
-
-compile:
-    [javac] Compiling 1 source file to C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
-    [javac] ����: [options] Դֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
-    [javac] ����: [options] Ŀ��ֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
-    [javac] ����: [options] Ҫ�����й��ѹ�ʱѡ��ľ���, ��ʹ�� -Xlint:-options��
-    [javac] 3 ������
-
--post-compile:
-
--dex:
-      [dex] input: C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
-      [dex] Found Deleted Target File
-      [dex] Converting compiled files and external libraries into C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes.dex...
-
--post-dex:
-
--jar:
-      [jar] Building jar: C:\Users\Administrator\workspace_201607\ContactUITest\bin\TestCatchLog.jar
-
--post-jar:
-
-build:
-
-BUILD SUCCESSFUL
-Total time: 4 seconds
-1674 KB/s (34293 bytes in 0.020s)
-INSTRUMENTATION_STATUS: current=1
-
-INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
-
-INSTRUMENTATION_STATUS: class=com.testCode.TestCatchLog
-
-INSTRUMENTATION_STATUS: stream=
-
-com.testCode.TestCatchLog:
-
-INSTRUMENTATION_STATUS: numtests=1
-
-INSTRUMENTATION_STATUS: test=testDemo
-
-INSTRUMENTATION_STATUS_CODE: 1
-
-start.......
-
-end.......
-
-INSTRUMENTATION_STATUS: current=1
-
-INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
-
-INSTRUMENTATION_STATUS: class=com.testCode.TestCatchLog
-
-INSTRUMENTATION_STATUS: stream=.
-
-INSTRUMENTATION_STATUS: numtests=1
-
-INSTRUMENTATION_STATUS: test=testDemo
-
-INSTRUMENTATION_STATUS_CODE: 0
-
-INSTRUMENTATION_STATUS: stream=
-
-Test results for WatcherResultPrinter=.
-
-Time: 12.679
-
-
-
-OK (1 test)
-
-
-
-
-
-INSTRUMENTATION_STATUS_CODE: -1
-
-Updated file C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
-Buildfile: C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
-
--check-env:
- [checkenv] Android SDK Tools Revision 22.6.2
- [checkenv] Installed at G:\adt-bundle-windows-x86_64-20140321\adt-bundle-windows-x86_64-20140321\sdk
-
--build-setup:
-[getbuildtools] Using latest Build Tools: 19.0.3
-     [echo] Resolving Build Target for TestCatchLog...
-[getuitarget] Project Target:   Android 4.4.2
-[getuitarget] API level:        19
-     [echo] ----------
-     [echo] Creating output directories if needed...
-
--pre-compile:
-
-compile:
-    [javac] Compiling 1 source file to C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
-    [javac] ����: [options] Դֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
-    [javac] ����: [options] Ŀ��ֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
-    [javac] ����: [options] Ҫ�����й��ѹ�ʱѡ��ľ���, ��ʹ�� -Xlint:-options��
-    [javac] 3 ������
-
--post-compile:
-
--dex:
-      [dex] input: C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
-      [dex] Found Deleted Target File
-      [dex] Converting compiled files and external libraries into C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes.dex...
-
--post-dex:
-
--jar:
-      [jar] Building jar: C:\Users\Administrator\workspace_201607\ContactUITest\bin\TestCatchLog.jar
-
--post-jar:
-
-build:
-
-BUILD SUCCESSFUL
-Total time: 3 seconds
-1763 KB/s (34322 bytes in 0.019s)
-INSTRUMENTATION_STATUS: current=1
-
-INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
-
-INSTRUMENTATION_STATUS: class=com.testCode.TestCatchLog
-
-INSTRUMENTATION_STATUS: stream=
-
-com.testCode.TestCatchLog:
-
-INSTRUMENTATION_STATUS: numtests=1
-
-INSTRUMENTATION_STATUS: test=testDemo
-
-INSTRUMENTATION_STATUS_CODE: 1
-
-start.......
-
-end.......
-
-INSTRUMENTATION_STATUS: current=1
-
-INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
-
-INSTRUMENTATION_STATUS: class=com.testCode.TestCatchLog
-
-INSTRUMENTATION_STATUS: stream=.
-
-INSTRUMENTATION_STATUS: numtests=1
-
-INSTRUMENTATION_STATUS: test=testDemo
-
-INSTRUMENTATION_STATUS_CODE: 0
-
-INSTRUMENTATION_STATUS: stream=
-
-Test results for WatcherResultPrinter=.
-
-Time: 12.378
-
-
-
-OK (1 test)
-
-
-
-
-
-INSTRUMENTATION_STATUS_CODE: -1
-
-Updated file C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
-Buildfile: C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
-
--check-env:
- [checkenv] Android SDK Tools Revision 22.6.2
- [checkenv] Installed at G:\adt-bundle-windows-x86_64-20140321\adt-bundle-windows-x86_64-20140321\sdk
-
--build-setup:
-[getbuildtools] Using latest Build Tools: 19.0.3
-     [echo] Resolving Build Target for TestCatchLog...
-[getuitarget] Project Target:   Android 4.4.2
-[getuitarget] API level:        19
-     [echo] ----------
-     [echo] Creating output directories if needed...
-
--pre-compile:
-
-compile:
-    [javac] Compiling 2 source files to C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
-    [javac] ����: [options] Դֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
-    [javac] ����: [options] Ŀ��ֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
-    [javac] ����: [options] Ҫ�����й��ѹ�ʱѡ��ľ���, ��ʹ�� -Xlint:-options��
-    [javac] 3 ������
-
--post-compile:
-
--dex:
-      [dex] input: C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
-      [dex] Found Deleted Target File
-      [dex] Converting compiled files and external libraries into C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes.dex...
-
--post-dex:
-
--jar:
-      [jar] Building jar: C:\Users\Administrator\workspace_201607\ContactUITest\bin\TestCatchLog.jar
-
--post-jar:
-
-build:
-
-BUILD SUCCESSFUL
-Total time: 4 seconds
-1679 KB/s (34408 bytes in 0.020s)
-INSTRUMENTATION_STATUS: current=1
-
-INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
-
-INSTRUMENTATION_STATUS: class=com.testCode.TestCatchLog
-
-INSTRUMENTATION_STATUS: stream=
-
-com.testCode.TestCatchLog:
-
-INSTRUMENTATION_STATUS: numtests=1
-
-INSTRUMENTATION_STATUS: test=testDemo
-
-INSTRUMENTATION_STATUS_CODE: 1
-
-start.......
-
-end.......
-
-INSTRUMENTATION_STATUS: current=1
-
-INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
-
-INSTRUMENTATION_STATUS: class=com.testCode.TestCatchLog
-
-INSTRUMENTATION_STATUS: stream=.
-
-INSTRUMENTATION_STATUS: numtests=1
-
-INSTRUMENTATION_STATUS: test=testDemo
-
-INSTRUMENTATION_STATUS_CODE: 0
-
-INSTRUMENTATION_STATUS: stream=
-
-Test results for WatcherResultPrinter=.
-
-Time: 7.524
-
-
-
-OK (1 test)
-
-
-
-
-
-INSTRUMENTATION_STATUS_CODE: -1
-
-Updated file C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
-Buildfile: C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
-
--check-env:
- [checkenv] Android SDK Tools Revision 22.6.2
- [checkenv] Installed at G:\adt-bundle-windows-x86_64-20140321\adt-bundle-windows-x86_64-20140321\sdk
-
--build-setup:
-[getbuildtools] Using latest Build Tools: 19.0.3
-     [echo] Resolving Build Target for TestCatchLog...
-[getuitarget] Project Target:   Android 4.4.2
-[getuitarget] API level:        19
-     [echo] ----------
-     [echo] Creating output directories if needed...
-
--pre-compile:
-
-compile:
-    [javac] Compiling 1 source file to C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
-    [javac] ����: [options] Դֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
-    [javac] ����: [options] Ŀ��ֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
-    [javac] ����: [options] Ҫ�����й��ѹ�ʱѡ��ľ���, ��ʹ�� -Xlint:-options��
-    [javac] 3 ������
-
--post-compile:
-
--dex:
-      [dex] input: C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
-      [dex] Found Deleted Target File
-      [dex] Converting compiled files and external libraries into C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes.dex...
-
--post-dex:
-
--jar:
-      [jar] Building jar: C:\Users\Administrator\workspace_201607\ContactUITest\bin\TestCatchLog.jar
-
--post-jar:
-
-build:
-
-BUILD SUCCESSFUL
-Total time: 3 seconds
-1600 KB/s (34427 bytes in 0.021s)
-INSTRUMENTATION_STATUS: current=1
-
-INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
-
-INSTRUMENTATION_STATUS: class=com.testCode.TestCatchLog
-
-INSTRUMENTATION_STATUS: stream=
-
-com.testCode.TestCatchLog:
-
-INSTRUMENTATION_STATUS: numtests=1
-
-INSTRUMENTATION_STATUS: test=testDemo
-
-INSTRUMENTATION_STATUS_CODE: 1
-
-start.......
-
-Updated file C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
-Buildfile: C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
-
--check-env:
- [checkenv] Android SDK Tools Revision 22.6.2
- [checkenv] Installed at G:\adt-bundle-windows-x86_64-20140321\adt-bundle-windows-x86_64-20140321\sdk
-
--build-setup:
-[getbuildtools] Using latest Build Tools: 19.0.3
-     [echo] Resolving Build Target for TestCatchLog...
-[getuitarget] Project Target:   Android 4.4.2
-[getuitarget] API level:        19
-     [echo] ----------
-     [echo] Creating output directories if needed...
-
--pre-compile:
-
-compile:
-    [javac] Compiling 2 source files to C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
-    [javac] ����: [options] Դֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
-    [javac] ����: [options] Ŀ��ֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
-    [javac] ����: [options] Ҫ�����й��ѹ�ʱѡ��ľ���, ��ʹ�� -Xlint:-options��
-    [javac] 3 ������
-
--post-compile:
-
--dex:
-      [dex] input: C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
-      [dex] Found Deleted Target File
-      [dex] Converting compiled files and external libraries into C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes.dex...
-
--post-dex:
-
--jar:
-      [jar] Building jar: C:\Users\Administrator\workspace_201607\ContactUITest\bin\TestCatchLog.jar
-
--post-jar:
-
-build:
-
-BUILD SUCCESSFUL
-Total time: 3 seconds
-error: device not found
-error: device not found
-Updated file C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
-Buildfile: C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
-
--check-env:
- [checkenv] Android SDK Tools Revision 22.6.2
- [checkenv] Installed at G:\adt-bundle-windows-x86_64-20140321\adt-bundle-windows-x86_64-20140321\sdk
-
--build-setup:
-[getbuildtools] Using latest Build Tools: 19.0.3
-     [echo] Resolving Build Target for TestCatchLog...
-[getuitarget] Project Target:   Android 4.4.2
-[getuitarget] API level:        19
-     [echo] ----------
-     [echo] Creating output directories if needed...
-
--pre-compile:
-
-compile:
-
--post-compile:
-
--dex:
-      [dex] input: C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
-      [dex] Found Deleted Target File
-      [dex] Converting compiled files and external libraries into C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes.dex...
-
--post-dex:
-
--jar:
-      [jar] Building jar: C:\Users\Administrator\workspace_201607\ContactUITest\bin\TestCatchLog.jar
-
--post-jar:
-
-build:
-
-BUILD SUCCESSFUL
-Total time: 3 seconds
-1607 KB/s (34559 bytes in 0.021s)
-INSTRUMENTATION_STATUS: current=1
-
-INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
-
-INSTRUMENTATION_STATUS: class=com.testCode.TestCatchLog
-
-INSTRUMENTATION_STATUS: stream=
-
-com.testCode.TestCatchLog:
-
-INSTRUMENTATION_STATUS: numtests=1
-
-INSTRUMENTATION_STATUS: test=testDemo
-
-INSTRUMENTATION_STATUS_CODE: 1
-
-start.......
-
-log.......
-
-end.......
-
-INSTRUMENTATION_STATUS: current=1
-
-INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
-
-INSTRUMENTATION_STATUS: class=com.testCode.TestCatchLog
-
-INSTRUMENTATION_STATUS: stream=.
-
-INSTRUMENTATION_STATUS: numtests=1
-
-INSTRUMENTATION_STATUS: test=testDemo
-
-INSTRUMENTATION_STATUS_CODE: 0
-
-INSTRUMENTATION_STATUS: stream=
-
-Test results for WatcherResultPrinter=.
-
-Time: 7.399
-
-
-
-OK (1 test)
-
-
-
-
-
-INSTRUMENTATION_STATUS_CODE: -1
-
-Updated file C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
-Buildfile: C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
-
--check-env:
- [checkenv] Android SDK Tools Revision 22.6.2
- [checkenv] Installed at G:\adt-bundle-windows-x86_64-20140321\adt-bundle-windows-x86_64-20140321\sdk
-
--build-setup:
-[getbuildtools] Using latest Build Tools: 19.0.3
-     [echo] Resolving Build Target for CloudCard...
-[getuitarget] Project Target:   Android 4.4.2
-[getuitarget] API level:        19
-     [echo] ----------
-     [echo] Creating output directories if needed...
-
--pre-compile:
-
-compile:
-    [javac] Compiling 2 source files to C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
-    [javac] ����: [options] Դֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
-    [javac] ����: [options] Ŀ��ֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
-    [javac] ����: [options] Ҫ�����й��ѹ�ʱѡ��ľ���, ��ʹ�� -Xlint:-options��
-    [javac] 3 ������
-
--post-compile:
-
--dex:
-      [dex] input: C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
-      [dex] Found Deleted Target File
-      [dex] Converting compiled files and external libraries into C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes.dex...
-
--post-dex:
-
--jar:
       [jar] Building jar: C:\Users\Administrator\workspace_201607\ContactUITest\bin\CloudCard.jar
 
 -post-jar:
@@ -2827,151 +571,10 @@ compile:
 build:
 
 BUILD SUCCESSFUL
-Total time: 3 seconds
-2597 KB/s (34578 bytes in 0.013s)
-INSTRUMENTATION_STATUS: current=1
+Total time: 7 seconds
+1994 KB/s (34720 bytes in 0.017s)
+run PId: 12285
 
-INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
-
-INSTRUMENTATION_STATUS: class=com.uitest.contact.testcase.CloudCard
-
-INSTRUMENTATION_STATUS: stream=
-
-com.uitest.contact.testcase.CloudCard:
-
-INSTRUMENTATION_STATUS: numtests=1
-
-INSTRUMENTATION_STATUS: test=testDemo
-
-INSTRUMENTATION_STATUS_CODE: 1
-
-testDemo.......
-
-INSTRUMENTATION_STATUS: current=1
-
-INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
-
-INSTRUMENTATION_STATUS: class=com.uitest.contact.testcase.CloudCard
-
-INSTRUMENTATION_STATUS: stream=
-
-Failure in testDemo:
-
-junit.framework.AssertionFailedError: testdemo expected:<false> but was:<true>
-
-	at com.uitest.contact.testcase.CloudCard.testDemo(CloudCard.java:134)
-
-	at java.lang.reflect.Method.invokeNative(Native Method)
-
-	at com.uitest.uiautomatorUtil.TestListenerManager.run(TestListenerManager.java:78)
-
-	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.start(UiAutomatorTestRunner.java:160)
-
-	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.run(UiAutomatorTestRunner.java:96)
-
-	at com.android.commands.uiautomator.RunTestCommand.run(RunTestCommand.java:91)
-
-	at com.android.commands.uiautomator.Launcher.main(Launcher.java:83)
-
-	at com.android.internal.os.RuntimeInit.nativeFinishInit(Native Method)
-
-	at com.android.internal.os.RuntimeInit.main(RuntimeInit.java:297)
-
-	at dalvik.system.NativeStart.main(Native Method)
-
-
-
-INSTRUMENTATION_STATUS: numtests=1
-
-INSTRUMENTATION_STATUS: stack=junit.framework.AssertionFailedError: testdemo expected:<false> but was:<true>
-
-	at com.uitest.contact.testcase.CloudCard.testDemo(CloudCard.java:134)
-
-	at java.lang.reflect.Method.invokeNative(Native Method)
-
-	at com.uitest.uiautomatorUtil.TestListenerManager.run(TestListenerManager.java:78)
-
-	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.start(UiAutomatorTestRunner.java:160)
-
-	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.run(UiAutomatorTestRunner.java:96)
-
-	at com.android.commands.uiautomator.RunTestCommand.run(RunTestCommand.java:91)
-
-	at com.android.commands.uiautomator.Launcher.main(Launcher.java:83)
-
-	at com.android.internal.os.RuntimeInit.nativeFinishInit(Native Method)
-
-	at com.android.internal.os.RuntimeInit.main(RuntimeInit.java:297)
-
-	at dalvik.system.NativeStart.main(Native Method)
-
-
-
-INSTRUMENTATION_STATUS: test=testDemo
-
-INSTRUMENTATION_STATUS_CODE: -2
-
-INSTRUMENTATION_STATUS: stream=
-
-Test results for WatcherResultPrinter=.F
-
-Time: 2.314
-
-
-
-FAILURES!!!
-
-Tests run: 1,  Failures: 1,  Errors: 0
-
-
-
-
-
-INSTRUMENTATION_STATUS_CODE: -1
-
-Updated file C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
-Buildfile: C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
-
--check-env:
- [checkenv] Android SDK Tools Revision 22.6.2
- [checkenv] Installed at G:\adt-bundle-windows-x86_64-20140321\adt-bundle-windows-x86_64-20140321\sdk
-
--build-setup:
-[getbuildtools] Using latest Build Tools: 19.0.3
-     [echo] Resolving Build Target for CloudCard...
-[getuitarget] Project Target:   Android 4.4.2
-[getuitarget] API level:        19
-     [echo] ----------
-     [echo] Creating output directories if needed...
-
--pre-compile:
-
-compile:
-    [javac] Compiling 1 source file to C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
-    [javac] ����: [options] Դֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
-    [javac] ����: [options] Ŀ��ֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
-    [javac] ����: [options] Ҫ�����й��ѹ�ʱѡ��ľ���, ��ʹ�� -Xlint:-options��
-    [javac] 3 ������
-
--post-compile:
-
--dex:
-      [dex] input: C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
-      [dex] Found Deleted Target File
-      [dex] Converting compiled files and external libraries into C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes.dex...
-
--post-dex:
-
--jar:
-      [jar] Building jar: C:\Users\Administrator\workspace_201607\ContactUITest\bin\CloudCard.jar
-
--post-jar:
-
-build:
-
-BUILD SUCCESSFUL
-Total time: 3 seconds
-1777 KB/s (34582 bytes in 0.019s)
 INSTRUMENTATION_STATUS: current=1
 
 INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
@@ -2988,13 +591,43 @@ INSTRUMENTATION_STATUS: test=testDemo_002
 
 INSTRUMENTATION_STATUS_CODE: 1
 
+startTest: testDemo_002(com.uitest.contact.testcase.CloudCard)
+
+[start] findAndOpenApp和通讯录
+
+isExistByName: 应用程序
+
+elementExist: false
+
+isExistByName: 应用程序
+
+elementExist: true
+
+clickByName: 应用程序
+
+drag
+
+[ doing ] swipeToRight 
+
+click 和通讯录
+
+clickById: iab_title
+
 testCase_002........
 
 [start] back
 
 isExistById: tab_bar
 
-elementExist: false
+elementExist: true
+
+isExistById: iab_view
+
+elementExist: true
+
+isExistById: user_info_layout
+
+elementExist: true
 
 not rootFloor
 
@@ -3006,95 +639,39 @@ notRootFloor or settingPage or searchPage
 
 isExistById: tab_bar
 
-elementExist: false
+elementExist: true
 
-not rootFloor
+isExistById: iab_view
 
-isExistById: iab_back
+elementExist: true
 
-elementExist: false
-
-notRootFloor or settingPage or searchPage
-
-isExistById: tab_bar
+isExistById: user_info_layout
 
 elementExist: false
 
-not rootFloor
+rootFloor
 
-isExistById: iab_back
+clickById: tab_contacts
 
-elementExist: false
+clickById: tab_contacts
 
-notRootFloor or settingPage or searchPage
-
-isExistById: tab_bar
-
-elementExist: false
-
-not rootFloor
-
-isExistById: iab_back
-
-elementExist: false
-
-notRootFloor or settingPage or searchPage
-
-isExistById: tab_bar
-
-elementExist: false
-
-not rootFloor
-
-isExistById: iab_back
-
-elementExist: false
-
-notRootFloor or settingPage or searchPage
-
-isExistById: tab_bar
-
-elementExist: false
-
-not rootFloor
-
-isExistById: iab_back
-
-elementExist: false
-
-notRootFloor or settingPage or searchPage
-
-isExistById: tab_bar
-
-elementExist: false
-
-not rootFloor
-
-isExistById: iab_back
-
-elementExist: false
-
-notRootFloor or settingPage or searchPage
+[ end ] back
 
 clickById: iab_ib_more
 
-uiobject not found
-
 clickByName: 联系人整理
 
-uiobject not found
-
 isExistById: iab_back_area
 
 elementExist: false
 
 isExistById: iab_back_area
 
-elementExist: false
+elementExist: true
 
 isExistById: iab_back_area
 
-elementExist: false
+elementExist: true
 
 isExistById: dialog_btn_positive
 
@@ -3186,7 +763,7 @@ elementExist: false
 
 notRootFloor or settingPage or searchPage
 
-isExistById: iab_title1
+isExistById: iab_title
 
 elementExist: false
 
@@ -3206,11 +783,11 @@ junit.framework.AssertionFailedError: 联系人整理运行期间发生错误 ex
 
 	at com.uitest.uiautomatorUtil.AssertUtil.Myassert(AssertUtil.java:33)
 
-	at com.uitest.contact.testcase.CloudCard.testDemo_002(CloudCard.java:123)
+	at com.uitest.contact.testcase.CloudCard.testDemo_002(CloudCard.java:118)
 
 	at java.lang.reflect.Method.invokeNative(Native Method)
 
-	at com.uitest.uiautomatorUtil.TestListenerManager.run(TestListenerManager.java:78)
+	at com.uitest.uiautomatorUtil.TestListenerManager.run(TestListenerManager.java:85)
 
 	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.start(UiAutomatorTestRunner.java:160)
 
@@ -3234,11 +811,11 @@ INSTRUMENTATION_STATUS: stack=junit.framework.AssertionFailedError: 联系人整
 
 	at com.uitest.uiautomatorUtil.AssertUtil.Myassert(AssertUtil.java:33)
 
-	at com.uitest.contact.testcase.CloudCard.testDemo_002(CloudCard.java:123)
+	at com.uitest.contact.testcase.CloudCard.testDemo_002(CloudCard.java:118)
 
 	at java.lang.reflect.Method.invokeNative(Native Method)
 
-	at com.uitest.uiautomatorUtil.TestListenerManager.run(TestListenerManager.java:78)
+	at com.uitest.uiautomatorUtil.TestListenerManager.run(TestListenerManager.java:85)
 
 	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.start(UiAutomatorTestRunner.java:160)
 
@@ -3264,7 +841,7 @@ INSTRUMENTATION_STATUS: stream=
 
 Test results for WatcherResultPrinter=.F
 
-Time: 24.666
+Time: 42.857
 
 
 
@@ -3296,351 +873,7 @@ Buildfile: C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
 -pre-compile:
 
 compile:
-
--post-compile:
-
--dex:
-      [dex] input: C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
-      [dex] Found Deleted Target File
-      [dex] Converting compiled files and external libraries into C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes.dex...
-
--post-dex:
-
--jar:
-      [jar] Building jar: C:\Users\Administrator\workspace_201607\ContactUITest\bin\CloudCard.jar
-
--post-jar:
-
-build:
-
-BUILD SUCCESSFUL
-Total time: 3 seconds
-1534 KB/s (34582 bytes in 0.022s)
-INSTRUMENTATION_STATUS: current=1
-
-INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
-
-INSTRUMENTATION_STATUS: class=com.uitest.contact.testcase.CloudCard
-
-INSTRUMENTATION_STATUS: stream=
-
-com.uitest.contact.testcase.CloudCard:
-
-INSTRUMENTATION_STATUS: numtests=1
-
-INSTRUMENTATION_STATUS: test=testDemo_002
-
-INSTRUMENTATION_STATUS_CODE: 1
-
-testCase_002........
-
-[start] back
-
-isExistById: tab_bar
-
-elementExist: false
-
-not rootFloor
-
-isExistById: iab_back
-
-elementExist: false
-
-notRootFloor or settingPage or searchPage
-
-isExistById: tab_bar
-
-elementExist: false
-
-not rootFloor
-
-isExistById: iab_back
-
-elementExist: false
-
-notRootFloor or settingPage or searchPage
-
-isExistById: tab_bar
-
-elementExist: false
-
-not rootFloor
-
-isExistById: iab_back
-
-elementExist: false
-
-notRootFloor or settingPage or searchPage
-
-isExistById: tab_bar
-
-elementExist: false
-
-not rootFloor
-
-isExistById: iab_back
-
-elementExist: false
-
-notRootFloor or settingPage or searchPage
-
-isExistById: tab_bar
-
-elementExist: false
-
-not rootFloor
-
-isExistById: iab_back
-
-elementExist: false
-
-notRootFloor or settingPage or searchPage
-
-isExistById: tab_bar
-
-elementExist: false
-
-not rootFloor
-
-isExistById: iab_back
-
-elementExist: false
-
-notRootFloor or settingPage or searchPage
-
-isExistById: tab_bar
-
-elementExist: false
-
-not rootFloor
-
-isExistById: iab_back
-
-elementExist: false
-
-notRootFloor or settingPage or searchPage
-
-clickById: iab_ib_more
-
-uiobject not found
-
-clickByName: 联系人整理
-
-uiobject not found
-
-isExistById: iab_back_area
-
-elementExist: false
-
-isExistById: iab_back_area
-
-elementExist: false
-
-isExistById: iab_back_area
-
-elementExist: false
-
-isExistById: dialog_btn_positive
-
-elementExist: false
-
-[start] back
-
-isExistById: tab_bar
-
-elementExist: false
-
-not rootFloor
-
-isExistById: iab_back
-
-elementExist: false
-
-notRootFloor or settingPage or searchPage
-
-isExistById: tab_bar
-
-elementExist: false
-
-not rootFloor
-
-isExistById: iab_back
-
-elementExist: false
-
-notRootFloor or settingPage or searchPage
-
-isExistById: tab_bar
-
-elementExist: false
-
-not rootFloor
-
-isExistById: iab_back
-
-elementExist: false
-
-notRootFloor or settingPage or searchPage
-
-isExistById: tab_bar
-
-elementExist: false
-
-not rootFloor
-
-isExistById: iab_back
-
-elementExist: false
-
-notRootFloor or settingPage or searchPage
-
-isExistById: tab_bar
-
-elementExist: false
-
-not rootFloor
-
-isExistById: iab_back
-
-elementExist: false
-
-notRootFloor or settingPage or searchPage
-
-isExistById: tab_bar
-
-elementExist: false
-
-not rootFloor
-
-isExistById: iab_back
-
-elementExist: false
-
-notRootFloor or settingPage or searchPage
-
-isExistById: tab_bar
-
-elementExist: false
-
-not rootFloor
-
-isExistById: iab_back
-
-elementExist: false
-
-notRootFloor or settingPage or searchPage
-
-isExistById: iab_title1
-
-elementExist: false
-
-snapshot
-
-INSTRUMENTATION_STATUS: current=1
-
-INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
-
-INSTRUMENTATION_STATUS: class=com.uitest.contact.testcase.CloudCard
-
-INSTRUMENTATION_STATUS: stream=
-
-Failure in testDemo_002:
-
-junit.framework.AssertionFailedError: 联系人整理运行期间发生错误 expected:<false> but was:<true>
-
-	at com.uitest.uiautomatorUtil.AssertUtil.Myassert(AssertUtil.java:33)
-
-	at com.uitest.contact.testcase.CloudCard.testDemo_002(CloudCard.java:123)
-
-	at java.lang.reflect.Method.invokeNative(Native Method)
-
-	at com.uitest.uiautomatorUtil.TestListenerManager.run(TestListenerManager.java:78)
-
-	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.start(UiAutomatorTestRunner.java:160)
-
-	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.run(UiAutomatorTestRunner.java:96)
-
-	at com.android.commands.uiautomator.RunTestCommand.run(RunTestCommand.java:91)
-
-	at com.android.commands.uiautomator.Launcher.main(Launcher.java:83)
-
-	at com.android.internal.os.RuntimeInit.nativeFinishInit(Native Method)
-
-	at com.android.internal.os.RuntimeInit.main(RuntimeInit.java:297)
-
-	at dalvik.system.NativeStart.main(Native Method)
-
-
-
-INSTRUMENTATION_STATUS: numtests=1
-
-INSTRUMENTATION_STATUS: stack=junit.framework.AssertionFailedError: 联系人整理运行期间发生错误 expected:<false> but was:<true>
-
-	at com.uitest.uiautomatorUtil.AssertUtil.Myassert(AssertUtil.java:33)
-
-	at com.uitest.contact.testcase.CloudCard.testDemo_002(CloudCard.java:123)
-
-	at java.lang.reflect.Method.invokeNative(Native Method)
-
-	at com.uitest.uiautomatorUtil.TestListenerManager.run(TestListenerManager.java:78)
-
-	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.start(UiAutomatorTestRunner.java:160)
-
-	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.run(UiAutomatorTestRunner.java:96)
-
-	at com.android.commands.uiautomator.RunTestCommand.run(RunTestCommand.java:91)
-
-	at com.android.commands.uiautomator.Launcher.main(Launcher.java:83)
-
-	at com.android.internal.os.RuntimeInit.nativeFinishInit(Native Method)
-
-	at com.android.internal.os.RuntimeInit.main(RuntimeInit.java:297)
-
-	at dalvik.system.NativeStart.main(Native Method)
-
-
-
-INSTRUMENTATION_STATUS: test=testDemo_002
-
-INSTRUMENTATION_STATUS_CODE: -2
-
-INSTRUMENTATION_STATUS: stream=
-
-Test results for WatcherResultPrinter=.F
-
-Time: 24.649
-
-
-
-FAILURES!!!
-
-Tests run: 1,  Failures: 1,  Errors: 0
-
-
-
-
-
-INSTRUMENTATION_STATUS_CODE: -1
-
-Updated file C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
-Buildfile: C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
-
--check-env:
- [checkenv] Android SDK Tools Revision 22.6.2
- [checkenv] Installed at G:\adt-bundle-windows-x86_64-20140321\adt-bundle-windows-x86_64-20140321\sdk
-
--build-setup:
-[getbuildtools] Using latest Build Tools: 19.0.3
-     [echo] Resolving Build Target for CloudCard...
-[getuitarget] Project Target:   Android 4.4.2
-[getuitarget] API level:        19
-     [echo] ----------
-     [echo] Creating output directories if needed...
-
--pre-compile:
-
-compile:
-    [javac] Compiling 1 source file to C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
+    [javac] Compiling 2 source files to C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
     [javac] ����: [options] Դֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
     [javac] ����: [options] Ŀ��ֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
     [javac] ����: [options] Ҫ�����й��ѹ�ʱѡ��ľ���, ��ʹ�� -Xlint:-options��
@@ -3664,7 +897,9 @@ build:
 
 BUILD SUCCESSFUL
 Total time: 4 seconds
-1877 KB/s (34600 bytes in 0.018s)
+1886 KB/s (34767 bytes in 0.018s)
+run PId: 14475
+
 INSTRUMENTATION_STATUS: current=1
 
 INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
@@ -3680,6 +915,8 @@ INSTRUMENTATION_STATUS: numtests=1
 INSTRUMENTATION_STATUS: test=testDemo_002
 
 INSTRUMENTATION_STATUS_CODE: 1
+
+startTest: testDemo_002(com.uitest.contact.testcase.CloudCard)
 
 [start] findAndOpenApp和通讯录
 
@@ -3689,155 +926,13 @@ elementExist: true
 
 clickByName: 应用程序
 
-16:33:27:
+drag
+
+[ doing ] swipeToRight 
 
 click 和通讯录
 
 clickById: iab_title
-
-16:33:33:
-
-[start] back
-
-isExistById: tab_bar
-
-elementExist: true
-
-isExistById: iab_view
-
-elementExist: true
-
-isExistById: user_info_layout
-
-elementExist: true
-
-not rootFloor
-
-isExistById: iab_back
-
-elementExist: false
-
-notRootFloor or settingPage or searchPage
-
-isExistById: tab_bar
-
-elementExist: true
-
-isExistById: iab_view
-
-elementExist: true
-
-isExistById: user_info_layout
-
-elementExist: false
-
-rootFloor
-
-clickById: tab_contacts
-
-16:33:38:
-
-clickById: tab_contacts
-
-16:33:42:
-
-[ end ] back
-
-clickById: iab_title
-
-16:33:45:
-
-[start] back
-
-isExistById: tab_bar
-
-elementExist: true
-
-isExistById: iab_view
-
-elementExist: true
-
-isExistById: user_info_layout
-
-elementExist: true
-
-not rootFloor
-
-isExistById: iab_back
-
-elementExist: false
-
-notRootFloor or settingPage or searchPage
-
-isExistById: tab_bar
-
-elementExist: true
-
-isExistById: iab_view
-
-elementExist: true
-
-isExistById: user_info_layout
-
-elementExist: false
-
-rootFloor
-
-clickById: tab_contacts
-
-16:33:48:
-
-clickById: tab_contacts
-
-16:33:52:
-
-[ end ] back
-
-clickById: iab_title
-
-16:33:55:
-
-clickById: setting_layout
-
-16:33:56:
-
-clickById: setting_item_login
-
-16:33:57:
-
-clickById: btn_login_dynamic
-
-16:33:58:
-
-[start] inputTextByName: setting_new_login_mobile_et_num , input: 13427665104
-
-[start] inputText: 13427665104
-
-text len: 12
-
-[end] inputText:  , input: 13427665104
-
-[start] inputTextByName: setting_new_login_mobile_et_password , input: yscs12345
-
-[start] inputText: yscs12345
-
-text len: 0
-
-[end] inputText:  , input: yscs12345
-
-startime: 1970-01-01 08:31:08:333
-
-clickById: setting_new_login_mobile_btn_login
-
-16:34:10:
-
-waitForExiststById: setting_item_login_logout_text
-
-waitForExiststById: true
-
-endtime: 1970-01-01 08:31:11:176
-
-run time: 2843
 
 testCase_002........
 
@@ -3879,21 +974,13 @@ rootFloor
 
 clickById: tab_contacts
 
-16:34:18:
-
 clickById: tab_contacts
-
-16:34:19:
 
 [ end ] back
 
 clickById: iab_ib_more
 
-16:34:23:
-
 clickByName: 联系人整理
-
-16:34:24:
 
 isExistById: iab_back_area
 
@@ -3997,7 +1084,7 @@ elementExist: false
 
 notRootFloor or settingPage or searchPage
 
-isExistById: iab_title1
+isExistById: iab_title
 
 elementExist: false
 
@@ -4017,11 +1104,11 @@ junit.framework.AssertionFailedError: 联系人整理运行期间发生错误 ex
 
 	at com.uitest.uiautomatorUtil.AssertUtil.Myassert(AssertUtil.java:33)
 
-	at com.uitest.contact.testcase.CloudCard.testDemo_002(CloudCard.java:123)
+	at com.uitest.contact.testcase.CloudCard.testDemo_002(CloudCard.java:118)
 
 	at java.lang.reflect.Method.invokeNative(Native Method)
 
-	at com.uitest.uiautomatorUtil.TestListenerManager.run(TestListenerManager.java:78)
+	at com.uitest.uiautomatorUtil.TestListenerManager.run(TestListenerManager.java:87)
 
 	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.start(UiAutomatorTestRunner.java:160)
 
@@ -4045,11 +1132,11 @@ INSTRUMENTATION_STATUS: stack=junit.framework.AssertionFailedError: 联系人整
 
 	at com.uitest.uiautomatorUtil.AssertUtil.Myassert(AssertUtil.java:33)
 
-	at com.uitest.contact.testcase.CloudCard.testDemo_002(CloudCard.java:123)
+	at com.uitest.contact.testcase.CloudCard.testDemo_002(CloudCard.java:118)
 
 	at java.lang.reflect.Method.invokeNative(Native Method)
 
-	at com.uitest.uiautomatorUtil.TestListenerManager.run(TestListenerManager.java:78)
+	at com.uitest.uiautomatorUtil.TestListenerManager.run(TestListenerManager.java:87)
 
 	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.start(UiAutomatorTestRunner.java:160)
 
@@ -4075,13 +1162,657 @@ INSTRUMENTATION_STATUS: stream=
 
 Test results for WatcherResultPrinter=.F
 
-Time: 75.489
+Time: 41.768
 
 
 
 FAILURES!!!
 
 Tests run: 1,  Failures: 1,  Errors: 0
+
+
+
+
+
+INSTRUMENTATION_STATUS_CODE: -1
+
+Updated file C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
+Buildfile: C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 22.6.2
+ [checkenv] Installed at G:\adt-bundle-windows-x86_64-20140321\adt-bundle-windows-x86_64-20140321\sdk
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 19.0.3
+     [echo] Resolving Build Target for CloudCard...
+[getuitarget] Project Target:   Android 4.4.2
+[getuitarget] API level:        19
+     [echo] ----------
+     [echo] Creating output directories if needed...
+
+-pre-compile:
+
+compile:
+    [javac] Compiling 2 source files to C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
+    [javac] ����: [options] Դֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ŀ��ֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ҫ�����й��ѹ�ʱѡ��ľ���, ��ʹ�� -Xlint:-options��
+    [javac] 3 ������
+
+-post-compile:
+
+-dex:
+      [dex] input: C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
+      [dex] Found Deleted Target File
+      [dex] Converting compiled files and external libraries into C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes.dex...
+
+-post-dex:
+
+-jar:
+      [jar] Building jar: C:\Users\Administrator\workspace_201607\ContactUITest\bin\CloudCard.jar
+
+-post-jar:
+
+build:
+
+BUILD SUCCESSFUL
+Total time: 4 seconds
+error: device not found
+error: device not found
+Updated file C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
+Buildfile: C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 22.6.2
+ [checkenv] Installed at G:\adt-bundle-windows-x86_64-20140321\adt-bundle-windows-x86_64-20140321\sdk
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 19.0.3
+     [echo] Resolving Build Target for CloudCard...
+[getuitarget] Project Target:   Android 4.4.2
+[getuitarget] API level:        19
+     [echo] ----------
+     [echo] Creating output directories if needed...
+
+-pre-compile:
+
+compile:
+
+-post-compile:
+
+-dex:
+      [dex] input: C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
+      [dex] Found Deleted Target File
+      [dex] Converting compiled files and external libraries into C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes.dex...
+
+-post-dex:
+
+-jar:
+      [jar] Building jar: C:\Users\Administrator\workspace_201607\ContactUITest\bin\CloudCard.jar
+
+-post-jar:
+
+build:
+
+BUILD SUCCESSFUL
+Total time: 3 seconds
+3394 KB/s (34766 bytes in 0.010s)
+run PId: 17542
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact.testcase.CloudCard
+
+INSTRUMENTATION_STATUS: stream=
+
+com.uitest.contact.testcase.CloudCard:
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: test=testDemo_002
+
+INSTRUMENTATION_STATUS_CODE: 1
+
+startTest: testDemo_002(com.uitest.contact.testcase.CloudCard)
+
+[start] findAndOpenApp和通讯录
+
+isExistByName: 应用程序
+
+elementExist: false
+
+isExistByName: 应用程序
+
+elementExist: true
+
+clickByName: 应用程序
+
+drag
+
+[ doing ] swipeToRight 
+
+click 和通讯录
+
+clickById: iab_title
+
+[start] back
+
+isExistById: tab_bar
+
+elementExist: false
+
+not rootFloor
+
+isExistById: iab_back
+
+elementExist: false
+
+notRootFloor or settingPage or searchPage
+
+isExistById: tab_bar
+
+elementExist: false
+
+not rootFloor
+
+isExistById: iab_back
+
+elementExist: false
+
+notRootFloor or settingPage or searchPage
+
+isExistById: tab_bar
+
+elementExist: false
+
+not rootFloor
+
+isExistById: iab_back
+
+elementExist: false
+
+notRootFloor or settingPage or searchPage
+
+isExistById: tab_bar
+
+elementExist: false
+
+not rootFloor
+
+isExistById: iab_back
+
+elementExist: false
+
+notRootFloor or settingPage or searchPage
+
+isExistById: tab_bar
+
+elementExist: false
+
+not rootFloor
+
+isExistById: iab_back
+
+elementExist: false
+
+notRootFloor or settingPage or searchPage
+
+isExistById: tab_bar
+
+elementExist: false
+
+not rootFloor
+
+isExistById: iab_back
+
+elementExist: false
+
+notRootFloor or settingPage or searchPage
+
+isExistById: tab_bar
+
+elementExist: false
+
+not rootFloor
+
+isExistById: iab_back
+
+elementExist: false
+
+notRootFloor or settingPage or searchPage
+
+clickById: iab_title
+
+uiobject not found
+
+[start] back
+
+isExistById: tab_bar
+
+elementExist: false
+
+not rootFloor
+
+isExistById: iab_back
+
+elementExist: false
+
+notRootFloor or settingPage or searchPage
+
+isExistById: tab_bar
+
+elementExist: false
+
+not rootFloor
+
+isExistById: iab_back
+
+elementExist: false
+
+notRootFloor or settingPage or searchPage
+
+isExistById: tab_bar
+
+elementExist: false
+
+not rootFloor
+
+isExistById: iab_back
+
+elementExist: false
+
+notRootFloor or settingPage or searchPage
+
+isExistById: tab_bar
+
+elementExist: false
+
+not rootFloor
+
+isExistById: iab_back
+
+elementExist: false
+
+notRootFloor or settingPage or searchPage
+
+isExistById: tab_bar
+
+elementExist: false
+
+not rootFloor
+
+isExistById: iab_back
+
+elementExist: false
+
+notRootFloor or settingPage or searchPage
+
+isExistById: tab_bar
+
+elementExist: false
+
+not rootFloor
+
+isExistById: iab_back
+
+elementExist: false
+
+notRootFloor or settingPage or searchPage
+
+isExistById: tab_bar
+
+elementExist: false
+
+not rootFloor
+
+isExistById: iab_back
+
+elementExist: false
+
+notRootFloor or settingPage or searchPage
+
+clickById: iab_title
+
+uiobject not found
+
+clickById: setting_layout
+
+uiobject not found
+
+clickById: setting_item_login
+
+uiobject not found
+
+clickById: btn_login_dynamic
+
+uiobject not found
+
+[start] inputTextByName: setting_new_login_mobile_et_num , input: 13427665104
+
+[start] inputText: 13427665104
+
+[end] can not find: 
+
+[start] inputTextByName: setting_new_login_mobile_et_password , input: yscs12345
+
+[start] inputText: yscs12345
+
+[end] can not find: 
+
+startime: 1970-01-01 10:02:46:523
+
+clickById: setting_new_login_mobile_btn_login
+
+uiobject not found
+
+waitForExiststById: setting_item_login_logout_text
+
+waitForExiststById: false
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact.testcase.CloudCard
+
+INSTRUMENTATION_STATUS: stream=
+
+Failure in testDemo_002:
+
+junit.framework.AssertionFailedError: Login failed! login time more than 20s expected:<true> but was:<false>
+
+	at com.uitest.util.TestContactBase.Login(TestContactBase.java:69)
+
+	at com.uitest.contact.testcase.CloudCard.setUp(CloudCard.java:38)
+
+	at com.uitest.uiautomatorUtil.TestListenerManager.run(TestListenerManager.java:87)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.start(UiAutomatorTestRunner.java:160)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.run(UiAutomatorTestRunner.java:96)
+
+	at com.android.commands.uiautomator.RunTestCommand.run(RunTestCommand.java:91)
+
+	at com.android.commands.uiautomator.Launcher.main(Launcher.java:83)
+
+	at com.android.internal.os.RuntimeInit.nativeFinishInit(Native Method)
+
+	at com.android.internal.os.RuntimeInit.main(RuntimeInit.java:297)
+
+	at dalvik.system.NativeStart.main(Native Method)
+
+
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: stack=junit.framework.AssertionFailedError: Login failed! login time more than 20s expected:<true> but was:<false>
+
+	at com.uitest.util.TestContactBase.Login(TestContactBase.java:69)
+
+	at com.uitest.contact.testcase.CloudCard.setUp(CloudCard.java:38)
+
+	at com.uitest.uiautomatorUtil.TestListenerManager.run(TestListenerManager.java:87)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.start(UiAutomatorTestRunner.java:160)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.run(UiAutomatorTestRunner.java:96)
+
+	at com.android.commands.uiautomator.RunTestCommand.run(RunTestCommand.java:91)
+
+	at com.android.commands.uiautomator.Launcher.main(Launcher.java:83)
+
+	at com.android.internal.os.RuntimeInit.nativeFinishInit(Native Method)
+
+	at com.android.internal.os.RuntimeInit.main(RuntimeInit.java:297)
+
+	at dalvik.system.NativeStart.main(Native Method)
+
+
+
+INSTRUMENTATION_STATUS: test=testDemo_002
+
+INSTRUMENTATION_STATUS_CODE: -2
+
+INSTRUMENTATION_STATUS: stream=
+
+Test results for WatcherResultPrinter=.F
+
+Time: 49.216
+
+
+
+FAILURES!!!
+
+Tests run: 1,  Failures: 1,  Errors: 0
+
+
+
+
+
+INSTRUMENTATION_STATUS_CODE: -1
+
+Updated file C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
+Buildfile: C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 22.6.2
+ [checkenv] Installed at G:\adt-bundle-windows-x86_64-20140321\adt-bundle-windows-x86_64-20140321\sdk
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 19.0.3
+     [echo] Resolving Build Target for CloudCard...
+[getuitarget] Project Target:   Android 4.4.2
+[getuitarget] API level:        19
+     [echo] ----------
+     [echo] Creating output directories if needed...
+
+-pre-compile:
+
+compile:
+
+-post-compile:
+
+-dex:
+      [dex] input: C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
+      [dex] Found Deleted Target File
+      [dex] Converting compiled files and external libraries into C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes.dex...
+
+-post-dex:
+
+-jar:
+      [jar] Building jar: C:\Users\Administrator\workspace_201607\ContactUITest\bin\CloudCard.jar
+
+-post-jar:
+
+build:
+
+BUILD SUCCESSFUL
+Total time: 3 seconds
+2424 KB/s (34766 bytes in 0.014s)
+run PId: 20023
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact.testcase.CloudCard
+
+INSTRUMENTATION_STATUS: stream=
+
+com.uitest.contact.testcase.CloudCard:
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: test=testDemo_002
+
+INSTRUMENTATION_STATUS_CODE: 1
+
+startTest: testDemo_002(com.uitest.contact.testcase.CloudCard)
+
+[start] findAndOpenApp和通讯录
+
+isExistByName: 应用程序
+
+elementExist: true
+
+clickByName: 应用程序
+
+click 和通讯录
+
+clickById: iab_title
+
+testCase_002........
+
+[start] back
+
+isExistById: tab_bar
+
+elementExist: true
+
+isExistById: iab_view
+
+elementExist: true
+
+isExistById: user_info_layout
+
+elementExist: true
+
+not rootFloor
+
+isExistById: iab_back
+
+elementExist: false
+
+notRootFloor or settingPage or searchPage
+
+isExistById: tab_bar
+
+elementExist: true
+
+isExistById: iab_view
+
+elementExist: true
+
+isExistById: user_info_layout
+
+elementExist: false
+
+rootFloor
+
+clickById: tab_contacts
+
+clickById: tab_contacts
+
+[ end ] back
+
+clickById: iab_ib_more
+
+clickByName: 联系人整理
+
+isExistById: iab_back_area
+
+elementExist: false
+
+isExistById: iab_back_area
+
+elementExist: true
+
+isExistById: iab_back_area
+
+elementExist: true
+
+isExistById: dialog_btn_positive
+
+elementExist: false
+
+[start] back
+
+isExistById: tab_bar
+
+elementExist: false
+
+not rootFloor
+
+isExistById: iab_back
+
+elementExist: false
+
+notRootFloor or settingPage or searchPage
+
+isExistById: tab_bar
+
+elementExist: false
+
+not rootFloor
+
+isExistById: iab_back
+
+elementExist: false
+
+notRootFloor or settingPage or searchPage
+
+isExistById: tab_bar
+
+elementExist: false
+
+not rootFloor
+
+isExistById: iab_back
+
+elementExist: false
+
+notRootFloor or settingPage or searchPage
+
+isExistById: tab_bar
+
+elementExist: true
+
+isExistById: iab_view
+
+elementExist: true
+
+isExistById: user_info_layout
+
+elementExist: false
+
+rootFloor
+
+clickById: tab_contacts
+
+clickById: tab_contacts
+
+[ end ] back
+
+isExistById: iab_title
+
+elementExist: true
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact.testcase.CloudCard
+
+INSTRUMENTATION_STATUS: stream=.
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: test=testDemo_002
+
+INSTRUMENTATION_STATUS_CODE: 0
+
+INSTRUMENTATION_STATUS: stream=
+
+Test results for WatcherResultPrinter=.
+
+Time: 34.87
+
+
+
+OK (1 test)
 
 
 

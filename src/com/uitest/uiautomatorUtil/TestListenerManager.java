@@ -8,8 +8,13 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 
+
+
+
 import com.android.uiautomator.core.UiDevice;
 import com.android.uiautomator.testrunner.UiAutomatorTestCase;
+import com.uitest.data.UserConfig;
+import com.uitest.log.MyLogcatHelper;
 
 import android.net.ParseException;
 import android.os.Bundle;
@@ -26,15 +31,17 @@ import junit.framework.TestResult;
 public class TestListenerManager extends UiAutomatorTestCase{
 
 	
-	protected static final String ROOT_PATH="/mnt/sdcard/AppTestReport/";
+	//protected static final String ROOT_PATH="/mnt/sdcard/AppTestReport/";
+	protected static final String ROOT_PATH= UserConfig.saveRootPath;
 	protected static final String DIR_NAME;//任务目录名
 	protected static String sTestName;//测试用例名
 	protected static String filePath;//保存用例测试信息文件名
 	protected static String pngPath;//保存图像文件名
+	protected static String logPath; //系统日志文件名
 	protected static boolean isSaveReport2SD=true;//控制保存到SD卡报告的开关
 	protected static TestListener listen;//监听
 	private static int runtime_local = 0;
-	
+	MyLogcatHelper  mylog  = null;
 		
 
 	//静态初始化目录  当然目录名可以从命令传入，保证每次任务结果在同一个目录下面
@@ -65,7 +72,7 @@ public class TestListenerManager extends UiAutomatorTestCase{
 		sTestName=testName+"_"+time;
 		filePath=dirPath+"/"+testName+"_"+time+".txt";
 		pngPath=dirPath+"/"+testName+"_"+time+".png";
-				
+		logPath=dirPath+"/"+testName+"_"+time+"_runlog.txt";
 		try {
 			Runtime.getRuntime().exec("mkdir "+ROOT_PATH);
 			Runtime.getRuntime().exec("mkdir "+dirPath);
@@ -73,6 +80,8 @@ public class TestListenerManager extends UiAutomatorTestCase{
 	 }catch(Exception e){
 		e.printStackTrace();
 	 }
+		//添加系统日志管理
+		mylog = new MyLogcatHelper(logPath);
 		listen=new listener(filePath,result);
 		result.addListener(listen);	//加入监听者		
 		super.run(result);
@@ -100,6 +109,7 @@ public class TestListenerManager extends UiAutomatorTestCase{
 		 }
 			
 		}
+		
 		
 
 		@Override
@@ -138,7 +148,8 @@ public class TestListenerManager extends UiAutomatorTestCase{
 			} catch (java.text.ParseException e) {
 				e.printStackTrace();
 			}
-		    				    		
+		    //关闭系统日志
+		    mylog.stop();				    		
 			results.removeListener(listen);//结束移除监听
 			
 		}
@@ -147,7 +158,9 @@ public class TestListenerManager extends UiAutomatorTestCase{
 		public void startTest(Test arg0) {
 			startTime=TimeUtil.getCurrentSysTimeLog();
 			FileManager.saveFile("Start Time:"+startTime, ft);
-			
+			System.out.println("startTest: " + arg0.toString());
+			//启动记录系统日志
+			mylog.start();
 		}
 	}
 	
