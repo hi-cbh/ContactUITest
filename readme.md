@@ -34,7 +34,11 @@
 	**实例：**
 	
 		uo.setText(Utf7ImeHelper.e(content));
-	
+
+* 记录单个用例的系统运行日志及app运行步骤日志	
+
+		com.uitest.log
+
 * 用于调试
 
 		com.testCode

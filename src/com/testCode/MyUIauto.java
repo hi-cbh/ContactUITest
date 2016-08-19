@@ -20,7 +20,6 @@ import com.uitest.util.UiAutomatorHelper;
 public class MyUIauto extends UiAutomatorTestCase{
 	
 	
-	private static final String TAG = "MyUIauto";
 
 	public static void main(String[] args) {
 		String jarName = "MyUIauto";
@@ -78,7 +77,8 @@ public class MyUIauto extends UiAutomatorTestCase{
 	}
 	
 	public void testImage(){
-		ImageManager.snapshot("testImage", "有点水印");
+		//ImageManager.snapshot("testImage", "有点水印");
+		ImageManager.snapshotLine("testImageLine");
 	}
 	
 	

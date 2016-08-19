@@ -110,10 +110,72 @@ public class ImageManager {
         //转为bitmap类型
         Bitmap bitmap=BitmapFactory.decodeFile(path);
         //添加水印
-        Bitmap drawBitmap=drawTextBitmap(bitmap, text);
+        Bitmap drawBitmap=drawLine(bitmap);
         //重命名图片，保存
         saveBitMapToSdcard(drawBitmap, imageName);
     }
+	
+	//////////////////////////////
+	
+	public static void snapshotLine(String testCasename){
+		
+		System.out.println("snapshot");
+		// 获取当前工作路径
+		String currentPath = UserConfig.savePicPath;
+		
+		//临时文件
+		String tmpPic = "tmpPic.jpg"; 
+		//文件名
+		String filename = testCasename + "_" + TimeUtil.getCurrentSysTimeUnsigned() + ".jpg";
+		//System.out.println("file name: " + filename);
+		screenshotAndDrawLine(currentPath + tmpPic, filename);
+
+
+	}
+	
+	
+	public static void screenshotAndDrawLine(String path,String imageName){
+        File file=new File(path);
+        //System.out.println("path: " + path);
+        //截图
+        UiDevice.getInstance().takeScreenshot(file);
+        //UiDevice.getInstance().takeScreenshot(file, 0.1f, 1);
+        //转为bitmap类型
+        Bitmap bitmap=BitmapFactory.decodeFile(path);
+        //添加水印
+        Bitmap drawBitmap=drawLine(bitmap);
+        //重命名图片，保存
+        saveBitMapToSdcard(drawBitmap, imageName);
+    }
+	
+    
+    public static Bitmap drawLine(Bitmap bitmap){
+        int x=bitmap.getWidth();
+        int y=bitmap.getHeight();
+
+        //创建一个比原来图片更大的位图
+        Bitmap newBitmap=Bitmap.createBitmap(x, y, Bitmap.Config.ARGB_8888);
+        Canvas canvans=new Canvas(newBitmap);
+        Paint paint=new Paint();
+        //在原图位置（0，0）叠加一张图片
+        canvans.drawBitmap(newBitmap, 0,0, paint);
+        //画笔颜色
+        paint.setColor(Color.parseColor("#FF0000"));
+        paint.setStrokeWidth(2.0f);
+        
+        paint.setTextSize(40);
+        //canvans.drawText(text, 20, y+55, paint);
+        canvans.drawText("hello", 500 , 500, paint);
+        canvans.drawLine(60, 400, 400, 400, paint);
+        canvans.save(Canvas.ALL_SAVE_FLAG);
+        canvans.restore();
+        return newBitmap;
+    }
+    //Bitmap的叠加处理
+	
+	////////////////////////////
+	
+	
 	/**
 	 *  添加水印
 	 * @param bitmap
@@ -136,6 +198,8 @@ public class ImageManager {
         canvans.drawText(text, 20, y+55, paint);
         canvans.save(Canvas.ALL_SAVE_FLAG);
         canvans.restore();
+   
+        
         return newBitmap;
     }
 
@@ -172,5 +236,6 @@ public class ImageManager {
         return false;
     }
 	
+
 	
 }
