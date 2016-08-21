@@ -15,12 +15,12 @@ import com.uitest.log.UiautomatorAssistant;
 
 /**
  * 用于页面元素管理，等待页面元素，判断页面元素是否存在、是否被显示等。
- * 
+ * 每一步都写入步骤文件中。
  * 日志记录： 版本 日期 修改者 更新内容 1.0 2016-06-04 cbh 模块重新整理
  * 
  */
 
-public class ElementManager extends UiAutomatorTestCase{
+public class ElementManagerLog extends UiAutomatorTestCase{
 	// 时间(ms)
 	public static long MAXRUNTIME = 60000;
 	public static long MIDRUNTIME = 45000;
@@ -98,6 +98,7 @@ public class ElementManager extends UiAutomatorTestCase{
 	 * @return
 	 */
 	public static UiObject getUiObjectByText(String text) {
+		UiautomatorAssistant.UiAutomationLog("");
 		return new UiObject(new UiSelector().textContains(text));
 	}
 

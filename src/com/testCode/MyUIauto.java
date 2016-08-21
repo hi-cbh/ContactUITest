@@ -13,6 +13,8 @@ import com.android.uiautomator.core.UiDevice;
 import com.android.uiautomator.core.UiObject;
 import com.android.uiautomator.core.UiObjectNotFoundException;
 import com.android.uiautomator.testrunner.UiAutomatorTestCase;
+import com.uitest.data.UserConfig;
+import com.uitest.uiautomatorUtil.ElementManager;
 import com.uitest.uiautomatorUtil.ImageManager;
 import com.uitest.uiautomatorUtil.TimeUtil;
 import com.uitest.util.UiAutomatorHelper;
@@ -25,7 +27,7 @@ public class MyUIauto extends UiAutomatorTestCase{
 		String jarName = "MyUIauto";
 		String testClass = "com.testCode.MyUIauto";
 		String testName = "testImage";
-		String androidId = "2";
+		String androidId = UserConfig.androidId;
 		new UiAutomatorHelper(jarName, testClass, testName, androidId);
 	}
 	
@@ -76,9 +78,11 @@ public class MyUIauto extends UiAutomatorTestCase{
 //		}
 	}
 	
-	public void testImage(){
-		//ImageManager.snapshot("testImage", "有点水印");
-		ImageManager.snapshotLine("testImageLine");
+	public void testImage() throws UiObjectNotFoundException{
+		UiDevice.getInstance().pressHome();
+		UiObject uo = ElementManager.getUiObjectByTextMatches("和通讯录");
+		ImageManager.snapshot("testImage", "有点水印");
+		ImageManager.snapshotAndDrawRect("snapshotAndDrawRect", uo.getBounds());
 	}
 	
 	
