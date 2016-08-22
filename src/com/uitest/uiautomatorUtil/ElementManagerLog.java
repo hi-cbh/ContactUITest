@@ -606,7 +606,7 @@ public class ElementManagerLog extends UiAutomatorTestCase{
 	 */
 	public static void click(int x, int y) {
 
-
+		UiautomatorAssistant.UiAutomationLog("click point: [ " + x + " : " + y + " ]");
 		UiDevice.getInstance().click(x, y);
 	}
 
@@ -633,13 +633,39 @@ public class ElementManagerLog extends UiAutomatorTestCase{
 	}
 
 	/**
+	 * 通过uiobject对象点击
+	 * 
+	 * @param uo  点击对象
+	 * @param str 写入文档内容
+	 */
+	public static void clickbyObject(UiObject uo, String str) {
+		// System.out.println("clickbyObject:");
+		try {
+			if (uo.exists()) {
+				UiautomatorAssistant.UiAutomationLog("click: "+str);
+				//每一步都截图，每部都需要耗费1秒时间
+				//ImageManager.snapshotAndDrawRect("click ", uo.getBounds());
+				uo.click();
+			} else {
+				//失败写入日志
+				UiautomatorAssistant.UiAutomationLog(str+ " not-find!");
+			}
+		} catch (UiObjectNotFoundException e) {
+			e.printStackTrace();
+		}
+
+	}
+	
+	
+	/**
 	 * 需求：根据资源name点击Uiobject
 	 * 
 	 * @param name
 	 */
 	public static void clickByName(String name) {
 		System.out.println("clickByName: " + name);
-		clickbyObject(getUiObjectByTextMatches(name));
+
+		clickbyObject(getUiObjectByTextMatches(name), " byName " + name);
 	}
 
 	/**
@@ -650,7 +676,7 @@ public class ElementManagerLog extends UiAutomatorTestCase{
 	public static void clickById(String id) {
 		System.out.println("clickById: " + id);
 
-		clickbyObject(getUiObjectByResourceIdMatches(id));
+		clickbyObject(getUiObjectByResourceIdMatches(id)," byId " + id);
 
 	}
 
@@ -677,7 +703,11 @@ public class ElementManagerLog extends UiAutomatorTestCase{
 	private static void myLongClick(UiObject uo, int step) {
 		Rect buttonRect;
 		try {
+			
 			buttonRect = uo.getBounds();
+			//
+			UiautomatorAssistant.UiAutomationLog("LongClick point: [ " 
+			+ buttonRect.centerX() + " : " + buttonRect.centerY() + " ]");
 			// 滑动同一点
 			UiDevice.getInstance().swipe(buttonRect.centerX(),
 					buttonRect.centerY(), buttonRect.centerX(),
@@ -703,7 +733,17 @@ public class ElementManagerLog extends UiAutomatorTestCase{
 	public static void clickSameClassObjectByOne(String rootClass, String id,
 			int num) {
 		try {
-			getUiObjectByClassId(rootClass, id, num).click();
+			UiObject uo = getUiObjectByClassId(rootClass, id, num);
+			if(uo.exists()){
+				UiautomatorAssistant.UiAutomationLog("click: "+rootClass + "/" + id+"/"+"["+num+"]");
+				uo.click();
+			}
+			else{
+				UiautomatorAssistant.UiAutomationLog("not-find"+rootClass + "/" + id+"/"+"["+num+"]");
+			}
+			
+			
+			
 		} catch (UiObjectNotFoundException e) {
 
 			e.printStackTrace();
@@ -720,7 +760,16 @@ public class ElementManagerLog extends UiAutomatorTestCase{
 	public static void clickSameClassObject(String type1, String rootClass,
 			String styp2, String destClass, int num) {
 		try {
-			getSameClassObject(type1, rootClass, styp2, destClass, num).click();
+			UiObject uo = getSameClassObject(type1, rootClass, styp2, destClass, num);
+			
+			if(uo.exists()){
+				UiautomatorAssistant.UiAutomationLog("click: "+rootClass + "/" + destClass+"/"+"["+num+"]");
+				uo.click();
+			}
+			else{
+				UiautomatorAssistant.UiAutomationLog("not-find"+rootClass + "/" + destClass+"/"+"["+num+"]");
+			}
+
 		} catch (UiObjectNotFoundException e) {
 
 			e.printStackTrace();
@@ -743,7 +792,15 @@ public class ElementManagerLog extends UiAutomatorTestCase{
 
 	public static void clickClassId(String root, String sub, int num) {
 		try {
-			getUiObjectByClassId(root, sub, num).click();
+			UiObject uo = getUiObjectByClassId(root, sub, num);
+			if(uo.exists()){
+				UiautomatorAssistant.UiAutomationLog("click: "+root + "/" + sub+"/"+"["+num+"]");
+				uo.click();
+			}
+			else{
+				UiautomatorAssistant.UiAutomationLog("not-find"+root + "/" + sub+"/"+"["+num+"]");
+			}
+
 		} catch (UiObjectNotFoundException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -753,7 +810,14 @@ public class ElementManagerLog extends UiAutomatorTestCase{
 	public static void clickClassClass(String root, String sub, int num) {
 
 		try {
-			getUiObjectByClassClass(root, sub, num).click();
+			UiObject uo = getUiObjectByClassClass(root, sub, num);
+			if(uo.exists()){
+				UiautomatorAssistant.UiAutomationLog("click: "+root + "/" + sub+"/"+"["+num+"]");
+				uo.click();
+			}
+			else{
+				UiautomatorAssistant.UiAutomationLog("not-find"+root + "/" + sub+"/"+"["+num+"]");
+			}
 		} catch (UiObjectNotFoundException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -762,7 +826,14 @@ public class ElementManagerLog extends UiAutomatorTestCase{
 
 	public static void clickIdClass(String root, String sub, int num) {
 		try {
-			getUiObjectByIdClass(root, sub, num).click();
+			UiObject uo = getUiObjectByIdClass(root, sub, num);
+			if(uo.exists()){
+				UiautomatorAssistant.UiAutomationLog("click: "+root + "/" + sub+"/"+"["+num+"]");
+				uo.click();
+			}
+			else{
+				UiautomatorAssistant.UiAutomationLog("not-find"+root + "/" + sub+"/"+"["+num+"]");
+			}
 		} catch (UiObjectNotFoundException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -771,7 +842,14 @@ public class ElementManagerLog extends UiAutomatorTestCase{
 
 	public static void clickIdId(String root, String sub, int num) {
 		try {
-			getUiObjectByIdId(root, sub, num).click();
+			UiObject uo = getUiObjectByIdId(root, sub, num);
+			if(uo.exists()){
+				UiautomatorAssistant.UiAutomationLog("click: "+root + "/" + sub+"/"+"["+num+"]");
+				uo.click();
+			}
+			else{
+				UiautomatorAssistant.UiAutomationLog("not-find"+root + "/" + sub+"/"+"["+num+"]");
+			}
 		} catch (UiObjectNotFoundException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -783,7 +861,14 @@ public class ElementManagerLog extends UiAutomatorTestCase{
 	 */
 	public static void clickSameTextByClassAndName(String className, String name) {
 		try {
-			getUiObjectSearchByClassNameAndName(className, name).click();
+			UiObject uo = getUiObjectSearchByClassNameAndName(className, name);
+			if(uo.exists()){
+				UiautomatorAssistant.UiAutomationLog("click: "+className + "/" + name);
+				uo.click();
+			}
+			else{
+				UiautomatorAssistant.UiAutomationLog("not-find"+className + "/" + name);
+			}
 		} catch (UiObjectNotFoundException e) {
 
 			e.printStackTrace();
@@ -798,7 +883,14 @@ public class ElementManagerLog extends UiAutomatorTestCase{
 	 */
 	public static void clickWithScrollList(String classname, String text) {
 		try {
-			getUiObjectScrollListViewByText(classname, text).click();
+			UiObject uo = getUiObjectScrollListViewByText(classname, text);
+			if(uo.exists()){
+				UiautomatorAssistant.UiAutomationLog("click: "+classname + "/" + text);
+				uo.click();
+			}
+			else{
+				UiautomatorAssistant.UiAutomationLog("not-find"+classname + "/" + text);
+			}
 		} catch (UiObjectNotFoundException e) {
 
 			e.printStackTrace();
@@ -816,8 +908,10 @@ public class ElementManagerLog extends UiAutomatorTestCase{
 		try {
 			uo = getUiObjectByResourceIdMatches(id);
 			if (uo.exists()) {
+				UiautomatorAssistant.UiAutomationLog("click: "+id );
 				uo.clickAndWaitForNewWindow();
 			} else {
+				UiautomatorAssistant.UiAutomationLog("not-find"+id );
 				System.out.println("clickAndWaitForNewWindowById: " + id
 						+ " not exists, return null");
 			}
@@ -830,8 +924,10 @@ public class ElementManagerLog extends UiAutomatorTestCase{
 	 * 点击屏幕中间
 	 */
 	public static void clickPageCenter() {
+		
 		int width = UiDevice.getInstance().getDisplayWidth();
 		int height = UiDevice.getInstance().getDisplayHeight();
+		UiautomatorAssistant.UiAutomationLog("click: [ " + width / 2 + " : " + height / 2 + " ]");
 		UiDevice.getInstance().click(width / 2, height / 2);
 	}
 
@@ -847,10 +943,12 @@ public class ElementManagerLog extends UiAutomatorTestCase{
 		System.out.println("[start] inputText: " + content);
 		if (!uo.exists()) {
 			System.out.println("[end] can not find: ");
+			UiautomatorAssistant.UiAutomationLog("not-find,can not input");
 			return;
 		}
 		EditText.clearEditText(uo);
 		EditText.setText(uo, content);
+		UiautomatorAssistant.UiAutomationLog("input: " + content);
 		System.out.println("[end] inputText: " + " , input: " + content);
 	}
 
@@ -864,8 +962,12 @@ public class ElementManagerLog extends UiAutomatorTestCase{
 		System.out.println("[start] inputTextByName: " + name + " , input: "
 				+ content);
 		UiObject uo = getUiObjectByText(name);
-		inputText(uo, content);
-
+		if(uo.exists()){
+			inputText(uo, content);
+			UiautomatorAssistant.UiAutomationLog("input: " + content);
+		}else{
+			UiautomatorAssistant.UiAutomationLog("not-find,can not input");
+		}
 	}
 
 	/**
@@ -878,7 +980,12 @@ public class ElementManagerLog extends UiAutomatorTestCase{
 		System.out.println("[start] inputTextByName: " + id + " , input: "
 				+ content);
 		UiObject uo = getUiObjectByResourceIdMatches(id);
-		inputText(uo, content);
+		if(uo.exists()){
+			inputText(uo, content);
+			UiautomatorAssistant.UiAutomationLog("input: " + content);
+		}else{
+			UiautomatorAssistant.UiAutomationLog("not-find,can not input");
+		}
 	}
 
 	/**
@@ -892,6 +999,7 @@ public class ElementManagerLog extends UiAutomatorTestCase{
 				+ content);
 		UiObject uo = getUiObjectByResourceIdMatches(id);
 		if (!uo.exists()) {
+			UiautomatorAssistant.UiAutomationLog("not-find,can not input");
 			System.out.println("[end] can not find: " + id);
 			return;
 		}
@@ -901,6 +1009,7 @@ public class ElementManagerLog extends UiAutomatorTestCase{
 			ct = uo.getBounds();
 			click(ct.top, ct.top);
 			EditText.setText(uo, content);
+			UiautomatorAssistant.UiAutomationLog("input: " + content);
 			System.out.println("[end] inputTextByName: " + id + " , input: "
 					+ content);
 		} catch (UiObjectNotFoundException e) {

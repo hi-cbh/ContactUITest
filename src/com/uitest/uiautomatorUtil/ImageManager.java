@@ -123,6 +123,37 @@ public class ImageManager {
 	}
 
 	/**
+	 * 截图
+	 * 
+	 * @param saveFile
+	 *            存储路径
+	 * @param saveName
+	 *            存储的文件名
+	 */
+	public static void takesnapshot(String saveFile, String saveName) {
+
+		System.out.println("snapshot");
+		
+		// 获取当前工作路径,临时文件
+		String currentPath = saveFile + "tmpPic.jpg";
+
+		// 存储路径，文件名
+		String filename = saveFile + saveName + ".jpg";
+		
+		//创建图片
+		new File(currentPath);
+		new File(filename);
+		
+		//截图
+		takeScreenshot(currentPath);
+		
+		//压缩，另存为
+		CompressToSdcard(currentPath, filename);
+		
+
+	}
+	
+	/**
 	 * 截屏，添加水印
 	 * 
 	 * @param path      截屏保存路径

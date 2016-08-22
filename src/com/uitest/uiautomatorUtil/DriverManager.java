@@ -6,6 +6,7 @@ import com.android.uiautomator.core.UiDevice;
 import com.android.uiautomator.core.UiObjectNotFoundException;
 import com.android.uiautomator.core.UiScrollable;
 import com.android.uiautomator.core.UiSelector;
+import com.uitest.log.UiautomatorAssistant;
 
 /**
  * 用于页面滑动，休眠唤醒。
@@ -32,6 +33,7 @@ public class DriverManager{
 		System.out.println("drag");
 		int width = UiDevice.getInstance().getDisplayWidth();
 		int height = UiDevice.getInstance().getDisplayHeight();
+		UiautomatorAssistant.UiAutomationLog("swipeToRight");
 		UiDevice.getInstance().swipe(width / 2, height * 4 / 5, width, height * 4 / 5, 60);
 		System.out.println("[ doing ] swipeToRight ");
 	}
@@ -44,6 +46,7 @@ public class DriverManager{
 		int width = UiDevice.getInstance().getDisplayWidth();
 		int height = UiDevice.getInstance().getDisplayHeight();
 		UiDevice.getInstance().swipe(width* 4 / 5, height * 4 / 5, width / 5, height * 4 / 5, 30);
+		UiautomatorAssistant.UiAutomationLog("swipeToLeft");
 		System.out.println("[ doing ] swipeToRight ");
 	}
 	
@@ -55,6 +58,7 @@ public class DriverManager{
 		int width = UiDevice.getInstance().getDisplayWidth();
 		int height = UiDevice.getInstance().getDisplayHeight();
 		UiDevice.getInstance().swipe(width / 2, height / 5, width / 2, height * 4 / 5, 60);
+		UiautomatorAssistant.UiAutomationLog("swipeToDown");
 		System.out.println("[ doing ] swipeToDown ");
 	}
 
@@ -66,6 +70,7 @@ public class DriverManager{
 		int width = UiDevice.getInstance().getDisplayWidth();
 		int height = UiDevice.getInstance().getDisplayHeight();
 		UiDevice.getInstance().swipe(width / 2, height  * 4 / 5, width / 2, height / 5, 60);
+		UiautomatorAssistant.UiAutomationLog("swipeToUp");
 		System.out.println("[ doing ] swipeToUp ");
 	}
 	
@@ -96,12 +101,6 @@ public class DriverManager{
 		}
 	}
 
-
-	
-	
-
-		
-	
 	/**
 	 * 水平滑动屏幕
 	 * @param num
