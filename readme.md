@@ -13,6 +13,11 @@
 	
 		com.uitest.data
 	
+* 日志管理类
+
+		com.uitest.log.MyLogcatHelper         //系统运行日志截取
+		com.uitest.log.UiautomatorAssistant   //app运行步骤日志记录（默认开启）
+	
 **【测试用例】**
 
 * 和通讯录测试用例
@@ -43,4 +48,8 @@
 
 		com.testCode
 
+**【备注】**
+
+* ImageManager类中，已实现截图并标记点击的元素对象，不建议使用，每次截图都耗时1秒
+* 运行前，需要提前创建辅助目录（UserConfig中），可用bat辅助。
 	
