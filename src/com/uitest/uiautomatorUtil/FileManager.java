@@ -7,6 +7,8 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.OutputStreamWriter;
 
+import com.uitest.data.UserConfig;
+
 
 /**
  * 保存文件，追加内容到文件
@@ -14,12 +16,13 @@ import java.io.OutputStreamWriter;
  * 日志记录：
  * 版本                  日期                         修改者    更新内容
  * 1.0       2016-06-04   cbh  模块重新整理
+ * 1.1       2016-08-19   cbh  修改ROOT_PATH 全局变量
  * 
  */
 
 public class FileManager {
 	
-	protected static final String ROOT_PATH="/mnt/sdcard/AppTestReport/";
+	protected static final String ROOT_PATH=UserConfig.saveRootPath;
 	
 	/**
    * 新增或追加内容到文件中

@@ -4,6 +4,7 @@ package com.uitest.uiautomatorUtil;
 import junit.framework.Assert;
 
 import com.uitest.data.UserConfig;
+import com.uitest.log.UiautomatorAssistant;
 import com.uitest.util.TestContactBase;
 
 /**
@@ -14,6 +15,7 @@ import com.uitest.util.TestContactBase;
  * 1.0       2016-08-12   cbh  新增Myassert方法
  * 1.1       2016-08-16   cbh  修改Myassert方法，
  * 调用Assert.assertEquals（被junt中的TestListener捕获）
+ * 1.2       2016-08-16   cbh  添加运行日志
  */
 public class AssertUtil extends TestContactBase{
 	/**
@@ -27,14 +29,14 @@ public class AssertUtil extends TestContactBase{
 
 		//bl为false
 		if (bl == false) {
-			//调用自己编写的截图工具，可以不调用
-			ImageManager.snapshot(caseName,message);
+			//写入app运行日志
+			UiautomatorAssistant.UiAutomationLog(caseName+" 验证失败: "+message);
 			//被TestListener捕获，已经写有截图工具
 			Assert.assertEquals(message, false, true);
 		}
 		//bl为true
 		Assert.assertEquals(message, true, true);
-
+		UiautomatorAssistant.UiAutomationLog(caseName+" 验证通过");
 	}
 	
 
