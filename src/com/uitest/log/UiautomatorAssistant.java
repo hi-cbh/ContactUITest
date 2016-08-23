@@ -70,7 +70,7 @@ public class UiautomatorAssistant extends UiAutomatorTestCase {
 					|| str.contains("不通过")) {
 				fwlog.write("------------------" + "\r\n");
 			}
-			System.out.println(str);
+			//System.out.println(str);
 
 			fwlog.flush();
 

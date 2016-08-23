@@ -163,6 +163,7 @@ public class DriverManager{
 	 * 点击物理返回键
 	 */
 	public static void pressBack(){
+		UiautomatorAssistant.UiAutomationLog("press Back");
 		UiDevice.getInstance().pressBack();
 	}
 	
@@ -170,6 +171,7 @@ public class DriverManager{
 	 * 点击物理Home
 	 */
 	public static void pressHome(){
+		UiautomatorAssistant.UiAutomationLog("press Home");
 		UiDevice.getInstance().pressHome();
 	}
 	
@@ -177,6 +179,7 @@ public class DriverManager{
 	 * 点击物理菜单
 	 */
 	public static void pressMenu(){
+		UiautomatorAssistant.UiAutomationLog("press Menu");
 		UiDevice.getInstance().pressMenu();
 	}
 	
