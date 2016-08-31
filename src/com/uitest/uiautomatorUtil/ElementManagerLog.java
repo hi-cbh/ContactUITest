@@ -619,7 +619,7 @@ public class ElementManagerLog extends UiAutomatorTestCase{
 		// System.out.println("clickbyObject:");
 		try {
 			if (uo.exists()) {
-				
+				ImageManager.snapshotAndDrawRect("click ", uo.getBounds());
 				uo.click();
 				// System.out.println("clicking finish");
 			} else {
@@ -644,7 +644,7 @@ public class ElementManagerLog extends UiAutomatorTestCase{
 			if (uo.exists()) {
 				UiautomatorAssistant.UiAutomationLog("click: "+str);
 				//每一步都截图，每部都需要耗费1秒时间
-				//ImageManager.snapshotAndDrawRect("click ", uo.getBounds());
+				ImageManager.snapshotAndDrawRect("click ", uo.getBounds());
 				uo.click();
 			} else {
 				//失败写入日志

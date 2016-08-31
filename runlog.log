@@ -6316,3 +6316,1627 @@ OK (1 test)
 
 INSTRUMENTATION_STATUS_CODE: -1
 
+Updated file C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
+Buildfile: C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 22.6.2
+ [checkenv] Installed at G:\adt-bundle-windows-x86_64-20140321\adt-bundle-windows-x86_64-20140321\sdk
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 19.0.3
+     [echo] Resolving Build Target for Traversal...
+[getuitarget] Project Target:   Android 4.4.2
+[getuitarget] API level:        19
+     [echo] ----------
+     [echo] Creating output directories if needed...
+    [mkdir] Created dir: C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
+
+-pre-compile:
+
+compile:
+    [javac] Compiling 40 source files to C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
+    [javac] ����: [options] Դֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ŀ��ֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ҫ�����й��ѹ�ʱѡ��ľ���, ��ʹ�� -Xlint:-options��
+    [javac] ע: C:\Users\Administrator\workspace_201607\ContactUITest\src\com\beetstra\jutf7\CharsetProvider.javaʹ����δ�����򲻰�ȫ�Ĳ�����
+    [javac] ע: �й���ϸ��Ϣ, ��ʹ�� -Xlint:unchecked ���±��롣
+    [javac] 3 ������
+
+-post-compile:
+
+-dex:
+      [dex] input: C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
+      [dex] Converting compiled files and external libraries into C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes.dex...
+
+-post-dex:
+
+-jar:
+      [jar] Building jar: C:\Users\Administrator\workspace_201607\ContactUITest\bin\Traversal.jar
+
+-post-jar:
+
+build:
+
+BUILD SUCCESSFUL
+Total time: 10 seconds
+* daemon not running. starting it now on port 5037 *
+* daemon started successfully *
+2481 KB/s (35569 bytes in 0.014s)
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact.traversal.Traversal
+
+INSTRUMENTATION_STATUS: stream=
+
+com.uitest.contact.traversal.Traversal:
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: test=testTraversal
+
+INSTRUMENTATION_STATUS_CODE: 1
+
+clickByName: 和通讯录
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact.traversal.Traversal
+
+INSTRUMENTATION_STATUS: stream=.
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: test=testTraversal
+
+INSTRUMENTATION_STATUS_CODE: 0
+
+INSTRUMENTATION_STATUS: stream=
+
+Test results for WatcherResultPrinter=.
+
+Time: 2.159
+
+
+
+OK (1 test)
+
+
+
+
+
+INSTRUMENTATION_STATUS_CODE: -1
+
+Updated file C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
+Buildfile: C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 22.6.2
+ [checkenv] Installed at G:\adt-bundle-windows-x86_64-20140321\adt-bundle-windows-x86_64-20140321\sdk
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 19.0.3
+     [echo] Resolving Build Target for Traversal...
+[getuitarget] Project Target:   Android 4.4.2
+[getuitarget] API level:        19
+     [echo] ----------
+     [echo] Creating output directories if needed...
+
+-pre-compile:
+
+compile:
+    [javac] Compiling 2 source files to C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
+    [javac] ����: [options] Դֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ŀ��ֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ҫ�����й��ѹ�ʱѡ��ľ���, ��ʹ�� -Xlint:-options��
+    [javac] 3 ������
+
+-post-compile:
+
+-dex:
+      [dex] input: C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
+      [dex] Found Deleted Target File
+      [dex] Converting compiled files and external libraries into C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes.dex...
+
+-post-dex:
+
+-jar:
+      [jar] Building jar: C:\Users\Administrator\workspace_201607\ContactUITest\bin\Traversal.jar
+
+-post-jar:
+
+build:
+
+BUILD SUCCESSFUL
+Total time: 4 seconds
+2195 KB/s (35966 bytes in 0.016s)
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact.traversal.Traversal
+
+INSTRUMENTATION_STATUS: stream=
+
+com.uitest.contact.traversal.Traversal:
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: test=testTraversal
+
+INSTRUMENTATION_STATUS_CODE: 1
+
+clickByName: 和通讯录
+
+snapshot
+
+cnt: 4
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact.traversal.Traversal
+
+INSTRUMENTATION_STATUS: stream=.
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: test=testTraversal
+
+INSTRUMENTATION_STATUS_CODE: 0
+
+INSTRUMENTATION_STATUS: stream=
+
+Test results for WatcherResultPrinter=.
+
+Time: 18.164
+
+
+
+OK (1 test)
+
+
+
+
+
+INSTRUMENTATION_STATUS_CODE: -1
+
+Updated file C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
+Buildfile: C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 22.6.2
+ [checkenv] Installed at G:\adt-bundle-windows-x86_64-20140321\adt-bundle-windows-x86_64-20140321\sdk
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 19.0.3
+     [echo] Resolving Build Target for Traversal...
+[getuitarget] Project Target:   Android 4.4.2
+[getuitarget] API level:        19
+     [echo] ----------
+     [echo] Creating output directories if needed...
+
+-pre-compile:
+
+compile:
+    [javac] Compiling 1 source file to C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
+    [javac] ����: [options] Դֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ŀ��ֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ҫ�����й��ѹ�ʱѡ��ľ���, ��ʹ�� -Xlint:-options��
+    [javac] 3 ������
+
+-post-compile:
+
+-dex:
+      [dex] input: C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
+      [dex] Found Deleted Target File
+      [dex] Converting compiled files and external libraries into C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes.dex...
+
+-post-dex:
+
+-jar:
+      [jar] Building jar: C:\Users\Administrator\workspace_201607\ContactUITest\bin\Traversal.jar
+
+-post-jar:
+
+build:
+
+BUILD SUCCESSFUL
+Total time: 4 seconds
+error: device offline
+error: device offline
+Updated file C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
+Buildfile: C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 22.6.2
+ [checkenv] Installed at G:\adt-bundle-windows-x86_64-20140321\adt-bundle-windows-x86_64-20140321\sdk
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 19.0.3
+     [echo] Resolving Build Target for Traversal...
+[getuitarget] Project Target:   Android 4.4.2
+[getuitarget] API level:        19
+     [echo] ----------
+     [echo] Creating output directories if needed...
+
+-pre-compile:
+
+compile:
+
+-post-compile:
+
+-dex:
+      [dex] input: C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
+      [dex] Found Deleted Target File
+      [dex] Converting compiled files and external libraries into C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes.dex...
+
+-post-dex:
+
+-jar:
+      [jar] Building jar: C:\Users\Administrator\workspace_201607\ContactUITest\bin\Traversal.jar
+
+-post-jar:
+
+build:
+
+BUILD SUCCESSFUL
+Total time: 3 seconds
+2507 KB/s (35953 bytes in 0.014s)
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact.traversal.Traversal
+
+INSTRUMENTATION_STATUS: stream=
+
+com.uitest.contact.traversal.Traversal:
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: test=testTraversal
+
+INSTRUMENTATION_STATUS_CODE: 1
+
+clickByName: 和通讯录
+
+snapshot
+
+cnt: 4
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact.traversal.Traversal
+
+INSTRUMENTATION_STATUS: stream=.
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: test=testTraversal
+
+INSTRUMENTATION_STATUS_CODE: 0
+
+INSTRUMENTATION_STATUS: stream=
+
+Test results for WatcherResultPrinter=.
+
+Time: 19.692
+
+
+
+OK (1 test)
+
+
+
+
+
+INSTRUMENTATION_STATUS_CODE: -1
+
+Updated file C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
+Buildfile: C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 22.6.2
+ [checkenv] Installed at G:\adt-bundle-windows-x86_64-20140321\adt-bundle-windows-x86_64-20140321\sdk
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 19.0.3
+     [echo] Resolving Build Target for Traversal...
+[getuitarget] Project Target:   Android 4.4.2
+[getuitarget] API level:        19
+     [echo] ----------
+     [echo] Creating output directories if needed...
+
+-pre-compile:
+
+compile:
+    [javac] Compiling 1 source file to C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
+    [javac] ����: [options] Դֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ŀ��ֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ҫ�����й��ѹ�ʱѡ��ľ���, ��ʹ�� -Xlint:-options��
+    [javac] 3 ������
+
+-post-compile:
+
+-dex:
+      [dex] input: C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
+      [dex] Found Deleted Target File
+      [dex] Converting compiled files and external libraries into C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes.dex...
+
+-post-dex:
+
+-jar:
+      [jar] Building jar: C:\Users\Administrator\workspace_201607\ContactUITest\bin\Traversal.jar
+
+-post-jar:
+
+build:
+
+BUILD SUCCESSFUL
+Total time: 4 seconds
+2067 KB/s (35994 bytes in 0.017s)
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact.traversal.Traversal
+
+INSTRUMENTATION_STATUS: stream=
+
+com.uitest.contact.traversal.Traversal:
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: test=testTraversal
+
+INSTRUMENTATION_STATUS_CODE: 1
+
+clickByName: 和通讯录
+
+snapshot
+
+cnt: 4
+
+snapshot
+
+snapshot
+
+snapshot
+
+snapshot
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact.traversal.Traversal
+
+INSTRUMENTATION_STATUS: stream=.
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: test=testTraversal
+
+INSTRUMENTATION_STATUS_CODE: 0
+
+INSTRUMENTATION_STATUS: stream=
+
+Test results for WatcherResultPrinter=.
+
+Time: 23.591
+
+
+
+OK (1 test)
+
+
+
+
+
+INSTRUMENTATION_STATUS_CODE: -1
+
+Updated file C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
+Buildfile: C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 22.6.2
+ [checkenv] Installed at G:\adt-bundle-windows-x86_64-20140321\adt-bundle-windows-x86_64-20140321\sdk
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 19.0.3
+     [echo] Resolving Build Target for Traversal...
+[getuitarget] Project Target:   Android 4.4.2
+[getuitarget] API level:        19
+     [echo] ----------
+     [echo] Creating output directories if needed...
+
+-pre-compile:
+
+compile:
+    [javac] Compiling 1 source file to C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
+    [javac] ����: [options] Դֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ŀ��ֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ҫ�����й��ѹ�ʱѡ��ľ���, ��ʹ�� -Xlint:-options��
+    [javac] 3 ������
+
+-post-compile:
+
+-dex:
+      [dex] input: C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
+      [dex] Found Deleted Target File
+      [dex] Converting compiled files and external libraries into C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes.dex...
+
+-post-dex:
+
+-jar:
+      [jar] Building jar: C:\Users\Administrator\workspace_201607\ContactUITest\bin\Traversal.jar
+
+-post-jar:
+
+build:
+
+BUILD SUCCESSFUL
+Total time: 4 seconds
+1852 KB/s (36048 bytes in 0.019s)
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact.traversal.Traversal
+
+INSTRUMENTATION_STATUS: stream=
+
+com.uitest.contact.traversal.Traversal:
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: test=testCall
+
+INSTRUMENTATION_STATUS_CODE: 1
+
+clickByName: 和通讯录
+
+snapshot
+
+clickByName: 拨号
+
+snapshot
+
+clickById: iab_ib_more
+
+snapshot
+
+clickByName: 清空通话记录
+
+snapshot
+
+clickById: dialog_btn_negative
+
+snapshot
+
+clickById: iab_ib_more
+
+snapshot
+
+clickByName: 清空通话记录
+
+snapshot
+
+clickById: dialog_btn_positive
+
+snapshot
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact.traversal.Traversal
+
+INSTRUMENTATION_STATUS: stream=.
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: test=testCall
+
+INSTRUMENTATION_STATUS_CODE: 0
+
+INSTRUMENTATION_STATUS: stream=
+
+Test results for WatcherResultPrinter=.
+
+Time: 26.65
+
+
+
+OK (1 test)
+
+
+
+
+
+INSTRUMENTATION_STATUS_CODE: -1
+
+Updated file C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
+Buildfile: C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 22.6.2
+ [checkenv] Installed at G:\adt-bundle-windows-x86_64-20140321\adt-bundle-windows-x86_64-20140321\sdk
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 19.0.3
+     [echo] Resolving Build Target for Traversal...
+[getuitarget] Project Target:   Android 4.4.2
+[getuitarget] API level:        19
+     [echo] ----------
+     [echo] Creating output directories if needed...
+
+-pre-compile:
+
+compile:
+    [javac] Compiling 1 source file to C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
+    [javac] ����: [options] Դֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ŀ��ֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ҫ�����й��ѹ�ʱѡ��ľ���, ��ʹ�� -Xlint:-options��
+    [javac] 3 ������
+
+-post-compile:
+
+-dex:
+      [dex] input: C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
+      [dex] Found Deleted Target File
+      [dex] Converting compiled files and external libraries into C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes.dex...
+
+-post-dex:
+
+-jar:
+      [jar] Building jar: C:\Users\Administrator\workspace_201607\ContactUITest\bin\Traversal.jar
+
+-post-jar:
+
+build:
+
+BUILD SUCCESSFUL
+Total time: 4 seconds
+2513 KB/s (36043 bytes in 0.014s)
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact.traversal.Traversal
+
+INSTRUMENTATION_STATUS: stream=
+
+com.uitest.contact.traversal.Traversal:
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: test=testCall
+
+INSTRUMENTATION_STATUS_CODE: 1
+
+clickByName: 和通讯录
+
+snapshot
+
+clickByName: 拨号
+
+snapshot
+
+clickById: iab_ib_more
+
+snapshot
+
+clickByName: 未接来电
+
+snapshot
+
+clickById: iab_ib_more
+
+snapshot
+
+clickByName: 通话设置
+
+snapshot
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact.traversal.Traversal
+
+INSTRUMENTATION_STATUS: stream=.
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: test=testCall
+
+INSTRUMENTATION_STATUS_CODE: 0
+
+INSTRUMENTATION_STATUS: stream=
+
+Test results for WatcherResultPrinter=.
+
+Time: 20.028
+
+
+
+OK (1 test)
+
+
+
+
+
+INSTRUMENTATION_STATUS_CODE: -1
+
+Updated file C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
+Buildfile: C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 22.6.2
+ [checkenv] Installed at G:\adt-bundle-windows-x86_64-20140321\adt-bundle-windows-x86_64-20140321\sdk
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 19.0.3
+     [echo] Resolving Build Target for Traversal...
+[getuitarget] Project Target:   Android 4.4.2
+[getuitarget] API level:        19
+     [echo] ----------
+     [echo] Creating output directories if needed...
+
+-pre-compile:
+
+compile:
+    [javac] Compiling 1 source file to C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
+    [javac] ����: [options] Դֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ŀ��ֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ҫ�����й��ѹ�ʱѡ��ľ���, ��ʹ�� -Xlint:-options��
+    [javac] 3 ������
+
+-post-compile:
+
+-dex:
+      [dex] input: C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
+      [dex] Found Deleted Target File
+      [dex] Converting compiled files and external libraries into C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes.dex...
+
+-post-dex:
+
+-jar:
+      [jar] Building jar: C:\Users\Administrator\workspace_201607\ContactUITest\bin\Traversal.jar
+
+-post-jar:
+
+build:
+
+BUILD SUCCESSFUL
+Total time: 5 seconds
+1759 KB/s (36028 bytes in 0.020s)
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact.traversal.Traversal
+
+INSTRUMENTATION_STATUS: stream=
+
+com.uitest.contact.traversal.Traversal:
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: test=testCall
+
+INSTRUMENTATION_STATUS_CODE: 1
+
+clickByName: 和通讯录
+
+snapshot
+
+clickById: iab_ib_more
+
+snapshot
+
+clickByName: 通话设置
+
+snapshot
+
+cnt: 4
+
+snapshot
+
+snapshot
+
+snapshot
+
+snapshot
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact.traversal.Traversal
+
+INSTRUMENTATION_STATUS: stream=.
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: test=testCall
+
+INSTRUMENTATION_STATUS_CODE: 0
+
+INSTRUMENTATION_STATUS: stream=
+
+Test results for WatcherResultPrinter=.
+
+Time: 17.549
+
+
+
+OK (1 test)
+
+
+
+
+
+INSTRUMENTATION_STATUS_CODE: -1
+
+Updated file C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
+Buildfile: C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 22.6.2
+ [checkenv] Installed at G:\adt-bundle-windows-x86_64-20140321\adt-bundle-windows-x86_64-20140321\sdk
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 19.0.3
+     [echo] Resolving Build Target for Traversal...
+[getuitarget] Project Target:   Android 4.4.2
+[getuitarget] API level:        19
+     [echo] ----------
+     [echo] Creating output directories if needed...
+
+-pre-compile:
+
+compile:
+    [javac] Compiling 1 source file to C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
+    [javac] ����: [options] Դֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ŀ��ֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ҫ�����й��ѹ�ʱѡ��ľ���, ��ʹ�� -Xlint:-options��
+    [javac] 3 ������
+
+-post-compile:
+
+-dex:
+      [dex] input: C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
+      [dex] Found Deleted Target File
+      [dex] Converting compiled files and external libraries into C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes.dex...
+
+-post-dex:
+
+-jar:
+      [jar] Building jar: C:\Users\Administrator\workspace_201607\ContactUITest\bin\Traversal.jar
+
+-post-jar:
+
+build:
+
+BUILD SUCCESSFUL
+Total time: 5 seconds
+2516 KB/s (36086 bytes in 0.014s)
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact.traversal.Traversal
+
+INSTRUMENTATION_STATUS: stream=
+
+com.uitest.contact.traversal.Traversal:
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: test=testCall
+
+INSTRUMENTATION_STATUS_CODE: 1
+
+clickByName: 和通讯录
+
+snapshot
+
+clickById: iab_ib_more
+
+snapshot
+
+clickByName: 通话设置
+
+snapshot
+
+cnt: 4
+
+snapshot
+
+snapshot
+
+snapshot
+
+snapshot
+
+snapshot
+
+snapshot
+
+snapshot
+
+snapshot
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact.traversal.Traversal
+
+INSTRUMENTATION_STATUS: stream=.
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: test=testCall
+
+INSTRUMENTATION_STATUS_CODE: 0
+
+INSTRUMENTATION_STATUS: stream=
+
+Test results for WatcherResultPrinter=.
+
+Time: 26.525
+
+
+
+OK (1 test)
+
+
+
+
+
+INSTRUMENTATION_STATUS_CODE: -1
+
+Updated file C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
+Buildfile: C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 22.6.2
+ [checkenv] Installed at G:\adt-bundle-windows-x86_64-20140321\adt-bundle-windows-x86_64-20140321\sdk
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 19.0.3
+     [echo] Resolving Build Target for Traversal...
+[getuitarget] Project Target:   Android 4.4.2
+[getuitarget] API level:        19
+     [echo] ----------
+     [echo] Creating output directories if needed...
+
+-pre-compile:
+
+compile:
+    [javac] Compiling 1 source file to C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
+    [javac] ����: [options] Դֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ŀ��ֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ҫ�����й��ѹ�ʱѡ��ľ���, ��ʹ�� -Xlint:-options��
+    [javac] 3 ������
+
+-post-compile:
+
+-dex:
+      [dex] input: C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
+      [dex] Found Deleted Target File
+      [dex] Converting compiled files and external libraries into C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes.dex...
+
+-post-dex:
+
+-jar:
+      [jar] Building jar: C:\Users\Administrator\workspace_201607\ContactUITest\bin\Traversal.jar
+
+-post-jar:
+
+build:
+
+BUILD SUCCESSFUL
+Total time: 5 seconds
+3217 KB/s (36243 bytes in 0.011s)
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact.traversal.Traversal
+
+INSTRUMENTATION_STATUS: stream=
+
+com.uitest.contact.traversal.Traversal:
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: test=testCall_002
+
+INSTRUMENTATION_STATUS_CODE: 1
+
+clickByName: 和通讯录
+
+snapshot
+
+clickByName: 拨号
+
+snapshot
+
+isExistById: btn_backspace
+
+elementExist: false
+
+clickByName: 拨号
+
+snapshot
+
+cnt: 13
+
+snapshot
+
+snapshot
+
+snapshot
+
+snapshot
+
+snapshot
+
+snapshot
+
+snapshot
+
+snapshot
+
+snapshot
+
+snapshot
+
+snapshot
+
+snapshot
+
+snapshot
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact.traversal.Traversal
+
+INSTRUMENTATION_STATUS: stream=.
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: test=testCall_002
+
+INSTRUMENTATION_STATUS_CODE: 0
+
+INSTRUMENTATION_STATUS: stream=
+
+Test results for WatcherResultPrinter=.
+
+Time: 47.073
+
+
+
+OK (1 test)
+
+
+
+
+
+INSTRUMENTATION_STATUS_CODE: -1
+
+Updated file C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
+Buildfile: C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 22.6.2
+ [checkenv] Installed at G:\adt-bundle-windows-x86_64-20140321\adt-bundle-windows-x86_64-20140321\sdk
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 19.0.3
+     [echo] Resolving Build Target for Traversal...
+[getuitarget] Project Target:   Android 4.4.2
+[getuitarget] API level:        19
+     [echo] ----------
+     [echo] Creating output directories if needed...
+
+-pre-compile:
+
+compile:
+    [javac] Compiling 1 source file to C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
+    [javac] ����: [options] Դֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ŀ��ֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ҫ�����й��ѹ�ʱѡ��ľ���, ��ʹ�� -Xlint:-options��
+    [javac] 3 ������
+
+-post-compile:
+
+-dex:
+      [dex] input: C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
+      [dex] Found Deleted Target File
+      [dex] Converting compiled files and external libraries into C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes.dex...
+
+-post-dex:
+
+-jar:
+      [jar] Building jar: C:\Users\Administrator\workspace_201607\ContactUITest\bin\Traversal.jar
+
+-post-jar:
+
+build:
+
+BUILD SUCCESSFUL
+Total time: 4 seconds
+2534 KB/s (36342 bytes in 0.014s)
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact.traversal.Traversal
+
+INSTRUMENTATION_STATUS: stream=
+
+com.uitest.contact.traversal.Traversal:
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: test=testCall_002
+
+INSTRUMENTATION_STATUS_CODE: 1
+
+clickByName: 和通讯录
+
+snapshot
+
+clickByName: 拨号
+
+snapshot
+
+isExistById: btn_backspace
+
+elementExist: false
+
+clickByName: 拨号
+
+snapshot
+
+cnt: 0
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact.traversal.Traversal
+
+INSTRUMENTATION_STATUS: stream=
+
+Error in testCall_002:
+
+java.lang.NullPointerException
+
+	at com.uitest.contact.traversal.Traversal.testCall_002(Traversal.java:114)
+
+	at java.lang.reflect.Method.invokeNative(Native Method)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.start(UiAutomatorTestRunner.java:160)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.run(UiAutomatorTestRunner.java:96)
+
+	at com.android.commands.uiautomator.RunTestCommand.run(RunTestCommand.java:91)
+
+	at com.android.commands.uiautomator.Launcher.main(Launcher.java:83)
+
+	at com.android.internal.os.RuntimeInit.nativeFinishInit(Native Method)
+
+	at com.android.internal.os.RuntimeInit.main(RuntimeInit.java:297)
+
+	at dalvik.system.NativeStart.main(Native Method)
+
+
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: stack=java.lang.NullPointerException
+
+	at com.uitest.contact.traversal.Traversal.testCall_002(Traversal.java:114)
+
+	at java.lang.reflect.Method.invokeNative(Native Method)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.start(UiAutomatorTestRunner.java:160)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.run(UiAutomatorTestRunner.java:96)
+
+	at com.android.commands.uiautomator.RunTestCommand.run(RunTestCommand.java:91)
+
+	at com.android.commands.uiautomator.Launcher.main(Launcher.java:83)
+
+	at com.android.internal.os.RuntimeInit.nativeFinishInit(Native Method)
+
+	at com.android.internal.os.RuntimeInit.main(RuntimeInit.java:297)
+
+	at dalvik.system.NativeStart.main(Native Method)
+
+
+
+INSTRUMENTATION_STATUS: test=testCall_002
+
+INSTRUMENTATION_STATUS_CODE: -1
+
+INSTRUMENTATION_STATUS: stream=
+
+Test results for WatcherResultPrinter=.E
+
+Time: 10.836
+
+
+
+FAILURES!!!
+
+Tests run: 1,  Failures: 0,  Errors: 1
+
+
+
+
+
+INSTRUMENTATION_STATUS_CODE: -1
+
+Updated file C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
+Buildfile: C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 22.6.2
+ [checkenv] Installed at G:\adt-bundle-windows-x86_64-20140321\adt-bundle-windows-x86_64-20140321\sdk
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 19.0.3
+     [echo] Resolving Build Target for Traversal...
+[getuitarget] Project Target:   Android 4.4.2
+[getuitarget] API level:        19
+     [echo] ----------
+     [echo] Creating output directories if needed...
+
+-pre-compile:
+
+compile:
+
+-post-compile:
+
+-dex:
+      [dex] input: C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
+      [dex] Found Deleted Target File
+      [dex] Converting compiled files and external libraries into C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes.dex...
+
+-post-dex:
+
+-jar:
+      [jar] Building jar: C:\Users\Administrator\workspace_201607\ContactUITest\bin\Traversal.jar
+
+-post-jar:
+
+build:
+
+BUILD SUCCESSFUL
+Total time: 3 seconds
+1613 KB/s (36342 bytes in 0.022s)
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact.traversal.Traversal
+
+INSTRUMENTATION_STATUS: stream=
+
+com.uitest.contact.traversal.Traversal:
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: test=testCall_002
+
+INSTRUMENTATION_STATUS_CODE: 1
+
+clickByName: 和通讯录
+
+snapshot
+
+clickByName: 拨号
+
+snapshot
+
+isExistById: btn_backspace
+
+elementExist: false
+
+clickByName: 拨号
+
+snapshot
+
+cnt: 13
+
+snapshot
+
+snapshot
+
+snapshot
+
+snapshot
+
+snapshot
+
+snapshot
+
+snapshot
+
+snapshot
+
+snapshot
+
+snapshot
+
+snapshot
+
+snapshot
+
+snapshot
+
+clickByName: 添加为联系人
+
+snapshot
+
+clickByName: 新建联系人
+
+snapshot
+
+clickByName: 完成
+
+snapshot
+
+clickByName: 取消
+
+snapshot
+
+clickByName: 确定
+
+snapshot
+
+clickByName: 发短信
+
+snapshot
+
+clickByName: 发送
+
+snapshot
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact.traversal.Traversal
+
+INSTRUMENTATION_STATUS: stream=.
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: test=testCall_002
+
+INSTRUMENTATION_STATUS_CODE: 0
+
+INSTRUMENTATION_STATUS: stream=
+
+Test results for WatcherResultPrinter=.
+
+Time: 76.464
+
+
+
+OK (1 test)
+
+
+
+
+
+INSTRUMENTATION_STATUS_CODE: -1
+
+Updated file C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
+Buildfile: C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 22.6.2
+ [checkenv] Installed at G:\adt-bundle-windows-x86_64-20140321\adt-bundle-windows-x86_64-20140321\sdk
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 19.0.3
+     [echo] Resolving Build Target for Traversal...
+[getuitarget] Project Target:   Android 4.4.2
+[getuitarget] API level:        19
+     [echo] ----------
+     [echo] Creating output directories if needed...
+
+-pre-compile:
+
+compile:
+    [javac] Compiling 1 source file to C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
+    [javac] ����: [options] Դֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ŀ��ֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ҫ�����й��ѹ�ʱѡ��ľ���, ��ʹ�� -Xlint:-options��
+    [javac] 3 ������
+
+-post-compile:
+
+-dex:
+      [dex] input: C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
+      [dex] Found Deleted Target File
+      [dex] Converting compiled files and external libraries into C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes.dex...
+
+-post-dex:
+
+-jar:
+      [jar] Building jar: C:\Users\Administrator\workspace_201607\ContactUITest\bin\Traversal.jar
+
+-post-jar:
+
+build:
+
+BUILD SUCCESSFUL
+Total time: 5 seconds
+1774 KB/s (36342 bytes in 0.020s)
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact.traversal.Traversal
+
+INSTRUMENTATION_STATUS: stream=
+
+com.uitest.contact.traversal.Traversal:
+
+INSTRUMENTATION_STATUS: numtests=3
+
+INSTRUMENTATION_STATUS: test=testCall_001
+
+INSTRUMENTATION_STATUS_CODE: 1
+
+clickByName: 和通讯录
+
+snapshot
+
+clickByName: 拨号
+
+snapshot
+
+clickById: iab_ib_more
+
+snapshot
+
+clickByName: 清空通话记录
+
+snapshot
+
+clickById: dialog_btn_negative
+
+snapshot
+
+clickById: iab_ib_more
+
+snapshot
+
+clickByName: 清空通话记录
+
+snapshot
+
+clickById: dialog_btn_positive
+
+snapshot
+
+clickById: iab_ib_more
+
+snapshot
+
+clickByName: 未接来电
+
+snapshot
+
+clickById: iab_ib_more
+
+snapshot
+
+clickByName: 通话设置
+
+snapshot
+
+cnt: 4
+
+snapshot
+
+snapshot
+
+snapshot
+
+snapshot
+
+snapshot
+
+snapshot
+
+snapshot
+
+snapshot
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact.traversal.Traversal
+
+INSTRUMENTATION_STATUS: stream=.
+
+INSTRUMENTATION_STATUS: numtests=3
+
+INSTRUMENTATION_STATUS: test=testCall_001
+
+INSTRUMENTATION_STATUS_CODE: 0
+
+INSTRUMENTATION_STATUS: current=2
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact.traversal.Traversal
+
+INSTRUMENTATION_STATUS: stream=
+
+INSTRUMENTATION_STATUS: numtests=3
+
+INSTRUMENTATION_STATUS: test=testCall_002
+
+INSTRUMENTATION_STATUS_CODE: 1
+
+clickByName: 和通讯录
+
+snapshot
+
+clickByName: 拨号
+
+snapshot
+
+isExistById: btn_backspace
+
+elementExist: true
+
+cnt: 13
+
+snapshot
+
+snapshot
+
+snapshot
+
+snapshot
+
+snapshot
+
+snapshot
+
+snapshot
+
+snapshot
+
+snapshot
+
+snapshot
+
+snapshot
+
+snapshot
+
+snapshot
+
+clickByName: 添加为联系人
+
+snapshot
+
+clickByName: 新建联系人
+
+snapshot
+
+clickByName: 完成
+
+snapshot
+
+clickByName: 取消
+
+snapshot
+
+clickByName: 确定
+
+snapshot
+
+clickByName: 发短信
+
+snapshot
+
+clickByName: 发送
+
+snapshot
+
+INSTRUMENTATION_STATUS: current=2
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact.traversal.Traversal
+
+INSTRUMENTATION_STATUS: stream=.
+
+INSTRUMENTATION_STATUS: numtests=3
+
+INSTRUMENTATION_STATUS: test=testCall_002
+
+INSTRUMENTATION_STATUS_CODE: 0
+
+INSTRUMENTATION_STATUS: current=3
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact.traversal.Traversal
+
+INSTRUMENTATION_STATUS: stream=
+
+INSTRUMENTATION_STATUS: numtests=3
+
+INSTRUMENTATION_STATUS: test=testTraversal
+
+INSTRUMENTATION_STATUS_CODE: 1
+
+clickByName: 和通讯录
+
+snapshot
+
+cnt: 2
+
+snapshot
+
+snapshot
+
+INSTRUMENTATION_STATUS: current=3
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact.traversal.Traversal
+
+INSTRUMENTATION_STATUS: stream=.
+
+INSTRUMENTATION_STATUS: numtests=3
+
+INSTRUMENTATION_STATUS: test=testTraversal
+
+INSTRUMENTATION_STATUS_CODE: 0
+
+INSTRUMENTATION_STATUS: stream=
+
+Test results for WatcherResultPrinter=...
+
+Time: 136.256
+
+
+
+OK (3 tests)
+
+
+
+
+
+INSTRUMENTATION_STATUS_CODE: -1
+
