@@ -38,6 +38,16 @@ public class DriverManager{
 		System.out.println("[ doing ] swipeToRight ");
 	}
 	
+	public static void swipe(){
+		System.out.println("swipe");
+		int width = UiDevice.getInstance().getDisplayWidth();
+		int height = UiDevice.getInstance().getDisplayHeight();
+		UiautomatorAssistant.UiAutomationLog("swipe");
+		UiDevice.getInstance().swipe(width / 2, height * 4 / 5, width, height * 4 / 5, 15);
+		System.out.println("[ doing ] swipe ");
+	}
+	
+	
 	/**
 	 * 左滑
 	 */
@@ -79,20 +89,16 @@ public class DriverManager{
 	/**
 	 * 解锁唤醒
 	 */
-	public void wakeAndUnlock() {
+	public static void wakeAndUnlock() {
 		System.out.println("wakeAndUnlock");
 		try {
-			System.out.println("isScreenOn: " + UiDevice.getInstance().isScreenOn());
-			if (!UiDevice.getInstance().isScreenOn()) {
+			boolean bl =  UiDevice.getInstance().isScreenOn();
+			System.out.println("isScreenOn: " + bl);
+			if (!bl) {
 				System.out.println("wakeUp");
 				UiDevice.getInstance().wakeUp();
-				try {
-					UiDevice.getInstance().wait(500);
-				} catch (InterruptedException e) {
-					// TODO Auto-generated catch block
-					e.printStackTrace();
-				}
-				swipeToRight();
+				
+				swipe();
 			}
 			// 点击
 			UiDevice.getInstance().pressHome();

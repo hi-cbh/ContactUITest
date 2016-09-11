@@ -7940,3 +7940,5248 @@ OK (3 tests)
 
 INSTRUMENTATION_STATUS_CODE: -1
 
+Updated file C:\Users\Administrator\workspace_github\ContactUITest\build.xml
+Buildfile: C:\Users\Administrator\workspace_github\ContactUITest\build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 22.6.2
+ [checkenv] Installed at F:\android\adt-bundle-windows-x86_64-20140321\sdk
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 21.0.0
+     [echo] Resolving Build Target for ContactV4_2...
+[getuitarget] Project Target:   Android 5.0
+[getuitarget] API level:        21
+     [echo] ----------
+     [echo] Creating output directories if needed...
+    [mkdir] Created dir: C:\Users\Administrator\workspace_github\ContactUITest\bin\classes
+
+-pre-compile:
+
+compile:
+    [javac] Compiling 41 source files to C:\Users\Administrator\workspace_github\ContactUITest\bin\classes
+    [javac] ����: [options] Դֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ŀ��ֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ҫ�����й��ѹ�ʱѡ��ľ���, ��ʹ�� -Xlint:-options��
+    [javac] C:\Users\Administrator\workspace_github\ContactUITest\src\com\uitest\contact\testcase\ContactV4_2.java:4: ����: �����org.junit������
+    [javac] import org.junit.Test;
+    [javac]                 ^
+    [javac] C:\Users\Administrator\workspace_github\ContactUITest\src\com\uitest\contact\testcase\ContactV4_2.java:53: ����: �Ҳ�������
+    [javac] 		@Test
+    [javac] 		 ^
+    [javac]   ����:   �� Test
+    [javac]   λ��: �� ContactV4_2
+    [javac] ע: C:\Users\Administrator\workspace_github\ContactUITest\src\com\beetstra\jutf7\CharsetProvider.javaʹ����δ�����򲻰�ȫ�Ĳ�����
+    [javac] ע: �й���ϸ��Ϣ, ��ʹ�� -Xlint:unchecked ���±��롣
+    [javac] 2 ������
+    [javac] 3 ������
+
+BUILD FAILED
+F:\android\adt-bundle-windows-x86_64-20140321\sdk\tools\ant\uibuild.xml:183: Compile failed; see the compiler error output for details.
+
+Total time: 5 seconds
+cannot stat 'C:\Users\Administrator\workspace_github\ContactUITest\bin\ContactV4_2.jar': No such file or directory
+Error: /data/local/tmp/ContactV4_2.jar does not exist
+
+Usage: uiautomator <subcommand> [options]
+
+
+
+Available subcommands:
+
+
+
+help: displays help message
+
+
+
+runtest: executes UI automation tests
+
+    runtest <class spec> [options]
+
+    <class spec>: <JARS> < -c <CLASSES> | -e class <CLASSES> >
+
+      <JARS>: a list of jar files containing test classes and dependencies. If
+
+        the path is relative, it's assumed to be under /data/local/tmp. Use
+
+        absolute path if the file is elsewhere. Multiple files can be
+
+        specified, separated by space.
+
+      <CLASSES>: a list of test class names to run, separated by comma. To
+
+        a single method, use TestClass#testMethod format. The -e or -c option
+
+        may be repeated. This option is not required and if not provided then
+
+        all the tests in provided jars will be run automatically.
+
+    options:
+
+      --nohup: trap SIG_HUP, so test won't terminate even if parent process
+
+               is terminated, e.g. USB is disconnected.
+
+      -e debug [true|false]: wait for debugger to connect before starting.
+
+      -e runner [CLASS]: use specified test runner class instead. If
+
+        unspecified, framework default runner will be used.
+
+      -e <NAME> <VALUE>: other name-value pairs to be passed to test classes.
+
+        May be repeated.
+
+      -e outputFormat simple | -s: enabled less verbose JUnit style output.
+
+
+
+dump: creates an XML dump of current UI hierarchy
+
+    dump [--verbose][file]
+
+      [--compressed]: dumps compressed layout information.
+
+      [file]: the location where the dumped XML should be stored, default is
+
+      /storage/emulated/legacy/window_dump.xml
+
+
+
+events: prints out accessibility events until terminated
+
+
+
+Updated file C:\Users\Administrator\workspace_github\ContactUITest\build.xml
+Buildfile: C:\Users\Administrator\workspace_github\ContactUITest\build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 22.6.2
+ [checkenv] Installed at F:\android\adt-bundle-windows-x86_64-20140321\sdk
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 21.0.0
+     [echo] Resolving Build Target for ContactV4_2...
+[getuitarget] Project Target:   Android 5.0
+[getuitarget] API level:        21
+     [echo] ----------
+     [echo] Creating output directories if needed...
+
+-pre-compile:
+
+compile:
+    [javac] Compiling 41 source files to C:\Users\Administrator\workspace_github\ContactUITest\bin\classes
+    [javac] ����: [options] Դֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ŀ��ֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ҫ�����й��ѹ�ʱѡ��ľ���, ��ʹ�� -Xlint:-options��
+    [javac] ע: C:\Users\Administrator\workspace_github\ContactUITest\src\com\beetstra\jutf7\CharsetProvider.javaʹ����δ�����򲻰�ȫ�Ĳ�����
+    [javac] ע: �й���ϸ��Ϣ, ��ʹ�� -Xlint:unchecked ���±��롣
+    [javac] 3 ������
+
+-post-compile:
+
+-dex:
+      [dex] input: C:\Users\Administrator\workspace_github\ContactUITest\bin\classes
+      [dex] Converting compiled files and external libraries into C:\Users\Administrator\workspace_github\ContactUITest\bin\classes.dex...
+
+-post-dex:
+
+-jar:
+      [jar] Building jar: C:\Users\Administrator\workspace_github\ContactUITest\bin\ContactV4_2.jar
+
+-post-jar:
+
+build:
+
+BUILD SUCCESSFUL
+Total time: 6 seconds
+1882 KB/s (36626 bytes in 0.019s)
+run PId: 23242
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact.testcase.ContactV4_2
+
+INSTRUMENTATION_STATUS: stream=
+
+com.uitest.contact.testcase.ContactV4_2:
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: test=testCase_other_001
+
+INSTRUMENTATION_STATUS_CODE: 1
+
+startTest: testCase_other_001(com.uitest.contact.testcase.ContactV4_2)
+
+[start] findAndOpenApp和通讯录
+
+isExistByName: 应用程序
+
+elementExist: true
+
+clickByName: 应用程序
+
+drag
+
+[ doing ] swipeToRight 
+
+click 和通讯录
+
+[start] back
+
+isExistById: tab_bar
+
+elementExist: true
+
+isExistById: iab_view
+
+elementExist: true
+
+isExistById: user_info_layout
+
+elementExist: false
+
+rootFloor
+
+clickById: tab_contacts
+
+clickById: tab_contacts
+
+[ end ] back
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+isExistById: iab_title
+
+elementExist: true
+
+clickById: tab_call
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+isExistById: iab_title
+
+elementExist: true
+
+clickById: tab_mms
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+Updated file C:\Users\Administrator\workspace_github\ContactUITest\build.xml
+Buildfile: C:\Users\Administrator\workspace_github\ContactUITest\build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 22.6.2
+ [checkenv] Installed at F:\android\adt-bundle-windows-x86_64-20140321\sdk
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 21.0.0
+     [echo] Resolving Build Target for ContactV4_2...
+[getuitarget] Project Target:   Android 5.0
+[getuitarget] API level:        21
+     [echo] ----------
+     [echo] Creating output directories if needed...
+
+-pre-compile:
+
+compile:
+    [javac] Compiling 3 source files to C:\Users\Administrator\workspace_github\ContactUITest\bin\classes
+    [javac] ����: [options] Դֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ŀ��ֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ҫ�����й��ѹ�ʱѡ��ľ���, ��ʹ�� -Xlint:-options��
+    [javac] 3 ������
+
+-post-compile:
+
+-dex:
+      [dex] input: C:\Users\Administrator\workspace_github\ContactUITest\bin\classes
+      [dex] Found Deleted Target File
+      [dex] Converting compiled files and external libraries into C:\Users\Administrator\workspace_github\ContactUITest\bin\classes.dex...
+
+-post-dex:
+
+-jar:
+      [jar] Building jar: C:\Users\Administrator\workspace_github\ContactUITest\bin\ContactV4_2.jar
+
+-post-jar:
+
+build:
+
+BUILD SUCCESSFUL
+Total time: 5 seconds
+2293 KB/s (36631 bytes in 0.015s)
+run PId: 30082
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact.testcase.ContactV4_2
+
+INSTRUMENTATION_STATUS: stream=
+
+com.uitest.contact.testcase.ContactV4_2:
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: test=testCase_other_001
+
+INSTRUMENTATION_STATUS_CODE: 1
+
+startTest: testCase_other_001(com.uitest.contact.testcase.ContactV4_2)
+
+wakeAndUnlock
+
+isScreenOn: false
+
+wakeUp
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact.testcase.ContactV4_2
+
+INSTRUMENTATION_STATUS: stream=
+
+Error in testCase_other_001:
+
+java.lang.IllegalMonitorStateException: object not locked by thread before wait()
+
+	at java.lang.Object.wait(Native Method)
+
+	at java.lang.Object.wait(Object.java:401)
+
+	at com.uitest.uiautomatorUtil.DriverManager.wakeAndUnlock(DriverManager.java:90)
+
+	at com.uitest.util.TestContactBase.openContact(TestContactBase.java:25)
+
+	at com.uitest.contact.testcase.ContactV4_2.setUp(ContactV4_2.java:31)
+
+	at com.uitest.uiautomatorUtil.TestListenerManager.run(TestListenerManager.java:87)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.start(UiAutomatorTestRunner.java:160)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.run(UiAutomatorTestRunner.java:96)
+
+	at com.android.commands.uiautomator.RunTestCommand.run(RunTestCommand.java:91)
+
+	at com.android.commands.uiautomator.Launcher.main(Launcher.java:83)
+
+	at com.android.internal.os.RuntimeInit.nativeFinishInit(Native Method)
+
+	at com.android.internal.os.RuntimeInit.main(RuntimeInit.java:297)
+
+	at dalvik.system.NativeStart.main(Native Method)
+
+
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: stack=java.lang.IllegalMonitorStateException: object not locked by thread before wait()
+
+	at java.lang.Object.wait(Native Method)
+
+	at java.lang.Object.wait(Object.java:401)
+
+	at com.uitest.uiautomatorUtil.DriverManager.wakeAndUnlock(DriverManager.java:90)
+
+	at com.uitest.util.TestContactBase.openContact(TestContactBase.java:25)
+
+	at com.uitest.contact.testcase.ContactV4_2.setUp(ContactV4_2.java:31)
+
+	at com.uitest.uiautomatorUtil.TestListenerManager.run(TestListenerManager.java:87)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.start(UiAutomatorTestRunner.java:160)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.run(UiAutomatorTestRunner.java:96)
+
+	at com.android.commands.uiautomator.RunTestCommand.run(RunTestCommand.java:91)
+
+	at com.android.commands.uiautomator.Launcher.main(Launcher.java:83)
+
+	at com.android.internal.os.RuntimeInit.nativeFinishInit(Native Method)
+
+	at com.android.internal.os.RuntimeInit.main(RuntimeInit.java:297)
+
+	at dalvik.system.NativeStart.main(Native Method)
+
+
+
+INSTRUMENTATION_STATUS: test=testCase_other_001
+
+INSTRUMENTATION_STATUS_CODE: -1
+
+INSTRUMENTATION_STATUS: stream=
+
+Test results for WatcherResultPrinter=.E
+
+Time: 2.678
+
+
+
+FAILURES!!!
+
+Tests run: 1,  Failures: 0,  Errors: 1
+
+
+
+
+
+INSTRUMENTATION_STATUS_CODE: -1
+
+Updated file C:\Users\Administrator\workspace_github\ContactUITest\build.xml
+Buildfile: C:\Users\Administrator\workspace_github\ContactUITest\build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 22.6.2
+ [checkenv] Installed at F:\android\adt-bundle-windows-x86_64-20140321\sdk
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 21.0.0
+     [echo] Resolving Build Target for ContactV4_2...
+[getuitarget] Project Target:   Android 5.0
+[getuitarget] API level:        21
+     [echo] ----------
+     [echo] Creating output directories if needed...
+
+-pre-compile:
+
+compile:
+    [javac] Compiling 1 source file to C:\Users\Administrator\workspace_github\ContactUITest\bin\classes
+    [javac] ����: [options] Դֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ŀ��ֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ҫ�����й��ѹ�ʱѡ��ľ���, ��ʹ�� -Xlint:-options��
+    [javac] 3 ������
+
+-post-compile:
+
+-dex:
+      [dex] input: C:\Users\Administrator\workspace_github\ContactUITest\bin\classes
+      [dex] Found Deleted Target File
+      [dex] Converting compiled files and external libraries into C:\Users\Administrator\workspace_github\ContactUITest\bin\classes.dex...
+
+-post-dex:
+
+-jar:
+      [jar] Building jar: C:\Users\Administrator\workspace_github\ContactUITest\bin\ContactV4_2.jar
+
+-post-jar:
+
+build:
+
+BUILD SUCCESSFUL
+Total time: 3 seconds
+2290 KB/s (36585 bytes in 0.015s)
+run PId: 30224
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact.testcase.ContactV4_2
+
+INSTRUMENTATION_STATUS: stream=
+
+com.uitest.contact.testcase.ContactV4_2:
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: test=testCase_other_001
+
+INSTRUMENTATION_STATUS_CODE: 1
+
+startTest: testCase_other_001(com.uitest.contact.testcase.ContactV4_2)
+
+wakeAndUnlock
+
+isScreenOn: false
+
+wakeUp
+
+drag
+
+[ doing ] swipeToRight 
+
+[start] findAndOpenApp和通讯录
+
+isExistByName: 应用程序
+
+elementExist: false
+
+isExistByName: 应用程序
+
+elementExist: false
+
+isExistByName: 应用程序
+
+elementExist: false
+
+isExistByName: 应用程序
+
+elementExist: false
+
+isExistByName: 应用程序
+
+elementExist: false
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+UiObject name: 和通讯录 not exists
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact.testcase.ContactV4_2
+
+INSTRUMENTATION_STATUS: stream=
+
+Failure in testCase_other_001:
+
+junit.framework.ComparisonFailure: openContact error  expected:<[com.chinamobile.contacts.im]> but was:<[android]>
+
+	at com.uitest.util.TestContactBase.openContact(TestContactBase.java:30)
+
+	at com.uitest.contact.testcase.ContactV4_2.setUp(ContactV4_2.java:31)
+
+	at com.uitest.uiautomatorUtil.TestListenerManager.run(TestListenerManager.java:87)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.start(UiAutomatorTestRunner.java:160)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.run(UiAutomatorTestRunner.java:96)
+
+	at com.android.commands.uiautomator.RunTestCommand.run(RunTestCommand.java:91)
+
+	at com.android.commands.uiautomator.Launcher.main(Launcher.java:83)
+
+	at com.android.internal.os.RuntimeInit.nativeFinishInit(Native Method)
+
+	at com.android.internal.os.RuntimeInit.main(RuntimeInit.java:297)
+
+	at dalvik.system.NativeStart.main(Native Method)
+
+
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: stack=junit.framework.ComparisonFailure: openContact error  expected:<[com.chinamobile.contacts.im]> but was:<[android]>
+
+	at com.uitest.util.TestContactBase.openContact(TestContactBase.java:30)
+
+	at com.uitest.contact.testcase.ContactV4_2.setUp(ContactV4_2.java:31)
+
+	at com.uitest.uiautomatorUtil.TestListenerManager.run(TestListenerManager.java:87)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.start(UiAutomatorTestRunner.java:160)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.run(UiAutomatorTestRunner.java:96)
+
+	at com.android.commands.uiautomator.RunTestCommand.run(RunTestCommand.java:91)
+
+	at com.android.commands.uiautomator.Launcher.main(Launcher.java:83)
+
+	at com.android.internal.os.RuntimeInit.nativeFinishInit(Native Method)
+
+	at com.android.internal.os.RuntimeInit.main(RuntimeInit.java:297)
+
+	at dalvik.system.NativeStart.main(Native Method)
+
+
+
+INSTRUMENTATION_STATUS: test=testCase_other_001
+
+INSTRUMENTATION_STATUS_CODE: -2
+
+INSTRUMENTATION_STATUS: stream=
+
+Test results for WatcherResultPrinter=.F
+
+Time: 15.398
+
+
+
+FAILURES!!!
+
+Tests run: 1,  Failures: 1,  Errors: 0
+
+
+
+
+
+INSTRUMENTATION_STATUS_CODE: -1
+
+Updated file C:\Users\Administrator\workspace_github\ContactUITest\build.xml
+Buildfile: C:\Users\Administrator\workspace_github\ContactUITest\build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 22.6.2
+ [checkenv] Installed at F:\android\adt-bundle-windows-x86_64-20140321\sdk
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 21.0.0
+     [echo] Resolving Build Target for ContactV4_2...
+[getuitarget] Project Target:   Android 5.0
+[getuitarget] API level:        21
+     [echo] ----------
+     [echo] Creating output directories if needed...
+
+-pre-compile:
+
+compile:
+    [javac] Compiling 1 source file to C:\Users\Administrator\workspace_github\ContactUITest\bin\classes
+    [javac] ����: [options] Դֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ŀ��ֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ҫ�����й��ѹ�ʱѡ��ľ���, ��ʹ�� -Xlint:-options��
+    [javac] 3 ������
+
+-post-compile:
+
+-dex:
+      [dex] input: C:\Users\Administrator\workspace_github\ContactUITest\bin\classes
+      [dex] Found Deleted Target File
+      [dex] Converting compiled files and external libraries into C:\Users\Administrator\workspace_github\ContactUITest\bin\classes.dex...
+
+-post-dex:
+
+-jar:
+      [jar] Building jar: C:\Users\Administrator\workspace_github\ContactUITest\bin\ContactV4_2.jar
+
+-post-jar:
+
+build:
+
+BUILD SUCCESSFUL
+Total time: 3 seconds
+2291 KB/s (36608 bytes in 0.015s)
+run PId: 31177
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact.testcase.ContactV4_2
+
+INSTRUMENTATION_STATUS: stream=
+
+com.uitest.contact.testcase.ContactV4_2:
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: test=testCase_other_001
+
+INSTRUMENTATION_STATUS_CODE: 1
+
+startTest: testCase_other_001(com.uitest.contact.testcase.ContactV4_2)
+
+wakeAndUnlock
+
+isScreenOn: false
+
+wakeUp
+
+swipe
+
+[ doing ] swipe 
+
+[start] findAndOpenApp和通讯录
+
+isExistByName: 应用程序
+
+elementExist: false
+
+isExistByName: 应用程序
+
+elementExist: false
+
+isExistByName: 应用程序
+
+elementExist: false
+
+isExistByName: 应用程序
+
+elementExist: false
+
+isExistByName: 应用程序
+
+elementExist: false
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+UiObject name: 和通讯录 not exists
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact.testcase.ContactV4_2
+
+INSTRUMENTATION_STATUS: stream=
+
+Failure in testCase_other_001:
+
+junit.framework.ComparisonFailure: openContact error  expected:<[com.chinamobile.contacts.im]> but was:<[android]>
+
+	at com.uitest.util.TestContactBase.openContact(TestContactBase.java:30)
+
+	at com.uitest.contact.testcase.ContactV4_2.setUp(ContactV4_2.java:31)
+
+	at com.uitest.uiautomatorUtil.TestListenerManager.run(TestListenerManager.java:87)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.start(UiAutomatorTestRunner.java:160)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.run(UiAutomatorTestRunner.java:96)
+
+	at com.android.commands.uiautomator.RunTestCommand.run(RunTestCommand.java:91)
+
+	at com.android.commands.uiautomator.Launcher.main(Launcher.java:83)
+
+	at com.android.internal.os.RuntimeInit.nativeFinishInit(Native Method)
+
+	at com.android.internal.os.RuntimeInit.main(RuntimeInit.java:297)
+
+	at dalvik.system.NativeStart.main(Native Method)
+
+
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: stack=junit.framework.ComparisonFailure: openContact error  expected:<[com.chinamobile.contacts.im]> but was:<[android]>
+
+	at com.uitest.util.TestContactBase.openContact(TestContactBase.java:30)
+
+	at com.uitest.contact.testcase.ContactV4_2.setUp(ContactV4_2.java:31)
+
+	at com.uitest.uiautomatorUtil.TestListenerManager.run(TestListenerManager.java:87)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.start(UiAutomatorTestRunner.java:160)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.run(UiAutomatorTestRunner.java:96)
+
+	at com.android.commands.uiautomator.RunTestCommand.run(RunTestCommand.java:91)
+
+	at com.android.commands.uiautomator.Launcher.main(Launcher.java:83)
+
+	at com.android.internal.os.RuntimeInit.nativeFinishInit(Native Method)
+
+	at com.android.internal.os.RuntimeInit.main(RuntimeInit.java:297)
+
+	at dalvik.system.NativeStart.main(Native Method)
+
+
+
+INSTRUMENTATION_STATUS: test=testCase_other_001
+
+INSTRUMENTATION_STATUS_CODE: -2
+
+INSTRUMENTATION_STATUS: stream=
+
+Test results for WatcherResultPrinter=.F
+
+Time: 14.793
+
+
+
+FAILURES!!!
+
+Tests run: 1,  Failures: 1,  Errors: 0
+
+
+
+
+
+INSTRUMENTATION_STATUS_CODE: -1
+
+Updated file C:\Users\Administrator\workspace_github\ContactUITest\build.xml
+Buildfile: C:\Users\Administrator\workspace_github\ContactUITest\build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 22.6.2
+ [checkenv] Installed at F:\android\adt-bundle-windows-x86_64-20140321\sdk
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 21.0.0
+     [echo] Resolving Build Target for ContactV4_2...
+[getuitarget] Project Target:   Android 5.0
+[getuitarget] API level:        21
+     [echo] ----------
+     [echo] Creating output directories if needed...
+
+-pre-compile:
+
+compile:
+    [javac] Compiling 1 source file to C:\Users\Administrator\workspace_github\ContactUITest\bin\classes
+    [javac] ����: [options] Դֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ŀ��ֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ҫ�����й��ѹ�ʱѡ��ľ���, ��ʹ�� -Xlint:-options��
+    [javac] 3 ������
+
+-post-compile:
+
+-dex:
+      [dex] input: C:\Users\Administrator\workspace_github\ContactUITest\bin\classes
+      [dex] Found Deleted Target File
+      [dex] Converting compiled files and external libraries into C:\Users\Administrator\workspace_github\ContactUITest\bin\classes.dex...
+
+-post-dex:
+
+-jar:
+      [jar] Building jar: C:\Users\Administrator\workspace_github\ContactUITest\bin\ContactV4_2.jar
+
+-post-jar:
+
+build:
+
+BUILD SUCCESSFUL
+Total time: 3 seconds
+1145 KB/s (36609 bytes in 0.031s)
+run PId: 31383
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact.testcase.ContactV4_2
+
+INSTRUMENTATION_STATUS: stream=
+
+com.uitest.contact.testcase.ContactV4_2:
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: test=testCase_other_001
+
+INSTRUMENTATION_STATUS_CODE: 1
+
+startTest: testCase_other_001(com.uitest.contact.testcase.ContactV4_2)
+
+wakeAndUnlock
+
+isScreenOn: false
+
+wakeUp
+
+swipe
+
+[ doing ] swipe 
+
+[start] findAndOpenApp和通讯录
+
+isExistByName: 应用程序
+
+elementExist: false
+
+isExistByName: 应用程序
+
+elementExist: false
+
+isExistByName: 应用程序
+
+elementExist: false
+
+isExistByName: 应用程序
+
+elementExist: false
+
+isExistByName: 应用程序
+
+elementExist: false
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+UiObject name: 和通讯录 not exists
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact.testcase.ContactV4_2
+
+INSTRUMENTATION_STATUS: stream=
+
+Failure in testCase_other_001:
+
+junit.framework.ComparisonFailure: openContact error  expected:<com.[chinamobile.contacts.im]> but was:<com.[sec.android.app.launcher]>
+
+	at com.uitest.util.TestContactBase.openContact(TestContactBase.java:30)
+
+	at com.uitest.contact.testcase.ContactV4_2.setUp(ContactV4_2.java:31)
+
+	at com.uitest.uiautomatorUtil.TestListenerManager.run(TestListenerManager.java:87)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.start(UiAutomatorTestRunner.java:160)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.run(UiAutomatorTestRunner.java:96)
+
+	at com.android.commands.uiautomator.RunTestCommand.run(RunTestCommand.java:91)
+
+	at com.android.commands.uiautomator.Launcher.main(Launcher.java:83)
+
+	at com.android.internal.os.RuntimeInit.nativeFinishInit(Native Method)
+
+	at com.android.internal.os.RuntimeInit.main(RuntimeInit.java:297)
+
+	at dalvik.system.NativeStart.main(Native Method)
+
+
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: stack=junit.framework.ComparisonFailure: openContact error  expected:<com.[chinamobile.contacts.im]> but was:<com.[sec.android.app.launcher]>
+
+	at com.uitest.util.TestContactBase.openContact(TestContactBase.java:30)
+
+	at com.uitest.contact.testcase.ContactV4_2.setUp(ContactV4_2.java:31)
+
+	at com.uitest.uiautomatorUtil.TestListenerManager.run(TestListenerManager.java:87)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.start(UiAutomatorTestRunner.java:160)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.run(UiAutomatorTestRunner.java:96)
+
+	at com.android.commands.uiautomator.RunTestCommand.run(RunTestCommand.java:91)
+
+	at com.android.commands.uiautomator.Launcher.main(Launcher.java:83)
+
+	at com.android.internal.os.RuntimeInit.nativeFinishInit(Native Method)
+
+	at com.android.internal.os.RuntimeInit.main(RuntimeInit.java:297)
+
+	at dalvik.system.NativeStart.main(Native Method)
+
+
+
+INSTRUMENTATION_STATUS: test=testCase_other_001
+
+INSTRUMENTATION_STATUS_CODE: -2
+
+INSTRUMENTATION_STATUS: stream=
+
+Test results for WatcherResultPrinter=.F
+
+Time: 19.314
+
+
+
+FAILURES!!!
+
+Tests run: 1,  Failures: 1,  Errors: 0
+
+
+
+
+
+INSTRUMENTATION_STATUS_CODE: -1
+
+Updated file C:\Users\Administrator\workspace_github\ContactUITest\build.xml
+Buildfile: C:\Users\Administrator\workspace_github\ContactUITest\build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 22.6.2
+ [checkenv] Installed at F:\android\adt-bundle-windows-x86_64-20140321\sdk
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 21.0.0
+     [echo] Resolving Build Target for ContactV4_2...
+[getuitarget] Project Target:   Android 5.0
+[getuitarget] API level:        21
+     [echo] ----------
+     [echo] Creating output directories if needed...
+
+-pre-compile:
+
+compile:
+    [javac] Compiling 1 source file to C:\Users\Administrator\workspace_github\ContactUITest\bin\classes
+    [javac] ����: [options] Դֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ŀ��ֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ҫ�����й��ѹ�ʱѡ��ľ���, ��ʹ�� -Xlint:-options��
+    [javac] 3 ������
+
+-post-compile:
+
+-dex:
+      [dex] input: C:\Users\Administrator\workspace_github\ContactUITest\bin\classes
+      [dex] Found Deleted Target File
+      [dex] Converting compiled files and external libraries into C:\Users\Administrator\workspace_github\ContactUITest\bin\classes.dex...
+
+-post-dex:
+
+-jar:
+      [jar] Building jar: C:\Users\Administrator\workspace_github\ContactUITest\bin\ContactV4_2.jar
+
+-post-jar:
+
+build:
+
+BUILD SUCCESSFUL
+Total time: 4 seconds
+2291 KB/s (36610 bytes in 0.015s)
+run PId: 31900
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact.testcase.ContactV4_2
+
+INSTRUMENTATION_STATUS: stream=
+
+com.uitest.contact.testcase.ContactV4_2:
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: test=testCase_other_001
+
+INSTRUMENTATION_STATUS_CODE: 1
+
+startTest: testCase_other_001(com.uitest.contact.testcase.ContactV4_2)
+
+wakeAndUnlock
+
+isScreenOn: true
+
+[start] findAndOpenApp和通讯录
+
+isExistByName: 应用程序
+
+elementExist: true
+
+clickByName: 应用程序
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+UiObject name: 和通讯录 not exists
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact.testcase.ContactV4_2
+
+INSTRUMENTATION_STATUS: stream=
+
+Failure in testCase_other_001:
+
+junit.framework.ComparisonFailure: openContact error  expected:<[com.chinamobile.contacts.im]> but was:<[android]>
+
+	at com.uitest.util.TestContactBase.openContact(TestContactBase.java:30)
+
+	at com.uitest.contact.testcase.ContactV4_2.setUp(ContactV4_2.java:31)
+
+	at com.uitest.uiautomatorUtil.TestListenerManager.run(TestListenerManager.java:87)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.start(UiAutomatorTestRunner.java:160)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.run(UiAutomatorTestRunner.java:96)
+
+	at com.android.commands.uiautomator.RunTestCommand.run(RunTestCommand.java:91)
+
+	at com.android.commands.uiautomator.Launcher.main(Launcher.java:83)
+
+	at com.android.internal.os.RuntimeInit.nativeFinishInit(Native Method)
+
+	at com.android.internal.os.RuntimeInit.main(RuntimeInit.java:297)
+
+	at dalvik.system.NativeStart.main(Native Method)
+
+
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: stack=junit.framework.ComparisonFailure: openContact error  expected:<[com.chinamobile.contacts.im]> but was:<[android]>
+
+	at com.uitest.util.TestContactBase.openContact(TestContactBase.java:30)
+
+	at com.uitest.contact.testcase.ContactV4_2.setUp(ContactV4_2.java:31)
+
+	at com.uitest.uiautomatorUtil.TestListenerManager.run(TestListenerManager.java:87)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.start(UiAutomatorTestRunner.java:160)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.run(UiAutomatorTestRunner.java:96)
+
+	at com.android.commands.uiautomator.RunTestCommand.run(RunTestCommand.java:91)
+
+	at com.android.commands.uiautomator.Launcher.main(Launcher.java:83)
+
+	at com.android.internal.os.RuntimeInit.nativeFinishInit(Native Method)
+
+	at com.android.internal.os.RuntimeInit.main(RuntimeInit.java:297)
+
+	at dalvik.system.NativeStart.main(Native Method)
+
+
+
+INSTRUMENTATION_STATUS: test=testCase_other_001
+
+INSTRUMENTATION_STATUS_CODE: -2
+
+INSTRUMENTATION_STATUS: stream=
+
+Test results for WatcherResultPrinter=.F
+
+Time: 10.911
+
+
+
+FAILURES!!!
+
+Tests run: 1,  Failures: 1,  Errors: 0
+
+
+
+
+
+INSTRUMENTATION_STATUS_CODE: -1
+
+Updated file C:\Users\Administrator\workspace_github\ContactUITest\build.xml
+Buildfile: C:\Users\Administrator\workspace_github\ContactUITest\build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 22.6.2
+ [checkenv] Installed at F:\android\adt-bundle-windows-x86_64-20140321\sdk
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 21.0.0
+     [echo] Resolving Build Target for ContactV4_2...
+[getuitarget] Project Target:   Android 5.0
+[getuitarget] API level:        21
+     [echo] ----------
+     [echo] Creating output directories if needed...
+
+-pre-compile:
+
+compile:
+
+-post-compile:
+
+-dex:
+      [dex] input: C:\Users\Administrator\workspace_github\ContactUITest\bin\classes
+      [dex] Found Deleted Target File
+      [dex] Converting compiled files and external libraries into C:\Users\Administrator\workspace_github\ContactUITest\bin\classes.dex...
+
+-post-dex:
+
+-jar:
+      [jar] Building jar: C:\Users\Administrator\workspace_github\ContactUITest\bin\ContactV4_2.jar
+
+-post-jar:
+
+build:
+
+BUILD SUCCESSFUL
+Total time: 3 seconds
+2291 KB/s (36610 bytes in 0.015s)
+run PId: 32014
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact.testcase.ContactV4_2
+
+INSTRUMENTATION_STATUS: stream=
+
+com.uitest.contact.testcase.ContactV4_2:
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: test=testCase_other_001
+
+INSTRUMENTATION_STATUS_CODE: 1
+
+startTest: testCase_other_001(com.uitest.contact.testcase.ContactV4_2)
+
+wakeAndUnlock
+
+isScreenOn: false
+
+wakeUp
+
+swipe
+
+[ doing ] swipe 
+
+[start] findAndOpenApp和通讯录
+
+isExistByName: 应用程序
+
+elementExist: false
+
+isExistByName: 应用程序
+
+elementExist: false
+
+isExistByName: 应用程序
+
+elementExist: false
+
+isExistByName: 应用程序
+
+elementExist: false
+
+isExistByName: 应用程序
+
+elementExist: false
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+UiObject name: 和通讯录 not exists
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact.testcase.ContactV4_2
+
+INSTRUMENTATION_STATUS: stream=
+
+Failure in testCase_other_001:
+
+junit.framework.ComparisonFailure: openContact error  expected:<[com.chinamobile.contacts.im]> but was:<[android]>
+
+	at com.uitest.util.TestContactBase.openContact(TestContactBase.java:30)
+
+	at com.uitest.contact.testcase.ContactV4_2.setUp(ContactV4_2.java:31)
+
+	at com.uitest.uiautomatorUtil.TestListenerManager.run(TestListenerManager.java:87)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.start(UiAutomatorTestRunner.java:160)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.run(UiAutomatorTestRunner.java:96)
+
+	at com.android.commands.uiautomator.RunTestCommand.run(RunTestCommand.java:91)
+
+	at com.android.commands.uiautomator.Launcher.main(Launcher.java:83)
+
+	at com.android.internal.os.RuntimeInit.nativeFinishInit(Native Method)
+
+	at com.android.internal.os.RuntimeInit.main(RuntimeInit.java:297)
+
+	at dalvik.system.NativeStart.main(Native Method)
+
+
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: stack=junit.framework.ComparisonFailure: openContact error  expected:<[com.chinamobile.contacts.im]> but was:<[android]>
+
+	at com.uitest.util.TestContactBase.openContact(TestContactBase.java:30)
+
+	at com.uitest.contact.testcase.ContactV4_2.setUp(ContactV4_2.java:31)
+
+	at com.uitest.uiautomatorUtil.TestListenerManager.run(TestListenerManager.java:87)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.start(UiAutomatorTestRunner.java:160)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.run(UiAutomatorTestRunner.java:96)
+
+	at com.android.commands.uiautomator.RunTestCommand.run(RunTestCommand.java:91)
+
+	at com.android.commands.uiautomator.Launcher.main(Launcher.java:83)
+
+	at com.android.internal.os.RuntimeInit.nativeFinishInit(Native Method)
+
+	at com.android.internal.os.RuntimeInit.main(RuntimeInit.java:297)
+
+	at dalvik.system.NativeStart.main(Native Method)
+
+
+
+INSTRUMENTATION_STATUS: test=testCase_other_001
+
+INSTRUMENTATION_STATUS_CODE: -2
+
+INSTRUMENTATION_STATUS: stream=
+
+Test results for WatcherResultPrinter=.F
+
+Time: 14.71
+
+
+
+FAILURES!!!
+
+Tests run: 1,  Failures: 1,  Errors: 0
+
+
+
+
+
+INSTRUMENTATION_STATUS_CODE: -1
+
+Updated file C:\Users\Administrator\workspace_github\ContactUITest\build.xml
+Buildfile: C:\Users\Administrator\workspace_github\ContactUITest\build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 22.6.2
+ [checkenv] Installed at F:\android\adt-bundle-windows-x86_64-20140321\sdk
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 21.0.0
+     [echo] Resolving Build Target for ContactV4_2...
+[getuitarget] Project Target:   Android 5.0
+[getuitarget] API level:        21
+     [echo] ----------
+     [echo] Creating output directories if needed...
+
+-pre-compile:
+
+compile:
+    [javac] Compiling 1 source file to C:\Users\Administrator\workspace_github\ContactUITest\bin\classes
+    [javac] ����: [options] Դֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ŀ��ֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ҫ�����й��ѹ�ʱѡ��ľ���, ��ʹ�� -Xlint:-options��
+    [javac] 3 ������
+
+-post-compile:
+
+-dex:
+      [dex] input: C:\Users\Administrator\workspace_github\ContactUITest\bin\classes
+      [dex] Found Deleted Target File
+      [dex] Converting compiled files and external libraries into C:\Users\Administrator\workspace_github\ContactUITest\bin\classes.dex...
+
+-post-dex:
+
+-jar:
+      [jar] Building jar: C:\Users\Administrator\workspace_github\ContactUITest\bin\ContactV4_2.jar
+
+-post-jar:
+
+build:
+
+BUILD SUCCESSFUL
+Total time: 3 seconds
+2293 KB/s (36642 bytes in 0.015s)
+run PId: 32258
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact.testcase.ContactV4_2
+
+INSTRUMENTATION_STATUS: stream=
+
+com.uitest.contact.testcase.ContactV4_2:
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: test=testWakeup
+
+INSTRUMENTATION_STATUS_CODE: 1
+
+startTest: testWakeup(com.uitest.contact.testcase.ContactV4_2)
+
+wakeAndUnlock
+
+isScreenOn: false
+
+wakeUp
+
+swipe
+
+[ doing ] swipe 
+
+[start] findAndOpenApp和通讯录
+
+isExistByName: 应用程序
+
+elementExist: false
+
+isExistByName: 应用程序
+
+elementExist: false
+
+isExistByName: 应用程序
+
+elementExist: false
+
+isExistByName: 应用程序
+
+elementExist: false
+
+isExistByName: 应用程序
+
+elementExist: false
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+UiObject name: 和通讯录 not exists
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact.testcase.ContactV4_2
+
+INSTRUMENTATION_STATUS: stream=
+
+Failure in testWakeup:
+
+junit.framework.ComparisonFailure: openContact error  expected:<[com.chinamobile.contacts.im]> but was:<[android]>
+
+	at com.uitest.util.TestContactBase.openContact(TestContactBase.java:30)
+
+	at com.uitest.contact.testcase.ContactV4_2.setUp(ContactV4_2.java:31)
+
+	at com.uitest.uiautomatorUtil.TestListenerManager.run(TestListenerManager.java:87)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.start(UiAutomatorTestRunner.java:160)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.run(UiAutomatorTestRunner.java:96)
+
+	at com.android.commands.uiautomator.RunTestCommand.run(RunTestCommand.java:91)
+
+	at com.android.commands.uiautomator.Launcher.main(Launcher.java:83)
+
+	at com.android.internal.os.RuntimeInit.nativeFinishInit(Native Method)
+
+	at com.android.internal.os.RuntimeInit.main(RuntimeInit.java:297)
+
+	at dalvik.system.NativeStart.main(Native Method)
+
+
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: stack=junit.framework.ComparisonFailure: openContact error  expected:<[com.chinamobile.contacts.im]> but was:<[android]>
+
+	at com.uitest.util.TestContactBase.openContact(TestContactBase.java:30)
+
+	at com.uitest.contact.testcase.ContactV4_2.setUp(ContactV4_2.java:31)
+
+	at com.uitest.uiautomatorUtil.TestListenerManager.run(TestListenerManager.java:87)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.start(UiAutomatorTestRunner.java:160)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.run(UiAutomatorTestRunner.java:96)
+
+	at com.android.commands.uiautomator.RunTestCommand.run(RunTestCommand.java:91)
+
+	at com.android.commands.uiautomator.Launcher.main(Launcher.java:83)
+
+	at com.android.internal.os.RuntimeInit.nativeFinishInit(Native Method)
+
+	at com.android.internal.os.RuntimeInit.main(RuntimeInit.java:297)
+
+	at dalvik.system.NativeStart.main(Native Method)
+
+
+
+INSTRUMENTATION_STATUS: test=testWakeup
+
+INSTRUMENTATION_STATUS_CODE: -2
+
+INSTRUMENTATION_STATUS: stream=
+
+Test results for WatcherResultPrinter=.F
+
+Time: 14.94
+
+
+
+FAILURES!!!
+
+Tests run: 1,  Failures: 1,  Errors: 0
+
+
+
+
+
+INSTRUMENTATION_STATUS_CODE: -1
+
+Updated file C:\Users\Administrator\workspace_github\ContactUITest\build.xml
+Buildfile: C:\Users\Administrator\workspace_github\ContactUITest\build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 22.6.2
+ [checkenv] Installed at F:\android\adt-bundle-windows-x86_64-20140321\sdk
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 21.0.0
+     [echo] Resolving Build Target for ContactV4_2...
+[getuitarget] Project Target:   Android 5.0
+[getuitarget] API level:        21
+     [echo] ----------
+     [echo] Creating output directories if needed...
+
+-pre-compile:
+
+compile:
+
+-post-compile:
+
+-dex:
+      [dex] input: C:\Users\Administrator\workspace_github\ContactUITest\bin\classes
+      [dex] Found Deleted Target File
+      [dex] Converting compiled files and external libraries into C:\Users\Administrator\workspace_github\ContactUITest\bin\classes.dex...
+
+-post-dex:
+
+-jar:
+      [jar] Building jar: C:\Users\Administrator\workspace_github\ContactUITest\bin\ContactV4_2.jar
+
+-post-jar:
+
+build:
+
+BUILD SUCCESSFUL
+Total time: 3 seconds
+2293 KB/s (36642 bytes in 0.015s)
+run PId: 32534
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact.testcase.ContactV4_2
+
+INSTRUMENTATION_STATUS: stream=
+
+com.uitest.contact.testcase.ContactV4_2:
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: test=testWakeup
+
+INSTRUMENTATION_STATUS_CODE: 1
+
+startTest: testWakeup(com.uitest.contact.testcase.ContactV4_2)
+
+wakeAndUnlock
+
+isScreenOn: false
+
+wakeUp
+
+swipe
+
+[ doing ] swipe 
+
+[start] findAndOpenApp和通讯录
+
+isExistByName: 应用程序
+
+elementExist: false
+
+isExistByName: 应用程序
+
+elementExist: false
+
+isExistByName: 应用程序
+
+elementExist: false
+
+isExistByName: 应用程序
+
+elementExist: false
+
+isExistByName: 应用程序
+
+elementExist: false
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+UiObject name: 和通讯录 not exists
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact.testcase.ContactV4_2
+
+INSTRUMENTATION_STATUS: stream=
+
+Failure in testWakeup:
+
+junit.framework.ComparisonFailure: openContact error  expected:<[com.chinamobile.contacts.im]> but was:<[android]>
+
+	at com.uitest.util.TestContactBase.openContact(TestContactBase.java:30)
+
+	at com.uitest.contact.testcase.ContactV4_2.setUp(ContactV4_2.java:31)
+
+	at com.uitest.uiautomatorUtil.TestListenerManager.run(TestListenerManager.java:87)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.start(UiAutomatorTestRunner.java:160)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.run(UiAutomatorTestRunner.java:96)
+
+	at com.android.commands.uiautomator.RunTestCommand.run(RunTestCommand.java:91)
+
+	at com.android.commands.uiautomator.Launcher.main(Launcher.java:83)
+
+	at com.android.internal.os.RuntimeInit.nativeFinishInit(Native Method)
+
+	at com.android.internal.os.RuntimeInit.main(RuntimeInit.java:297)
+
+	at dalvik.system.NativeStart.main(Native Method)
+
+
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: stack=junit.framework.ComparisonFailure: openContact error  expected:<[com.chinamobile.contacts.im]> but was:<[android]>
+
+	at com.uitest.util.TestContactBase.openContact(TestContactBase.java:30)
+
+	at com.uitest.contact.testcase.ContactV4_2.setUp(ContactV4_2.java:31)
+
+	at com.uitest.uiautomatorUtil.TestListenerManager.run(TestListenerManager.java:87)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.start(UiAutomatorTestRunner.java:160)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.run(UiAutomatorTestRunner.java:96)
+
+	at com.android.commands.uiautomator.RunTestCommand.run(RunTestCommand.java:91)
+
+	at com.android.commands.uiautomator.Launcher.main(Launcher.java:83)
+
+	at com.android.internal.os.RuntimeInit.nativeFinishInit(Native Method)
+
+	at com.android.internal.os.RuntimeInit.main(RuntimeInit.java:297)
+
+	at dalvik.system.NativeStart.main(Native Method)
+
+
+
+INSTRUMENTATION_STATUS: test=testWakeup
+
+INSTRUMENTATION_STATUS_CODE: -2
+
+INSTRUMENTATION_STATUS: stream=
+
+Test results for WatcherResultPrinter=.F
+
+Time: 16.492
+
+
+
+FAILURES!!!
+
+Tests run: 1,  Failures: 1,  Errors: 0
+
+
+
+
+
+INSTRUMENTATION_STATUS_CODE: -1
+
+Updated file C:\Users\Administrator\workspace_github\ContactUITest\build.xml
+Buildfile: C:\Users\Administrator\workspace_github\ContactUITest\build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 22.6.2
+ [checkenv] Installed at F:\android\adt-bundle-windows-x86_64-20140321\sdk
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 21.0.0
+     [echo] Resolving Build Target for ContactV4_2...
+[getuitarget] Project Target:   Android 5.0
+[getuitarget] API level:        21
+     [echo] ----------
+     [echo] Creating output directories if needed...
+
+-pre-compile:
+
+compile:
+    [javac] Compiling 1 source file to C:\Users\Administrator\workspace_github\ContactUITest\bin\classes
+    [javac] ����: [options] Դֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ŀ��ֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ҫ�����й��ѹ�ʱѡ��ľ���, ��ʹ�� -Xlint:-options��
+    [javac] 3 ������
+
+-post-compile:
+
+-dex:
+      [dex] input: C:\Users\Administrator\workspace_github\ContactUITest\bin\classes
+      [dex] Found Deleted Target File
+      [dex] Converting compiled files and external libraries into C:\Users\Administrator\workspace_github\ContactUITest\bin\classes.dex...
+
+-post-dex:
+
+-jar:
+      [jar] Building jar: C:\Users\Administrator\workspace_github\ContactUITest\bin\ContactV4_2.jar
+
+-post-jar:
+
+build:
+
+BUILD SUCCESSFUL
+Total time: 3 seconds
+2293 KB/s (36640 bytes in 0.015s)
+run PId: 32699
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact.testcase.ContactV4_2
+
+INSTRUMENTATION_STATUS: stream=
+
+com.uitest.contact.testcase.ContactV4_2:
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: test=testWakeup
+
+INSTRUMENTATION_STATUS_CODE: 1
+
+startTest: testWakeup(com.uitest.contact.testcase.ContactV4_2)
+
+wakeAndUnlock
+
+isScreenOn: false
+
+wakeUp
+
+swipe
+
+[ doing ] swipe 
+
+[start] close app
+
+[end] close app
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact.testcase.ContactV4_2
+
+INSTRUMENTATION_STATUS: stream=.
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: test=testWakeup
+
+INSTRUMENTATION_STATUS_CODE: 0
+
+INSTRUMENTATION_STATUS: stream=
+
+Test results for WatcherResultPrinter=.
+
+Time: 4.729
+
+
+
+OK (1 test)
+
+
+
+
+
+INSTRUMENTATION_STATUS_CODE: -1
+
+Updated file C:\Users\Administrator\workspace_github\ContactUITest\build.xml
+Buildfile: C:\Users\Administrator\workspace_github\ContactUITest\build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 22.6.2
+ [checkenv] Installed at F:\android\adt-bundle-windows-x86_64-20140321\sdk
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 21.0.0
+     [echo] Resolving Build Target for ContactV4_2...
+[getuitarget] Project Target:   Android 5.0
+[getuitarget] API level:        21
+     [echo] ----------
+     [echo] Creating output directories if needed...
+
+-pre-compile:
+
+compile:
+
+-post-compile:
+
+-dex:
+      [dex] input: C:\Users\Administrator\workspace_github\ContactUITest\bin\classes
+      [dex] Found Deleted Target File
+      [dex] Converting compiled files and external libraries into C:\Users\Administrator\workspace_github\ContactUITest\bin\classes.dex...
+
+-post-dex:
+
+-jar:
+      [jar] Building jar: C:\Users\Administrator\workspace_github\ContactUITest\bin\ContactV4_2.jar
+
+-post-jar:
+
+build:
+
+BUILD SUCCESSFUL
+Total time: 3 seconds
+2293 KB/s (36640 bytes in 0.015s)
+run PId: 1430
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact.testcase.ContactV4_2
+
+INSTRUMENTATION_STATUS: stream=
+
+com.uitest.contact.testcase.ContactV4_2:
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: test=testWakeup
+
+INSTRUMENTATION_STATUS_CODE: 1
+
+startTest: testWakeup(com.uitest.contact.testcase.ContactV4_2)
+
+wakeAndUnlock
+
+isScreenOn: false
+
+wakeUp
+
+swipe
+
+[ doing ] swipe 
+
+[start] close app
+
+[end] close app
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact.testcase.ContactV4_2
+
+INSTRUMENTATION_STATUS: stream=.
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: test=testWakeup
+
+INSTRUMENTATION_STATUS_CODE: 0
+
+INSTRUMENTATION_STATUS: stream=
+
+Test results for WatcherResultPrinter=.
+
+Time: 5.168
+
+
+
+OK (1 test)
+
+
+
+
+
+INSTRUMENTATION_STATUS_CODE: -1
+
+Updated file C:\Users\Administrator\workspace_github\ContactUITest\build.xml
+Buildfile: C:\Users\Administrator\workspace_github\ContactUITest\build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 22.6.2
+ [checkenv] Installed at F:\android\adt-bundle-windows-x86_64-20140321\sdk
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 21.0.0
+     [echo] Resolving Build Target for ContactV4_2...
+[getuitarget] Project Target:   Android 5.0
+[getuitarget] API level:        21
+     [echo] ----------
+     [echo] Creating output directories if needed...
+
+-pre-compile:
+
+compile:
+    [javac] Compiling 1 source file to C:\Users\Administrator\workspace_github\ContactUITest\bin\classes
+    [javac] ����: [options] Դֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ŀ��ֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ҫ�����й��ѹ�ʱѡ��ľ���, ��ʹ�� -Xlint:-options��
+    [javac] 3 ������
+
+-post-compile:
+
+-dex:
+      [dex] input: C:\Users\Administrator\workspace_github\ContactUITest\bin\classes
+      [dex] Found Deleted Target File
+      [dex] Converting compiled files and external libraries into C:\Users\Administrator\workspace_github\ContactUITest\bin\classes.dex...
+
+-post-dex:
+
+-jar:
+      [jar] Building jar: C:\Users\Administrator\workspace_github\ContactUITest\bin\ContactV4_2.jar
+
+-post-jar:
+
+build:
+
+BUILD SUCCESSFUL
+Total time: 3 seconds
+2293 KB/s (36638 bytes in 0.015s)
+run PId: 1704
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact.testcase.ContactV4_2
+
+INSTRUMENTATION_STATUS: stream=
+
+com.uitest.contact.testcase.ContactV4_2:
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: test=testWakeup
+
+INSTRUMENTATION_STATUS_CODE: 1
+
+startTest: testWakeup(com.uitest.contact.testcase.ContactV4_2)
+
+wakeAndUnlock
+
+isScreenOn: false
+
+wakeUp
+
+swipe
+
+[ doing ] swipe 
+
+[start] close app
+
+[end] close app
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact.testcase.ContactV4_2
+
+INSTRUMENTATION_STATUS: stream=.
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: test=testWakeup
+
+INSTRUMENTATION_STATUS_CODE: 0
+
+INSTRUMENTATION_STATUS: stream=
+
+Test results for WatcherResultPrinter=.
+
+Time: 5.149
+
+
+
+OK (1 test)
+
+
+
+
+
+INSTRUMENTATION_STATUS_CODE: -1
+
+Updated file C:\Users\Administrator\workspace_github\ContactUITest\build.xml
+Buildfile: C:\Users\Administrator\workspace_github\ContactUITest\build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 22.6.2
+ [checkenv] Installed at F:\android\adt-bundle-windows-x86_64-20140321\sdk
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 21.0.0
+     [echo] Resolving Build Target for ContactV4_2...
+[getuitarget] Project Target:   Android 5.0
+[getuitarget] API level:        21
+     [echo] ----------
+     [echo] Creating output directories if needed...
+
+-pre-compile:
+
+compile:
+    [javac] Compiling 1 source file to C:\Users\Administrator\workspace_github\ContactUITest\bin\classes
+    [javac] ����: [options] Դֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ŀ��ֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ҫ�����й��ѹ�ʱѡ��ľ���, ��ʹ�� -Xlint:-options��
+    [javac] 3 ������
+
+-post-compile:
+
+-dex:
+      [dex] input: C:\Users\Administrator\workspace_github\ContactUITest\bin\classes
+      [dex] Found Deleted Target File
+      [dex] Converting compiled files and external libraries into C:\Users\Administrator\workspace_github\ContactUITest\bin\classes.dex...
+
+-post-dex:
+
+-jar:
+      [jar] Building jar: C:\Users\Administrator\workspace_github\ContactUITest\bin\ContactV4_2.jar
+
+-post-jar:
+
+build:
+
+BUILD SUCCESSFUL
+Total time: 3 seconds
+2293 KB/s (36639 bytes in 0.015s)
+run PId: 1863
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact.testcase.ContactV4_2
+
+INSTRUMENTATION_STATUS: stream=
+
+com.uitest.contact.testcase.ContactV4_2:
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: test=testWakeup
+
+INSTRUMENTATION_STATUS_CODE: 1
+
+startTest: testWakeup(com.uitest.contact.testcase.ContactV4_2)
+
+wakeAndUnlock
+
+isScreenOn: false
+
+wakeUp
+
+swipe
+
+[ doing ] swipe 
+
+[start] close app
+
+[end] close app
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact.testcase.ContactV4_2
+
+INSTRUMENTATION_STATUS: stream=.
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: test=testWakeup
+
+INSTRUMENTATION_STATUS_CODE: 0
+
+INSTRUMENTATION_STATUS: stream=
+
+Test results for WatcherResultPrinter=.
+
+Time: 5.646
+
+
+
+OK (1 test)
+
+
+
+
+
+INSTRUMENTATION_STATUS_CODE: -1
+
+Updated file C:\Users\Administrator\workspace_github\ContactUITest\build.xml
+Buildfile: C:\Users\Administrator\workspace_github\ContactUITest\build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 22.6.2
+ [checkenv] Installed at F:\android\adt-bundle-windows-x86_64-20140321\sdk
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 21.0.0
+     [echo] Resolving Build Target for ContactV4_2...
+[getuitarget] Project Target:   Android 5.0
+[getuitarget] API level:        21
+     [echo] ----------
+     [echo] Creating output directories if needed...
+
+-pre-compile:
+
+compile:
+    [javac] Compiling 1 source file to C:\Users\Administrator\workspace_github\ContactUITest\bin\classes
+    [javac] ����: [options] Դֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ŀ��ֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ҫ�����й��ѹ�ʱѡ��ľ���, ��ʹ�� -Xlint:-options��
+    [javac] 3 ������
+
+-post-compile:
+
+-dex:
+      [dex] input: C:\Users\Administrator\workspace_github\ContactUITest\bin\classes
+      [dex] Found Deleted Target File
+      [dex] Converting compiled files and external libraries into C:\Users\Administrator\workspace_github\ContactUITest\bin\classes.dex...
+
+-post-dex:
+
+-jar:
+      [jar] Building jar: C:\Users\Administrator\workspace_github\ContactUITest\bin\ContactV4_2.jar
+
+-post-jar:
+
+build:
+
+BUILD SUCCESSFUL
+Total time: 3 seconds
+2293 KB/s (36639 bytes in 0.015s)
+run PId: 3490
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact.testcase.ContactV4_2
+
+INSTRUMENTATION_STATUS: stream=
+
+com.uitest.contact.testcase.ContactV4_2:
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: test=testWakeup
+
+INSTRUMENTATION_STATUS_CODE: 1
+
+startTest: testWakeup(com.uitest.contact.testcase.ContactV4_2)
+
+wakeAndUnlock
+
+isScreenOn: false
+
+wakeUp
+
+swipe
+
+[ doing ] swipe 
+
+[start] close app
+
+[end] close app
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact.testcase.ContactV4_2
+
+INSTRUMENTATION_STATUS: stream=.
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: test=testWakeup
+
+INSTRUMENTATION_STATUS_CODE: 0
+
+INSTRUMENTATION_STATUS: stream=
+
+Test results for WatcherResultPrinter=.
+
+Time: 7.185
+
+
+
+OK (1 test)
+
+
+
+
+
+INSTRUMENTATION_STATUS_CODE: -1
+
+Updated file C:\Users\Administrator\workspace_github\ContactUITest\build.xml
+Buildfile: C:\Users\Administrator\workspace_github\ContactUITest\build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 22.6.2
+ [checkenv] Installed at F:\android\adt-bundle-windows-x86_64-20140321\sdk
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 21.0.0
+     [echo] Resolving Build Target for ContactV4_2...
+[getuitarget] Project Target:   Android 5.0
+[getuitarget] API level:        21
+     [echo] ----------
+     [echo] Creating output directories if needed...
+
+-pre-compile:
+
+compile:
+    [javac] Compiling 1 source file to C:\Users\Administrator\workspace_github\ContactUITest\bin\classes
+    [javac] ����: [options] Դֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ŀ��ֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ҫ�����й��ѹ�ʱѡ��ľ���, ��ʹ�� -Xlint:-options��
+    [javac] 3 ������
+
+-post-compile:
+
+-dex:
+      [dex] input: C:\Users\Administrator\workspace_github\ContactUITest\bin\classes
+      [dex] Found Deleted Target File
+      [dex] Converting compiled files and external libraries into C:\Users\Administrator\workspace_github\ContactUITest\bin\classes.dex...
+
+-post-dex:
+
+-jar:
+      [jar] Building jar: C:\Users\Administrator\workspace_github\ContactUITest\bin\ContactV4_2.jar
+
+-post-jar:
+
+build:
+
+BUILD SUCCESSFUL
+Total time: 3 seconds
+2294 KB/s (36660 bytes in 0.015s)
+run PId: 3706
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact.testcase.ContactV4_2
+
+INSTRUMENTATION_STATUS: stream=
+
+com.uitest.contact.testcase.ContactV4_2:
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: test=testWakeup
+
+INSTRUMENTATION_STATUS_CODE: 1
+
+startTest: testWakeup(com.uitest.contact.testcase.ContactV4_2)
+
+wakeAndUnlock
+
+isScreenOn: false
+
+wakeUp
+
+swipe
+
+[ doing ] swipe 
+
+[start] close app
+
+点击关闭
+
+[end] close app
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact.testcase.ContactV4_2
+
+INSTRUMENTATION_STATUS: stream=.
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: test=testWakeup
+
+INSTRUMENTATION_STATUS_CODE: 0
+
+INSTRUMENTATION_STATUS: stream=
+
+Test results for WatcherResultPrinter=.
+
+Time: 6.009
+
+
+
+OK (1 test)
+
+
+
+
+
+INSTRUMENTATION_STATUS_CODE: -1
+
+Updated file C:\Users\Administrator\workspace_github\ContactUITest\build.xml
+Buildfile: C:\Users\Administrator\workspace_github\ContactUITest\build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 22.6.2
+ [checkenv] Installed at F:\android\adt-bundle-windows-x86_64-20140321\sdk
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 21.0.0
+     [echo] Resolving Build Target for ContactV4_2...
+[getuitarget] Project Target:   Android 5.0
+[getuitarget] API level:        21
+     [echo] ----------
+     [echo] Creating output directories if needed...
+
+-pre-compile:
+
+compile:
+    [javac] Compiling 1 source file to C:\Users\Administrator\workspace_github\ContactUITest\bin\classes
+    [javac] ����: [options] Դֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ŀ��ֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ҫ�����й��ѹ�ʱѡ��ľ���, ��ʹ�� -Xlint:-options��
+    [javac] 3 ������
+
+-post-compile:
+
+-dex:
+      [dex] input: C:\Users\Administrator\workspace_github\ContactUITest\bin\classes
+      [dex] Found Deleted Target File
+      [dex] Converting compiled files and external libraries into C:\Users\Administrator\workspace_github\ContactUITest\bin\classes.dex...
+
+-post-dex:
+
+-jar:
+      [jar] Building jar: C:\Users\Administrator\workspace_github\ContactUITest\bin\ContactV4_2.jar
+
+-post-jar:
+
+build:
+
+BUILD SUCCESSFUL
+Total time: 3 seconds
+2293 KB/s (36642 bytes in 0.015s)
+run PId: 3975
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact.testcase.ContactV4_2
+
+INSTRUMENTATION_STATUS: stream=
+
+com.uitest.contact.testcase.ContactV4_2:
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: test=testWakeup
+
+INSTRUMENTATION_STATUS_CODE: 1
+
+startTest: testWakeup(com.uitest.contact.testcase.ContactV4_2)
+
+wakeAndUnlock
+
+isScreenOn: false
+
+wakeUp
+
+swipe
+
+[ doing ] swipe 
+
+[start] findAndOpenApp和通讯录
+
+isExistByName: 应用程序
+
+elementExist: true
+
+clickByName: 应用程序
+
+drag
+
+[ doing ] swipeToRight 
+
+click 和通讯录
+
+[start] close app
+
+点击关闭
+
+[end] close app
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact.testcase.ContactV4_2
+
+INSTRUMENTATION_STATUS: stream=
+
+Failure in testWakeup:
+
+junit.framework.AssertionFailedError: Method "testWakeup" not found
+
+	at com.uitest.uiautomatorUtil.TestListenerManager.run(TestListenerManager.java:87)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.start(UiAutomatorTestRunner.java:160)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.run(UiAutomatorTestRunner.java:96)
+
+	at com.android.commands.uiautomator.RunTestCommand.run(RunTestCommand.java:91)
+
+	at com.android.commands.uiautomator.Launcher.main(Launcher.java:83)
+
+	at com.android.internal.os.RuntimeInit.nativeFinishInit(Native Method)
+
+	at com.android.internal.os.RuntimeInit.main(RuntimeInit.java:297)
+
+	at dalvik.system.NativeStart.main(Native Method)
+
+
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: stack=junit.framework.AssertionFailedError: Method "testWakeup" not found
+
+	at com.uitest.uiautomatorUtil.TestListenerManager.run(TestListenerManager.java:87)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.start(UiAutomatorTestRunner.java:160)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.run(UiAutomatorTestRunner.java:96)
+
+	at com.android.commands.uiautomator.RunTestCommand.run(RunTestCommand.java:91)
+
+	at com.android.commands.uiautomator.Launcher.main(Launcher.java:83)
+
+	at com.android.internal.os.RuntimeInit.nativeFinishInit(Native Method)
+
+	at com.android.internal.os.RuntimeInit.main(RuntimeInit.java:297)
+
+	at dalvik.system.NativeStart.main(Native Method)
+
+
+
+INSTRUMENTATION_STATUS: test=testWakeup
+
+INSTRUMENTATION_STATUS_CODE: -2
+
+INSTRUMENTATION_STATUS: stream=
+
+Test results for WatcherResultPrinter=.F
+
+Time: 19.424
+
+
+
+FAILURES!!!
+
+Tests run: 1,  Failures: 1,  Errors: 0
+
+
+
+
+
+INSTRUMENTATION_STATUS_CODE: -1
+
+Updated file C:\Users\Administrator\workspace_github\ContactUITest\build.xml
+Buildfile: C:\Users\Administrator\workspace_github\ContactUITest\build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 22.6.2
+ [checkenv] Installed at F:\android\adt-bundle-windows-x86_64-20140321\sdk
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 21.0.0
+     [echo] Resolving Build Target for ContactV4_2...
+[getuitarget] Project Target:   Android 5.0
+[getuitarget] API level:        21
+     [echo] ----------
+     [echo] Creating output directories if needed...
+
+-pre-compile:
+
+compile:
+    [javac] Compiling 1 source file to C:\Users\Administrator\workspace_github\ContactUITest\bin\classes
+    [javac] ����: [options] Դֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ŀ��ֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ҫ�����й��ѹ�ʱѡ��ľ���, ��ʹ�� -Xlint:-options��
+    [javac] 3 ������
+
+-post-compile:
+
+-dex:
+      [dex] input: C:\Users\Administrator\workspace_github\ContactUITest\bin\classes
+      [dex] Found Deleted Target File
+      [dex] Converting compiled files and external libraries into C:\Users\Administrator\workspace_github\ContactUITest\bin\classes.dex...
+
+-post-dex:
+
+-jar:
+      [jar] Building jar: C:\Users\Administrator\workspace_github\ContactUITest\bin\ContactV4_2.jar
+
+-post-jar:
+
+build:
+
+BUILD SUCCESSFUL
+Total time: 3 seconds
+2291 KB/s (36611 bytes in 0.015s)
+run PId: 4381
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact.testcase.ContactV4_2
+
+INSTRUMENTATION_STATUS: stream=
+
+com.uitest.contact.testcase.ContactV4_2:
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: test=testCase_other_001
+
+INSTRUMENTATION_STATUS_CODE: 1
+
+startTest: testCase_other_001(com.uitest.contact.testcase.ContactV4_2)
+
+wakeAndUnlock
+
+isScreenOn: true
+
+[start] findAndOpenApp和通讯录
+
+isExistByName: 应用程序
+
+elementExist: true
+
+clickByName: 应用程序
+
+click 和通讯录
+
+[start] back
+
+isExistById: tab_bar
+
+elementExist: true
+
+isExistById: iab_view
+
+elementExist: true
+
+isExistById: user_info_layout
+
+elementExist: false
+
+rootFloor
+
+clickById: tab_contacts
+
+clickById: tab_contacts
+
+[ end ] back
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+isExistById: iab_title
+
+elementExist: true
+
+clickById: tab_call
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+isExistById: iab_title
+
+elementExist: true
+
+clickById: tab_mms
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+isExistById: iab_title
+
+elementExist: true
+
+[start] close app
+
+点击关闭
+
+[end] close app
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact.testcase.ContactV4_2
+
+INSTRUMENTATION_STATUS: stream=.
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: test=testCase_other_001
+
+INSTRUMENTATION_STATUS_CODE: 0
+
+INSTRUMENTATION_STATUS: stream=
+
+Test results for WatcherResultPrinter=.
+
+Time: 110.348
+
+
+
+OK (1 test)
+
+
+
+
+
+INSTRUMENTATION_STATUS_CODE: -1
+
+Updated file C:\Users\Administrator\workspace_github\ContactUITest\build.xml
+Buildfile: C:\Users\Administrator\workspace_github\ContactUITest\build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 22.6.2
+ [checkenv] Installed at F:\android\adt-bundle-windows-x86_64-20140321\sdk
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 21.0.0
+     [echo] Resolving Build Target for ContactV4_2...
+[getuitarget] Project Target:   Android 5.0
+[getuitarget] API level:        21
+     [echo] ----------
+     [echo] Creating output directories if needed...
+
+-pre-compile:
+
+compile:
+    [javac] Compiling 1 source file to C:\Users\Administrator\workspace_github\ContactUITest\bin\classes
+    [javac] ����: [options] Դֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ŀ��ֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ҫ�����й��ѹ�ʱѡ��ľ���, ��ʹ�� -Xlint:-options��
+    [javac] 3 ������
+
+-post-compile:
+
+-dex:
+      [dex] input: C:\Users\Administrator\workspace_github\ContactUITest\bin\classes
+      [dex] Found Deleted Target File
+      [dex] Converting compiled files and external libraries into C:\Users\Administrator\workspace_github\ContactUITest\bin\classes.dex...
+
+-post-dex:
+
+-jar:
+      [jar] Building jar: C:\Users\Administrator\workspace_github\ContactUITest\bin\ContactV4_2.jar
+
+-post-jar:
+
+build:
+
+BUILD SUCCESSFUL
+Total time: 3 seconds
+2304 KB/s (36817 bytes in 0.015s)
+run PId: 8613
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact.testcase.ContactV4_2
+
+INSTRUMENTATION_STATUS: stream=
+
+com.uitest.contact.testcase.ContactV4_2:
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: test=testCase_other_002
+
+INSTRUMENTATION_STATUS_CODE: 1
+
+startTest: testCase_other_002(com.uitest.contact.testcase.ContactV4_2)
+
+wakeAndUnlock
+
+isScreenOn: false
+
+wakeUp
+
+swipe
+
+[ doing ] swipe 
+
+[start] findAndOpenApp和通讯录
+
+isExistByName: 应用程序
+
+elementExist: true
+
+clickByName: 应用程序
+
+click 和通讯录
+
+clickById: tab_contacts
+
+clickById: tab_call
+
+clickById: tab_mms
+
+clickById: tab_mms
+
+clickById: tab_mms
+
+clickById: iab_title
+
+clickById: tab_call
+
+clickById: tab_cloud
+
+clickById: tab_contacts
+
+clickById: tab_contacts
+
+clickById: tab_call
+
+clickById: iab_title
+
+clickById: iab_title
+
+clickById: tab_cloud
+
+clickById: tab_contacts
+
+clickById: tab_contacts
+
+clickById: tab_mms
+
+clickById: tab_cloud
+
+clickById: tab_contacts
+
+clickById: tab_mms
+
+isExistById: iab_title
+
+elementExist: true
+
+[start] close app
+
+点击关闭
+
+[end] close app
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact.testcase.ContactV4_2
+
+INSTRUMENTATION_STATUS: stream=.
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: test=testCase_other_002
+
+INSTRUMENTATION_STATUS_CODE: 0
+
+INSTRUMENTATION_STATUS: stream=
+
+Test results for WatcherResultPrinter=.
+
+Time: 58.321
+
+
+
+OK (1 test)
+
+
+
+
+
+INSTRUMENTATION_STATUS_CODE: -1
+
+Updated file C:\Users\Administrator\workspace_github\ContactUITest\build.xml
+Buildfile: C:\Users\Administrator\workspace_github\ContactUITest\build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 22.6.2
+ [checkenv] Installed at F:\android\adt-bundle-windows-x86_64-20140321\sdk
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 21.0.0
+     [echo] Resolving Build Target for ContactV4_2...
+[getuitarget] Project Target:   Android 5.0
+[getuitarget] API level:        21
+     [echo] ----------
+     [echo] Creating output directories if needed...
+
+-pre-compile:
+
+compile:
+    [javac] Compiling 1 source file to C:\Users\Administrator\workspace_github\ContactUITest\bin\classes
+    [javac] ����: [options] Դֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ŀ��ֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ҫ�����й��ѹ�ʱѡ��ľ���, ��ʹ�� -Xlint:-options��
+    [javac] 3 ������
+
+-post-compile:
+
+-dex:
+      [dex] input: C:\Users\Administrator\workspace_github\ContactUITest\bin\classes
+      [dex] Found Deleted Target File
+      [dex] Converting compiled files and external libraries into C:\Users\Administrator\workspace_github\ContactUITest\bin\classes.dex...
+
+-post-dex:
+
+-jar:
+      [jar] Building jar: C:\Users\Administrator\workspace_github\ContactUITest\bin\ContactV4_2.jar
+
+-post-jar:
+
+build:
+
+BUILD SUCCESSFUL
+Total time: 3 seconds
+2304 KB/s (36814 bytes in 0.015s)
+run PId: 9387
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact.testcase.ContactV4_2
+
+INSTRUMENTATION_STATUS: stream=
+
+com.uitest.contact.testcase.ContactV4_2:
+
+INSTRUMENTATION_STATUS: numtests=2
+
+INSTRUMENTATION_STATUS: test=testCase_other_001
+
+INSTRUMENTATION_STATUS_CODE: 1
+
+startTest: testCase_other_001(com.uitest.contact.testcase.ContactV4_2)
+
+wakeAndUnlock
+
+isScreenOn: true
+
+[start] findAndOpenApp和通讯录
+
+isExistByName: 应用程序
+
+elementExist: true
+
+clickByName: 应用程序
+
+click 和通讯录
+
+[start] back
+
+isExistById: tab_bar
+
+elementExist: true
+
+isExistById: iab_view
+
+elementExist: true
+
+isExistById: user_info_layout
+
+elementExist: false
+
+rootFloor
+
+clickById: tab_contacts
+
+clickById: tab_contacts
+
+[ end ] back
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+isExistById: iab_title
+
+elementExist: true
+
+clickById: tab_call
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+isExistById: iab_title
+
+elementExist: true
+
+clickById: tab_mms
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+isExistById: iab_title
+
+elementExist: true
+
+[start] close app
+
+点击关闭
+
+[end] close app
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact.testcase.ContactV4_2
+
+INSTRUMENTATION_STATUS: stream=.
+
+INSTRUMENTATION_STATUS: numtests=2
+
+INSTRUMENTATION_STATUS: test=testCase_other_001
+
+INSTRUMENTATION_STATUS_CODE: 0
+
+run PId: 9387
+
+INSTRUMENTATION_STATUS: current=2
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact.testcase.ContactV4_2
+
+INSTRUMENTATION_STATUS: stream=
+
+INSTRUMENTATION_STATUS: numtests=2
+
+INSTRUMENTATION_STATUS: test=testCase_other_002
+
+INSTRUMENTATION_STATUS_CODE: 1
+
+startTest: testCase_other_002(com.uitest.contact.testcase.ContactV4_2)
+
+wakeAndUnlock
+
+isScreenOn: true
+
+[start] findAndOpenApp和通讯录
+
+isExistByName: 应用程序
+
+elementExist: true
+
+clickByName: 应用程序
+
+click 和通讯录
+
+clickById: iab_title
+
+clickById: iab_title
+
+clickById: tab_cloud
+
+clickById: iab_title
+
+clickById: tab_contacts
+
+clickById: iab_title
+
+clickById: tab_call
+
+clickById: tab_call
+
+clickById: tab_call
+
+clickById: tab_call
+
+clickById: tab_call
+
+clickById: tab_mms
+
+clickById: tab_contacts
+
+clickById: tab_mms
+
+clickById: tab_call
+
+clickById: tab_cloud
+
+clickById: tab_contacts
+
+clickById: tab_mms
+
+clickById: tab_mms
+
+clickById: tab_call
+
+isExistById: iab_title
+
+elementExist: true
+
+[start] close app
+
+点击关闭
+
+[end] close app
+
+INSTRUMENTATION_STATUS: current=2
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact.testcase.ContactV4_2
+
+INSTRUMENTATION_STATUS: stream=.
+
+INSTRUMENTATION_STATUS: numtests=2
+
+INSTRUMENTATION_STATUS: test=testCase_other_002
+
+INSTRUMENTATION_STATUS_CODE: 0
+
+INSTRUMENTATION_STATUS: stream=
+
+Test results for WatcherResultPrinter=..
+
+Time: 162.69
+
+
+
+OK (2 tests)
+
+
+
+
+
+INSTRUMENTATION_STATUS_CODE: -1
+
+Updated file C:\Users\Administrator\workspace_github\ContactUITest\build.xml
+Buildfile: C:\Users\Administrator\workspace_github\ContactUITest\build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 22.6.2
+ [checkenv] Installed at F:\android\adt-bundle-windows-x86_64-20140321\sdk
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 21.0.0
+     [echo] Resolving Build Target for ContactV4_2...
+[getuitarget] Project Target:   Android 5.0
+[getuitarget] API level:        21
+     [echo] ----------
+     [echo] Creating output directories if needed...
+
+-pre-compile:
+
+compile:
+    [javac] Compiling 6 source files to C:\Users\Administrator\workspace_github\ContactUITest\bin\classes
+    [javac] ����: [options] Դֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ŀ��ֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ҫ�����й��ѹ�ʱѡ��ľ���, ��ʹ�� -Xlint:-options��
+    [javac] 3 ������
+
+-post-compile:
+
+-dex:
+      [dex] input: C:\Users\Administrator\workspace_github\ContactUITest\bin\classes
+      [dex] Found Deleted Target File
+      [dex] Converting compiled files and external libraries into C:\Users\Administrator\workspace_github\ContactUITest\bin\classes.dex...
+
+-post-dex:
+
+-jar:
+      [jar] Building jar: C:\Users\Administrator\workspace_github\ContactUITest\bin\ContactV4_2.jar
+
+-post-jar:
+
+build:
+
+BUILD SUCCESSFUL
+Total time: 4 seconds
+2382 KB/s (38066 bytes in 0.015s)
+run PId: 17926
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact.testcase.ContactV4_2
+
+INSTRUMENTATION_STATUS: stream=
+
+com.uitest.contact.testcase.ContactV4_2:
+
+INSTRUMENTATION_STATUS: numtests=2
+
+INSTRUMENTATION_STATUS: test=testCase_other_001
+
+INSTRUMENTATION_STATUS_CODE: 1
+
+startTest: testCase_other_001(com.uitest.contact.testcase.ContactV4_2)
+
+wakeAndUnlock
+
+isScreenOn: false
+
+wakeUp
+
+swipe
+
+[ doing ] swipe 
+
+[start] findAndOpenApp和通讯录
+
+isExistByName: 应用程序
+
+elementExist: false
+
+isExistByName: 应用程序
+
+elementExist: true
+
+clickByName: 应用程序
+
+click 和通讯录
+
+[start] back
+
+isExistById: tab_bar
+
+elementExist: true
+
+isExistById: iab_view
+
+elementExist: true
+
+isExistById: user_info_layout
+
+elementExist: false
+
+rootFloor
+
+clickById: tab_contacts
+
+clickById: tab_contacts
+
+[ end ] back
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+isExistById: iab_title
+
+elementExist: true
+
+clickById: tab_call
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+isExistById: iab_title
+
+elementExist: true
+
+clickById: tab_mms
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+drag
+
+[ doing ] swipeToRight 
+
+isExistById: iab_title
+
+elementExist: true
+
+[start] close app
+
+点击关闭
+
+[end] close app
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact.testcase.ContactV4_2
+
+INSTRUMENTATION_STATUS: stream=.
+
+INSTRUMENTATION_STATUS: numtests=2
+
+INSTRUMENTATION_STATUS: test=testCase_other_001
+
+INSTRUMENTATION_STATUS_CODE: 0
+
+run PId: 17926
+
+INSTRUMENTATION_STATUS: current=2
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact.testcase.ContactV4_2
+
+INSTRUMENTATION_STATUS: stream=
+
+INSTRUMENTATION_STATUS: numtests=2
+
+INSTRUMENTATION_STATUS: test=testCase_other_002
+
+INSTRUMENTATION_STATUS_CODE: 1
+
+startTest: testCase_other_002(com.uitest.contact.testcase.ContactV4_2)
+
+wakeAndUnlock
+
+isScreenOn: true
+
+[start] findAndOpenApp和通讯录
+
+isExistByName: 应用程序
+
+elementExist: true
+
+clickByName: 应用程序
+
+click 和通讯录
+
+clickById: tab_contacts
+
+clickById: tab_cloud
+
+clickById: tab_cloud
+
+clickById: tab_cloud
+
+clickById: tab_call
+
+clickById: tab_contacts
+
+clickById: tab_cloud
+
+clickById: tab_call
+
+clickById: tab_contacts
+
+clickById: tab_call
+
+clickById: iab_title
+
+clickById: tab_cloud
+
+clickById: tab_contacts
+
+clickById: tab_contacts
+
+clickById: tab_call
+
+clickById: tab_contacts
+
+clickById: iab_title
+
+clickById: tab_mms
+
+clickById: tab_mms
+
+clickById: tab_mms
+
+isExistById: iab_title
+
+elementExist: true
+
+[start] close app
+
+点击关闭
+
+[end] close app
+
+INSTRUMENTATION_STATUS: current=2
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact.testcase.ContactV4_2
+
+INSTRUMENTATION_STATUS: stream=.
+
+INSTRUMENTATION_STATUS: numtests=2
+
+INSTRUMENTATION_STATUS: test=testCase_other_002
+
+INSTRUMENTATION_STATUS_CODE: 0
+
+INSTRUMENTATION_STATUS: stream=
+
+Test results for WatcherResultPrinter=..
+
+Time: 171.696
+
+
+
+OK (2 tests)
+
+
+
+
+
+INSTRUMENTATION_STATUS_CODE: -1
+

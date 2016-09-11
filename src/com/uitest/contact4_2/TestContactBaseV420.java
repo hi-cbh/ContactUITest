@@ -1,4 +1,4 @@
-package com.uitest.util;
+package com.uitest.contact4_2;
 
 import android.net.ParseException;
 import android.os.RemoteException;
@@ -14,7 +14,7 @@ import com.uitest.uiautomatorUtil.FileManager;
 import com.uitest.uiautomatorUtil.TestListenerManager;
 import com.uitest.uiautomatorUtil.TimeUtil;
 
-public class TestContactBase extends TestListenerManager {
+public class TestContactBaseV420 extends TestListenerManager {
 	
 	String packageName = UserConfig.packageName;
 
