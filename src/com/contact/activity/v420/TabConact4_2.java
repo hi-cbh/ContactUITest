@@ -6,7 +6,7 @@ import com.contact.activity.MainActivity_contact;
 public class TabConact4_2 extends MainActivity_contact {
 
 	@Override
-	public void newContact(String name, String phone) {
+	public  void newContact(String name, String phone) {
 		// TODO Auto-generated method stub
 		super.newContact(name, phone);
 	}

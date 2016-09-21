@@ -13185,3 +13185,430 @@ OK (2 tests)
 
 INSTRUMENTATION_STATUS_CODE: -1
 
+Updated file C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
+Buildfile: C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 22.6.2
+ [checkenv] Installed at G:\adt-bundle-windows-x86_64-20140321\adt-bundle-windows-x86_64-20140321\sdk
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 19.0.3
+     [echo] Resolving Build Target for ContactV4_2...
+[getuitarget] Project Target:   Android 4.4.2
+[getuitarget] API level:        19
+     [echo] ----------
+     [echo] Creating output directories if needed...
+    [mkdir] Created dir: C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
+
+-pre-compile:
+
+compile:
+    [javac] Compiling 46 source files to C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
+    [javac] ����: [options] Դֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ŀ��ֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ҫ�����й��ѹ�ʱѡ��ľ���, ��ʹ�� -Xlint:-options��
+    [javac] C:\Users\Administrator\workspace_201607\ContactUITest\src\com\contact\activity\v420\TabConact4_2.java:9: ����: TabConact4_2�е�newContact(String,String)�޷�����MainActivity_contact�е�newContact(String,String)
+    [javac] 	public void newContact(String name, String phone) {
+    [javac] 	            ^
+    [javac]   �����ǵķ���Ϊstatic
+    [javac] C:\Users\Administrator\workspace_201607\ContactUITest\src\com\contact\activity\v420\TabConact4_2.java:8: ����: �������Ḳ�ǻ�ʵ�ֳ����͵ķ���
+    [javac] 	@Override
+    [javac] 	^
+    [javac] ע: C:\Users\Administrator\workspace_201607\ContactUITest\src\com\beetstra\jutf7\CharsetProvider.javaʹ����δ�����򲻰�ȫ�Ĳ�����
+    [javac] ע: �й���ϸ��Ϣ, ��ʹ�� -Xlint:unchecked ���±��롣
+    [javac] 2 ������
+    [javac] 3 ������
+
+BUILD FAILED
+G:\adt-bundle-windows-x86_64-20140321\adt-bundle-windows-x86_64-20140321\sdk\tools\ant\uibuild.xml:183: Compile failed; see the compiler error output for details.
+
+Total time: 5 seconds
+* daemon not running. starting it now on port 5037 *
+* daemon started successfully *
+cannot stat 'C:\Users\Administrator\workspace_201607\ContactUITest\bin\ContactV4_2.jar': No such file or directory
+INSTRUMENTATION_RESULT: shortMsg=java.lang.RuntimeException
+
+INSTRUMENTATION_RESULT: longMsg=Didn't find class "com.uitest.contact.testcase.ContactV4_2" on path: /system/framework/android.test.runner.jar:/system/framework/uiautomator.jar::/data/local/tmp/ContactV4_2.jar
+
+INSTRUMENTATION_CODE: 0
+
+Updated file C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
+Buildfile: C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 22.6.2
+ [checkenv] Installed at G:\adt-bundle-windows-x86_64-20140321\adt-bundle-windows-x86_64-20140321\sdk
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 19.0.3
+     [echo] Resolving Build Target for ContactV4_2...
+[getuitarget] Project Target:   Android 4.4.2
+[getuitarget] API level:        19
+     [echo] ----------
+     [echo] Creating output directories if needed...
+
+-pre-compile:
+
+compile:
+    [javac] Compiling 35 source files to C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
+    [javac] ����: [options] Դֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ŀ��ֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ҫ�����й��ѹ�ʱѡ��ľ���, ��ʹ�� -Xlint:-options��
+    [javac] C:\Users\Administrator\workspace_201607\ContactUITest\src\com\contact\activity\v420\TabConact4_2.java:9: ����: TabConact4_2�е�newContact(String,String)�޷�����MainActivity_contact�е�newContact(String,String)
+    [javac] 	public static void newContact(String name, String phone) {
+    [javac] 	                   ^
+    [javac]   ���ǵķ���Ϊ static
+    [javac] C:\Users\Administrator\workspace_201607\ContactUITest\src\com\contact\activity\v420\TabConact4_2.java:8: ����: �������Ḳ�ǻ�ʵ�ֳ����͵ķ���
+    [javac] 	@Override
+    [javac] 	^
+    [javac] C:\Users\Administrator\workspace_201607\ContactUITest\src\com\contact\activity\v420\TabConact4_2.java:11: ����: �޷��Ӿ�̬�����������÷Ǿ�̬ ���� super
+    [javac] 		super.newContact(name, phone);
+    [javac] 		^
+    [javac] 3 ������
+    [javac] 3 ������
+
+BUILD FAILED
+G:\adt-bundle-windows-x86_64-20140321\adt-bundle-windows-x86_64-20140321\sdk\tools\ant\uibuild.xml:183: Compile failed; see the compiler error output for details.
+
+Total time: 2 seconds
+cannot stat 'C:\Users\Administrator\workspace_201607\ContactUITest\bin\ContactV4_2.jar': No such file or directory
+INSTRUMENTATION_RESULT: shortMsg=java.lang.RuntimeException
+
+INSTRUMENTATION_RESULT: longMsg=Didn't find class "com.uitest.contact.testcase.ContactV4_2" on path: /system/framework/android.test.runner.jar:/system/framework/uiautomator.jar::/data/local/tmp/ContactV4_2.jar
+
+INSTRUMENTATION_CODE: 0
+
+Updated file C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
+Buildfile: C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 22.6.2
+ [checkenv] Installed at G:\adt-bundle-windows-x86_64-20140321\adt-bundle-windows-x86_64-20140321\sdk
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 19.0.3
+     [echo] Resolving Build Target for ContactV4_2...
+[getuitarget] Project Target:   Android 4.4.2
+[getuitarget] API level:        19
+     [echo] ----------
+     [echo] Creating output directories if needed...
+
+-pre-compile:
+
+compile:
+    [javac] Compiling 34 source files to C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
+    [javac] ����: [options] Դֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ŀ��ֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ҫ�����й��ѹ�ʱѡ��ľ���, ��ʹ�� -Xlint:-options��
+    [javac] 3 ������
+
+-post-compile:
+
+-dex:
+      [dex] input: C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
+      [dex] Converting compiled files and external libraries into C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes.dex...
+
+-post-dex:
+
+-jar:
+      [jar] Building jar: C:\Users\Administrator\workspace_201607\ContactUITest\bin\ContactV4_2.jar
+
+-post-jar:
+
+build:
+
+BUILD SUCCESSFUL
+Total time: 5 seconds
+1290 KB/s (38326 bytes in 0.029s)
+INSTRUMENTATION_RESULT: shortMsg=java.lang.RuntimeException
+
+INSTRUMENTATION_RESULT: longMsg=Didn't find class "com.uitest.contact.testcase.ContactV4_2" on path: /system/framework/android.test.runner.jar:/system/framework/uiautomator.jar::/data/local/tmp/ContactV4_2.jar
+
+INSTRUMENTATION_CODE: 0
+
+Updated file C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
+Buildfile: C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 22.6.2
+ [checkenv] Installed at G:\adt-bundle-windows-x86_64-20140321\adt-bundle-windows-x86_64-20140321\sdk
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 19.0.3
+     [echo] Resolving Build Target for ContactV4_2...
+[getuitarget] Project Target:   Android 4.4.2
+[getuitarget] API level:        19
+     [echo] ----------
+     [echo] Creating output directories if needed...
+
+-pre-compile:
+
+compile:
+
+-post-compile:
+
+-dex:
+      [dex] input: C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
+      [dex] Found Deleted Target File
+      [dex] Converting compiled files and external libraries into C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes.dex...
+
+-post-dex:
+
+-jar:
+      [jar] Building jar: C:\Users\Administrator\workspace_201607\ContactUITest\bin\ContactV4_2.jar
+
+-post-jar:
+
+build:
+
+BUILD SUCCESSFUL
+Total time: 3 seconds
+4158 KB/s (38326 bytes in 0.009s)
+INSTRUMENTATION_RESULT: shortMsg=java.lang.RuntimeException
+
+INSTRUMENTATION_RESULT: longMsg=Didn't find class "com.uitest.contact.testcase.ContactV4_2" on path: /system/framework/android.test.runner.jar:/system/framework/uiautomator.jar::/data/local/tmp/ContactV4_2.jar
+
+INSTRUMENTATION_CODE: 0
+
+Updated file C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
+Buildfile: C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 22.6.2
+ [checkenv] Installed at G:\adt-bundle-windows-x86_64-20140321\adt-bundle-windows-x86_64-20140321\sdk
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 19.0.3
+     [echo] Resolving Build Target for ContactV4_2...
+[getuitarget] Project Target:   Android 4.4.2
+[getuitarget] API level:        19
+     [echo] ----------
+     [echo] Creating output directories if needed...
+
+-pre-compile:
+
+compile:
+    [javac] Compiling 1 source file to C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
+    [javac] ����: [options] Դֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ŀ��ֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ҫ�����й��ѹ�ʱѡ��ľ���, ��ʹ�� -Xlint:-options��
+    [javac] 3 ������
+
+-post-compile:
+
+-dex:
+      [dex] input: C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
+      [dex] Found Deleted Target File
+      [dex] Converting compiled files and external libraries into C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes.dex...
+
+-post-dex:
+
+-jar:
+      [jar] Building jar: C:\Users\Administrator\workspace_201607\ContactUITest\bin\ContactV4_2.jar
+
+-post-jar:
+
+build:
+
+BUILD SUCCESSFUL
+Total time: 3 seconds
+4157 KB/s (38318 bytes in 0.009s)
+run PId: 4611
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact4_2.ContactV4_2
+
+INSTRUMENTATION_STATUS: stream=
+
+com.uitest.contact4_2.ContactV4_2:
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: test=testCase_001
+
+INSTRUMENTATION_STATUS_CODE: 1
+
+startTest: testCase_001(com.uitest.contact4_2.ContactV4_2)
+
+wakeAndUnlock
+
+isScreenOn: true
+
+[start] findAndOpenApp和通讯录
+
+clickByName: 应用程序
+
+click 和通讯录
+
+clickById: tab_contacts
+
+clickById: iab_ib_action
+
+text len: 2
+
+text len: 4
+
+clickById: iab_ib_action
+
+uiobject not found
+
+[start] close app
+
+点击关闭
+
+[end] close app
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact4_2.ContactV4_2
+
+INSTRUMENTATION_STATUS: stream=.
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: test=testCase_001
+
+INSTRUMENTATION_STATUS_CODE: 0
+
+INSTRUMENTATION_STATUS: stream=
+
+Test results for WatcherResultPrinter=.
+
+Time: 23.937
+
+
+
+OK (1 test)
+
+
+
+
+
+INSTRUMENTATION_STATUS_CODE: -1
+
+Updated file C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
+Buildfile: C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 22.6.2
+ [checkenv] Installed at G:\adt-bundle-windows-x86_64-20140321\adt-bundle-windows-x86_64-20140321\sdk
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 19.0.3
+     [echo] Resolving Build Target for ContactV4_2...
+[getuitarget] Project Target:   Android 4.4.2
+[getuitarget] API level:        19
+     [echo] ----------
+     [echo] Creating output directories if needed...
+
+-pre-compile:
+
+compile:
+
+-post-compile:
+
+-dex:
+      [dex] input: C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
+      [dex] Found Deleted Target File
+      [dex] Converting compiled files and external libraries into C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes.dex...
+
+-post-dex:
+
+-jar:
+      [jar] Building jar: C:\Users\Administrator\workspace_201607\ContactUITest\bin\ContactV4_2.jar
+
+-post-jar:
+
+build:
+
+BUILD SUCCESSFUL
+Total time: 3 seconds
+3741 KB/s (38318 bytes in 0.010s)
+run PId: 5708
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact4_2.ContactV4_2
+
+INSTRUMENTATION_STATUS: stream=
+
+com.uitest.contact4_2.ContactV4_2:
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: test=testCase_001
+
+INSTRUMENTATION_STATUS_CODE: 1
+
+startTest: testCase_001(com.uitest.contact4_2.ContactV4_2)
+
+wakeAndUnlock
+
+isScreenOn: true
+
+[start] findAndOpenApp和通讯录
+
+clickByName: 应用程序
+
+drag
+
+[ doing ] swipeToRight 
+
+click 和通讯录
+
+clickById: tab_contacts
+
+clickById: iab_ib_action
+
+text len: 2
+
+text len: 4
+
+clickById: iab_ib_action
+
+uiobject not found
+
+[start] close app
+
+点击关闭
+
+[end] close app
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact4_2.ContactV4_2
+
+INSTRUMENTATION_STATUS: stream=.
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: test=testCase_001
+
+INSTRUMENTATION_STATUS_CODE: 0
+
+INSTRUMENTATION_STATUS: stream=
+
+Test results for WatcherResultPrinter=.
+
+Time: 29.616
+
+
+
+OK (1 test)
+
+
+
+
+
+INSTRUMENTATION_STATUS_CODE: -1
+
