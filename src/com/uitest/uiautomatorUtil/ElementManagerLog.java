@@ -98,7 +98,6 @@ public class ElementManagerLog extends UiAutomatorTestCase{
 	 * @return
 	 */
 	public static UiObject getUiObjectByText(String text) {
-		UiautomatorAssistant.UiAutomationLog("");
 		return new UiObject(new UiSelector().textContains(text));
 	}
 
@@ -642,7 +641,7 @@ public class ElementManagerLog extends UiAutomatorTestCase{
 		// System.out.println("clickbyObject:");
 		try {
 			if (uo.exists()) {
-				UiautomatorAssistant.UiAutomationLog("click: "+str);
+				UiautomatorAssistant.UiAutomationLog("click:"+str);
 				//每一步都截图，每部都需要耗费1秒时间
 				ImageManager.snapshotAndDrawRect("click ", uo.getBounds());
 				uo.click();
@@ -665,7 +664,7 @@ public class ElementManagerLog extends UiAutomatorTestCase{
 	public static void clickByName(String name) {
 		System.out.println("clickByName: " + name);
 
-		clickbyObject(getUiObjectByTextMatches(name), " byName " + name);
+		clickbyObject(getUiObjectByTextMatches(name), "Name:" + name);
 	}
 
 	/**
@@ -676,7 +675,7 @@ public class ElementManagerLog extends UiAutomatorTestCase{
 	public static void clickById(String id) {
 		System.out.println("clickById: " + id);
 
-		clickbyObject(getUiObjectByResourceIdMatches(id)," byId " + id);
+		clickbyObject(getUiObjectByResourceIdMatches(id),"Id:" + id);
 
 	}
 
@@ -707,7 +706,7 @@ public class ElementManagerLog extends UiAutomatorTestCase{
 			buttonRect = uo.getBounds();
 			//
 			UiautomatorAssistant.UiAutomationLog("LongClick point: [ " 
-			+ buttonRect.centerX() + " : " + buttonRect.centerY() + " ]");
+			+ buttonRect.centerX() + "," + buttonRect.centerY() + " ]");
 			// 滑动同一点
 			UiDevice.getInstance().swipe(buttonRect.centerX(),
 					buttonRect.centerY(), buttonRect.centerX(),
@@ -963,8 +962,9 @@ public class ElementManagerLog extends UiAutomatorTestCase{
 				+ content);
 		UiObject uo = getUiObjectByText(name);
 		if(uo.exists()){
-			inputText(uo, content);
-			UiautomatorAssistant.UiAutomationLog("input: " + content);
+			EditText.clearEditText(uo);
+			EditText.setText(uo, content);
+			UiautomatorAssistant.UiAutomationLog("Name:" + name + ":intput:" + content);
 		}else{
 			UiautomatorAssistant.UiAutomationLog("not-find,can not input");
 		}
@@ -981,8 +981,9 @@ public class ElementManagerLog extends UiAutomatorTestCase{
 				+ content);
 		UiObject uo = getUiObjectByResourceIdMatches(id);
 		if(uo.exists()){
-			inputText(uo, content);
-			UiautomatorAssistant.UiAutomationLog("input: " + content);
+			EditText.clearEditText(uo);
+			EditText.setText(uo, content);
+			UiautomatorAssistant.UiAutomationLog("Id:" + id + ":intput:" + content);
 		}else{
 			UiautomatorAssistant.UiAutomationLog("not-find,can not input");
 		}
@@ -1009,7 +1010,7 @@ public class ElementManagerLog extends UiAutomatorTestCase{
 			ct = uo.getBounds();
 			click(ct.top, ct.top);
 			EditText.setText(uo, content);
-			UiautomatorAssistant.UiAutomationLog("input: " + content);
+			UiautomatorAssistant.UiAutomationLog("point["+ct.top +","+ct.top +"]:input:" + content);
 			System.out.println("[end] inputTextByName: " + id + " , input: "
 					+ content);
 		} catch (UiObjectNotFoundException e) {

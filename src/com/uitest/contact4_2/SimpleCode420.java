@@ -9,6 +9,10 @@ import com.uitest.uiautomatorUtil.ElementManagerLog;
 
 public class SimpleCode420 extends TestContactBaseV420{
 
+	
+	
+	
+	
 	/**
 	 * 点击资源ID
 	 * @param id
@@ -29,7 +33,7 @@ public class SimpleCode420 extends TestContactBaseV420{
 	 * 长按屏幕上的资源ID
 	 * @param id
 	 */
-	public void clickLongId(String id){
+	public void longClickId(String id){
 		ElementManagerLog.clickLongByUiObject(ElementManagerLog.getUiObjectByResourceIdMatches(id));
 	}
 	
@@ -38,7 +42,7 @@ public class SimpleCode420 extends TestContactBaseV420{
 	 * 长按屏幕上的资源text
 	 * @param text
 	 */
-	public void clickLongText(String text){
+	public void longClickText(String text){
 		ElementManagerLog.clickLongByUiObject(ElementManagerLog.getUiObjectByText(text));
 	}
 	
@@ -129,8 +133,40 @@ public class SimpleCode420 extends TestContactBaseV420{
 	}
 	
 	
+	/**
+	 * 通过ID控件，输入内容
+	 * @param id
+	 * @param content
+	 */
+	public void inputTextById(String id, String content){
+		ElementManagerLog.inputTextById(id, content);
+	}
 	
+	/**
+	 * 通过文字找控件，输入内容
+	 * @param name
+	 * @param content
+	 */
+	public void inputTextByText(String name, String content){
+		ElementManagerLog.inputTextByName(name, content);
+	}
 	
+	/**
+	 * 判断ID 是否存在
+	 * @param id
+	 * @return
+	 */
+	public boolean isExistId(String id){
+		return ElementManagerLog.isExistById(id);
+	}
 	
+	/**
+	 * 判断name 是否存在
+	 * @param name
+	 * @return
+	 */
+	public boolean isExistText(String name){
+		return ElementManagerLog.isExistByName(name);
+	}
 	
 }

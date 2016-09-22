@@ -8,8 +8,10 @@ import com.android.uiautomator.core.UiObject;
 import com.android.uiautomator.core.UiObjectNotFoundException;
 import com.contact.activity.MainActivity_contact;
 import com.uitest.data.UserConfig;
+import com.uitest.log.UiautomatorAssistant;
 import com.uitest.uiautomatorUtil.DriverManager;
 import com.uitest.uiautomatorUtil.ElementManager;
+import com.uitest.uiautomatorUtil.ElementManagerLog;
 import com.uitest.uiautomatorUtil.FileManager;
 import com.uitest.uiautomatorUtil.TestListenerManager;
 import com.uitest.uiautomatorUtil.TimeUtil;
@@ -22,12 +24,15 @@ public class TestContactBaseV420 extends TestListenerManager {
 	 * 打开和通讯录
 	 */
 	public void openContact() {
+		UiautomatorAssistant.UiAutomationLog("开始");
 		 DriverManager.wakeAndUnlock();
 		 findAndOpenApp("和通讯录");
 		 sleep(2000);
 		 
 		 String curpackageName=UiDevice.getInstance().getCurrentPackageName();
 		 assertEquals("openContact error ",packageName, curpackageName);
+		 
+		 
 	}
 	
 
@@ -198,6 +203,7 @@ public class TestContactBaseV420 extends TestListenerManager {
 	 * @throws InterruptedException
 	 */
 	 public void exitApp() {
+		 UiautomatorAssistant.UiAutomationLog("结束");
 		 System.out.println("[start] close app");
 	        try {
 	        	UiDevice.getInstance().pressHome();

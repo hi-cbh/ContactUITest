@@ -39,7 +39,7 @@ public class TabCall4_2 extends MainActivity_call {
 	/**
 	 * 清空通话记录
 	 */
-	public static void deleteAllCall(){
+	public void deleteAllCall(){
 		//点击拨号
 		ElementManagerLog.clickById("tab_call");
 		
@@ -63,7 +63,7 @@ public class TabCall4_2 extends MainActivity_call {
 	 * 拨号盘点击号码
 	 * @param str
 	 */
-	public static void touchCallNumber(String str){
+	public void touchCallNumber(String str){
 		int len = str.length();
 		int i;
 		for(i = 0; i< len; i++){

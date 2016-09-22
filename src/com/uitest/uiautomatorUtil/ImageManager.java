@@ -186,6 +186,10 @@ public class ImageManager {
 	 */
 	public static void snapshotAndDrawRect(String testCasename, Rect r) {
 
+		if(!UserConfig.isWritePic){
+			return;
+		}
+		
 		System.out.println("snapshot");
 		// 获取当前工作路径
 		String currentPath = UserConfig.savePicPath;

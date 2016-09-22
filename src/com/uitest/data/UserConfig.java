@@ -10,7 +10,7 @@ public class UserConfig {
 	
 	//全局参数
 	public static boolean isWriteLog = true; //是否写入app运行日志，默认为关闭
-	
+	public static boolean isWritePic = false; //是否记录运行步骤中的图片
 	
 	//登录账号
 	public static String LoginName = "13427665104";

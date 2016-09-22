@@ -13612,3 +13612,3145 @@ OK (1 test)
 
 INSTRUMENTATION_STATUS_CODE: -1
 
+Updated file C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
+Buildfile: C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 22.6.2
+ [checkenv] Installed at G:\adt-bundle-windows-x86_64-20140321\adt-bundle-windows-x86_64-20140321\sdk
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 19.0.3
+     [echo] Resolving Build Target for ContactV4_2...
+[getuitarget] Project Target:   Android 4.4.2
+[getuitarget] API level:        19
+     [echo] ----------
+     [echo] Creating output directories if needed...
+
+-pre-compile:
+
+compile:
+    [javac] Compiling 3 source files to C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
+    [javac] ����: [options] Դֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ŀ��ֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ҫ�����й��ѹ�ʱѡ��ľ���, ��ʹ�� -Xlint:-options��
+    [javac] 3 ������
+
+-post-compile:
+
+-dex:
+      [dex] input: C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
+      [dex] Found Deleted Target File
+      [dex] Converting compiled files and external libraries into C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes.dex...
+
+-post-dex:
+
+-jar:
+      [jar] Building jar: C:\Users\Administrator\workspace_201607\ContactUITest\bin\ContactV4_2.jar
+
+-post-jar:
+
+build:
+
+BUILD SUCCESSFUL
+Total time: 7 seconds
+1166 KB/s (38222 bytes in 0.032s)
+run PId: 7997
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact4_2.ContactV4_2
+
+INSTRUMENTATION_STATUS: stream=
+
+com.uitest.contact4_2.ContactV4_2:
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: test=testCase_001
+
+INSTRUMENTATION_STATUS_CODE: 1
+
+startTest: testCase_001(com.uitest.contact4_2.ContactV4_2)
+
+wakeAndUnlock
+
+isScreenOn: true
+
+[start] findAndOpenApp和通讯录
+
+clickByName: 应用程序
+
+click 和通讯录
+
+clickById: iab_ib_action
+
+snapshot
+
+[start] inputTextByName: edit_contact_name , input: 陈壁画
+
+[start] inputText: 陈壁画
+
+text len: 2
+
+[end] inputText:  , input: 陈壁画
+
+[start] inputTextByName: 电话号码 , input: 13543493854
+
+[start] inputText: 13543493854
+
+text len: 4
+
+[end] inputText:  , input: 13543493854
+
+clickByName: 完成
+
+snapshot
+
+[start] close app
+
+点击关闭
+
+[end] close app
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact4_2.ContactV4_2
+
+INSTRUMENTATION_STATUS: stream=.
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: test=testCase_001
+
+INSTRUMENTATION_STATUS_CODE: 0
+
+INSTRUMENTATION_STATUS: stream=
+
+Test results for WatcherResultPrinter=.
+
+Time: 25.016
+
+
+
+OK (1 test)
+
+
+
+
+
+INSTRUMENTATION_STATUS_CODE: -1
+
+Updated file C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
+Buildfile: C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 22.6.2
+ [checkenv] Installed at G:\adt-bundle-windows-x86_64-20140321\adt-bundle-windows-x86_64-20140321\sdk
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 19.0.3
+     [echo] Resolving Build Target for ContactV4_2...
+[getuitarget] Project Target:   Android 4.4.2
+[getuitarget] API level:        19
+     [echo] ----------
+     [echo] Creating output directories if needed...
+
+-pre-compile:
+
+compile:
+    [javac] Compiling 1 source file to C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
+    [javac] ����: [options] Դֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ŀ��ֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ҫ�����й��ѹ�ʱѡ��ľ���, ��ʹ�� -Xlint:-options��
+    [javac] 3 ������
+
+-post-compile:
+
+-dex:
+      [dex] input: C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
+      [dex] Found Deleted Target File
+      [dex] Converting compiled files and external libraries into C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes.dex...
+
+-post-dex:
+
+-jar:
+      [jar] Building jar: C:\Users\Administrator\workspace_201607\ContactUITest\bin\ContactV4_2.jar
+
+-post-jar:
+
+build:
+
+BUILD SUCCESSFUL
+Total time: 4 seconds
+2074 KB/s (38242 bytes in 0.018s)
+run PId: 8658
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact4_2.ContactV4_2
+
+INSTRUMENTATION_STATUS: stream=
+
+com.uitest.contact4_2.ContactV4_2:
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: test=testCase_001
+
+INSTRUMENTATION_STATUS_CODE: 1
+
+startTest: testCase_001(com.uitest.contact4_2.ContactV4_2)
+
+wakeAndUnlock
+
+isScreenOn: true
+
+[start] findAndOpenApp和通讯录
+
+clickByName: 应用程序
+
+click 和通讯录
+
+clickById: iab_ib_action
+
+snapshot
+
+[start] inputTextByName: edit_contact_name , input: 陈壁画
+
+[start] inputText: 陈壁画
+
+text len: 2
+
+[end] inputText:  , input: 陈壁画
+
+[start] inputTextByName: 电话号码 , input: 13543493854
+
+[start] inputText: 13543493854
+
+text len: 4
+
+[end] inputText:  , input: 13543493854
+
+clickByName: 完成
+
+snapshot
+
+[start] close app
+
+点击关闭
+
+[end] close app
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact4_2.ContactV4_2
+
+INSTRUMENTATION_STATUS: stream=.
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: test=testCase_001
+
+INSTRUMENTATION_STATUS_CODE: 0
+
+INSTRUMENTATION_STATUS: stream=
+
+Test results for WatcherResultPrinter=.
+
+Time: 28.096
+
+
+
+OK (1 test)
+
+
+
+
+
+INSTRUMENTATION_STATUS_CODE: -1
+
+Updated file C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
+Buildfile: C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 22.6.2
+ [checkenv] Installed at G:\adt-bundle-windows-x86_64-20140321\adt-bundle-windows-x86_64-20140321\sdk
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 19.0.3
+     [echo] Resolving Build Target for ContactV4_2...
+[getuitarget] Project Target:   Android 4.4.2
+[getuitarget] API level:        19
+     [echo] ----------
+     [echo] Creating output directories if needed...
+
+-pre-compile:
+
+compile:
+
+-post-compile:
+
+-dex:
+      [dex] input: C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
+      [dex] Found Deleted Target File
+      [dex] Converting compiled files and external libraries into C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes.dex...
+
+-post-dex:
+
+-jar:
+      [jar] Building jar: C:\Users\Administrator\workspace_201607\ContactUITest\bin\ContactV4_2.jar
+
+-post-jar:
+
+build:
+
+BUILD SUCCESSFUL
+Total time: 3 seconds
+4149 KB/s (38242 bytes in 0.009s)
+run PId: 10883
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact4_2.ContactV4_2
+
+INSTRUMENTATION_STATUS: stream=
+
+com.uitest.contact4_2.ContactV4_2:
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: test=testCase_001
+
+INSTRUMENTATION_STATUS_CODE: 1
+
+startTest: testCase_001(com.uitest.contact4_2.ContactV4_2)
+
+wakeAndUnlock
+
+isScreenOn: true
+
+[start] findAndOpenApp和通讯录
+
+clickByName: 应用程序
+
+drag
+
+[ doing ] swipeToRight 
+
+click 和通讯录
+
+clickById: iab_ib_action
+
+snapshot
+
+[start] inputTextByName: edit_contact_name , input: 陈壁画
+
+[start] inputText: 陈壁画
+
+text len: 2
+
+[end] inputText:  , input: 陈壁画
+
+[start] inputTextByName: 电话号码 , input: 13543493854
+
+[start] inputText: 13543493854
+
+text len: 4
+
+[end] inputText:  , input: 13543493854
+
+clickByName: 完成
+
+snapshot
+
+[start] close app
+
+点击关闭
+
+[end] close app
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact4_2.ContactV4_2
+
+INSTRUMENTATION_STATUS: stream=.
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: test=testCase_001
+
+INSTRUMENTATION_STATUS_CODE: 0
+
+INSTRUMENTATION_STATUS: stream=
+
+Test results for WatcherResultPrinter=.
+
+Time: 29.093
+
+
+
+OK (1 test)
+
+
+
+
+
+INSTRUMENTATION_STATUS_CODE: -1
+
+Updated file C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
+Buildfile: C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 22.6.2
+ [checkenv] Installed at G:\adt-bundle-windows-x86_64-20140321\adt-bundle-windows-x86_64-20140321\sdk
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 19.0.3
+     [echo] Resolving Build Target for ContactV4_2...
+[getuitarget] Project Target:   Android 4.4.2
+[getuitarget] API level:        19
+     [echo] ----------
+     [echo] Creating output directories if needed...
+
+-pre-compile:
+
+compile:
+    [javac] Compiling 1 source file to C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
+    [javac] ����: [options] Դֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ŀ��ֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ҫ�����й��ѹ�ʱѡ��ľ���, ��ʹ�� -Xlint:-options��
+    [javac] 3 ������
+
+-post-compile:
+
+-dex:
+      [dex] input: C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
+      [dex] Found Deleted Target File
+      [dex] Converting compiled files and external libraries into C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes.dex...
+
+-post-dex:
+
+-jar:
+      [jar] Building jar: C:\Users\Administrator\workspace_201607\ContactUITest\bin\ContactV4_2.jar
+
+-post-jar:
+
+build:
+
+BUILD SUCCESSFUL
+Total time: 4 seconds
+4157 KB/s (38312 bytes in 0.009s)
+run PId: 12333
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact4_2.ContactV4_2
+
+INSTRUMENTATION_STATUS: stream=
+
+com.uitest.contact4_2.ContactV4_2:
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: test=testCall_001
+
+INSTRUMENTATION_STATUS_CODE: 1
+
+startTest: testCall_001(com.uitest.contact4_2.ContactV4_2)
+
+wakeAndUnlock
+
+isScreenOn: true
+
+[start] findAndOpenApp和通讯录
+
+clickByName: 应用程序
+
+click 和通讯录
+
+clickByName: 清空通话记录
+
+snapshot
+
+clickById: dialog_btn_positive
+
+snapshot
+
+isExistById: btResolve
+
+elementExist: true
+
+[start] close app
+
+点击关闭
+
+[end] close app
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact4_2.ContactV4_2
+
+INSTRUMENTATION_STATUS: stream=.
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: test=testCall_001
+
+INSTRUMENTATION_STATUS_CODE: 0
+
+INSTRUMENTATION_STATUS: stream=
+
+Test results for WatcherResultPrinter=.
+
+Time: 18.261
+
+
+
+OK (1 test)
+
+
+
+
+
+INSTRUMENTATION_STATUS_CODE: -1
+
+Updated file C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
+Buildfile: C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 22.6.2
+ [checkenv] Installed at G:\adt-bundle-windows-x86_64-20140321\adt-bundle-windows-x86_64-20140321\sdk
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 19.0.3
+     [echo] Resolving Build Target for ContactV4_2...
+[getuitarget] Project Target:   Android 4.4.2
+[getuitarget] API level:        19
+     [echo] ----------
+     [echo] Creating output directories if needed...
+
+-pre-compile:
+
+compile:
+    [javac] Compiling 2 source files to C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
+    [javac] ����: [options] Դֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ŀ��ֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ҫ�����й��ѹ�ʱѡ��ľ���, ��ʹ�� -Xlint:-options��
+    [javac] 3 ������
+
+-post-compile:
+
+-dex:
+      [dex] input: C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
+      [dex] Found Deleted Target File
+      [dex] Converting compiled files and external libraries into C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes.dex...
+
+-post-dex:
+
+-jar:
+      [jar] Building jar: C:\Users\Administrator\workspace_201607\ContactUITest\bin\ContactV4_2.jar
+
+-post-jar:
+
+build:
+
+BUILD SUCCESSFUL
+Total time: 9 seconds
+2344 KB/s (38416 bytes in 0.016s)
+run PId: 29659
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact4_2.ContactV4_2
+
+INSTRUMENTATION_STATUS: stream=
+
+com.uitest.contact4_2.ContactV4_2:
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: test=testCase_001
+
+INSTRUMENTATION_STATUS_CODE: 1
+
+startTest: testCase_001(com.uitest.contact4_2.ContactV4_2)
+
+wakeAndUnlock
+
+isScreenOn: true
+
+[start] findAndOpenApp和通讯录
+
+clickByName: 应用程序
+
+drag
+
+[ doing ] swipeToRight 
+
+click 和通讯录
+
+clickById: tab_contacts
+
+snapshot
+
+clickById: contact_search_hint_tv
+
+snapshot
+
+[start] inputTextByName: contact_search_hint_tv , input: 陈壁画
+
+[start] inputText: 陈壁画
+
+text len: 7
+
+[end] inputText:  , input: 陈壁画
+
+isExistById: contact_name
+
+elementExist: false
+
+clickById: contact_search_del_btn
+
+snapshot
+
+clickById: iab_ib_action
+
+snapshot
+
+[start] inputTextByName: edit_contact_name , input: 陈壁画
+
+[start] inputText: 陈壁画
+
+text len: 2
+
+[end] inputText:  , input: 陈壁画
+
+[start] inputTextByName: 电话号码 , input: 13543493854
+
+[start] inputText: 13543493854
+
+text len: 4
+
+[end] inputText:  , input: 13543493854
+
+clickByName: 完成
+
+snapshot
+
+[start] close app
+
+点击关闭
+
+[end] close app
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact4_2.ContactV4_2
+
+INSTRUMENTATION_STATUS: stream=.
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: test=testCase_001
+
+INSTRUMENTATION_STATUS_CODE: 0
+
+INSTRUMENTATION_STATUS: stream=
+
+Test results for WatcherResultPrinter=.
+
+Time: 48.199
+
+
+
+OK (1 test)
+
+
+
+
+
+INSTRUMENTATION_STATUS_CODE: -1
+
+Updated file C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
+Buildfile: C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 22.6.2
+ [checkenv] Installed at G:\adt-bundle-windows-x86_64-20140321\adt-bundle-windows-x86_64-20140321\sdk
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 19.0.3
+     [echo] Resolving Build Target for ContactV4_2...
+[getuitarget] Project Target:   Android 4.4.2
+[getuitarget] API level:        19
+     [echo] ----------
+     [echo] Creating output directories if needed...
+
+-pre-compile:
+
+compile:
+    [javac] Compiling 1 source file to C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
+    [javac] ����: [options] Դֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ŀ��ֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ҫ�����й��ѹ�ʱѡ��ľ���, ��ʹ�� -Xlint:-options��
+    [javac] 3 ������
+
+-post-compile:
+
+-dex:
+      [dex] input: C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
+      [dex] Found Deleted Target File
+      [dex] Converting compiled files and external libraries into C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes.dex...
+
+-post-dex:
+
+-jar:
+      [jar] Building jar: C:\Users\Administrator\workspace_201607\ContactUITest\bin\ContactV4_2.jar
+
+-post-jar:
+
+build:
+
+BUILD SUCCESSFUL
+Total time: 3 seconds
+2206 KB/s (38408 bytes in 0.017s)
+run PId: 31172
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact4_2.ContactV4_2
+
+INSTRUMENTATION_STATUS: stream=
+
+com.uitest.contact4_2.ContactV4_2:
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: test=testCase_001
+
+INSTRUMENTATION_STATUS_CODE: 1
+
+startTest: testCase_001(com.uitest.contact4_2.ContactV4_2)
+
+wakeAndUnlock
+
+isScreenOn: true
+
+[start] findAndOpenApp和通讯录
+
+clickByName: 应用程序
+
+click 和通讯录
+
+clickById: tab_contacts
+
+snapshot
+
+clickById: contact_search_hint_tv
+
+snapshot
+
+[start] inputTextByName: contact_search_hint_tv , input: 陈壁画
+
+snapshot
+
+isExistById: contact_name
+
+elementExist: true
+
+start long click
+
+end long click
+
+clickByName: 删除
+
+snapshot
+
+clickByName: 删除
+
+snapshot
+
+clickById: iab_ib_action
+
+snapshot
+
+[start] inputTextByName: edit_contact_name , input: 陈壁画
+
+[start] inputText: 陈壁画
+
+text len: 2
+
+[end] inputText:  , input: 陈壁画
+
+[start] inputTextByName: 电话号码 , input: 13543493854
+
+[start] inputText: 13543493854
+
+text len: 4
+
+[end] inputText:  , input: 13543493854
+
+clickByName: 完成
+
+snapshot
+
+[start] close app
+
+点击关闭
+
+[end] close app
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact4_2.ContactV4_2
+
+INSTRUMENTATION_STATUS: stream=.
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: test=testCase_001
+
+INSTRUMENTATION_STATUS_CODE: 0
+
+INSTRUMENTATION_STATUS: stream=
+
+Test results for WatcherResultPrinter=.
+
+Time: 41.162
+
+
+
+OK (1 test)
+
+
+
+
+
+INSTRUMENTATION_STATUS_CODE: -1
+
+Updated file C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
+Buildfile: C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 22.6.2
+ [checkenv] Installed at G:\adt-bundle-windows-x86_64-20140321\adt-bundle-windows-x86_64-20140321\sdk
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 19.0.3
+     [echo] Resolving Build Target for ContactV4_2...
+[getuitarget] Project Target:   Android 4.4.2
+[getuitarget] API level:        19
+     [echo] ----------
+     [echo] Creating output directories if needed...
+
+-pre-compile:
+
+compile:
+
+-post-compile:
+
+-dex:
+      [dex] input: C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
+      [dex] Found Deleted Target File
+      [dex] Converting compiled files and external libraries into C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes.dex...
+
+-post-dex:
+
+-jar:
+      [jar] Building jar: C:\Users\Administrator\workspace_201607\ContactUITest\bin\ContactV4_2.jar
+
+-post-jar:
+
+build:
+
+BUILD SUCCESSFUL
+Total time: 3 seconds
+4688 KB/s (38408 bytes in 0.008s)
+run PId: 32154
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact4_2.ContactV4_2
+
+INSTRUMENTATION_STATUS: stream=
+
+com.uitest.contact4_2.ContactV4_2:
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: test=testCase_001
+
+INSTRUMENTATION_STATUS_CODE: 1
+
+startTest: testCase_001(com.uitest.contact4_2.ContactV4_2)
+
+wakeAndUnlock
+
+isScreenOn: true
+
+[start] findAndOpenApp和通讯录
+
+clickByName: 应用程序
+
+click 和通讯录
+
+clickById: tab_contacts
+
+snapshot
+
+clickById: contact_search_hint_tv
+
+snapshot
+
+[start] inputTextByName: contact_search_hint_tv , input: 陈壁画
+
+snapshot
+
+isExistById: contact_name
+
+elementExist: true
+
+start long click
+
+end long click
+
+clickByName: 删除
+
+snapshot
+
+clickByName: 删除
+
+snapshot
+
+clickById: iab_ib_action
+
+snapshot
+
+[start] inputTextByName: edit_contact_name , input: 陈壁画
+
+[start] inputText: 陈壁画
+
+text len: 2
+
+[end] inputText:  , input: 陈壁画
+
+[start] inputTextByName: 电话号码 , input: 13543493854
+
+[start] inputText: 13543493854
+
+text len: 4
+
+[end] inputText:  , input: 13543493854
+
+clickByName: 完成
+
+snapshot
+
+[start] close app
+
+点击关闭
+
+[end] close app
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact4_2.ContactV4_2
+
+INSTRUMENTATION_STATUS: stream=.
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: test=testCase_001
+
+INSTRUMENTATION_STATUS_CODE: 0
+
+INSTRUMENTATION_STATUS: stream=
+
+Test results for WatcherResultPrinter=.
+
+Time: 42.05
+
+
+
+OK (1 test)
+
+
+
+
+
+INSTRUMENTATION_STATUS_CODE: -1
+
+Updated file C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
+Buildfile: C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 22.6.2
+ [checkenv] Installed at G:\adt-bundle-windows-x86_64-20140321\adt-bundle-windows-x86_64-20140321\sdk
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 19.0.3
+     [echo] Resolving Build Target for ContactV4_2...
+[getuitarget] Project Target:   Android 4.4.2
+[getuitarget] API level:        19
+     [echo] ----------
+     [echo] Creating output directories if needed...
+
+-pre-compile:
+
+compile:
+    [javac] Compiling 1 source file to C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
+    [javac] ����: [options] Դֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ŀ��ֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ҫ�����й��ѹ�ʱѡ��ľ���, ��ʹ�� -Xlint:-options��
+    [javac] 3 ������
+
+-post-compile:
+
+-dex:
+      [dex] input: C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
+      [dex] Found Deleted Target File
+      [dex] Converting compiled files and external libraries into C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes.dex...
+
+-post-dex:
+
+-jar:
+      [jar] Building jar: C:\Users\Administrator\workspace_201607\ContactUITest\bin\ContactV4_2.jar
+
+-post-jar:
+
+build:
+
+BUILD SUCCESSFUL
+Total time: 3 seconds
+3751 KB/s (38415 bytes in 0.010s)
+run PId: 32685
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact4_2.ContactV4_2
+
+INSTRUMENTATION_STATUS: stream=
+
+com.uitest.contact4_2.ContactV4_2:
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: test=testCase_001
+
+INSTRUMENTATION_STATUS_CODE: 1
+
+startTest: testCase_001(com.uitest.contact4_2.ContactV4_2)
+
+wakeAndUnlock
+
+isScreenOn: true
+
+[start] findAndOpenApp和通讯录
+
+clickByName: 应用程序
+
+click 和通讯录
+
+clickById: tab_contacts
+
+snapshot
+
+[start] inputTextByName: contact_search_hint_tv , input: 陈壁画
+
+[start] inputText: 陈壁画
+
+com.android.uiautomator.core.UiObjectNotFoundException: UiSelector[RESOURCE_ID_REGEX=.*contact_search_hint_tv]
+
+	at com.android.uiautomator.core.UiObject.getText(UiObject.java:535)
+
+	at com.uitest.cmp.EditText.clearEditText(EditText.java:36)
+
+	at com.uitest.uiautomatorUtil.ElementManagerLog.inputText(ElementManagerLog.java:949)
+
+	at com.uitest.uiautomatorUtil.ElementManagerLog.inputTextById(ElementManagerLog.java:984)
+
+	at com.uitest.contact4_2.SimpleCode420.inputTextById(SimpleCode420.java:138)
+
+	at com.uitest.contact4_2.ContactV4_2.testCase_001(ContactV4_2.java:132)
+
+	at java.lang.reflect.Method.invokeNative(Native Method)
+
+	at java.lang.reflect.Method.invoke(Method.java:525)
+
+	at junit.framework.TestCase.runTest(TestCase.java:168)
+
+	at junit.framework.TestCase.runBare(TestCase.java:134)
+
+	at junit.framework.TestResult$1.protect(TestResult.java:115)
+
+	at junit.framework.TestResult.runProtected(TestResult.java:133)
+
+	at junit.framework.TestResult.run(TestResult.java:118)
+
+	at junit.framework.TestCase.run(TestCase.java:124)
+
+	at com.uitest.uiautomatorUtil.TestListenerManager.run(TestListenerManager.java:87)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.start(UiAutomatorTestRunner.java:160)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.run(UiAutomatorTestRunner.java:96)
+
+	at com.android.commands.uiautomator.RunTestCommand.run(RunTestCommand.java:91)
+
+	at com.android.commands.uiautomator.Launcher.main(Launcher.java:83)
+
+	at com.android.internal.os.RuntimeInit.nativeFinishInit(Native Method)
+
+	at com.android.internal.os.RuntimeInit.main(RuntimeInit.java:297)
+
+	at dalvik.system.NativeStart.main(Native Method)
+
+setText: 对象不存在
+
+[end] inputText:  , input: 陈壁画
+
+isExistById: contact_name
+
+elementExist: true
+
+start long click
+
+end long click
+
+clickByName: 删除
+
+snapshot
+
+clickByName: 删除
+
+snapshot
+
+clickById: iab_ib_action
+
+snapshot
+
+[start] inputTextByName: edit_contact_name , input: 陈壁画
+
+[start] inputText: 陈壁画
+
+text len: 2
+
+[end] inputText:  , input: 陈壁画
+
+[start] inputTextByName: 电话号码 , input: 13543493854
+
+[start] inputText: 13543493854
+
+text len: 4
+
+[end] inputText:  , input: 13543493854
+
+clickByName: 完成
+
+snapshot
+
+[start] close app
+
+点击关闭
+
+[end] close app
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact4_2.ContactV4_2
+
+INSTRUMENTATION_STATUS: stream=.
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: test=testCase_001
+
+INSTRUMENTATION_STATUS_CODE: 0
+
+INSTRUMENTATION_STATUS: stream=
+
+Test results for WatcherResultPrinter=.
+
+Time: 55.356
+
+
+
+OK (1 test)
+
+
+
+
+
+INSTRUMENTATION_STATUS_CODE: -1
+
+Updated file C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
+Buildfile: C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 22.6.2
+ [checkenv] Installed at G:\adt-bundle-windows-x86_64-20140321\adt-bundle-windows-x86_64-20140321\sdk
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 19.0.3
+     [echo] Resolving Build Target for ContactV4_2...
+[getuitarget] Project Target:   Android 4.4.2
+[getuitarget] API level:        19
+     [echo] ----------
+     [echo] Creating output directories if needed...
+
+-pre-compile:
+
+compile:
+    [javac] Compiling 1 source file to C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
+    [javac] ����: [options] Դֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ŀ��ֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ҫ�����й��ѹ�ʱѡ��ľ���, ��ʹ�� -Xlint:-options��
+    [javac] 3 ������
+
+-post-compile:
+
+-dex:
+      [dex] input: C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
+      [dex] Found Deleted Target File
+      [dex] Converting compiled files and external libraries into C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes.dex...
+
+-post-dex:
+
+-jar:
+      [jar] Building jar: C:\Users\Administrator\workspace_201607\ContactUITest\bin\ContactV4_2.jar
+
+-post-jar:
+
+build:
+
+BUILD SUCCESSFUL
+Total time: 3 seconds
+2083 KB/s (38396 bytes in 0.018s)
+run PId: 1898
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact4_2.ContactV4_2
+
+INSTRUMENTATION_STATUS: stream=
+
+com.uitest.contact4_2.ContactV4_2:
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: test=testCase_001
+
+INSTRUMENTATION_STATUS_CODE: 1
+
+startTest: testCase_001(com.uitest.contact4_2.ContactV4_2)
+
+wakeAndUnlock
+
+isScreenOn: true
+
+[start] findAndOpenApp和通讯录
+
+clickByName: 应用程序
+
+click 和通讯录
+
+clickById: tab_contacts
+
+snapshot
+
+clickById: contact_search_bar
+
+snapshot
+
+[start] inputTextByName: contact_search_bar , input: 陈壁画
+
+[start] inputText: 陈壁画
+
+text len: 0
+
+[end] inputText:  , input: 陈壁画
+
+isExistById: contact_name
+
+elementExist: false
+
+clickById: contact_search_del_btn
+
+snapshot
+
+clickById: iab_ib_action
+
+snapshot
+
+[start] inputTextByName: edit_contact_name , input: 陈壁画
+
+snapshot
+
+[start] inputTextByName: 电话号码 , input: 13543493854
+
+snapshot
+
+clickByName: 完成
+
+snapshot
+
+[start] close app
+
+点击关闭
+
+[end] close app
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact4_2.ContactV4_2
+
+INSTRUMENTATION_STATUS: stream=.
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: test=testCase_001
+
+INSTRUMENTATION_STATUS_CODE: 0
+
+INSTRUMENTATION_STATUS: stream=
+
+Test results for WatcherResultPrinter=.
+
+Time: 32.781
+
+
+
+OK (1 test)
+
+
+
+
+
+INSTRUMENTATION_STATUS_CODE: -1
+
+Updated file C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
+Buildfile: C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 22.6.2
+ [checkenv] Installed at G:\adt-bundle-windows-x86_64-20140321\adt-bundle-windows-x86_64-20140321\sdk
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 19.0.3
+     [echo] Resolving Build Target for ContactV4_2...
+[getuitarget] Project Target:   Android 4.4.2
+[getuitarget] API level:        19
+     [echo] ----------
+     [echo] Creating output directories if needed...
+
+-pre-compile:
+
+compile:
+
+-post-compile:
+
+-dex:
+      [dex] input: C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
+      [dex] Found Deleted Target File
+      [dex] Converting compiled files and external libraries into C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes.dex...
+
+-post-dex:
+
+-jar:
+      [jar] Building jar: C:\Users\Administrator\workspace_201607\ContactUITest\bin\ContactV4_2.jar
+
+-post-jar:
+
+build:
+
+BUILD SUCCESSFUL
+Total time: 3 seconds
+2343 KB/s (38396 bytes in 0.016s)
+run PId: 2820
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact4_2.ContactV4_2
+
+INSTRUMENTATION_STATUS: stream=
+
+com.uitest.contact4_2.ContactV4_2:
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: test=testCase_001
+
+INSTRUMENTATION_STATUS_CODE: 1
+
+startTest: testCase_001(com.uitest.contact4_2.ContactV4_2)
+
+wakeAndUnlock
+
+isScreenOn: true
+
+[start] findAndOpenApp和通讯录
+
+clickByName: 应用程序
+
+drag
+
+[ doing ] swipeToRight 
+
+click 和通讯录
+
+clickById: tab_contacts
+
+snapshot
+
+clickById: contact_search_bar
+
+snapshot
+
+[start] inputTextByName: contact_search_bar , input: 陈壁画
+
+[start] inputText: 陈壁画
+
+text len: 0
+
+[end] inputText:  , input: 陈壁画
+
+isExistById: contact_name
+
+elementExist: false
+
+clickById: contact_search_del_btn
+
+snapshot
+
+clickById: iab_ib_action
+
+snapshot
+
+[start] inputTextByName: edit_contact_name , input: 陈壁画
+
+snapshot
+
+[start] inputTextByName: 电话号码 , input: 13543493854
+
+snapshot
+
+clickByName: 完成
+
+snapshot
+
+[start] close app
+
+点击关闭
+
+[end] close app
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact4_2.ContactV4_2
+
+INSTRUMENTATION_STATUS: stream=.
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: test=testCase_001
+
+INSTRUMENTATION_STATUS_CODE: 0
+
+INSTRUMENTATION_STATUS: stream=
+
+Test results for WatcherResultPrinter=.
+
+Time: 34.685
+
+
+
+OK (1 test)
+
+
+
+
+
+INSTRUMENTATION_STATUS_CODE: -1
+
+Updated file C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
+Buildfile: C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 22.6.2
+ [checkenv] Installed at G:\adt-bundle-windows-x86_64-20140321\adt-bundle-windows-x86_64-20140321\sdk
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 19.0.3
+     [echo] Resolving Build Target for ContactV4_2...
+[getuitarget] Project Target:   Android 4.4.2
+[getuitarget] API level:        19
+     [echo] ----------
+     [echo] Creating output directories if needed...
+
+-pre-compile:
+
+compile:
+
+-post-compile:
+
+-dex:
+      [dex] input: C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
+      [dex] Found Deleted Target File
+      [dex] Converting compiled files and external libraries into C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes.dex...
+
+-post-dex:
+
+-jar:
+      [jar] Building jar: C:\Users\Administrator\workspace_201607\ContactUITest\bin\ContactV4_2.jar
+
+-post-jar:
+
+build:
+
+BUILD SUCCESSFUL
+Total time: 3 seconds
+2343 KB/s (38396 bytes in 0.016s)
+run PId: 3928
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact4_2.ContactV4_2
+
+INSTRUMENTATION_STATUS: stream=
+
+com.uitest.contact4_2.ContactV4_2:
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: test=testCase_001
+
+INSTRUMENTATION_STATUS_CODE: 1
+
+startTest: testCase_001(com.uitest.contact4_2.ContactV4_2)
+
+wakeAndUnlock
+
+isScreenOn: true
+
+[start] findAndOpenApp和通讯录
+
+clickByName: 应用程序
+
+click 和通讯录
+
+clickById: tab_contacts
+
+snapshot
+
+clickById: contact_search_bar
+
+snapshot
+
+[start] inputTextByName: contact_search_bar , input: 陈壁画
+
+snapshot
+
+isExistById: contact_name
+
+elementExist: false
+
+clickById: contact_search_del_btn
+
+snapshot
+
+clickById: iab_ib_action
+
+snapshot
+
+[start] inputTextByName: edit_contact_name , input: 陈壁画
+
+[start] inputText: 陈壁画
+
+text len: 2
+
+[end] inputText:  , input: 陈壁画
+
+[start] inputTextByName: 电话号码 , input: 13543493854
+
+[start] inputText: 13543493854
+
+text len: 4
+
+[end] inputText:  , input: 13543493854
+
+clickByName: 完成
+
+snapshot
+
+[start] close app
+
+点击关闭
+
+[end] close app
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact4_2.ContactV4_2
+
+INSTRUMENTATION_STATUS: stream=.
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: test=testCase_001
+
+INSTRUMENTATION_STATUS_CODE: 0
+
+INSTRUMENTATION_STATUS: stream=
+
+Test results for WatcherResultPrinter=.
+
+Time: 33.914
+
+
+
+OK (1 test)
+
+
+
+
+
+INSTRUMENTATION_STATUS_CODE: -1
+
+Updated file C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
+Buildfile: C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 22.6.2
+ [checkenv] Installed at G:\adt-bundle-windows-x86_64-20140321\adt-bundle-windows-x86_64-20140321\sdk
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 19.0.3
+     [echo] Resolving Build Target for ContactV4_2...
+[getuitarget] Project Target:   Android 4.4.2
+[getuitarget] API level:        19
+     [echo] ----------
+     [echo] Creating output directories if needed...
+
+-pre-compile:
+
+compile:
+    [javac] Compiling 3 source files to C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
+    [javac] ����: [options] Դֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ŀ��ֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ҫ�����й��ѹ�ʱѡ��ľ���, ��ʹ�� -Xlint:-options��
+    [javac] 3 ������
+
+-post-compile:
+
+-dex:
+      [dex] input: C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
+      [dex] Found Deleted Target File
+      [dex] Converting compiled files and external libraries into C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes.dex...
+
+-post-dex:
+
+-jar:
+      [jar] Building jar: C:\Users\Administrator\workspace_201607\ContactUITest\bin\ContactV4_2.jar
+
+-post-jar:
+
+build:
+
+BUILD SUCCESSFUL
+Total time: 4 seconds
+2349 KB/s (38504 bytes in 0.016s)
+run PId: 5263
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact4_2.ContactV4_2
+
+INSTRUMENTATION_STATUS: stream=
+
+com.uitest.contact4_2.ContactV4_2:
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: test=testCase_001
+
+INSTRUMENTATION_STATUS_CODE: 1
+
+startTest: testCase_001(com.uitest.contact4_2.ContactV4_2)
+
+wakeAndUnlock
+
+isScreenOn: true
+
+[start] findAndOpenApp和通讯录
+
+clickByName: 应用程序
+
+drag
+
+[ doing ] swipeToRight 
+
+click 和通讯录
+
+clickById: tab_contacts
+
+snapshot
+
+clickById: contact_search_bar
+
+snapshot
+
+[start] inputTextByName: contact_search_bar , input: 陈壁画
+
+[start] inputText: 陈壁画
+
+text len: 0
+
+[end] inputText:  , input: 陈壁画
+
+isExistById: contact_name
+
+elementExist: true
+
+start long click
+
+end long click
+
+clickByName: 删除
+
+snapshot
+
+clickByName: 删除
+
+snapshot
+
+clickById: iab_ib_action
+
+snapshot
+
+[start] inputTextByName: edit_contact_name , input: 陈壁画
+
+[start] inputText: 陈壁画
+
+text len: 2
+
+[end] inputText:  , input: 陈壁画
+
+[start] inputTextByName: 电话号码 , input: 13543493854
+
+[start] inputText: 13543493854
+
+text len: 4
+
+[end] inputText:  , input: 13543493854
+
+clickByName: 完成
+
+snapshot
+
+[start] close app
+
+点击关闭
+
+[end] close app
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact4_2.ContactV4_2
+
+INSTRUMENTATION_STATUS: stream=.
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: test=testCase_001
+
+INSTRUMENTATION_STATUS_CODE: 0
+
+INSTRUMENTATION_STATUS: stream=
+
+Test results for WatcherResultPrinter=.
+
+Time: 51.483
+
+
+
+OK (1 test)
+
+
+
+
+
+INSTRUMENTATION_STATUS_CODE: -1
+
+Updated file C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
+Buildfile: C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 22.6.2
+ [checkenv] Installed at G:\adt-bundle-windows-x86_64-20140321\adt-bundle-windows-x86_64-20140321\sdk
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 19.0.3
+     [echo] Resolving Build Target for ContactV4_2...
+[getuitarget] Project Target:   Android 4.4.2
+[getuitarget] API level:        19
+     [echo] ----------
+     [echo] Creating output directories if needed...
+
+-pre-compile:
+
+compile:
+    [javac] Compiling 1 source file to C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
+    [javac] ����: [options] Դֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ŀ��ֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ҫ�����й��ѹ�ʱѡ��ľ���, ��ʹ�� -Xlint:-options��
+    [javac] 3 ������
+
+-post-compile:
+
+-dex:
+      [dex] input: C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
+      [dex] Found Deleted Target File
+      [dex] Converting compiled files and external libraries into C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes.dex...
+
+-post-dex:
+
+-jar:
+      [jar] Building jar: C:\Users\Administrator\workspace_201607\ContactUITest\bin\ContactV4_2.jar
+
+-post-jar:
+
+build:
+
+BUILD SUCCESSFUL
+Total time: 4 seconds
+3759 KB/s (38497 bytes in 0.010s)
+run PId: 7203
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact4_2.ContactV4_2
+
+INSTRUMENTATION_STATUS: stream=
+
+com.uitest.contact4_2.ContactV4_2:
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: test=testCase_001
+
+INSTRUMENTATION_STATUS_CODE: 1
+
+startTest: testCase_001(com.uitest.contact4_2.ContactV4_2)
+
+wakeAndUnlock
+
+isScreenOn: true
+
+[start] findAndOpenApp和通讯录
+
+clickByName: 应用程序
+
+drag
+
+[ doing ] swipeToRight 
+
+click 和通讯录
+
+clickById: tab_contacts
+
+snapshot
+
+clickById: contact_search_bar
+
+snapshot
+
+[start] inputTextByName: contact_search_bar , input: 陈壁画
+
+text len: 0
+
+isExistById: contact_name
+
+elementExist: false
+
+clickById: contact_search_del_btn
+
+snapshot
+
+clickById: iab_ib_action
+
+snapshot
+
+[start] inputTextByName: edit_contact_name , input: 陈壁画
+
+snapshot
+
+[start] inputTextByName: 电话号码 , input: 13543493854
+
+snapshot
+
+clickByName: 完成
+
+snapshot
+
+[start] close app
+
+点击关闭
+
+[end] close app
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact4_2.ContactV4_2
+
+INSTRUMENTATION_STATUS: stream=.
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: test=testCase_001
+
+INSTRUMENTATION_STATUS_CODE: 0
+
+INSTRUMENTATION_STATUS: stream=
+
+Test results for WatcherResultPrinter=.
+
+Time: 35.681
+
+
+
+OK (1 test)
+
+
+
+
+
+INSTRUMENTATION_STATUS_CODE: -1
+
+Updated file C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
+Buildfile: C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 22.6.2
+ [checkenv] Installed at G:\adt-bundle-windows-x86_64-20140321\adt-bundle-windows-x86_64-20140321\sdk
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 19.0.3
+     [echo] Resolving Build Target for ContactV4_2...
+[getuitarget] Project Target:   Android 4.4.2
+[getuitarget] API level:        19
+     [echo] ----------
+     [echo] Creating output directories if needed...
+
+-pre-compile:
+
+compile:
+    [javac] Compiling 1 source file to C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
+    [javac] ����: [options] Դֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ŀ��ֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ҫ�����й��ѹ�ʱѡ��ľ���, ��ʹ�� -Xlint:-options��
+    [javac] 3 ������
+
+-post-compile:
+
+-dex:
+      [dex] input: C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
+      [dex] Found Deleted Target File
+      [dex] Converting compiled files and external libraries into C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes.dex...
+
+-post-dex:
+
+-jar:
+      [jar] Building jar: C:\Users\Administrator\workspace_201607\ContactUITest\bin\ContactV4_2.jar
+
+-post-jar:
+
+build:
+
+BUILD SUCCESSFUL
+Total time: 3 seconds
+1879 KB/s (38498 bytes in 0.020s)
+run PId: 7755
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact4_2.ContactV4_2
+
+INSTRUMENTATION_STATUS: stream=
+
+com.uitest.contact4_2.ContactV4_2:
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: test=testCase_001
+
+INSTRUMENTATION_STATUS_CODE: 1
+
+startTest: testCase_001(com.uitest.contact4_2.ContactV4_2)
+
+wakeAndUnlock
+
+isScreenOn: true
+
+[start] findAndOpenApp和通讯录
+
+clickByName: 应用程序
+
+click 和通讯录
+
+clickById: tab_contacts
+
+snapshot
+
+clickById: contact_search_bar
+
+snapshot
+
+[start] inputTextByName: contact_search_bar , input: 13543493854
+
+text len: 0
+
+isExistById: contact_name
+
+elementExist: true
+
+start long click
+
+end long click
+
+clickByName: 删除
+
+snapshot
+
+clickByName: 删除
+
+snapshot
+
+clickById: iab_ib_action
+
+snapshot
+
+[start] inputTextByName: edit_contact_name , input: 陈壁画
+
+text len: 2
+
+[start] inputTextByName: 电话号码 , input: 13543493854
+
+text len: 4
+
+clickByName: 完成
+
+snapshot
+
+[start] close app
+
+点击关闭
+
+[end] close app
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact4_2.ContactV4_2
+
+INSTRUMENTATION_STATUS: stream=.
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: test=testCase_001
+
+INSTRUMENTATION_STATUS_CODE: 0
+
+INSTRUMENTATION_STATUS: stream=
+
+Test results for WatcherResultPrinter=.
+
+Time: 48.545
+
+
+
+OK (1 test)
+
+
+
+
+
+INSTRUMENTATION_STATUS_CODE: -1
+
+Updated file C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
+Buildfile: C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 22.6.2
+ [checkenv] Installed at G:\adt-bundle-windows-x86_64-20140321\adt-bundle-windows-x86_64-20140321\sdk
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 19.0.3
+     [echo] Resolving Build Target for ContactV4_2...
+[getuitarget] Project Target:   Android 4.4.2
+[getuitarget] API level:        19
+     [echo] ----------
+     [echo] Creating output directories if needed...
+
+-pre-compile:
+
+compile:
+    [javac] Compiling 1 source file to C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
+    [javac] ����: [options] Դֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ŀ��ֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ҫ�����й��ѹ�ʱѡ��ľ���, ��ʹ�� -Xlint:-options��
+    [javac] 3 ������
+
+-post-compile:
+
+-dex:
+      [dex] input: C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
+      [dex] Found Deleted Target File
+      [dex] Converting compiled files and external libraries into C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes.dex...
+
+-post-dex:
+
+-jar:
+      [jar] Building jar: C:\Users\Administrator\workspace_201607\ContactUITest\bin\ContactV4_2.jar
+
+-post-jar:
+
+build:
+
+BUILD SUCCESSFUL
+Total time: 4 seconds
+2212 KB/s (38510 bytes in 0.017s)
+run PId: 9138
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact4_2.ContactV4_2
+
+INSTRUMENTATION_STATUS: stream=
+
+com.uitest.contact4_2.ContactV4_2:
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: test=testCase_001
+
+INSTRUMENTATION_STATUS_CODE: 1
+
+startTest: testCase_001(com.uitest.contact4_2.ContactV4_2)
+
+wakeAndUnlock
+
+isScreenOn: true
+
+[start] findAndOpenApp和通讯录
+
+clickByName: 应用程序
+
+drag
+
+[ doing ] swipeToRight 
+
+click 和通讯录
+
+clickById: tab_contacts
+
+snapshot
+
+clickById: contact_search_bar
+
+snapshot
+
+[start] inputTextByName: contact_search_bar , input: 13543493854
+
+text len: 0
+
+isExistById: contact_name
+
+elementExist: true
+
+start long click
+
+end long click
+
+clickByName: 删除
+
+snapshot
+
+clickByName: 删除
+
+snapshot
+
+clickById: iab_ib_action
+
+snapshot
+
+[start] inputTextByName: edit_contact_name , input: 陈壁画
+
+text len: 2
+
+[start] inputTextByName: 电话号码 , input: 13543493854
+
+text len: 4
+
+clickByName: 完成
+
+snapshot
+
+[start] close app
+
+点击关闭
+
+[end] close app
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact4_2.ContactV4_2
+
+INSTRUMENTATION_STATUS: stream=.
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: test=testCase_001
+
+INSTRUMENTATION_STATUS_CODE: 0
+
+INSTRUMENTATION_STATUS: stream=
+
+Test results for WatcherResultPrinter=.
+
+Time: 50.899
+
+
+
+OK (1 test)
+
+
+
+
+
+INSTRUMENTATION_STATUS_CODE: -1
+
+Updated file C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
+Buildfile: C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 22.6.2
+ [checkenv] Installed at G:\adt-bundle-windows-x86_64-20140321\adt-bundle-windows-x86_64-20140321\sdk
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 19.0.3
+     [echo] Resolving Build Target for ContactV4_2...
+[getuitarget] Project Target:   Android 4.4.2
+[getuitarget] API level:        19
+     [echo] ----------
+     [echo] Creating output directories if needed...
+
+-pre-compile:
+
+compile:
+    [javac] Compiling 1 source file to C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
+    [javac] ����: [options] Դֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ŀ��ֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ҫ�����й��ѹ�ʱѡ��ľ���, ��ʹ�� -Xlint:-options��
+    [javac] 3 ������
+
+-post-compile:
+
+-dex:
+      [dex] input: C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
+      [dex] Found Deleted Target File
+      [dex] Converting compiled files and external libraries into C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes.dex...
+
+-post-dex:
+
+-jar:
+      [jar] Building jar: C:\Users\Administrator\workspace_201607\ContactUITest\bin\ContactV4_2.jar
+
+-post-jar:
+
+build:
+
+BUILD SUCCESSFUL
+Total time: 4 seconds
+2350 KB/s (38510 bytes in 0.016s)
+run PId: 10448
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact4_2.ContactV4_2
+
+INSTRUMENTATION_STATUS: stream=
+
+com.uitest.contact4_2.ContactV4_2:
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: test=testCase_001
+
+INSTRUMENTATION_STATUS_CODE: 1
+
+startTest: testCase_001(com.uitest.contact4_2.ContactV4_2)
+
+wakeAndUnlock
+
+isScreenOn: true
+
+[start] findAndOpenApp和通讯录
+
+clickByName: 应用程序
+
+drag
+
+[ doing ] swipeToRight 
+
+click 和通讯录
+
+clickById: tab_contacts
+
+snapshot
+
+clickById: contact_search_bar
+
+snapshot
+
+[start] inputTextByName: contact_search_bar , input: 13543493854
+
+text len: 0
+
+isExistById: contact_name
+
+elementExist: true
+
+start long click
+
+end long click
+
+clickByName: 删除
+
+snapshot
+
+clickByName: 删除
+
+snapshot
+
+clickById: iab_ib_action
+
+snapshot
+
+[start] inputTextByName: edit_contact_name , input: 陈壁画
+
+text len: 2
+
+[start] inputTextByName: 电话号码 , input: 13543493854
+
+text len: 4
+
+clickByName: 完成
+
+snapshot
+
+[start] close app
+
+点击关闭
+
+[end] close app
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact4_2.ContactV4_2
+
+INSTRUMENTATION_STATUS: stream=.
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: test=testCase_001
+
+INSTRUMENTATION_STATUS_CODE: 0
+
+INSTRUMENTATION_STATUS: stream=
+
+Test results for WatcherResultPrinter=.
+
+Time: 50.829
+
+
+
+OK (1 test)
+
+
+
+
+
+INSTRUMENTATION_STATUS_CODE: -1
+
+Updated file C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
+Buildfile: C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 22.6.2
+ [checkenv] Installed at G:\adt-bundle-windows-x86_64-20140321\adt-bundle-windows-x86_64-20140321\sdk
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 19.0.3
+     [echo] Resolving Build Target for ContactV4_2...
+[getuitarget] Project Target:   Android 4.4.2
+[getuitarget] API level:        19
+     [echo] ----------
+     [echo] Creating output directories if needed...
+
+-pre-compile:
+
+compile:
+    [javac] Compiling 1 source file to C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
+    [javac] ����: [options] Դֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ŀ��ֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ҫ�����й��ѹ�ʱѡ��ľ���, ��ʹ�� -Xlint:-options��
+    [javac] 3 ������
+
+-post-compile:
+
+-dex:
+      [dex] input: C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
+      [dex] Found Deleted Target File
+      [dex] Converting compiled files and external libraries into C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes.dex...
+
+-post-dex:
+
+-jar:
+      [jar] Building jar: C:\Users\Administrator\workspace_201607\ContactUITest\bin\ContactV4_2.jar
+
+-post-jar:
+
+build:
+
+BUILD SUCCESSFUL
+Total time: 4 seconds
+4189 KB/s (38610 bytes in 0.009s)
+run PId: 11706
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact4_2.ContactV4_2
+
+INSTRUMENTATION_STATUS: stream=
+
+com.uitest.contact4_2.ContactV4_2:
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: test=testCase_001
+
+INSTRUMENTATION_STATUS_CODE: 1
+
+startTest: testCase_001(com.uitest.contact4_2.ContactV4_2)
+
+wakeAndUnlock
+
+isScreenOn: true
+
+[start] findAndOpenApp和通讯录
+
+clickByName: 应用程序
+
+drag
+
+[ doing ] swipeToRight 
+
+click 和通讯录
+
+clickById: tab_contacts
+
+snapshot
+
+clickById: contact_search_bar
+
+snapshot
+
+[start] inputTextByName: contact_search_bar , input: 13543493854
+
+text len: 0
+
+isExistById: contact_name
+
+elementExist: true
+
+start long click
+
+end long click
+
+clickByName: 删除
+
+snapshot
+
+clickByName: 删除
+
+snapshot
+
+clickById: iab_ib_action
+
+snapshot
+
+[start] inputTextByName: edit_contact_name , input: 陈壁画
+
+text len: 2
+
+[start] inputTextByName: 电话号码 , input: 13543493854
+
+text len: 4
+
+clickByName: 完成
+
+snapshot
+
+[start] close app
+
+点击关闭
+
+[end] close app
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact4_2.ContactV4_2
+
+INSTRUMENTATION_STATUS: stream=.
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: test=testCase_001
+
+INSTRUMENTATION_STATUS_CODE: 0
+
+INSTRUMENTATION_STATUS: stream=
+
+Test results for WatcherResultPrinter=.
+
+Time: 51.551
+
+
+
+OK (1 test)
+
+
+
+
+
+INSTRUMENTATION_STATUS_CODE: -1
+
+Updated file C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
+Buildfile: C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 22.6.2
+ [checkenv] Installed at G:\adt-bundle-windows-x86_64-20140321\adt-bundle-windows-x86_64-20140321\sdk
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 19.0.3
+     [echo] Resolving Build Target for ContactV4_2...
+[getuitarget] Project Target:   Android 4.4.2
+[getuitarget] API level:        19
+     [echo] ----------
+     [echo] Creating output directories if needed...
+
+-pre-compile:
+
+compile:
+    [javac] Compiling 3 source files to C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
+    [javac] ����: [options] Դֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ŀ��ֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ҫ�����й��ѹ�ʱѡ��ľ���, ��ʹ�� -Xlint:-options��
+    [javac] 3 ������
+
+-post-compile:
+
+-dex:
+      [dex] input: C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
+      [dex] Found Deleted Target File
+      [dex] Converting compiled files and external libraries into C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes.dex...
+
+-post-dex:
+
+-jar:
+      [jar] Building jar: C:\Users\Administrator\workspace_201607\ContactUITest\bin\ContactV4_2.jar
+
+-post-jar:
+
+build:
+
+BUILD SUCCESSFUL
+Total time: 4 seconds
+2352 KB/s (38546 bytes in 0.016s)
+run PId: 13396
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact4_2.ContactV4_2
+
+INSTRUMENTATION_STATUS: stream=
+
+com.uitest.contact4_2.ContactV4_2:
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: test=testCase_001
+
+INSTRUMENTATION_STATUS_CODE: 1
+
+startTest: testCase_001(com.uitest.contact4_2.ContactV4_2)
+
+wakeAndUnlock
+
+isScreenOn: true
+
+[start] findAndOpenApp和通讯录
+
+clickByName: 应用程序
+
+drag
+
+[ doing ] swipeToRight 
+
+click 和通讯录
+
+clickById: tab_contacts
+
+clickById: contact_search_bar
+
+[start] inputTextByName: contact_search_bar , input: 13543493854
+
+text len: 0
+
+isExistById: contact_name
+
+elementExist: true
+
+start long click
+
+end long click
+
+clickByName: 删除
+
+clickByName: 删除
+
+clickById: iab_ib_action
+
+[start] inputTextByName: edit_contact_name , input: 陈壁画
+
+text len: 2
+
+[start] inputTextByName: 电话号码 , input: 13543493854
+
+text len: 4
+
+clickByName: 完成
+
+[start] close app
+
+点击关闭
+
+[end] close app
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact4_2.ContactV4_2
+
+INSTRUMENTATION_STATUS: stream=.
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: test=testCase_001
+
+INSTRUMENTATION_STATUS_CODE: 0
+
+INSTRUMENTATION_STATUS: stream=
+
+Test results for WatcherResultPrinter=.
+
+Time: 46.536
+
+
+
+OK (1 test)
+
+
+
+
+
+INSTRUMENTATION_STATUS_CODE: -1
+
+Updated file C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
+Buildfile: C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 22.6.2
+ [checkenv] Installed at G:\adt-bundle-windows-x86_64-20140321\adt-bundle-windows-x86_64-20140321\sdk
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 19.0.3
+     [echo] Resolving Build Target for ContactV4_2...
+[getuitarget] Project Target:   Android 4.4.2
+[getuitarget] API level:        19
+     [echo] ----------
+     [echo] Creating output directories if needed...
+
+-pre-compile:
+
+compile:
+    [javac] Compiling 4 source files to C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
+    [javac] ����: [options] Դֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ŀ��ֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ҫ�����й��ѹ�ʱѡ��ľ���, ��ʹ�� -Xlint:-options��
+    [javac] 3 ������
+
+-post-compile:
+
+-dex:
+      [dex] input: C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
+      [dex] Found Deleted Target File
+      [dex] Converting compiled files and external libraries into C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes.dex...
+
+-post-dex:
+
+-jar:
+      [jar] Building jar: C:\Users\Administrator\workspace_201607\ContactUITest\bin\ContactV4_2.jar
+
+-post-jar:
+
+build:
+
+BUILD SUCCESSFUL
+Total time: 4 seconds
+2099 KB/s (38704 bytes in 0.018s)
+run PId: 19551
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact4_2.ContactV4_2
+
+INSTRUMENTATION_STATUS: stream=
+
+com.uitest.contact4_2.ContactV4_2:
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: test=testCase_001
+
+INSTRUMENTATION_STATUS_CODE: 1
+
+startTest: testCase_001(com.uitest.contact4_2.ContactV4_2)
+
+wakeAndUnlock
+
+isScreenOn: true
+
+[start] findAndOpenApp和通讯录
+
+clickByName: 应用程序
+
+drag
+
+[ doing ] swipeToRight 
+
+click 和通讯录
+
+clickById: tab_contacts
+
+clickById: contact_search_bar
+
+[start] inputTextByName: contact_search_bar , input: 13543493854
+
+text len: 0
+
+isExistById: contact_name
+
+elementExist: true
+
+start long click
+
+end long click
+
+clickByName: 删除
+
+clickByName: 删除
+
+clickById: iab_ib_action
+
+[start] inputTextByName: edit_contact_name , input: 陈壁画
+
+text len: 2
+
+[start] inputTextByName: 电话号码 , input: 13543493854
+
+text len: 4
+
+clickByName: 完成
+
+[start] close app
+
+点击关闭
+
+[end] close app
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact4_2.ContactV4_2
+
+INSTRUMENTATION_STATUS: stream=.
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: test=testCase_001
+
+INSTRUMENTATION_STATUS_CODE: 0
+
+INSTRUMENTATION_STATUS: stream=
+
+Test results for WatcherResultPrinter=.
+
+Time: 44.618
+
+
+
+OK (1 test)
+
+
+
+
+
+INSTRUMENTATION_STATUS_CODE: -1
+
+Updated file C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
+Buildfile: C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 22.6.2
+ [checkenv] Installed at G:\adt-bundle-windows-x86_64-20140321\adt-bundle-windows-x86_64-20140321\sdk
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 19.0.3
+     [echo] Resolving Build Target for ContactV4_2...
+[getuitarget] Project Target:   Android 4.4.2
+[getuitarget] API level:        19
+     [echo] ----------
+     [echo] Creating output directories if needed...
+
+-pre-compile:
+
+compile:
+    [javac] Compiling 1 source file to C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
+    [javac] ����: [options] Դֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ŀ��ֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ҫ�����й��ѹ�ʱѡ��ľ���, ��ʹ�� -Xlint:-options��
+    [javac] 3 ������
+
+-post-compile:
+
+-dex:
+      [dex] input: C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
+      [dex] Found Deleted Target File
+      [dex] Converting compiled files and external libraries into C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes.dex...
+
+-post-dex:
+
+-jar:
+      [jar] Building jar: C:\Users\Administrator\workspace_201607\ContactUITest\bin\ContactV4_2.jar
+
+-post-jar:
+
+build:
+
+BUILD SUCCESSFUL
+Total time: 3 seconds
+1889 KB/s (38705 bytes in 0.020s)
+run PId: 20376
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact4_2.ContactV4_2
+
+INSTRUMENTATION_STATUS: stream=
+
+com.uitest.contact4_2.ContactV4_2:
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: test=testCase_call_001
+
+INSTRUMENTATION_STATUS_CODE: 1
+
+startTest: testCase_call_001(com.uitest.contact4_2.ContactV4_2)
+
+wakeAndUnlock
+
+isScreenOn: true
+
+[start] findAndOpenApp和通讯录
+
+clickByName: 应用程序
+
+click 和通讯录
+
+clickById: tab_contacts
+
+isExistById: btResolve
+
+elementExist: false
+
+collection: 2
+
+start long click
+
+end long click
+
+clickById: mca_ib_select
+
+clickById: mca_delete_layout
+
+clickById: dialog_btn_positive
+
+clickById: tab_call
+
+isExistById: two
+
+elementExist: true
+
+clickById: tab_call
+
+clickByName: 清空通话记录
+
+clickById: dialog_btn_positive
+
+clickById: tab_call
+
+clickById: tab_call
+
+clickById: tab_contacts
+
+clickById: tab_call
+
+clickById: digits
+
+clickById: one
+
+clickById: three
+
+clickById: eight
+
+clickById: two
+
+clickById: two
+
+clickById: one
+
+clickById: three
+
+clickById: eight
+
+clickById: zero
+
+clickById: zero
+
+clickById: one
+
+clickByName: 添加为联系人
+
+clickByName: 新建联系人
+
+[start] inputTextByName: edit_contact_name , input: saveAsContact
+
+text len: 2
+
+clickById: iab_ib_action
+
+snapshot
+
+clickById: tab_contacts
+
+snapshot
+
+clickById: contact_search_bar
+
+snapshot
+
+[start] inputTextByName: contact_search_bar , input: 13822138001
+
+snapshot
+
+isExistById: 13822138001
+
+elementExist: false
+
+snapshot
+
+[start] close app
+
+点击关闭
+
+[end] close app
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact4_2.ContactV4_2
+
+INSTRUMENTATION_STATUS: stream=
+
+Failure in testCase_call_001:
+
+junit.framework.AssertionFailedError: 没有找到：13822138001 expected:<false> but was:<true>
+
+	at com.uitest.uiautomatorUtil.AssertUtil.Myassert(AssertUtil.java:35)
+
+	at com.uitest.contact4_2.SimpleCode420.assertId(SimpleCode420.java:57)
+
+	at com.uitest.contact4_2.ContactV4_2.testCase_call_001(ContactV4_2.java:85)
+
+	at java.lang.reflect.Method.invokeNative(Native Method)
+
+	at com.uitest.uiautomatorUtil.TestListenerManager.run(TestListenerManager.java:87)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.start(UiAutomatorTestRunner.java:160)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.run(UiAutomatorTestRunner.java:96)
+
+	at com.android.commands.uiautomator.RunTestCommand.run(RunTestCommand.java:91)
+
+	at com.android.commands.uiautomator.Launcher.main(Launcher.java:83)
+
+	at com.android.internal.os.RuntimeInit.nativeFinishInit(Native Method)
+
+	at com.android.internal.os.RuntimeInit.main(RuntimeInit.java:297)
+
+	at dalvik.system.NativeStart.main(Native Method)
+
+
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: stack=junit.framework.AssertionFailedError: 没有找到：13822138001 expected:<false> but was:<true>
+
+	at com.uitest.uiautomatorUtil.AssertUtil.Myassert(AssertUtil.java:35)
+
+	at com.uitest.contact4_2.SimpleCode420.assertId(SimpleCode420.java:57)
+
+	at com.uitest.contact4_2.ContactV4_2.testCase_call_001(ContactV4_2.java:85)
+
+	at java.lang.reflect.Method.invokeNative(Native Method)
+
+	at com.uitest.uiautomatorUtil.TestListenerManager.run(TestListenerManager.java:87)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.start(UiAutomatorTestRunner.java:160)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.run(UiAutomatorTestRunner.java:96)
+
+	at com.android.commands.uiautomator.RunTestCommand.run(RunTestCommand.java:91)
+
+	at com.android.commands.uiautomator.Launcher.main(Launcher.java:83)
+
+	at com.android.internal.os.RuntimeInit.nativeFinishInit(Native Method)
+
+	at com.android.internal.os.RuntimeInit.main(RuntimeInit.java:297)
+
+	at dalvik.system.NativeStart.main(Native Method)
+
+
+
+INSTRUMENTATION_STATUS: test=testCase_call_001
+
+INSTRUMENTATION_STATUS_CODE: -2
+
+INSTRUMENTATION_STATUS: stream=
+
+Test results for WatcherResultPrinter=.F
+
+Time: 62.33
+
+
+
+FAILURES!!!
+
+Tests run: 1,  Failures: 1,  Errors: 0
+
+
+
+
+
+INSTRUMENTATION_STATUS_CODE: -1
+
