@@ -7,6 +7,9 @@ public class UserConfig {
 	public static String savePicPath = "/mnt/sdcard/AppTestReportPic/"; //运行错误时截图
 	public static String saveLogPath = "/mnt/sdcard/AppTestReportLog/"; //系统运行日志
 	public static String saveAppLogPath = "/mnt/sdcard/AppTestReportAppRunLog/";
+	public static String readXmlPath = "/mnt/sdcard/testdata.xml";      //读取数据文件
+	
+	
 	
 	//全局参数
 	public static boolean isWriteLog = true; //是否写入app运行日志，默认为关闭

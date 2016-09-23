@@ -16754,3 +16754,7180 @@ Tests run: 1,  Failures: 1,  Errors: 0
 
 INSTRUMENTATION_STATUS_CODE: -1
 
+Updated file C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
+Buildfile: C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 22.6.2
+ [checkenv] Installed at G:\adt-bundle-windows-x86_64-20140321\adt-bundle-windows-x86_64-20140321\sdk
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 19.0.3
+     [echo] Resolving Build Target for ContactV4_2...
+[getuitarget] Project Target:   Android 4.4.2
+[getuitarget] API level:        19
+     [echo] ----------
+     [echo] Creating output directories if needed...
+
+-pre-compile:
+
+compile:
+
+-post-compile:
+
+-dex:
+      [dex] input: C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
+      [dex] Found Deleted Target File
+      [dex] Converting compiled files and external libraries into C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes.dex...
+
+-post-dex:
+
+-jar:
+      [jar] Building jar: C:\Users\Administrator\workspace_201607\ContactUITest\bin\ContactV4_2.jar
+
+-post-jar:
+
+build:
+
+BUILD SUCCESSFUL
+Total time: 3 seconds
+2699 KB/s (38705 bytes in 0.014s)
+run PId: 25251
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact4_2.ContactV4_2
+
+INSTRUMENTATION_STATUS: stream=
+
+com.uitest.contact4_2.ContactV4_2:
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: test=testCase_call_001
+
+INSTRUMENTATION_STATUS_CODE: 1
+
+startTest: testCase_call_001(com.uitest.contact4_2.ContactV4_2)
+
+wakeAndUnlock
+
+isScreenOn: true
+
+[start] findAndOpenApp和通讯录
+
+clickByName: 应用程序
+
+click 和通讯录
+
+clickById: tab_contacts
+
+isExistById: btResolve
+
+elementExist: true
+
+clickById: tab_call
+
+isExistById: two
+
+elementExist: true
+
+clickById: tab_call
+
+clickByName: 清空通话记录
+
+clickById: dialog_btn_positive
+
+clickById: tab_call
+
+clickById: tab_call
+
+clickById: tab_contacts
+
+clickById: tab_call
+
+clickById: digits
+
+clickById: one
+
+clickById: three
+
+clickById: eight
+
+clickById: two
+
+clickById: two
+
+clickById: one
+
+clickById: three
+
+clickById: eight
+
+clickById: zero
+
+clickById: zero
+
+clickById: one
+
+clickByName: 添加为联系人
+
+clickByName: 新建联系人
+
+[start] inputTextByName: edit_contact_name , input: saveAsContact
+
+text len: 2
+
+clickById: iab_ib_action
+
+snapshot
+
+clickById: tab_contacts
+
+snapshot
+
+clickById: contact_search_bar
+
+snapshot
+
+[start] inputTextByName: contact_search_bar , input: 13822138001
+
+snapshot
+
+isExistById: 13822138001
+
+elementExist: false
+
+snapshot
+
+[start] close app
+
+点击关闭
+
+[end] close app
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact4_2.ContactV4_2
+
+INSTRUMENTATION_STATUS: stream=
+
+Failure in testCase_call_001:
+
+junit.framework.AssertionFailedError: 没有找到：13822138001 expected:<false> but was:<true>
+
+	at com.uitest.uiautomatorUtil.AssertUtil.Myassert(AssertUtil.java:35)
+
+	at com.uitest.contact4_2.SimpleCode420.assertId(SimpleCode420.java:57)
+
+	at com.uitest.contact4_2.ContactV4_2.testCase_call_001(ContactV4_2.java:85)
+
+	at java.lang.reflect.Method.invokeNative(Native Method)
+
+	at com.uitest.uiautomatorUtil.TestListenerManager.run(TestListenerManager.java:87)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.start(UiAutomatorTestRunner.java:160)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.run(UiAutomatorTestRunner.java:96)
+
+	at com.android.commands.uiautomator.RunTestCommand.run(RunTestCommand.java:91)
+
+	at com.android.commands.uiautomator.Launcher.main(Launcher.java:83)
+
+	at com.android.internal.os.RuntimeInit.nativeFinishInit(Native Method)
+
+	at com.android.internal.os.RuntimeInit.main(RuntimeInit.java:297)
+
+	at dalvik.system.NativeStart.main(Native Method)
+
+
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: stack=junit.framework.AssertionFailedError: 没有找到：13822138001 expected:<false> but was:<true>
+
+	at com.uitest.uiautomatorUtil.AssertUtil.Myassert(AssertUtil.java:35)
+
+	at com.uitest.contact4_2.SimpleCode420.assertId(SimpleCode420.java:57)
+
+	at com.uitest.contact4_2.ContactV4_2.testCase_call_001(ContactV4_2.java:85)
+
+	at java.lang.reflect.Method.invokeNative(Native Method)
+
+	at com.uitest.uiautomatorUtil.TestListenerManager.run(TestListenerManager.java:87)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.start(UiAutomatorTestRunner.java:160)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.run(UiAutomatorTestRunner.java:96)
+
+	at com.android.commands.uiautomator.RunTestCommand.run(RunTestCommand.java:91)
+
+	at com.android.commands.uiautomator.Launcher.main(Launcher.java:83)
+
+	at com.android.internal.os.RuntimeInit.nativeFinishInit(Native Method)
+
+	at com.android.internal.os.RuntimeInit.main(RuntimeInit.java:297)
+
+	at dalvik.system.NativeStart.main(Native Method)
+
+
+
+INSTRUMENTATION_STATUS: test=testCase_call_001
+
+INSTRUMENTATION_STATUS_CODE: -2
+
+INSTRUMENTATION_STATUS: stream=
+
+Test results for WatcherResultPrinter=.F
+
+Time: 50.618
+
+
+
+FAILURES!!!
+
+Tests run: 1,  Failures: 1,  Errors: 0
+
+
+
+
+
+INSTRUMENTATION_STATUS_CODE: -1
+
+Updated file C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
+Buildfile: C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 22.6.2
+ [checkenv] Installed at G:\adt-bundle-windows-x86_64-20140321\adt-bundle-windows-x86_64-20140321\sdk
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 19.0.3
+     [echo] Resolving Build Target for ContactV4_2...
+[getuitarget] Project Target:   Android 4.4.2
+[getuitarget] API level:        19
+     [echo] ----------
+     [echo] Creating output directories if needed...
+
+-pre-compile:
+
+compile:
+    [javac] Compiling 1 source file to C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
+    [javac] ����: [options] Դֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ŀ��ֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ҫ�����й��ѹ�ʱѡ��ľ���, ��ʹ�� -Xlint:-options��
+    [javac] 3 ������
+
+-post-compile:
+
+-dex:
+      [dex] input: C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
+      [dex] Found Deleted Target File
+      [dex] Converting compiled files and external libraries into C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes.dex...
+
+-post-dex:
+
+-jar:
+      [jar] Building jar: C:\Users\Administrator\workspace_201607\ContactUITest\bin\ContactV4_2.jar
+
+-post-jar:
+
+build:
+
+BUILD SUCCESSFUL
+Total time: 4 seconds
+* daemon not running. starting it now on port 5037 *
+* daemon started successfully *
+1799 KB/s (38703 bytes in 0.021s)
+run PId: 25888
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact4_2.ContactV4_2
+
+INSTRUMENTATION_STATUS: stream=
+
+com.uitest.contact4_2.ContactV4_2:
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: test=testCase_call_001
+
+INSTRUMENTATION_STATUS_CODE: 1
+
+startTest: testCase_call_001(com.uitest.contact4_2.ContactV4_2)
+
+wakeAndUnlock
+
+isScreenOn: true
+
+[start] findAndOpenApp和通讯录
+
+clickByName: 应用程序
+
+click 和通讯录
+
+clickById: tab_contacts
+
+isExistById: btResolve
+
+elementExist: true
+
+clickById: tab_call
+
+isExistById: two
+
+elementExist: true
+
+clickById: tab_call
+
+clickByName: 清空通话记录
+
+clickById: dialog_btn_positive
+
+clickById: tab_call
+
+clickById: tab_call
+
+clickById: tab_contacts
+
+clickById: tab_call
+
+clickById: digits
+
+clickById: one
+
+clickById: three
+
+clickById: eight
+
+clickById: two
+
+clickById: two
+
+clickById: one
+
+clickById: three
+
+clickById: eight
+
+clickById: zero
+
+clickById: zero
+
+clickById: one
+
+clickByName: 添加为联系人
+
+clickByName: 新建联系人
+
+[start] inputTextByName: edit_contact_name , input: saveAsContact
+
+text len: 2
+
+clickByName: 完成
+
+clickById: tab_contacts
+
+clickById: contact_search_bar
+
+[start] inputTextByName: contact_search_bar , input: 13822138001
+
+text len: 0
+
+isExistById: 13822138001
+
+elementExist: false
+
+snapshot
+
+[start] close app
+
+点击关闭
+
+[end] close app
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact4_2.ContactV4_2
+
+INSTRUMENTATION_STATUS: stream=
+
+Failure in testCase_call_001:
+
+junit.framework.AssertionFailedError: 没有找到：13822138001 expected:<false> but was:<true>
+
+	at com.uitest.uiautomatorUtil.AssertUtil.Myassert(AssertUtil.java:35)
+
+	at com.uitest.contact4_2.SimpleCode420.assertId(SimpleCode420.java:57)
+
+	at com.uitest.contact4_2.ContactV4_2.testCase_call_001(ContactV4_2.java:85)
+
+	at java.lang.reflect.Method.invokeNative(Native Method)
+
+	at com.uitest.uiautomatorUtil.TestListenerManager.run(TestListenerManager.java:87)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.start(UiAutomatorTestRunner.java:160)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.run(UiAutomatorTestRunner.java:96)
+
+	at com.android.commands.uiautomator.RunTestCommand.run(RunTestCommand.java:91)
+
+	at com.android.commands.uiautomator.Launcher.main(Launcher.java:83)
+
+	at com.android.internal.os.RuntimeInit.nativeFinishInit(Native Method)
+
+	at com.android.internal.os.RuntimeInit.main(RuntimeInit.java:297)
+
+	at dalvik.system.NativeStart.main(Native Method)
+
+
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: stack=junit.framework.AssertionFailedError: 没有找到：13822138001 expected:<false> but was:<true>
+
+	at com.uitest.uiautomatorUtil.AssertUtil.Myassert(AssertUtil.java:35)
+
+	at com.uitest.contact4_2.SimpleCode420.assertId(SimpleCode420.java:57)
+
+	at com.uitest.contact4_2.ContactV4_2.testCase_call_001(ContactV4_2.java:85)
+
+	at java.lang.reflect.Method.invokeNative(Native Method)
+
+	at com.uitest.uiautomatorUtil.TestListenerManager.run(TestListenerManager.java:87)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.start(UiAutomatorTestRunner.java:160)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.run(UiAutomatorTestRunner.java:96)
+
+	at com.android.commands.uiautomator.RunTestCommand.run(RunTestCommand.java:91)
+
+	at com.android.commands.uiautomator.Launcher.main(Launcher.java:83)
+
+	at com.android.internal.os.RuntimeInit.nativeFinishInit(Native Method)
+
+	at com.android.internal.os.RuntimeInit.main(RuntimeInit.java:297)
+
+	at dalvik.system.NativeStart.main(Native Method)
+
+
+
+INSTRUMENTATION_STATUS: test=testCase_call_001
+
+INSTRUMENTATION_STATUS_CODE: -2
+
+INSTRUMENTATION_STATUS: stream=
+
+Test results for WatcherResultPrinter=.F
+
+Time: 57.86
+
+
+
+FAILURES!!!
+
+Tests run: 1,  Failures: 1,  Errors: 0
+
+
+
+
+
+INSTRUMENTATION_STATUS_CODE: -1
+
+Updated file C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
+Buildfile: C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 22.6.2
+ [checkenv] Installed at G:\adt-bundle-windows-x86_64-20140321\adt-bundle-windows-x86_64-20140321\sdk
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 19.0.3
+     [echo] Resolving Build Target for TestBack...
+[getuitarget] Project Target:   Android 4.4.2
+[getuitarget] API level:        19
+     [echo] ----------
+     [echo] Creating output directories if needed...
+    [mkdir] Created dir: C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
+
+-pre-compile:
+
+compile:
+    [javac] Compiling 47 source files to C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
+    [javac] ����: [options] Դֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ŀ��ֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ҫ�����й��ѹ�ʱѡ��ľ���, ��ʹ�� -Xlint:-options��
+    [javac] C:\Users\Administrator\workspace_201607\ContactUITest\src\com\uitest\data\ReadExcel.java:8: ����: �����jxl������
+    [javac] import jxl.Sheet;
+    [javac]           ^
+    [javac] C:\Users\Administrator\workspace_201607\ContactUITest\src\com\uitest\data\ReadExcel.java:9: ����: �����jxl������
+    [javac] import jxl.Workbook;
+    [javac]           ^
+    [javac] C:\Users\Administrator\workspace_201607\ContactUITest\src\com\uitest\contact4_2\ContactV4_2.java:107: ����: �Ҳ�������
+    [javac] 		this.createContacts("saveContacts", "13824452646");
+    [javac] 		    ^
+    [javac]   ����: ���� createContacts(String,String)
+    [javac] C:\Users\Administrator\workspace_201607\ContactUITest\src\com\uitest\contact4_2\ContactV4_2.java:110: ����: �Ҳ�������
+    [javac] 		clickById("tab_call");
+    [javac] 		^
+    [javac]   ����:   ���� clickById(String)
+    [javac]   λ��: �� ContactV4_2
+    [javac] C:\Users\Administrator\workspace_201607\ContactUITest\src\com\uitest\contact4_2\ContactV4_2.java:113: ����: �Ҳ�������
+    [javac] 		clickById("tab_contacts");
+    [javac] 		^
+    [javac]   ����:   ���� clickById(String)
+    [javac]   λ��: �� ContactV4_2
+    [javac] C:\Users\Administrator\workspace_201607\ContactUITest\src\com\uitest\contact4_2\ContactV4_2.java:116: ����: �Ҳ�������
+    [javac] 		clickById("tab_call");
+    [javac] 		^
+    [javac]   ����:   ���� clickById(String)
+    [javac]   λ��: �� ContactV4_2
+    [javac] C:\Users\Administrator\workspace_201607\ContactUITest\src\com\uitest\contact4_2\ContactV4_2.java:119: ����: �Ҳ�������
+    [javac] 		clickById("digits");
+    [javac] 		^
+    [javac]   ����:   ���� clickById(String)
+    [javac]   λ��: �� ContactV4_2
+    [javac] C:\Users\Administrator\workspace_201607\ContactUITest\src\com\uitest\contact4_2\ContactV4_2.java:122: ����: �Ҳ�������
+    [javac] 		touchCallNumber("84850922");
+    [javac] 		^
+    [javac]   ����:   ���� touchCallNumber(String)
+    [javac]   λ��: �� ContactV4_2
+    [javac] C:\Users\Administrator\workspace_201607\ContactUITest\src\com\uitest\contact4_2\ContactV4_2.java:125: ����: �Ҳ�������
+    [javac] 		clickByName("���Ϊ��ϵ��");
+    [javac] 		^
+    [javac]   ����:   ���� clickByName(String)
+    [javac]   λ��: �� ContactV4_2
+    [javac] C:\Users\Administrator\workspace_201607\ContactUITest\src\com\uitest\contact4_2\ContactV4_2.java:128: ����: �Ҳ�������
+    [javac] 		clickByName("��ӵ�������ϵ��");
+    [javac] 		^
+    [javac]   ����:   ���� clickByName(String)
+    [javac]   λ��: �� ContactV4_2
+    [javac] C:\Users\Administrator\workspace_201607\ContactUITest\src\com\uitest\contact4_2\ContactV4_2.java:131: ����: �Ҳ�������
+    [javac] 		Myassert("û�н����½���ϵ��", driver.findElementByName("�½���ϵ��").isDisplayed());
+    [javac] 		                      ^
+    [javac]   ����:   ���� driver
+    [javac]   λ��: �� ContactV4_2
+    [javac] C:\Users\Administrator\workspace_201607\ContactUITest\src\com\uitest\contact4_2\ContactV4_2.java:133: ����: �Ҳ�������
+    [javac] 		intoContentEditTextById("contact_search_bar", "13824452646");
+    [javac] 		^
+    [javac]   ����:   ���� intoContentEditTextById(String,String)
+    [javac]   λ��: �� ContactV4_2
+    [javac] C:\Users\Administrator\workspace_201607\ContactUITest\src\com\uitest\contact4_2\ContactV4_2.java:135: ����: �Ҳ�������
+    [javac] 		searchWebElement("saveContacts").click();
+    [javac] 		^
+    [javac]   ����:   ���� searchWebElement(String)
+    [javac]   λ��: �� ContactV4_2
+    [javac] C:\Users\Administrator\workspace_201607\ContactUITest\src\com\uitest\contact4_2\ContactV4_2.java:137: ����: �Ҳ�������
+    [javac] 		Myassert("û�н���༭��ϵ��", driver.findElementByName("�༭��ϵ��").isDisplayed());
+    [javac] 		                      ^
+    [javac]   ����:   ���� driver
+    [javac]   λ��: �� ContactV4_2
+    [javac] C:\Users\Administrator\workspace_201607\ContactUITest\src\com\uitest\contact4_2\ContactV4_2.java:140: ����: �Ҳ�������
+    [javac] 		clickById("iab_ib_action");
+    [javac] 		^
+    [javac]   ����:   ���� clickById(String)
+    [javac]   λ��: �� ContactV4_2
+    [javac] C:\Users\Administrator\workspace_201607\ContactUITest\src\com\uitest\contact4_2\ContactV4_2.java:142: ����: �Ҳ�������
+    [javac] 		sleepTime(2000);
+    [javac] 		^
+    [javac]   ����:   ���� sleepTime(int)
+    [javac]   λ��: �� ContactV4_2
+    [javac] C:\Users\Administrator\workspace_201607\ContactUITest\src\com\uitest\contact4_2\ContactV4_2.java:146: ����: �Ҳ�������
+    [javac] 		deleteAllContacts();
+    [javac] 		^
+    [javac]   ����:   ���� deleteAllContacts()
+    [javac]   λ��: �� ContactV4_2
+    [javac] C:\Users\Administrator\workspace_201607\ContactUITest\src\com\uitest\contact4_2\ContactV4_2.java:147: ����: �Ҳ�������
+    [javac] 		deleteAllCall();
+    [javac] 		^
+    [javac]   ����:   ���� deleteAllCall()
+    [javac]   λ��: �� ContactV4_2
+    [javac] C:\Users\Administrator\workspace_201607\ContactUITest\src\com\uitest\contact4_2\ContactV4_2.java:148: ����: �Ҳ�������
+    [javac] 		reportLog("ͨ����¼-İ����-��ӵ�������ϵ��");
+    [javac] 		^
+    [javac]   ����:   ���� reportLog(String)
+    [javac]   λ��: �� ContactV4_2
+    [javac] C:\Users\Administrator\workspace_201607\ContactUITest\src\com\uitest\data\ReadExcel.java:20: ����: �Ҳ�������
+    [javac]             Workbook book = Workbook  
+    [javac]             ^
+    [javac]   ����:   �� Workbook
+    [javac]   λ��: �� ReadExcel
+    [javac] C:\Users\Administrator\workspace_201607\ContactUITest\src\com\uitest\data\ReadExcel.java:20: ����: �Ҳ�������
+    [javac]             Workbook book = Workbook  
+    [javac]                             ^
+    [javac]   ����:   ���� Workbook
+    [javac]   λ��: �� ReadExcel
+    [javac] C:\Users\Administrator\workspace_201607\ContactUITest\src\com\uitest\data\ReadExcel.java:24: ����: �Ҳ�������
+    [javac]             Sheet sheet = book.getSheet(0);  
+    [javac]             ^
+    [javac]   ����:   �� Sheet
+    [javac]   λ��: �� ReadExcel
+    [javac] C:\Users\Administrator\workspace_201607\ContactUITest\src\com\uitest\data\ReadExcel.java:41: ����: �����jxl������
+    [javac]             String result = ((jxl.Cell) cell1).getContents();  
+    [javac]                                  ^
+    [javac] ע: C:\Users\Administrator\workspace_201607\ContactUITest\src\com\beetstra\jutf7\CharsetProvider.javaʹ����δ�����򲻰�ȫ�Ĳ�����
+    [javac] ע: �й���ϸ��Ϣ, ��ʹ�� -Xlint:unchecked ���±��롣
+    [javac] 23 ������
+    [javac] 3 ������
+
+BUILD FAILED
+G:\adt-bundle-windows-x86_64-20140321\adt-bundle-windows-x86_64-20140321\sdk\tools\ant\uibuild.xml:183: Compile failed; see the compiler error output for details.
+
+Total time: 3 seconds
+cannot stat 'C:\Users\Administrator\workspace_201607\ContactUITest\bin\TestBack.jar': No such file or directory
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact.testcase.TestBack
+
+INSTRUMENTATION_STATUS: stream=
+
+com.uitest.contact.testcase.TestBack:
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: test=testCase_001
+
+INSTRUMENTATION_STATUS_CODE: 1
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact.testcase.TestBack
+
+INSTRUMENTATION_STATUS: stream=.
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: test=testCase_001
+
+INSTRUMENTATION_STATUS_CODE: 0
+
+INSTRUMENTATION_STATUS: stream=
+
+Test results for WatcherResultPrinter=.
+
+Time: 1.129
+
+
+
+OK (1 test)
+
+
+
+
+
+INSTRUMENTATION_STATUS_CODE: -1
+
+Updated file C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
+Buildfile: C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 22.6.2
+ [checkenv] Installed at G:\adt-bundle-windows-x86_64-20140321\adt-bundle-windows-x86_64-20140321\sdk
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 19.0.3
+     [echo] Resolving Build Target for TestBack...
+[getuitarget] Project Target:   Android 4.4.2
+[getuitarget] API level:        19
+     [echo] ----------
+     [echo] Creating output directories if needed...
+
+-pre-compile:
+
+compile:
+    [javac] Compiling 47 source files to C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
+    [javac] ����: [options] Դֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ŀ��ֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ҫ�����й��ѹ�ʱѡ��ľ���, ��ʹ�� -Xlint:-options��
+    [javac] C:\Users\Administrator\workspace_201607\ContactUITest\src\com\uitest\data\ReadExcel.java:8: ����: �����jxl������
+    [javac] import jxl.Sheet;
+    [javac]           ^
+    [javac] C:\Users\Administrator\workspace_201607\ContactUITest\src\com\uitest\data\ReadExcel.java:9: ����: �����jxl������
+    [javac] import jxl.Workbook;
+    [javac]           ^
+    [javac] C:\Users\Administrator\workspace_201607\ContactUITest\src\com\uitest\data\ReadExcel.java:20: ����: �Ҳ�������
+    [javac]             Workbook book = Workbook  
+    [javac]             ^
+    [javac]   ����:   �� Workbook
+    [javac]   λ��: �� ReadExcel
+    [javac] C:\Users\Administrator\workspace_201607\ContactUITest\src\com\uitest\data\ReadExcel.java:20: ����: �Ҳ�������
+    [javac]             Workbook book = Workbook  
+    [javac]                             ^
+    [javac]   ����:   ���� Workbook
+    [javac]   λ��: �� ReadExcel
+    [javac] C:\Users\Administrator\workspace_201607\ContactUITest\src\com\uitest\data\ReadExcel.java:24: ����: �Ҳ�������
+    [javac]             Sheet sheet = book.getSheet(0);  
+    [javac]             ^
+    [javac]   ����:   �� Sheet
+    [javac]   λ��: �� ReadExcel
+    [javac] C:\Users\Administrator\workspace_201607\ContactUITest\src\com\uitest\data\ReadExcel.java:41: ����: �����jxl������
+    [javac]             String result = ((jxl.Cell) cell1).getContents();  
+    [javac]                                  ^
+    [javac] ע: C:\Users\Administrator\workspace_201607\ContactUITest\src\com\beetstra\jutf7\CharsetProvider.javaʹ����δ�����򲻰�ȫ�Ĳ�����
+    [javac] ע: �й���ϸ��Ϣ, ��ʹ�� -Xlint:unchecked ���±��롣
+    [javac] 6 ������
+    [javac] 3 ������
+
+BUILD FAILED
+G:\adt-bundle-windows-x86_64-20140321\adt-bundle-windows-x86_64-20140321\sdk\tools\ant\uibuild.xml:183: Compile failed; see the compiler error output for details.
+
+Total time: 3 seconds
+cannot stat 'C:\Users\Administrator\workspace_201607\ContactUITest\bin\TestBack.jar': No such file or directory
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact.testcase.TestBack
+
+INSTRUMENTATION_STATUS: stream=
+
+com.uitest.contact.testcase.TestBack:
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: test=testCase_001
+
+INSTRUMENTATION_STATUS_CODE: 1
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact.testcase.TestBack
+
+INSTRUMENTATION_STATUS: stream=.
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: test=testCase_001
+
+INSTRUMENTATION_STATUS_CODE: 0
+
+INSTRUMENTATION_STATUS: stream=
+
+Test results for WatcherResultPrinter=.
+
+Time: 1.114
+
+
+
+OK (1 test)
+
+
+
+
+
+INSTRUMENTATION_STATUS_CODE: -1
+
+Updated file C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
+Buildfile: C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 22.6.2
+ [checkenv] Installed at G:\adt-bundle-windows-x86_64-20140321\adt-bundle-windows-x86_64-20140321\sdk
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 19.0.3
+     [echo] Resolving Build Target for TestBack...
+[getuitarget] Project Target:   Android 4.4.2
+[getuitarget] API level:        19
+     [echo] ----------
+     [echo] Creating output directories if needed...
+
+-pre-compile:
+
+compile:
+    [javac] Compiling 49 source files to C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
+    [javac] ����: [options] Դֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ŀ��ֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ҫ�����й��ѹ�ʱѡ��ľ���, ��ʹ�� -Xlint:-options��
+    [javac] ע: C:\Users\Administrator\workspace_201607\ContactUITest\src\com\beetstra\jutf7\CharsetProvider.javaʹ����δ�����򲻰�ȫ�Ĳ�����
+    [javac] ע: �й���ϸ��Ϣ, ��ʹ�� -Xlint:unchecked ���±��롣
+    [javac] 3 ������
+
+-post-compile:
+
+-dex:
+      [dex] input: C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
+      [dex] Converting compiled files and external libraries into C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes.dex...
+
+-post-dex:
+
+-jar:
+      [jar] Building jar: C:\Users\Administrator\workspace_201607\ContactUITest\bin\TestBack.jar
+
+-post-jar:
+
+build:
+
+BUILD SUCCESSFUL
+Total time: 6 seconds
+2144 KB/s (39537 bytes in 0.018s)
+run PId: 29845
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact.testcase.TestBack
+
+INSTRUMENTATION_STATUS: stream=
+
+com.uitest.contact.testcase.TestBack:
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: test=testPull
+
+INSTRUMENTATION_STATUS_CODE: 1
+
+startTest: testPull(com.uitest.contact.testcase.TestBack)
+
+com.uitest.contact.testcase.Book@41947d90
+
+com.uitest.contact.testcase.Book@419483c8
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact.testcase.TestBack
+
+INSTRUMENTATION_STATUS: stream=.
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: test=testPull
+
+INSTRUMENTATION_STATUS_CODE: 0
+
+INSTRUMENTATION_STATUS: stream=
+
+Test results for WatcherResultPrinter=.
+
+Time: 0.147
+
+
+
+OK (1 test)
+
+
+
+
+
+INSTRUMENTATION_STATUS_CODE: -1
+
+Updated file C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
+Buildfile: C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 22.6.2
+ [checkenv] Installed at G:\adt-bundle-windows-x86_64-20140321\adt-bundle-windows-x86_64-20140321\sdk
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 19.0.3
+     [echo] Resolving Build Target for TestBack...
+[getuitarget] Project Target:   Android 4.4.2
+[getuitarget] API level:        19
+     [echo] ----------
+     [echo] Creating output directories if needed...
+
+-pre-compile:
+
+compile:
+    [javac] Compiling 1 source file to C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
+    [javac] ����: [options] Դֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ŀ��ֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ҫ�����й��ѹ�ʱѡ��ľ���, ��ʹ�� -Xlint:-options��
+    [javac] 3 ������
+
+-post-compile:
+
+-dex:
+      [dex] input: C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
+      [dex] Found Deleted Target File
+      [dex] Converting compiled files and external libraries into C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes.dex...
+
+-post-dex:
+
+-jar:
+      [jar] Building jar: C:\Users\Administrator\workspace_201607\ContactUITest\bin\TestBack.jar
+
+-post-jar:
+
+build:
+
+BUILD SUCCESSFUL
+Total time: 4 seconds
+2575 KB/s (39563 bytes in 0.015s)
+run PId: 29935
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact.testcase.TestBack
+
+INSTRUMENTATION_STATUS: stream=
+
+com.uitest.contact.testcase.TestBack:
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: test=testPull
+
+INSTRUMENTATION_STATUS_CODE: 1
+
+startTest: testPull(com.uitest.contact.testcase.TestBack)
+
+book: com.uitest.contact.testcase.Book@4195da90
+
+book: com.uitest.contact.testcase.Book@4195e0c8
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact.testcase.TestBack
+
+INSTRUMENTATION_STATUS: stream=.
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: test=testPull
+
+INSTRUMENTATION_STATUS_CODE: 0
+
+INSTRUMENTATION_STATUS: stream=
+
+Test results for WatcherResultPrinter=.
+
+Time: 0.122
+
+
+
+OK (1 test)
+
+
+
+
+
+INSTRUMENTATION_STATUS_CODE: -1
+
+Updated file C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
+Buildfile: C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 22.6.2
+ [checkenv] Installed at G:\adt-bundle-windows-x86_64-20140321\adt-bundle-windows-x86_64-20140321\sdk
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 19.0.3
+     [echo] Resolving Build Target for TestBack...
+[getuitarget] Project Target:   Android 4.4.2
+[getuitarget] API level:        19
+     [echo] ----------
+     [echo] Creating output directories if needed...
+
+-pre-compile:
+
+compile:
+    [javac] Compiling 1 source file to C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
+    [javac] ����: [options] Դֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ŀ��ֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ҫ�����й��ѹ�ʱѡ��ľ���, ��ʹ�� -Xlint:-options��
+    [javac] 3 ������
+
+-post-compile:
+
+-dex:
+      [dex] input: C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
+      [dex] Found Deleted Target File
+      [dex] Converting compiled files and external libraries into C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes.dex...
+
+-post-dex:
+
+-jar:
+      [jar] Building jar: C:\Users\Administrator\workspace_201607\ContactUITest\bin\TestBack.jar
+
+-post-jar:
+
+build:
+
+BUILD SUCCESSFUL
+Total time: 3 seconds
+2576 KB/s (39576 bytes in 0.015s)
+run PId: 30011
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact.testcase.TestBack
+
+INSTRUMENTATION_STATUS: stream=
+
+com.uitest.contact.testcase.TestBack:
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: test=testPull
+
+INSTRUMENTATION_STATUS_CODE: 1
+
+startTest: testPull(com.uitest.contact.testcase.TestBack)
+
+book: thinking in java:85.5
+
+book: Spring in Action:39.0
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact.testcase.TestBack
+
+INSTRUMENTATION_STATUS: stream=.
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: test=testPull
+
+INSTRUMENTATION_STATUS_CODE: 0
+
+INSTRUMENTATION_STATUS: stream=
+
+Test results for WatcherResultPrinter=.
+
+Time: 0.104
+
+
+
+OK (1 test)
+
+
+
+
+
+INSTRUMENTATION_STATUS_CODE: -1
+
+Updated file C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
+Buildfile: C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 22.6.2
+ [checkenv] Installed at G:\adt-bundle-windows-x86_64-20140321\adt-bundle-windows-x86_64-20140321\sdk
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 19.0.3
+     [echo] Resolving Build Target for TestBack...
+[getuitarget] Project Target:   Android 4.4.2
+[getuitarget] API level:        19
+     [echo] ----------
+     [echo] Creating output directories if needed...
+
+-pre-compile:
+
+compile:
+    [javac] Compiling 4 source files to C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
+    [javac] ����: [options] Դֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ŀ��ֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ҫ�����й��ѹ�ʱѡ��ľ���, ��ʹ�� -Xlint:-options��
+    [javac] 3 ������
+
+-post-compile:
+
+-dex:
+      [dex] input: C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
+      [dex] Found Deleted Target File
+      [dex] Converting compiled files and external libraries into C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes.dex...
+
+-post-dex:
+
+-jar:
+      [jar] Building jar: C:\Users\Administrator\workspace_201607\ContactUITest\bin\TestBack.jar
+
+-post-jar:
+
+build:
+
+BUILD SUCCESSFUL
+Total time: 11 seconds
+2281 KB/s (39710 bytes in 0.017s)
+run PId: 4969
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact.testcase.TestBack
+
+INSTRUMENTATION_STATUS: stream=
+
+com.uitest.contact.testcase.TestBack:
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: test=testPull
+
+INSTRUMENTATION_STATUS_CODE: 1
+
+startTest: testPull(com.uitest.contact.testcase.TestBack)
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact.testcase.TestBack
+
+INSTRUMENTATION_STATUS: stream=
+
+Error in testPull:
+
+java.lang.IndexOutOfBoundsException
+
+	at org.kxml2.io.KXmlParser.getAttributeValue(KXmlParser.java:2006)
+
+	at com.uitest.contact.testcase.PullParseService.getContacts(PullParseService.java:28)
+
+	at com.uitest.contact.testcase.TestBack.testPull(TestBack.java:33)
+
+	at java.lang.reflect.Method.invokeNative(Native Method)
+
+	at com.uitest.uiautomatorUtil.TestListenerManager.run(TestListenerManager.java:87)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.start(UiAutomatorTestRunner.java:160)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.run(UiAutomatorTestRunner.java:96)
+
+	at com.android.commands.uiautomator.RunTestCommand.run(RunTestCommand.java:91)
+
+	at com.android.commands.uiautomator.Launcher.main(Launcher.java:83)
+
+	at com.android.internal.os.RuntimeInit.nativeFinishInit(Native Method)
+
+	at com.android.internal.os.RuntimeInit.main(RuntimeInit.java:297)
+
+	at dalvik.system.NativeStart.main(Native Method)
+
+
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: stack=java.lang.IndexOutOfBoundsException
+
+	at org.kxml2.io.KXmlParser.getAttributeValue(KXmlParser.java:2006)
+
+	at com.uitest.contact.testcase.PullParseService.getContacts(PullParseService.java:28)
+
+	at com.uitest.contact.testcase.TestBack.testPull(TestBack.java:33)
+
+	at java.lang.reflect.Method.invokeNative(Native Method)
+
+	at com.uitest.uiautomatorUtil.TestListenerManager.run(TestListenerManager.java:87)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.start(UiAutomatorTestRunner.java:160)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.run(UiAutomatorTestRunner.java:96)
+
+	at com.android.commands.uiautomator.RunTestCommand.run(RunTestCommand.java:91)
+
+	at com.android.commands.uiautomator.Launcher.main(Launcher.java:83)
+
+	at com.android.internal.os.RuntimeInit.nativeFinishInit(Native Method)
+
+	at com.android.internal.os.RuntimeInit.main(RuntimeInit.java:297)
+
+	at dalvik.system.NativeStart.main(Native Method)
+
+
+
+INSTRUMENTATION_STATUS: test=testPull
+
+INSTRUMENTATION_STATUS_CODE: -1
+
+INSTRUMENTATION_STATUS: stream=
+
+Test results for WatcherResultPrinter=.E
+
+Time: 0.71
+
+
+
+FAILURES!!!
+
+Tests run: 1,  Failures: 0,  Errors: 1
+
+
+
+
+
+INSTRUMENTATION_STATUS_CODE: -1
+
+Updated file C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
+Buildfile: C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 22.6.2
+ [checkenv] Installed at G:\adt-bundle-windows-x86_64-20140321\adt-bundle-windows-x86_64-20140321\sdk
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 19.0.3
+     [echo] Resolving Build Target for TestBack...
+[getuitarget] Project Target:   Android 4.4.2
+[getuitarget] API level:        19
+     [echo] ----------
+     [echo] Creating output directories if needed...
+
+-pre-compile:
+
+compile:
+    [javac] Compiling 1 source file to C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
+    [javac] ����: [options] Դֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ŀ��ֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ҫ�����й��ѹ�ʱѡ��ľ���, ��ʹ�� -Xlint:-options��
+    [javac] 3 ������
+
+-post-compile:
+
+-dex:
+      [dex] input: C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
+      [dex] Found Deleted Target File
+      [dex] Converting compiled files and external libraries into C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes.dex...
+
+-post-dex:
+
+-jar:
+      [jar] Building jar: C:\Users\Administrator\workspace_201607\ContactUITest\bin\TestBack.jar
+
+-post-jar:
+
+build:
+
+BUILD SUCCESSFUL
+Total time: 5 seconds
+2041 KB/s (39715 bytes in 0.019s)
+run PId: 5222
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact.testcase.TestBack
+
+INSTRUMENTATION_STATUS: stream=
+
+com.uitest.contact.testcase.TestBack:
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: test=testPull
+
+INSTRUMENTATION_STATUS_CODE: 1
+
+startTest: testPull(com.uitest.contact.testcase.TestBack)
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact.testcase.TestBack
+
+INSTRUMENTATION_STATUS: stream=
+
+Error in testPull:
+
+java.lang.IndexOutOfBoundsException
+
+	at org.kxml2.io.KXmlParser.getAttributeValue(KXmlParser.java:2006)
+
+	at com.uitest.contact.testcase.PullParseService.getContacts(PullParseService.java:28)
+
+	at com.uitest.contact.testcase.TestBack.testPull(TestBack.java:33)
+
+	at java.lang.reflect.Method.invokeNative(Native Method)
+
+	at com.uitest.uiautomatorUtil.TestListenerManager.run(TestListenerManager.java:87)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.start(UiAutomatorTestRunner.java:160)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.run(UiAutomatorTestRunner.java:96)
+
+	at com.android.commands.uiautomator.RunTestCommand.run(RunTestCommand.java:91)
+
+	at com.android.commands.uiautomator.Launcher.main(Launcher.java:83)
+
+	at com.android.internal.os.RuntimeInit.nativeFinishInit(Native Method)
+
+	at com.android.internal.os.RuntimeInit.main(RuntimeInit.java:297)
+
+	at dalvik.system.NativeStart.main(Native Method)
+
+
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: stack=java.lang.IndexOutOfBoundsException
+
+	at org.kxml2.io.KXmlParser.getAttributeValue(KXmlParser.java:2006)
+
+	at com.uitest.contact.testcase.PullParseService.getContacts(PullParseService.java:28)
+
+	at com.uitest.contact.testcase.TestBack.testPull(TestBack.java:33)
+
+	at java.lang.reflect.Method.invokeNative(Native Method)
+
+	at com.uitest.uiautomatorUtil.TestListenerManager.run(TestListenerManager.java:87)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.start(UiAutomatorTestRunner.java:160)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.run(UiAutomatorTestRunner.java:96)
+
+	at com.android.commands.uiautomator.RunTestCommand.run(RunTestCommand.java:91)
+
+	at com.android.commands.uiautomator.Launcher.main(Launcher.java:83)
+
+	at com.android.internal.os.RuntimeInit.nativeFinishInit(Native Method)
+
+	at com.android.internal.os.RuntimeInit.main(RuntimeInit.java:297)
+
+	at dalvik.system.NativeStart.main(Native Method)
+
+
+
+INSTRUMENTATION_STATUS: test=testPull
+
+INSTRUMENTATION_STATUS_CODE: -1
+
+INSTRUMENTATION_STATUS: stream=
+
+Test results for WatcherResultPrinter=.E
+
+Time: 0.707
+
+
+
+FAILURES!!!
+
+Tests run: 1,  Failures: 0,  Errors: 1
+
+
+
+
+
+INSTRUMENTATION_STATUS_CODE: -1
+
+Updated file C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
+Buildfile: C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 22.6.2
+ [checkenv] Installed at G:\adt-bundle-windows-x86_64-20140321\adt-bundle-windows-x86_64-20140321\sdk
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 19.0.3
+     [echo] Resolving Build Target for TestBack...
+[getuitarget] Project Target:   Android 4.4.2
+[getuitarget] API level:        19
+     [echo] ----------
+     [echo] Creating output directories if needed...
+
+-pre-compile:
+
+compile:
+
+-post-compile:
+
+-dex:
+      [dex] input: C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
+      [dex] Found Deleted Target File
+      [dex] Converting compiled files and external libraries into C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes.dex...
+
+-post-dex:
+
+-jar:
+      [jar] Building jar: C:\Users\Administrator\workspace_201607\ContactUITest\bin\TestBack.jar
+
+-post-jar:
+
+build:
+
+BUILD SUCCESSFUL
+Total time: 3 seconds
+1846 KB/s (39715 bytes in 0.021s)
+run PId: 5306
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact.testcase.TestBack
+
+INSTRUMENTATION_STATUS: stream=
+
+com.uitest.contact.testcase.TestBack:
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: test=testPull
+
+INSTRUMENTATION_STATUS_CODE: 1
+
+startTest: testPull(com.uitest.contact.testcase.TestBack)
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact.testcase.TestBack
+
+INSTRUMENTATION_STATUS: stream=
+
+Error in testPull:
+
+java.lang.IndexOutOfBoundsException
+
+	at org.kxml2.io.KXmlParser.getAttributeValue(KXmlParser.java:2006)
+
+	at com.uitest.contact.testcase.PullParseService.getContacts(PullParseService.java:28)
+
+	at com.uitest.contact.testcase.TestBack.testPull(TestBack.java:33)
+
+	at java.lang.reflect.Method.invokeNative(Native Method)
+
+	at com.uitest.uiautomatorUtil.TestListenerManager.run(TestListenerManager.java:87)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.start(UiAutomatorTestRunner.java:160)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.run(UiAutomatorTestRunner.java:96)
+
+	at com.android.commands.uiautomator.RunTestCommand.run(RunTestCommand.java:91)
+
+	at com.android.commands.uiautomator.Launcher.main(Launcher.java:83)
+
+	at com.android.internal.os.RuntimeInit.nativeFinishInit(Native Method)
+
+	at com.android.internal.os.RuntimeInit.main(RuntimeInit.java:297)
+
+	at dalvik.system.NativeStart.main(Native Method)
+
+
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: stack=java.lang.IndexOutOfBoundsException
+
+	at org.kxml2.io.KXmlParser.getAttributeValue(KXmlParser.java:2006)
+
+	at com.uitest.contact.testcase.PullParseService.getContacts(PullParseService.java:28)
+
+	at com.uitest.contact.testcase.TestBack.testPull(TestBack.java:33)
+
+	at java.lang.reflect.Method.invokeNative(Native Method)
+
+	at com.uitest.uiautomatorUtil.TestListenerManager.run(TestListenerManager.java:87)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.start(UiAutomatorTestRunner.java:160)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.run(UiAutomatorTestRunner.java:96)
+
+	at com.android.commands.uiautomator.RunTestCommand.run(RunTestCommand.java:91)
+
+	at com.android.commands.uiautomator.Launcher.main(Launcher.java:83)
+
+	at com.android.internal.os.RuntimeInit.nativeFinishInit(Native Method)
+
+	at com.android.internal.os.RuntimeInit.main(RuntimeInit.java:297)
+
+	at dalvik.system.NativeStart.main(Native Method)
+
+
+
+INSTRUMENTATION_STATUS: test=testPull
+
+INSTRUMENTATION_STATUS_CODE: -1
+
+INSTRUMENTATION_STATUS: stream=
+
+Test results for WatcherResultPrinter=.E
+
+Time: 0.772
+
+
+
+FAILURES!!!
+
+Tests run: 1,  Failures: 0,  Errors: 1
+
+
+
+
+
+INSTRUMENTATION_STATUS_CODE: -1
+
+Updated file C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
+Buildfile: C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 22.6.2
+ [checkenv] Installed at G:\adt-bundle-windows-x86_64-20140321\adt-bundle-windows-x86_64-20140321\sdk
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 19.0.3
+     [echo] Resolving Build Target for TestBack...
+[getuitarget] Project Target:   Android 4.4.2
+[getuitarget] API level:        19
+     [echo] ----------
+     [echo] Creating output directories if needed...
+
+-pre-compile:
+
+compile:
+    [javac] Compiling 1 source file to C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
+    [javac] ����: [options] Դֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ŀ��ֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ҫ�����й��ѹ�ʱѡ��ľ���, ��ʹ�� -Xlint:-options��
+    [javac] 3 ������
+
+-post-compile:
+
+-dex:
+      [dex] input: C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
+      [dex] Found Deleted Target File
+      [dex] Converting compiled files and external libraries into C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes.dex...
+
+-post-dex:
+
+-jar:
+      [jar] Building jar: C:\Users\Administrator\workspace_201607\ContactUITest\bin\TestBack.jar
+
+-post-jar:
+
+build:
+
+BUILD SUCCESSFUL
+Total time: 4 seconds
+2424 KB/s (39729 bytes in 0.016s)
+run PId: 5463
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact.testcase.TestBack
+
+INSTRUMENTATION_STATUS: stream=
+
+com.uitest.contact.testcase.TestBack:
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: test=testPull
+
+INSTRUMENTATION_STATUS_CODE: 1
+
+startTest: testPull(com.uitest.contact.testcase.TestBack)
+
+contact
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact.testcase.TestBack
+
+INSTRUMENTATION_STATUS: stream=
+
+Error in testPull:
+
+java.lang.IndexOutOfBoundsException
+
+	at org.kxml2.io.KXmlParser.getAttributeValue(KXmlParser.java:2006)
+
+	at com.uitest.contact.testcase.PullParseService.getContacts(PullParseService.java:28)
+
+	at com.uitest.contact.testcase.TestBack.testPull(TestBack.java:34)
+
+	at java.lang.reflect.Method.invokeNative(Native Method)
+
+	at com.uitest.uiautomatorUtil.TestListenerManager.run(TestListenerManager.java:87)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.start(UiAutomatorTestRunner.java:160)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.run(UiAutomatorTestRunner.java:96)
+
+	at com.android.commands.uiautomator.RunTestCommand.run(RunTestCommand.java:91)
+
+	at com.android.commands.uiautomator.Launcher.main(Launcher.java:83)
+
+	at com.android.internal.os.RuntimeInit.nativeFinishInit(Native Method)
+
+	at com.android.internal.os.RuntimeInit.main(RuntimeInit.java:297)
+
+	at dalvik.system.NativeStart.main(Native Method)
+
+
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: stack=java.lang.IndexOutOfBoundsException
+
+	at org.kxml2.io.KXmlParser.getAttributeValue(KXmlParser.java:2006)
+
+	at com.uitest.contact.testcase.PullParseService.getContacts(PullParseService.java:28)
+
+	at com.uitest.contact.testcase.TestBack.testPull(TestBack.java:34)
+
+	at java.lang.reflect.Method.invokeNative(Native Method)
+
+	at com.uitest.uiautomatorUtil.TestListenerManager.run(TestListenerManager.java:87)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.start(UiAutomatorTestRunner.java:160)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.run(UiAutomatorTestRunner.java:96)
+
+	at com.android.commands.uiautomator.RunTestCommand.run(RunTestCommand.java:91)
+
+	at com.android.commands.uiautomator.Launcher.main(Launcher.java:83)
+
+	at com.android.internal.os.RuntimeInit.nativeFinishInit(Native Method)
+
+	at com.android.internal.os.RuntimeInit.main(RuntimeInit.java:297)
+
+	at dalvik.system.NativeStart.main(Native Method)
+
+
+
+INSTRUMENTATION_STATUS: test=testPull
+
+INSTRUMENTATION_STATUS_CODE: -1
+
+INSTRUMENTATION_STATUS: stream=
+
+Test results for WatcherResultPrinter=.E
+
+Time: 0.726
+
+
+
+FAILURES!!!
+
+Tests run: 1,  Failures: 0,  Errors: 1
+
+
+
+
+
+INSTRUMENTATION_STATUS_CODE: -1
+
+Updated file C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
+Buildfile: C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 22.6.2
+ [checkenv] Installed at G:\adt-bundle-windows-x86_64-20140321\adt-bundle-windows-x86_64-20140321\sdk
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 19.0.3
+     [echo] Resolving Build Target for TestBack...
+[getuitarget] Project Target:   Android 4.4.2
+[getuitarget] API level:        19
+     [echo] ----------
+     [echo] Creating output directories if needed...
+
+-pre-compile:
+
+compile:
+
+-post-compile:
+
+-dex:
+      [dex] input: C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
+      [dex] Found Deleted Target File
+      [dex] Converting compiled files and external libraries into C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes.dex...
+
+-post-dex:
+
+-jar:
+      [jar] Building jar: C:\Users\Administrator\workspace_201607\ContactUITest\bin\TestBack.jar
+
+-post-jar:
+
+build:
+
+BUILD SUCCESSFUL
+Total time: 3 seconds
+2424 KB/s (39729 bytes in 0.016s)
+run PId: 5574
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact.testcase.TestBack
+
+INSTRUMENTATION_STATUS: stream=
+
+com.uitest.contact.testcase.TestBack:
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: test=testPull
+
+INSTRUMENTATION_STATUS_CODE: 1
+
+startTest: testPull(com.uitest.contact.testcase.TestBack)
+
+contact
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact.testcase.TestBack
+
+INSTRUMENTATION_STATUS: stream=
+
+Error in testPull:
+
+java.lang.IndexOutOfBoundsException
+
+	at org.kxml2.io.KXmlParser.getAttributeValue(KXmlParser.java:2006)
+
+	at com.uitest.contact.testcase.PullParseService.getContacts(PullParseService.java:28)
+
+	at com.uitest.contact.testcase.TestBack.testPull(TestBack.java:34)
+
+	at java.lang.reflect.Method.invokeNative(Native Method)
+
+	at com.uitest.uiautomatorUtil.TestListenerManager.run(TestListenerManager.java:87)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.start(UiAutomatorTestRunner.java:160)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.run(UiAutomatorTestRunner.java:96)
+
+	at com.android.commands.uiautomator.RunTestCommand.run(RunTestCommand.java:91)
+
+	at com.android.commands.uiautomator.Launcher.main(Launcher.java:83)
+
+	at com.android.internal.os.RuntimeInit.nativeFinishInit(Native Method)
+
+	at com.android.internal.os.RuntimeInit.main(RuntimeInit.java:297)
+
+	at dalvik.system.NativeStart.main(Native Method)
+
+
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: stack=java.lang.IndexOutOfBoundsException
+
+	at org.kxml2.io.KXmlParser.getAttributeValue(KXmlParser.java:2006)
+
+	at com.uitest.contact.testcase.PullParseService.getContacts(PullParseService.java:28)
+
+	at com.uitest.contact.testcase.TestBack.testPull(TestBack.java:34)
+
+	at java.lang.reflect.Method.invokeNative(Native Method)
+
+	at com.uitest.uiautomatorUtil.TestListenerManager.run(TestListenerManager.java:87)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.start(UiAutomatorTestRunner.java:160)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.run(UiAutomatorTestRunner.java:96)
+
+	at com.android.commands.uiautomator.RunTestCommand.run(RunTestCommand.java:91)
+
+	at com.android.commands.uiautomator.Launcher.main(Launcher.java:83)
+
+	at com.android.internal.os.RuntimeInit.nativeFinishInit(Native Method)
+
+	at com.android.internal.os.RuntimeInit.main(RuntimeInit.java:297)
+
+	at dalvik.system.NativeStart.main(Native Method)
+
+
+
+INSTRUMENTATION_STATUS: test=testPull
+
+INSTRUMENTATION_STATUS_CODE: -1
+
+INSTRUMENTATION_STATUS: stream=
+
+Test results for WatcherResultPrinter=.E
+
+Time: 0.746
+
+
+
+FAILURES!!!
+
+Tests run: 1,  Failures: 0,  Errors: 1
+
+
+
+
+
+INSTRUMENTATION_STATUS_CODE: -1
+
+Updated file C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
+Buildfile: C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 22.6.2
+ [checkenv] Installed at G:\adt-bundle-windows-x86_64-20140321\adt-bundle-windows-x86_64-20140321\sdk
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 19.0.3
+     [echo] Resolving Build Target for TestBack...
+[getuitarget] Project Target:   Android 4.4.2
+[getuitarget] API level:        19
+     [echo] ----------
+     [echo] Creating output directories if needed...
+
+-pre-compile:
+
+compile:
+
+-post-compile:
+
+-dex:
+      [dex] input: C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
+      [dex] Found Deleted Target File
+      [dex] Converting compiled files and external libraries into C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes.dex...
+
+-post-dex:
+
+-jar:
+      [jar] Building jar: C:\Users\Administrator\workspace_201607\ContactUITest\bin\TestBack.jar
+
+-post-jar:
+
+build:
+
+BUILD SUCCESSFUL
+Total time: 3 seconds
+2424 KB/s (39729 bytes in 0.016s)
+run PId: 5743
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact.testcase.TestBack
+
+INSTRUMENTATION_STATUS: stream=
+
+com.uitest.contact.testcase.TestBack:
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: test=testPull
+
+INSTRUMENTATION_STATUS_CODE: 1
+
+startTest: testPull(com.uitest.contact.testcase.TestBack)
+
+contact
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact.testcase.TestBack
+
+INSTRUMENTATION_STATUS: stream=
+
+Error in testPull:
+
+java.lang.IndexOutOfBoundsException
+
+	at org.kxml2.io.KXmlParser.getAttributeValue(KXmlParser.java:2006)
+
+	at com.uitest.contact.testcase.PullParseService.getContacts(PullParseService.java:28)
+
+	at com.uitest.contact.testcase.TestBack.testPull(TestBack.java:34)
+
+	at java.lang.reflect.Method.invokeNative(Native Method)
+
+	at com.uitest.uiautomatorUtil.TestListenerManager.run(TestListenerManager.java:87)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.start(UiAutomatorTestRunner.java:160)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.run(UiAutomatorTestRunner.java:96)
+
+	at com.android.commands.uiautomator.RunTestCommand.run(RunTestCommand.java:91)
+
+	at com.android.commands.uiautomator.Launcher.main(Launcher.java:83)
+
+	at com.android.internal.os.RuntimeInit.nativeFinishInit(Native Method)
+
+	at com.android.internal.os.RuntimeInit.main(RuntimeInit.java:297)
+
+	at dalvik.system.NativeStart.main(Native Method)
+
+
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: stack=java.lang.IndexOutOfBoundsException
+
+	at org.kxml2.io.KXmlParser.getAttributeValue(KXmlParser.java:2006)
+
+	at com.uitest.contact.testcase.PullParseService.getContacts(PullParseService.java:28)
+
+	at com.uitest.contact.testcase.TestBack.testPull(TestBack.java:34)
+
+	at java.lang.reflect.Method.invokeNative(Native Method)
+
+	at com.uitest.uiautomatorUtil.TestListenerManager.run(TestListenerManager.java:87)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.start(UiAutomatorTestRunner.java:160)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.run(UiAutomatorTestRunner.java:96)
+
+	at com.android.commands.uiautomator.RunTestCommand.run(RunTestCommand.java:91)
+
+	at com.android.commands.uiautomator.Launcher.main(Launcher.java:83)
+
+	at com.android.internal.os.RuntimeInit.nativeFinishInit(Native Method)
+
+	at com.android.internal.os.RuntimeInit.main(RuntimeInit.java:297)
+
+	at dalvik.system.NativeStart.main(Native Method)
+
+
+
+INSTRUMENTATION_STATUS: test=testPull
+
+INSTRUMENTATION_STATUS_CODE: -1
+
+INSTRUMENTATION_STATUS: stream=
+
+Test results for WatcherResultPrinter=.E
+
+Time: 0.753
+
+
+
+FAILURES!!!
+
+Tests run: 1,  Failures: 0,  Errors: 1
+
+
+
+
+
+INSTRUMENTATION_STATUS_CODE: -1
+
+Updated file C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
+Buildfile: C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 22.6.2
+ [checkenv] Installed at G:\adt-bundle-windows-x86_64-20140321\adt-bundle-windows-x86_64-20140321\sdk
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 19.0.3
+     [echo] Resolving Build Target for TestBack...
+[getuitarget] Project Target:   Android 4.4.2
+[getuitarget] API level:        19
+     [echo] ----------
+     [echo] Creating output directories if needed...
+
+-pre-compile:
+
+compile:
+    [javac] Compiling 1 source file to C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
+    [javac] ����: [options] Դֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ŀ��ֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ҫ�����й��ѹ�ʱѡ��ľ���, ��ʹ�� -Xlint:-options��
+    [javac] 3 ������
+
+-post-compile:
+
+-dex:
+      [dex] input: C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
+      [dex] Found Deleted Target File
+      [dex] Converting compiled files and external libraries into C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes.dex...
+
+-post-dex:
+
+-jar:
+      [jar] Building jar: C:\Users\Administrator\workspace_201607\ContactUITest\bin\TestBack.jar
+
+-post-jar:
+
+build:
+
+BUILD SUCCESSFUL
+Total time: 4 seconds
+2586 KB/s (39729 bytes in 0.015s)
+run PId: 6355
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact.testcase.TestBack
+
+INSTRUMENTATION_STATUS: stream=
+
+com.uitest.contact.testcase.TestBack:
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: test=testPull
+
+INSTRUMENTATION_STATUS_CODE: 1
+
+startTest: testPull(com.uitest.contact.testcase.TestBack)
+
+contact
+
+len: 2
+
+contact: �ò��:13086569660:email
+
+contact: ���ʡ:13190208434:email
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact.testcase.TestBack
+
+INSTRUMENTATION_STATUS: stream=.
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: test=testPull
+
+INSTRUMENTATION_STATUS_CODE: 0
+
+INSTRUMENTATION_STATUS: stream=
+
+Test results for WatcherResultPrinter=.
+
+Time: 0.1
+
+
+
+OK (1 test)
+
+
+
+
+
+INSTRUMENTATION_STATUS_CODE: -1
+
+Updated file C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
+Buildfile: C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 22.6.2
+ [checkenv] Installed at G:\adt-bundle-windows-x86_64-20140321\adt-bundle-windows-x86_64-20140321\sdk
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 19.0.3
+     [echo] Resolving Build Target for TestBack...
+[getuitarget] Project Target:   Android 4.4.2
+[getuitarget] API level:        19
+     [echo] ----------
+     [echo] Creating output directories if needed...
+
+-pre-compile:
+
+compile:
+
+-post-compile:
+
+-dex:
+      [dex] input: C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
+      [dex] Found Deleted Target File
+      [dex] Converting compiled files and external libraries into C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes.dex...
+
+-post-dex:
+
+-jar:
+      [jar] Building jar: C:\Users\Administrator\workspace_201607\ContactUITest\bin\TestBack.jar
+
+-post-jar:
+
+build:
+
+BUILD SUCCESSFUL
+Total time: 4 seconds
+2424 KB/s (39729 bytes in 0.016s)
+run PId: 6721
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact.testcase.TestBack
+
+INSTRUMENTATION_STATUS: stream=
+
+com.uitest.contact.testcase.TestBack:
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: test=testPull
+
+INSTRUMENTATION_STATUS_CODE: 1
+
+startTest: testPull(com.uitest.contact.testcase.TestBack)
+
+contact
+
+len: 2
+
+contact: �ò��:13086569660:email
+
+contact: ���ʡ:13190208434:email
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact.testcase.TestBack
+
+INSTRUMENTATION_STATUS: stream=.
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: test=testPull
+
+INSTRUMENTATION_STATUS_CODE: 0
+
+INSTRUMENTATION_STATUS: stream=
+
+Test results for WatcherResultPrinter=.
+
+Time: 0.096
+
+
+
+OK (1 test)
+
+
+
+
+
+INSTRUMENTATION_STATUS_CODE: -1
+
+Updated file C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
+Buildfile: C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 22.6.2
+ [checkenv] Installed at G:\adt-bundle-windows-x86_64-20140321\adt-bundle-windows-x86_64-20140321\sdk
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 19.0.3
+     [echo] Resolving Build Target for TestBack...
+[getuitarget] Project Target:   Android 4.4.2
+[getuitarget] API level:        19
+     [echo] ----------
+     [echo] Creating output directories if needed...
+
+-pre-compile:
+
+compile:
+
+-post-compile:
+
+-dex:
+      [dex] input: C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
+      [dex] Found Deleted Target File
+      [dex] Converting compiled files and external libraries into C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes.dex...
+
+-post-dex:
+
+-jar:
+      [jar] Building jar: C:\Users\Administrator\workspace_201607\ContactUITest\bin\TestBack.jar
+
+-post-jar:
+
+build:
+
+BUILD SUCCESSFUL
+Total time: 3 seconds
+2424 KB/s (39729 bytes in 0.016s)
+run PId: 6852
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact.testcase.TestBack
+
+INSTRUMENTATION_STATUS: stream=
+
+com.uitest.contact.testcase.TestBack:
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: test=testPull
+
+INSTRUMENTATION_STATUS_CODE: 1
+
+startTest: testPull(com.uitest.contact.testcase.TestBack)
+
+contact
+
+len: 2
+
+contact: 陈柏户:13086569660:email
+
+contact: 是打发点:13190208434:email
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact.testcase.TestBack
+
+INSTRUMENTATION_STATUS: stream=.
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: test=testPull
+
+INSTRUMENTATION_STATUS_CODE: 0
+
+INSTRUMENTATION_STATUS: stream=
+
+Test results for WatcherResultPrinter=.
+
+Time: 0.118
+
+
+
+OK (1 test)
+
+
+
+
+
+INSTRUMENTATION_STATUS_CODE: -1
+
+Updated file C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
+Buildfile: C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 22.6.2
+ [checkenv] Installed at G:\adt-bundle-windows-x86_64-20140321\adt-bundle-windows-x86_64-20140321\sdk
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 19.0.3
+     [echo] Resolving Build Target for TestBack...
+[getuitarget] Project Target:   Android 4.4.2
+[getuitarget] API level:        19
+     [echo] ----------
+     [echo] Creating output directories if needed...
+
+-pre-compile:
+
+compile:
+    [javac] Compiling 2 source files to C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
+    [javac] ����: [options] Դֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ŀ��ֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ҫ�����й��ѹ�ʱѡ��ľ���, ��ʹ�� -Xlint:-options��
+    [javac] 3 ������
+
+-post-compile:
+
+-dex:
+      [dex] input: C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
+      [dex] Found Deleted Target File
+      [dex] Converting compiled files and external libraries into C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes.dex...
+
+-post-dex:
+
+-jar:
+      [jar] Building jar: C:\Users\Administrator\workspace_201607\ContactUITest\bin\TestBack.jar
+
+-post-jar:
+
+build:
+
+BUILD SUCCESSFUL
+Total time: 5 seconds
+1847 KB/s (39729 bytes in 0.021s)
+run PId: 7074
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact.testcase.TestBack
+
+INSTRUMENTATION_STATUS: stream=
+
+com.uitest.contact.testcase.TestBack:
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: test=testPull
+
+INSTRUMENTATION_STATUS_CODE: 1
+
+startTest: testPull(com.uitest.contact.testcase.TestBack)
+
+contact
+
+len: 2
+
+contact: 陈柏户:13086569660:email
+
+contact: 是打发点:13190208434:email
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact.testcase.TestBack
+
+INSTRUMENTATION_STATUS: stream=.
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: test=testPull
+
+INSTRUMENTATION_STATUS_CODE: 0
+
+INSTRUMENTATION_STATUS: stream=
+
+Test results for WatcherResultPrinter=.
+
+Time: 0.133
+
+
+
+OK (1 test)
+
+
+
+
+
+INSTRUMENTATION_STATUS_CODE: -1
+
+Updated file C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
+Buildfile: C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 22.6.2
+ [checkenv] Installed at G:\adt-bundle-windows-x86_64-20140321\adt-bundle-windows-x86_64-20140321\sdk
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 19.0.3
+     [echo] Resolving Build Target for TestBack...
+[getuitarget] Project Target:   Android 4.4.2
+[getuitarget] API level:        19
+     [echo] ----------
+     [echo] Creating output directories if needed...
+
+-pre-compile:
+
+compile:
+    [javac] Compiling 1 source file to C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
+    [javac] ����: [options] Դֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ŀ��ֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ҫ�����й��ѹ�ʱѡ��ľ���, ��ʹ�� -Xlint:-options��
+    [javac] 3 ������
+
+-post-compile:
+
+-dex:
+      [dex] input: C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
+      [dex] Found Deleted Target File
+      [dex] Converting compiled files and external libraries into C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes.dex...
+
+-post-dex:
+
+-jar:
+      [jar] Building jar: C:\Users\Administrator\workspace_201607\ContactUITest\bin\TestBack.jar
+
+-post-jar:
+
+build:
+
+BUILD SUCCESSFUL
+Total time: 4 seconds
+2281 KB/s (39724 bytes in 0.017s)
+run PId: 7567
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact.testcase.TestBack
+
+INSTRUMENTATION_STATUS: stream=
+
+com.uitest.contact.testcase.TestBack:
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: test=testPull
+
+INSTRUMENTATION_STATUS_CODE: 1
+
+startTest: testPull(com.uitest.contact.testcase.TestBack)
+
+contact
+
+len: 2
+
+contact: 陈柏户:13086569660:email
+
+contact: 是打发点:13190208434:email
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact.testcase.TestBack
+
+INSTRUMENTATION_STATUS: stream=.
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: test=testPull
+
+INSTRUMENTATION_STATUS_CODE: 0
+
+INSTRUMENTATION_STATUS: stream=
+
+Test results for WatcherResultPrinter=.
+
+Time: 0.114
+
+
+
+OK (1 test)
+
+
+
+
+
+INSTRUMENTATION_STATUS_CODE: -1
+
+Updated file C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
+Buildfile: C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 22.6.2
+ [checkenv] Installed at G:\adt-bundle-windows-x86_64-20140321\adt-bundle-windows-x86_64-20140321\sdk
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 19.0.3
+     [echo] Resolving Build Target for TestBack...
+[getuitarget] Project Target:   Android 4.4.2
+[getuitarget] API level:        19
+     [echo] ----------
+     [echo] Creating output directories if needed...
+
+-pre-compile:
+
+compile:
+
+-post-compile:
+
+-dex:
+      [dex] input: C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
+      [dex] Found Deleted Target File
+      [dex] Converting compiled files and external libraries into C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes.dex...
+
+-post-dex:
+
+-jar:
+      [jar] Building jar: C:\Users\Administrator\workspace_201607\ContactUITest\bin\TestBack.jar
+
+-post-jar:
+
+build:
+
+BUILD SUCCESSFUL
+Total time: 3 seconds
+2281 KB/s (39724 bytes in 0.017s)
+run PId: 7760
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact.testcase.TestBack
+
+INSTRUMENTATION_STATUS: stream=
+
+com.uitest.contact.testcase.TestBack:
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: test=testPull
+
+INSTRUMENTATION_STATUS_CODE: 1
+
+startTest: testPull(com.uitest.contact.testcase.TestBack)
+
+contact
+
+len: 149
+
+contact: �ò��:13086569660:email
+
+contact: ���ʡ:13190208434:email
+
+contact: ������:13826009411:email
+
+contact: �Ϻ�:13570529810:email
+
+contact: ���ܹ�:13987691831:email
+
+contact: ��242:13929000242:email
+
+contact: ֹ�:13455495336:email
+
+contact: �Ƶ��:13642157845:email
+
+contact: ��139:13929000139:email
+
+contact: �޿�:13913452528:email
+
+contact: Ĥ����:13452658564:email
+
+contact: Ҳ��:13566808138:email
+
+contact: ��357:13929000357:email
+
+contact: ����:13839297473:email
+
+contact: ������:13408870475:email
+
+contact: ����:13649976928:email
+
+contact: ����ϣ:13340702777:email
+
+contact: ��328:13929000328:email
+
+contact: �д̳�:13142838865:email
+
+contact: ��ͬ����1:13990820664:email
+
+contact: ��ƻ:13628021823:email
+
+contact: ��Ǻ�:13753198951:email
+
+contact: ���̨:13555743134:email
+
+contact: ��355:13929000355:email
+
+contact: ����:13112024903:email
+
+contact: ��佾:13934958647:email
+
+contact: ����ȧ:13047165878:email
+
+contact: �ڶ�:13216286525:email
+
+contact: �����:13682468986:email
+
+contact: ��ɴ:13516795366:email
+
+contact: ��243:13929000243:email
+
+contact: ɧ���:13227196974:email
+
+contact: �����:13969704343:email
+
+contact: àѭ��:13000789068:email
+
+contact: ���ȸ�:13229937194:email
+
+contact: �ֹ�:13021035158:email
+
+contact: ����ʡ:13960871562:email
+
+contact: �����:13756123612:email
+
+contact: ����ɣ:13738460710:email
+
+contact: ��ʢӣ:13582268885:email
+
+contact: ����:13558500089:email
+
+contact: ������:13388776247:email
+
+contact: ƻ��=:13918947267:email
+
+contact: ����:13576787815:email
+
+contact: ���:13579675296:email
+
+contact: ���ƴ:13225803448:email
+
+contact: ����:13387191114:email
+
+contact: ������:13812297515:email
+
+contact: ����:13106365664:email
+
+contact: ����:13810822918:email
+
+contact: ��ͬ��ͬ�ֻ�:13057591877:email
+
+contact: ���:13025522386:email
+
+contact: ��ͬ����2:13475665097:email
+
+contact: ����:13547490850:email
+
+contact: ����:13944127828:email
+
+contact: ������:13061222949:email
+
+contact: ����:13141708509:email
+
+contact: ��ǧ��:13233132343:email
+
+contact: ����:13153295176:email
+
+contact: ��Ĩ��:13826687637:email
+
+contact: ����:13719811793:email
+
+contact: ��Ա��:13365530984:email
+
+contact: �����:13570568242:email
+
+contact: ��ơ��:13185235475:email
+
+contact: ����ӧ:13203332214:email
+
+contact: ������:13883867875:email
+
+contact: ��������??�ղӹ����(2):18933994437:email
+
+contact: �¹���Ժ�:13824457231:email
+
+contact: ƻ��":13197363146:email
+
+contact: ����:13315189279:email
+
+contact: ���:13860925317:email
+
+contact: ���ҽ�:13410376055:email
+
+contact: ���ٺ�:13489667643:email
+
+contact: ������:13181936768:email
+
+contact: ���ݼ�:13145136432:email
+
+contact: ��¢��:13278802325:email
+
+contact: ���:13373626863:email
+
+contact: ��:13673146927:email
+
+contact: ��Ȥ��:13365865610:email
+
+contact: ������:13493174283:email
+
+contact: ������:13816928335:email
+
+contact: �����:13607302739:email
+
+contact: ����:13742992997:email
+
+contact: տ��Ӿ��2��:13824452490:email
+
+contact: ���޾�:13796610111:email
+
+contact: ������:13874044266:email
+
+contact: ���ſ�:13009464932:email
+
+contact: ��̲��:13310022321:email
+
+contact: ̿���:13098709307:email
+
+contact: ϵ̡Ҧ:13041787966:email
+
+contact: ��ҡ:13682372125:email
+
+contact: ��ǫ��:13184817446:email
+
+contact: ��Ԫ�в��Ժ�:13824452490:email
+
+contact: �ö��:13600766208:email
+
+contact: ����:13968196575:email
+
+contact: |ƻ��|:13692587288:email
+
+contact: �汱��:13305455096:email
+
+contact: ɲ��ղ:13190916595:email
+
+contact: �ƺͻ�:13197363382:email
+
+contact: ����:13063545137:email
+
+contact: ����:13436515552:email
+
+contact: �念:13438011056:email
+
+contact: <ƻ��>:13297830883:email
+
+contact: ƻ��:13382325471:email
+
+contact: <<ƻ��:13444262927:email
+
+contact: ����:13040456265:email
+
+contact: �ǽ���:13164524118:email
+
+contact: ����:13599144530:email
+
+contact: ������:13869645229:email
+
+contact: ��థ:13244329441:email
+
+contact: Vac:13533348571:email
+
+contact: àŨ��:13607845618:email
+
+contact: ����:13131327339:email
+
+contact: �����:13465243402:email
+
+contact: ����:13973314153:email
+
+contact: �복��:13761180958:email
+
+contact: ����:13956176143:email
+
+contact: �����:13568950137:email
+
+contact: ���:13107700072:email
+
+contact: ��ͬ����:13272108427:email
+
+contact: ������:13186677809:email
+
+contact: ��դ:13636256911:email
+
+contact: ����Ҽ:13315994761:email
+
+contact: ���:13090281430:email
+
+contact: ��ԣ��:13918947267:email
+
+contact: ���:13023017320:email
+
+contact: �Ͼ���:13054703922:email
+
+contact: �����:13267584783:email
+
+contact: ��ϱ:13717916305:email
+
+contact: �ϰ�:13010292909:email
+
+contact: ���ݺ�:13557166002:email
+
+contact: ӧ���:13400717032:email
+
+contact: ����:13030517399:email
+
+contact: ��íƽ:13354943751:email
+
+contact: ������:13390074895:email
+
+contact: ɫ��ʮ:13207757035:email
+
+contact: ����:13942613372:email
+
+contact: ������:13316436501:email
+
+contact: ������:13893957166:email
+
+contact: �зŮ:13442227524:email
+
+contact: �����:13476029838:email
+
+contact: ҧµ:13428081631:email
+
+contact: �����:13188636163:email
+
+contact: ��ҧ:13041167543:email
+
+contact: ����:13291958594:email
+
+contact: �ﺦ��:13572599743:email
+
+contact: �ó���:13246214564:email
+
+contact: ��沽:13130349155:email
+
+contact: �����:13002861223:email
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact.testcase.TestBack
+
+INSTRUMENTATION_STATUS: stream=.
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: test=testPull
+
+INSTRUMENTATION_STATUS_CODE: 0
+
+INSTRUMENTATION_STATUS: stream=
+
+Test results for WatcherResultPrinter=.
+
+Time: 0.206
+
+
+
+OK (1 test)
+
+
+
+
+
+INSTRUMENTATION_STATUS_CODE: -1
+
+Updated file C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
+Buildfile: C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 22.6.2
+ [checkenv] Installed at G:\adt-bundle-windows-x86_64-20140321\adt-bundle-windows-x86_64-20140321\sdk
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 19.0.3
+     [echo] Resolving Build Target for TestBack...
+[getuitarget] Project Target:   Android 4.4.2
+[getuitarget] API level:        19
+     [echo] ----------
+     [echo] Creating output directories if needed...
+
+-pre-compile:
+
+compile:
+    [javac] Compiling 2 source files to C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
+    [javac] ����: [options] Դֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ŀ��ֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ҫ�����й��ѹ�ʱѡ��ľ���, ��ʹ�� -Xlint:-options��
+    [javac] 3 ������
+
+-post-compile:
+
+-dex:
+      [dex] input: C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
+      [dex] Found Deleted Target File
+      [dex] Converting compiled files and external libraries into C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes.dex...
+
+-post-dex:
+
+-jar:
+      [jar] Building jar: C:\Users\Administrator\workspace_201607\ContactUITest\bin\TestBack.jar
+
+-post-jar:
+
+build:
+
+BUILD SUCCESSFUL
+Total time: 4 seconds
+1939 KB/s (39722 bytes in 0.020s)
+run PId: 8038
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact.testcase.TestBack
+
+INSTRUMENTATION_STATUS: stream=
+
+com.uitest.contact.testcase.TestBack:
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: test=testPull
+
+INSTRUMENTATION_STATUS_CODE: 1
+
+startTest: testPull(com.uitest.contact.testcase.TestBack)
+
+contact
+
+len: 149
+
+contact: �ò��:13086569660:email
+
+contact: ���ʡ:13190208434:email
+
+contact: ������:13826009411:email
+
+contact: �Ϻ�:13570529810:email
+
+contact: ���ܹ�:13987691831:email
+
+contact: ��242:13929000242:email
+
+contact: ֹ�:13455495336:email
+
+contact: �Ƶ��:13642157845:email
+
+contact: ��139:13929000139:email
+
+contact: �޿�:13913452528:email
+
+contact: Ĥ����:13452658564:email
+
+contact: Ҳ��:13566808138:email
+
+contact: ��357:13929000357:email
+
+contact: ����:13839297473:email
+
+contact: ������:13408870475:email
+
+contact: ����:13649976928:email
+
+contact: ����ϣ:13340702777:email
+
+contact: ��328:13929000328:email
+
+contact: �д̳�:13142838865:email
+
+contact: ��ͬ����1:13990820664:email
+
+contact: ��ƻ:13628021823:email
+
+contact: ��Ǻ�:13753198951:email
+
+contact: ���̨:13555743134:email
+
+contact: ��355:13929000355:email
+
+contact: ����:13112024903:email
+
+contact: ��佾:13934958647:email
+
+contact: ����ȧ:13047165878:email
+
+contact: �ڶ�:13216286525:email
+
+contact: �����:13682468986:email
+
+contact: ��ɴ:13516795366:email
+
+contact: ��243:13929000243:email
+
+contact: ɧ���:13227196974:email
+
+contact: �����:13969704343:email
+
+contact: 脿ѭ��:13000789068:email
+
+contact: ���ȸ�:13229937194:email
+
+contact: �ֹ�:13021035158:email
+
+contact: ����ʡ:13960871562:email
+
+contact: �����:13756123612:email
+
+contact: ����ɣ:13738460710:email
+
+contact: ��ʢӣ:13582268885:email
+
+contact: ����:13558500089:email
+
+contact: ������:13388776247:email
+
+contact: ƻ��=:13918947267:email
+
+contact: ����:13576787815:email
+
+contact: ���:13579675296:email
+
+contact: ���ƴ:13225803448:email
+
+contact: ����:13387191114:email
+
+contact: ������:13812297515:email
+
+contact: ����:13106365664:email
+
+contact: ����:13810822918:email
+
+contact: ��ͬ��ͬ�ֻ�:13057591877:email
+
+contact: ���:13025522386:email
+
+contact: ��ͬ����2:13475665097:email
+
+contact: ����:13547490850:email
+
+contact: ����:13944127828:email
+
+contact: ������:13061222949:email
+
+contact: ����:13141708509:email
+
+contact: ��ǧ��:13233132343:email
+
+contact: ����:13153295176:email
+
+contact: ��Ĩ��:13826687637:email
+
+contact: ����:13719811793:email
+
+contact: ��Ա��:13365530984:email
+
+contact: �����:13570568242:email
+
+contact: ��ơ��:13185235475:email
+
+contact: ����ӧ:13203332214:email
+
+contact: ������:13883867875:email
+
+contact: ��������??�ղӹ����(2):18933994437:email
+
+contact: �¹���Ժ�:13824457231:email
+
+contact: ƻ��":13197363146:email
+
+contact: ����:13315189279:email
+
+contact: ���:13860925317:email
+
+contact: ���ҽ�:13410376055:email
+
+contact: ���ٺ�:13489667643:email
+
+contact: ������:13181936768:email
+
+contact: ���ݼ�:13145136432:email
+
+contact: ��¢��:13278802325:email
+
+contact: ���:13373626863:email
+
+contact: ��:13673146927:email
+
+contact: ��Ȥ��:13365865610:email
+
+contact: ������:13493174283:email
+
+contact: ������:13816928335:email
+
+contact: �����:13607302739:email
+
+contact: ����:13742992997:email
+
+contact: տ��Ӿ��2��:13824452490:email
+
+contact: ���޾�:13796610111:email
+
+contact: ������:13874044266:email
+
+contact: ���ſ�:13009464932:email
+
+contact: ��̲��:13310022321:email
+
+contact: ̿���:13098709307:email
+
+contact: ϵ̡Ҧ:13041787966:email
+
+contact: ��ҡ:13682372125:email
+
+contact: ��ǫ��:13184817446:email
+
+contact: ��Ԫ�в��Ժ�:13824452490:email
+
+contact: �ö��:13600766208:email
+
+contact: ����:13968196575:email
+
+contact: |ƻ��|:13692587288:email
+
+contact: �汱��:13305455096:email
+
+contact: ɲ��ղ:13190916595:email
+
+contact: �ƺͻ�:13197363382:email
+
+contact: ����:13063545137:email
+
+contact: ����:13436515552:email
+
+contact: �念:13438011056:email
+
+contact: <ƻ��>:13297830883:email
+
+contact: ƻ��:13382325471:email
+
+contact: <<ƻ��:13444262927:email
+
+contact: ����:13040456265:email
+
+contact: �ǽ���:13164524118:email
+
+contact: ����:13599144530:email
+
+contact: ������:13869645229:email
+
+contact: ��థ:13244329441:email
+
+contact: Vac:13533348571:email
+
+contact: 脿Ũ��:13607845618:email
+
+contact: ����:13131327339:email
+
+contact: �����:13465243402:email
+
+contact: ����:13973314153:email
+
+contact: �복��:13761180958:email
+
+contact: ����:13956176143:email
+
+contact: �����:13568950137:email
+
+contact: ���:13107700072:email
+
+contact: ��ͬ����:13272108427:email
+
+contact: ��粻��:13186677809:email
+
+contact: ��դ:13636256911:email
+
+contact: ����Ҽ:13315994761:email
+
+contact: ���:13090281430:email
+
+contact: ��ԣ��:13918947267:email
+
+contact: ���:13023017320:email
+
+contact: �Ͼ���:13054703922:email
+
+contact: �����:13267584783:email
+
+contact: ��ϱ:13717916305:email
+
+contact: �ϰ�:13010292909:email
+
+contact: ���ݺ�:13557166002:email
+
+contact: ӧ���:13400717032:email
+
+contact: ����:13030517399:email
+
+contact: ��íƽ:13354943751:email
+
+contact: ������:13390074895:email
+
+contact: ɫ��ʮ:13207757035:email
+
+contact: ����:13942613372:email
+
+contact: ������:13316436501:email
+
+contact: ������:13893957166:email
+
+contact: �зŮ:13442227524:email
+
+contact: �����:13476029838:email
+
+contact: ҧµ:13428081631:email
+
+contact: �����:13188636163:email
+
+contact: ��ҧ:13041167543:email
+
+contact: ����:13291958594:email
+
+contact: �ﺦ��:13572599743:email
+
+contact: �ó���:13246214564:email
+
+contact: ��沽:13130349155:email
+
+contact: �����:13002861223:email
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact.testcase.TestBack
+
+INSTRUMENTATION_STATUS: stream=.
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: test=testPull
+
+INSTRUMENTATION_STATUS_CODE: 0
+
+INSTRUMENTATION_STATUS: stream=
+
+Test results for WatcherResultPrinter=.
+
+Time: 0.192
+
+
+
+OK (1 test)
+
+
+
+
+
+INSTRUMENTATION_STATUS_CODE: -1
+
+Updated file C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
+Buildfile: C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 22.6.2
+ [checkenv] Installed at G:\adt-bundle-windows-x86_64-20140321\adt-bundle-windows-x86_64-20140321\sdk
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 19.0.3
+     [echo] Resolving Build Target for TestBack...
+[getuitarget] Project Target:   Android 4.4.2
+[getuitarget] API level:        19
+     [echo] ----------
+     [echo] Creating output directories if needed...
+
+-pre-compile:
+
+compile:
+
+-post-compile:
+
+-dex:
+      [dex] input: C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
+      [dex] Found Deleted Target File
+      [dex] Converting compiled files and external libraries into C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes.dex...
+
+-post-dex:
+
+-jar:
+      [jar] Building jar: C:\Users\Administrator\workspace_201607\ContactUITest\bin\TestBack.jar
+
+-post-jar:
+
+build:
+
+BUILD SUCCESSFUL
+Total time: 3 seconds
+2585 KB/s (39722 bytes in 0.015s)
+run PId: 8134
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact.testcase.TestBack
+
+INSTRUMENTATION_STATUS: stream=
+
+com.uitest.contact.testcase.TestBack:
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: test=testPull
+
+INSTRUMENTATION_STATUS_CODE: 1
+
+startTest: testPull(com.uitest.contact.testcase.TestBack)
+
+contact
+
+len: 149
+
+contact: �ò��:13086569660:email
+
+contact: ���ʡ:13190208434:email
+
+contact: ������:13826009411:email
+
+contact: �Ϻ�:13570529810:email
+
+contact: ���ܹ�:13987691831:email
+
+contact: ��242:13929000242:email
+
+contact: ֹ�:13455495336:email
+
+contact: �Ƶ��:13642157845:email
+
+contact: ��139:13929000139:email
+
+contact: �޿�:13913452528:email
+
+contact: Ĥ����:13452658564:email
+
+contact: Ҳ��:13566808138:email
+
+contact: ��357:13929000357:email
+
+contact: ����:13839297473:email
+
+contact: ������:13408870475:email
+
+contact: ����:13649976928:email
+
+contact: ����ϣ:13340702777:email
+
+contact: ��328:13929000328:email
+
+contact: �д̳�:13142838865:email
+
+contact: ��ͬ����1:13990820664:email
+
+contact: ��ƻ:13628021823:email
+
+contact: ��Ǻ�:13753198951:email
+
+contact: ���̨:13555743134:email
+
+contact: ��355:13929000355:email
+
+contact: ����:13112024903:email
+
+contact: ��佾:13934958647:email
+
+contact: ����ȧ:13047165878:email
+
+contact: �ڶ�:13216286525:email
+
+contact: �����:13682468986:email
+
+contact: ��ɴ:13516795366:email
+
+contact: ��243:13929000243:email
+
+contact: ɧ���:13227196974:email
+
+contact: �����:13969704343:email
+
+contact: 脿ѭ��:13000789068:email
+
+contact: ���ȸ�:13229937194:email
+
+contact: �ֹ�:13021035158:email
+
+contact: ����ʡ:13960871562:email
+
+contact: �����:13756123612:email
+
+contact: ����ɣ:13738460710:email
+
+contact: ��ʢӣ:13582268885:email
+
+contact: ����:13558500089:email
+
+contact: ������:13388776247:email
+
+contact: ƻ��=:13918947267:email
+
+contact: ����:13576787815:email
+
+contact: ���:13579675296:email
+
+contact: ���ƴ:13225803448:email
+
+contact: ����:13387191114:email
+
+contact: ������:13812297515:email
+
+contact: ����:13106365664:email
+
+contact: ����:13810822918:email
+
+contact: ��ͬ��ͬ�ֻ�:13057591877:email
+
+contact: ���:13025522386:email
+
+contact: ��ͬ����2:13475665097:email
+
+contact: ����:13547490850:email
+
+contact: ����:13944127828:email
+
+contact: ������:13061222949:email
+
+contact: ����:13141708509:email
+
+contact: ��ǧ��:13233132343:email
+
+contact: ����:13153295176:email
+
+contact: ��Ĩ��:13826687637:email
+
+contact: ����:13719811793:email
+
+contact: ��Ա��:13365530984:email
+
+contact: �����:13570568242:email
+
+contact: ��ơ��:13185235475:email
+
+contact: ����ӧ:13203332214:email
+
+contact: ������:13883867875:email
+
+contact: ��������??�ղӹ����(2):18933994437:email
+
+contact: �¹���Ժ�:13824457231:email
+
+contact: ƻ��":13197363146:email
+
+contact: ����:13315189279:email
+
+contact: ���:13860925317:email
+
+contact: ���ҽ�:13410376055:email
+
+contact: ���ٺ�:13489667643:email
+
+contact: ������:13181936768:email
+
+contact: ���ݼ�:13145136432:email
+
+contact: ��¢��:13278802325:email
+
+contact: ���:13373626863:email
+
+contact: ��:13673146927:email
+
+contact: ��Ȥ��:13365865610:email
+
+contact: ������:13493174283:email
+
+contact: ������:13816928335:email
+
+contact: �����:13607302739:email
+
+contact: ����:13742992997:email
+
+contact: տ��Ӿ��2��:13824452490:email
+
+contact: ���޾�:13796610111:email
+
+contact: ������:13874044266:email
+
+contact: ���ſ�:13009464932:email
+
+contact: ��̲��:13310022321:email
+
+contact: ̿���:13098709307:email
+
+contact: ϵ̡Ҧ:13041787966:email
+
+contact: ��ҡ:13682372125:email
+
+contact: ��ǫ��:13184817446:email
+
+contact: ��Ԫ�в��Ժ�:13824452490:email
+
+contact: �ö��:13600766208:email
+
+contact: ����:13968196575:email
+
+contact: |ƻ��|:13692587288:email
+
+contact: �汱��:13305455096:email
+
+contact: ɲ��ղ:13190916595:email
+
+contact: �ƺͻ�:13197363382:email
+
+contact: ����:13063545137:email
+
+contact: ����:13436515552:email
+
+contact: �念:13438011056:email
+
+contact: <ƻ��>:13297830883:email
+
+contact: ƻ��:13382325471:email
+
+contact: <<ƻ��:13444262927:email
+
+contact: ����:13040456265:email
+
+contact: �ǽ���:13164524118:email
+
+contact: ����:13599144530:email
+
+contact: ������:13869645229:email
+
+contact: ��థ:13244329441:email
+
+contact: Vac:13533348571:email
+
+contact: 脿Ũ��:13607845618:email
+
+contact: ����:13131327339:email
+
+contact: �����:13465243402:email
+
+contact: ����:13973314153:email
+
+contact: �복��:13761180958:email
+
+contact: ����:13956176143:email
+
+contact: �����:13568950137:email
+
+contact: ���:13107700072:email
+
+contact: ��ͬ����:13272108427:email
+
+contact: ��粻��:13186677809:email
+
+contact: ��դ:13636256911:email
+
+contact: ����Ҽ:13315994761:email
+
+contact: ���:13090281430:email
+
+contact: ��ԣ��:13918947267:email
+
+contact: ���:13023017320:email
+
+contact: �Ͼ���:13054703922:email
+
+contact: �����:13267584783:email
+
+contact: ��ϱ:13717916305:email
+
+contact: �ϰ�:13010292909:email
+
+contact: ���ݺ�:13557166002:email
+
+contact: ӧ���:13400717032:email
+
+contact: ����:13030517399:email
+
+contact: ��íƽ:13354943751:email
+
+contact: ������:13390074895:email
+
+contact: ɫ��ʮ:13207757035:email
+
+contact: ����:13942613372:email
+
+contact: ������:13316436501:email
+
+contact: ������:13893957166:email
+
+contact: �зŮ:13442227524:email
+
+contact: �����:13476029838:email
+
+contact: ҧµ:13428081631:email
+
+contact: �����:13188636163:email
+
+contact: ��ҧ:13041167543:email
+
+contact: ����:13291958594:email
+
+contact: �ﺦ��:13572599743:email
+
+contact: �ó���:13246214564:email
+
+contact: ��沽:13130349155:email
+
+contact: �����:13002861223:email
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact.testcase.TestBack
+
+INSTRUMENTATION_STATUS: stream=.
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: test=testPull
+
+INSTRUMENTATION_STATUS_CODE: 0
+
+INSTRUMENTATION_STATUS: stream=
+
+Test results for WatcherResultPrinter=.
+
+Time: 0.29
+
+
+
+OK (1 test)
+
+
+
+
+
+INSTRUMENTATION_STATUS_CODE: -1
+
+Updated file C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
+Buildfile: C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 22.6.2
+ [checkenv] Installed at G:\adt-bundle-windows-x86_64-20140321\adt-bundle-windows-x86_64-20140321\sdk
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 19.0.3
+     [echo] Resolving Build Target for TestBack...
+[getuitarget] Project Target:   Android 4.4.2
+[getuitarget] API level:        19
+     [echo] ----------
+     [echo] Creating output directories if needed...
+
+-pre-compile:
+
+compile:
+    [javac] Compiling 1 source file to C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
+    [javac] ����: [options] Դֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ŀ��ֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ҫ�����й��ѹ�ʱѡ��ľ���, ��ʹ�� -Xlint:-options��
+    [javac] 3 ������
+
+-post-compile:
+
+-dex:
+      [dex] input: C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
+      [dex] Found Deleted Target File
+      [dex] Converting compiled files and external libraries into C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes.dex...
+
+-post-dex:
+
+-jar:
+      [jar] Building jar: C:\Users\Administrator\workspace_201607\ContactUITest\bin\TestBack.jar
+
+-post-jar:
+
+build:
+
+BUILD SUCCESSFUL
+Total time: 4 seconds
+1686 KB/s (39722 bytes in 0.023s)
+run PId: 8325
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact.testcase.TestBack
+
+INSTRUMENTATION_STATUS: stream=
+
+com.uitest.contact.testcase.TestBack:
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: test=testPull
+
+INSTRUMENTATION_STATUS_CODE: 1
+
+startTest: testPull(com.uitest.contact.testcase.TestBack)
+
+contact
+
+len: 149
+
+contact: �ò��:13086569660:2r2lT4@yahoo.com.cn2r2lT4@yahoo.com.cn
+
+contact: ���ʡ:13190208434:bqee0a@qq.combqee0a@qq.com
+
+contact: ������:13826009411:zhangzhiruo@aspirecn.com
+
+contact: �Ϻ�:13570529810:15616153328@139.com
+
+contact: ���ܹ�:13987691831:1eAvD6@sina.com.cn1eAvD6@sina.com.cn
+
+contact: ��242:13929000242:13929000002@174.com
+
+contact: ֹ�:13455495336:M51823@yahoo.com
+
+contact: �Ƶ��:13642157845:u5t2L4@126.com
+
+contact: ��139:13929000139:13929000002@160.com
+
+contact: �޿�:13913452528:Ig00F3@gmail.com
+
+contact: Ĥ����:13452658564:uL65U5@yahoo.com.cn
+
+contact: Ҳ��:13566808138:20E024@163.com
+
+contact: ��357:13929000357:13929000001@192.com
+
+contact: ����:13839297473:tU7Hp5@qq.com
+
+contact: ������:13408870475:2i28p5@sina.com.cn2i28p5@sina.com.cn
+
+contact: ����:13649976928:l41Lp4@qq.com
+
+contact: ����ϣ:13340702777:50Bv1V@sina.com.cn50Bv1V@sina.com.cn
+
+contact: ��328:13929000328:13929000002@187.com
+
+contact: �д̳�:13142838865:2v33X6@qq.com
+
+contact: ��ͬ����1:13990820664:hehe@qq.comhehe@qq.com
+
+contact: ��ƻ:13628021823:3J0G30@126.com
+
+contact: ��Ǻ�:13753198951:05270a@sina.com.cn
+
+contact: ���̨:13555743134:Txm22v@126.com
+
+contact: ��355:13929000355:13929000001@191.com
+
+contact: ����:13112024903:2j672T@qq.com
+
+contact: ��佾:13934958647:1hDRGH@qq.com
+
+contact: ����ȧ:13047165878:6vC5AK@sina.com.cn6vC5AK@sina.com.cn
+
+contact: �ڶ�:13216286525:E7MOl4@qq.com
+
+contact: �����:13682468986:FHfCh0@163.com
+
+contact: ��ɴ:13516795366:g21141@163.comg21141@163.com
+
+contact: ��243:13929000243:13929000001@175.com
+
+contact: ɧ���:13227196974:N7KML7@sina.com.cn
+
+contact: �����:13969704343:d1q0K4@qq.com
+
+contact: 脿ѭ��:13000789068:E6A1fy@126.com
+
+contact: ���ȸ�:13229937194:KkEkav@qq.com
+
+contact: �ֹ�:13021035158:Hbyi70@qq.com
+
+contact: ����ʡ:13960871562:11G4bt@126.com
+
+contact: �����:13756123612:O1G7s7@sina.com.cn
+
+contact: ����ɣ:13738460710:6sP6Bl@sina.com.cn
+
+contact: ��ʢӣ:13582268885:V5l4Vw@126.com
+
+contact: ����:13558500089:d2ajxI@qq.com
+
+contact: ������:13388776247:2uVJX1@gmail.com
+
+contact: ƻ��=:13918947267:2b6B3q@sina.com.cn2b6B3q@sina.com.cn
+
+contact: ����:13576787815:NFB42v@qq.com
+
+contact: ���:13579675296:Oi88R0@qq.com
+
+contact: ���ƴ:13225803448:2M6304@126.com
+
+contact: ����:13387191114:5Pm1gF@163.com
+
+contact: ������:13812297515:6KhIs4@sina.com.cn
+
+contact: ����:13106365664:58338a@qq.com
+
+contact: ����:13810822918:V13ja7@sina.com.cn
+
+contact: ��ͬ��ͬ�ֻ�:13057591877:75VA3H@qq.com75VA3H@qq.com
+
+contact: ���:13025522386:Kef58R@qq.com
+
+contact: ��ͬ����2:13475665097:hehe@qq.com
+
+contact: ����:13547490850:v4TSJd@sina.com.cn
+
+contact: ����:13944127828:424081@gmail.com
+
+contact: ������:13061222949:656840@126.com
+
+contact: ����:13141708509:Cc83o8@sina.com.cn
+
+contact: ��ǧ��:13233132343:G756P5@qq.com
+
+contact: ����:13153295176:2214A5@yahoo.com
+
+contact: ��Ĩ��:13826687637:63Yy17@sina.com.cn
+
+contact: ����:13719811793:6qBDa7@sina.com.cn
+
+contact: ��Ա��:13365530984:htQ50a@sina.com.cn
+
+contact: �����:13570568242:Q7Kb24@163.com
+
+contact: ��ơ��:13185235475:73xxd4@sina.com.cn
+
+contact: ����ӧ:13203332214:76E507@gmail.com
+
+contact: ������:13883867875:51j661@qq.com
+
+contact: ��������??�ղӹ����(2):18933994437:18933994437@189.cn18933994437@189.cn
+
+contact: �¹���Ժ�:13824457231:13824457231@139.com
+
+contact: ƻ��":13197363146:4Mh345@yahoo.com.cn4Mh345@yahoo.com.cn
+
+contact: ����:13315189279:5w50Qo@gmail.com
+
+contact: ���:13860925317:tLLM1e@qq.com
+
+contact: ���ҽ�:13410376055:lg51k3@163.com
+
+contact: ���ٺ�:13489667643:3qpoa7@sina.com.cn
+
+contact: ������:13181936768:ti72hq@163.com
+
+contact: ���ݼ�:13145136432:8h3216@qq.com
+
+contact: ��¢��:13278802325:32w0c6@sina.com.cn
+
+contact: ���:13373626863:M867pk@163.com
+
+contact: ��:13673146927:sG703e@sina.com.cn
+
+contact: ��Ȥ��:13365865610:6I51gY@qq.com6I51gY@qq.com
+
+contact: ������:13493174283:135cKo@sina.com.cn
+
+contact: ������:13816928335:u7qb25@gmail.com
+
+contact: �����:13607302739:W0561w@sina.com.cn
+
+contact: ����:13742992997:18Qn6e@sina.com.cn
+
+contact: տ��Ӿ��2��:13824452490:13824452490@139.com13824452490@139.com
+
+contact: ���޾�:13796610111:1IW48a@sina.com.cn
+
+contact: ������:13874044266:7srI64@yahoo.com
+
+contact: ���ſ�:13009464932:cV32G5@sina.com.cn
+
+contact: ��̲��:13310022321:1CMFg6@yahoo.com
+
+contact: ̿���:13098709307:08I2x4@126.com
+
+contact: ϵ̡Ҧ:13041787966:r5yoT2@126.com
+
+contact: ��ҡ:13682372125:G5PwO7@qq.com
+
+contact: ��ǫ��:13184817446:N2HaUC@gmail.com
+
+contact: ��Ԫ�в��Ժ�:13824452490:13824452490@139.com
+
+contact: �ö��:13600766208:PFJ2kE@163.com
+
+contact: ����:13968196575:N5d22s@yahoo.com
+
+contact: |ƻ��|:13692587288:3c571s@qq.com
+
+contact: �汱��:13305455096:32wN06@sina.com.cn
+
+contact: ɲ��ղ:13190916595:8E400E@163.com
+
+contact: �ƺͻ�:13197363382:4F5q58@yahoo.com.cn
+
+contact: ����:13063545137:762M3c@126.com
+
+contact: ����:13436515552:2157N5@gmail.com
+
+contact: �念:13438011056:0xA1D6@163.com
+
+contact: <ƻ��>:13297830883:N55bI5@qq.comN55bI5@qq.com
+
+contact: ƻ��:13382325471:547266@yahoo.com547266@yahoo.com
+
+contact: <<ƻ��:13444262927:eQ2Y76@126.com
+
+contact: ����:13040456265:L0G0mP@163.com
+
+contact: �ǽ���:13164524118:114y72@sina.com.cn
+
+contact: ����:13599144530:e35F3G@sina.com.cn
+
+contact: ������:13869645229:0C84a1@163.com
+
+contact: ��థ:13244329441:OoU5i5@qq.com
+
+contact: Vac:13533348571:13533348571@139.com
+
+contact: 脿Ũ��:13607845618:defs5i@qq.com
+
+contact: ����:13131327339:142VPd@gmail.com
+
+contact: �����:13465243402:iCQw5H@sina.com.cn
+
+contact: ����:13973314153:gUj5vm@sina.com.cn
+
+contact: �복��:13761180958:7v8131@sina.com.cn
+
+contact: ����:13956176143:dP100Y@gmail.com
+
+contact: �����:13568950137:3525k7@yahoo.com
+
+contact: ���:13107700072:Wf0UOR@126.com
+
+contact: ��ͬ����:13272108427:7FVAT0@sina.com.cn
+
+contact: ��粻��:13186677809:g422At@sina.com.cn
+
+contact: ��դ:13636256911:3xv22o@qq.com
+
+contact: ����Ҽ:13315994761:ku8S1t@sina.com.cn
+
+contact: ���:13090281430:NE51Wr@163.com
+
+contact: ��ԣ��:13918947267:2b6B3q@sina.com.cn
+
+contact: ���:13023017320:2b6o12@qq.com
+
+contact: �Ͼ���:13054703922:1YPs6v@sina.com.cn
+
+contact: �����:13267584783:Rx6cid@163.com
+
+contact: ��ϱ:13717916305:8D4K4Q@qq.com
+
+contact: �ϰ�:13010292909:J05B36@sina.com.cn
+
+contact: ���ݺ�:13557166002:ct4xE1@yahoo.com
+
+contact: ӧ���:13400717032:O0300X@126.com
+
+contact: ����:13030517399:2di203@gmail.com
+
+contact: ��íƽ:13354943751:Xj750f@163.com
+
+contact: ������:13390074895:MK2Db6@gmail.com
+
+contact: ɫ��ʮ:13207757035:JHf4C1@yahoo.com.cn
+
+contact: ����:13942613372:i01Pq3@qq.com
+
+contact: ������:13316436501:3xi01l@sina.com.cn
+
+contact: ������:13893957166:a3nN0N@sina.com.cn
+
+contact: �зŮ:13442227524:hV8ap7@yahoo.com
+
+contact: �����:13476029838:a1n857@163.com
+
+contact: ҧµ:13428081631:gv7cCY@qq.com
+
+contact: �����:13188636163:0C56fy@qq.com
+
+contact: ��ҧ:13041167543:d78o46@gmail.com
+
+contact: ����:13291958594:F75216@sina.com.cn
+
+contact: �ﺦ��:13572599743:f6uRxi@qq.com
+
+contact: �ó���:13246214564:4c7PAf@163.com
+
+contact: ��沽:13130349155:b0tpY1@sina.com.cn
+
+contact: �����:13002861223:4y4372@sina.com.cn
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact.testcase.TestBack
+
+INSTRUMENTATION_STATUS: stream=.
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: test=testPull
+
+INSTRUMENTATION_STATUS_CODE: 0
+
+INSTRUMENTATION_STATUS: stream=
+
+Test results for WatcherResultPrinter=.
+
+Time: 0.27
+
+
+
+OK (1 test)
+
+
+
+
+
+INSTRUMENTATION_STATUS_CODE: -1
+
+Updated file C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
+Buildfile: C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 22.6.2
+ [checkenv] Installed at G:\adt-bundle-windows-x86_64-20140321\adt-bundle-windows-x86_64-20140321\sdk
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 19.0.3
+     [echo] Resolving Build Target for TestBack...
+[getuitarget] Project Target:   Android 4.4.2
+[getuitarget] API level:        19
+     [echo] ----------
+     [echo] Creating output directories if needed...
+
+-pre-compile:
+
+compile:
+    [javac] Compiling 1 source file to C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
+    [javac] ����: [options] Դֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ŀ��ֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ҫ�����й��ѹ�ʱѡ��ľ���, ��ʹ�� -Xlint:-options��
+    [javac] 3 ������
+
+-post-compile:
+
+-dex:
+      [dex] input: C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
+      [dex] Found Deleted Target File
+      [dex] Converting compiled files and external libraries into C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes.dex...
+
+-post-dex:
+
+-jar:
+      [jar] Building jar: C:\Users\Administrator\workspace_201607\ContactUITest\bin\TestBack.jar
+
+-post-jar:
+
+build:
+
+BUILD SUCCESSFUL
+Total time: 4 seconds
+2153 KB/s (39699 bytes in 0.018s)
+run PId: 8571
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact.testcase.TestBack
+
+INSTRUMENTATION_STATUS: stream=
+
+com.uitest.contact.testcase.TestBack:
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: test=testPull
+
+INSTRUMENTATION_STATUS_CODE: 1
+
+startTest: testPull(com.uitest.contact.testcase.TestBack)
+
+contact: �ò��:13086569660:2r2lT4@yahoo.com.cn2r2lT4@yahoo.com.cn
+
+contact: ���ʡ:13190208434:bqee0a@qq.combqee0a@qq.com
+
+contact: ������:13826009411:zhangzhiruo@aspirecn.com
+
+contact: �Ϻ�:13570529810:15616153328@139.com
+
+contact: ���ܹ�:13987691831:1eAvD6@sina.com.cn1eAvD6@sina.com.cn
+
+contact: ��242:13929000242:13929000002@174.com
+
+contact: ֹ�:13455495336:M51823@yahoo.com
+
+contact: �Ƶ��:13642157845:u5t2L4@126.com
+
+contact: ��139:13929000139:13929000002@160.com
+
+contact: �޿�:13913452528:Ig00F3@gmail.com
+
+contact: Ĥ����:13452658564:uL65U5@yahoo.com.cn
+
+contact: Ҳ��:13566808138:20E024@163.com
+
+contact: ��357:13929000357:13929000001@192.com
+
+contact: ����:13839297473:tU7Hp5@qq.com
+
+contact: ������:13408870475:2i28p5@sina.com.cn2i28p5@sina.com.cn
+
+contact: ����:13649976928:l41Lp4@qq.com
+
+contact: ����ϣ:13340702777:50Bv1V@sina.com.cn50Bv1V@sina.com.cn
+
+contact: ��328:13929000328:13929000002@187.com
+
+contact: �д̳�:13142838865:2v33X6@qq.com
+
+contact: ��ͬ����1:13990820664:hehe@qq.comhehe@qq.com
+
+contact: ��ƻ:13628021823:3J0G30@126.com
+
+contact: ��Ǻ�:13753198951:05270a@sina.com.cn
+
+contact: ���̨:13555743134:Txm22v@126.com
+
+contact: ��355:13929000355:13929000001@191.com
+
+contact: ����:13112024903:2j672T@qq.com
+
+contact: ��佾:13934958647:1hDRGH@qq.com
+
+contact: ����ȧ:13047165878:6vC5AK@sina.com.cn6vC5AK@sina.com.cn
+
+contact: �ڶ�:13216286525:E7MOl4@qq.com
+
+contact: �����:13682468986:FHfCh0@163.com
+
+contact: ��ɴ:13516795366:g21141@163.comg21141@163.com
+
+contact: ��243:13929000243:13929000001@175.com
+
+contact: ɧ���:13227196974:N7KML7@sina.com.cn
+
+contact: �����:13969704343:d1q0K4@qq.com
+
+contact: 脿ѭ��:13000789068:E6A1fy@126.com
+
+contact: ���ȸ�:13229937194:KkEkav@qq.com
+
+contact: �ֹ�:13021035158:Hbyi70@qq.com
+
+contact: ����ʡ:13960871562:11G4bt@126.com
+
+contact: �����:13756123612:O1G7s7@sina.com.cn
+
+contact: ����ɣ:13738460710:6sP6Bl@sina.com.cn
+
+contact: ��ʢӣ:13582268885:V5l4Vw@126.com
+
+contact: ����:13558500089:d2ajxI@qq.com
+
+contact: ������:13388776247:2uVJX1@gmail.com
+
+contact: ƻ��=:13918947267:2b6B3q@sina.com.cn2b6B3q@sina.com.cn
+
+contact: ����:13576787815:NFB42v@qq.com
+
+contact: ���:13579675296:Oi88R0@qq.com
+
+contact: ���ƴ:13225803448:2M6304@126.com
+
+contact: ����:13387191114:5Pm1gF@163.com
+
+contact: ������:13812297515:6KhIs4@sina.com.cn
+
+contact: ����:13106365664:58338a@qq.com
+
+contact: ����:13810822918:V13ja7@sina.com.cn
+
+contact: ��ͬ��ͬ�ֻ�:13057591877:75VA3H@qq.com75VA3H@qq.com
+
+contact: ���:13025522386:Kef58R@qq.com
+
+contact: ��ͬ����2:13475665097:hehe@qq.com
+
+contact: ����:13547490850:v4TSJd@sina.com.cn
+
+contact: ����:13944127828:424081@gmail.com
+
+contact: ������:13061222949:656840@126.com
+
+contact: ����:13141708509:Cc83o8@sina.com.cn
+
+contact: ��ǧ��:13233132343:G756P5@qq.com
+
+contact: ����:13153295176:2214A5@yahoo.com
+
+contact: ��Ĩ��:13826687637:63Yy17@sina.com.cn
+
+contact: ����:13719811793:6qBDa7@sina.com.cn
+
+contact: ��Ա��:13365530984:htQ50a@sina.com.cn
+
+contact: �����:13570568242:Q7Kb24@163.com
+
+contact: ��ơ��:13185235475:73xxd4@sina.com.cn
+
+contact: ����ӧ:13203332214:76E507@gmail.com
+
+contact: ������:13883867875:51j661@qq.com
+
+contact: ��������??�ղӹ����(2):18933994437:18933994437@189.cn18933994437@189.cn
+
+contact: �¹���Ժ�:13824457231:13824457231@139.com
+
+contact: ƻ��":13197363146:4Mh345@yahoo.com.cn4Mh345@yahoo.com.cn
+
+contact: ����:13315189279:5w50Qo@gmail.com
+
+contact: ���:13860925317:tLLM1e@qq.com
+
+contact: ���ҽ�:13410376055:lg51k3@163.com
+
+contact: ���ٺ�:13489667643:3qpoa7@sina.com.cn
+
+contact: ������:13181936768:ti72hq@163.com
+
+contact: ���ݼ�:13145136432:8h3216@qq.com
+
+contact: ��¢��:13278802325:32w0c6@sina.com.cn
+
+contact: ���:13373626863:M867pk@163.com
+
+contact: ��:13673146927:sG703e@sina.com.cn
+
+contact: ��Ȥ��:13365865610:6I51gY@qq.com6I51gY@qq.com
+
+contact: ������:13493174283:135cKo@sina.com.cn
+
+contact: ������:13816928335:u7qb25@gmail.com
+
+contact: �����:13607302739:W0561w@sina.com.cn
+
+contact: ����:13742992997:18Qn6e@sina.com.cn
+
+contact: տ��Ӿ��2��:13824452490:13824452490@139.com13824452490@139.com
+
+contact: ���޾�:13796610111:1IW48a@sina.com.cn
+
+contact: ������:13874044266:7srI64@yahoo.com
+
+contact: ���ſ�:13009464932:cV32G5@sina.com.cn
+
+contact: ��̲��:13310022321:1CMFg6@yahoo.com
+
+contact: ̿���:13098709307:08I2x4@126.com
+
+contact: ϵ̡Ҧ:13041787966:r5yoT2@126.com
+
+contact: ��ҡ:13682372125:G5PwO7@qq.com
+
+contact: ��ǫ��:13184817446:N2HaUC@gmail.com
+
+contact: ��Ԫ�в��Ժ�:13824452490:13824452490@139.com
+
+contact: �ö��:13600766208:PFJ2kE@163.com
+
+contact: ����:13968196575:N5d22s@yahoo.com
+
+contact: |ƻ��|:13692587288:3c571s@qq.com
+
+contact: �汱��:13305455096:32wN06@sina.com.cn
+
+contact: ɲ��ղ:13190916595:8E400E@163.com
+
+contact: �ƺͻ�:13197363382:4F5q58@yahoo.com.cn
+
+contact: ����:13063545137:762M3c@126.com
+
+contact: ����:13436515552:2157N5@gmail.com
+
+contact: �念:13438011056:0xA1D6@163.com
+
+contact: <ƻ��>:13297830883:N55bI5@qq.comN55bI5@qq.com
+
+contact: ƻ��:13382325471:547266@yahoo.com547266@yahoo.com
+
+contact: <<ƻ��:13444262927:eQ2Y76@126.com
+
+contact: ����:13040456265:L0G0mP@163.com
+
+contact: �ǽ���:13164524118:114y72@sina.com.cn
+
+contact: ����:13599144530:e35F3G@sina.com.cn
+
+contact: ������:13869645229:0C84a1@163.com
+
+contact: ��థ:13244329441:OoU5i5@qq.com
+
+contact: Vac:13533348571:13533348571@139.com
+
+contact: 脿Ũ��:13607845618:defs5i@qq.com
+
+contact: ����:13131327339:142VPd@gmail.com
+
+contact: �����:13465243402:iCQw5H@sina.com.cn
+
+contact: ����:13973314153:gUj5vm@sina.com.cn
+
+contact: �복��:13761180958:7v8131@sina.com.cn
+
+contact: ����:13956176143:dP100Y@gmail.com
+
+contact: �����:13568950137:3525k7@yahoo.com
+
+contact: ���:13107700072:Wf0UOR@126.com
+
+contact: ��ͬ����:13272108427:7FVAT0@sina.com.cn
+
+contact: ��粻��:13186677809:g422At@sina.com.cn
+
+contact: ��դ:13636256911:3xv22o@qq.com
+
+contact: ����Ҽ:13315994761:ku8S1t@sina.com.cn
+
+contact: ���:13090281430:NE51Wr@163.com
+
+contact: ��ԣ��:13918947267:2b6B3q@sina.com.cn
+
+contact: ���:13023017320:2b6o12@qq.com
+
+contact: �Ͼ���:13054703922:1YPs6v@sina.com.cn
+
+contact: �����:13267584783:Rx6cid@163.com
+
+contact: ��ϱ:13717916305:8D4K4Q@qq.com
+
+contact: �ϰ�:13010292909:J05B36@sina.com.cn
+
+contact: ���ݺ�:13557166002:ct4xE1@yahoo.com
+
+contact: ӧ���:13400717032:O0300X@126.com
+
+contact: ����:13030517399:2di203@gmail.com
+
+contact: ��íƽ:13354943751:Xj750f@163.com
+
+contact: ������:13390074895:MK2Db6@gmail.com
+
+contact: ɫ��ʮ:13207757035:JHf4C1@yahoo.com.cn
+
+contact: ����:13942613372:i01Pq3@qq.com
+
+contact: ������:13316436501:3xi01l@sina.com.cn
+
+contact: ������:13893957166:a3nN0N@sina.com.cn
+
+contact: �зŮ:13442227524:hV8ap7@yahoo.com
+
+contact: �����:13476029838:a1n857@163.com
+
+contact: ҧµ:13428081631:gv7cCY@qq.com
+
+contact: �����:13188636163:0C56fy@qq.com
+
+contact: ��ҧ:13041167543:d78o46@gmail.com
+
+contact: ����:13291958594:F75216@sina.com.cn
+
+contact: �ﺦ��:13572599743:f6uRxi@qq.com
+
+contact: �ó���:13246214564:4c7PAf@163.com
+
+contact: ��沽:13130349155:b0tpY1@sina.com.cn
+
+contact: �����:13002861223:4y4372@sina.com.cn
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact.testcase.TestBack
+
+INSTRUMENTATION_STATUS: stream=.
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: test=testPull
+
+INSTRUMENTATION_STATUS_CODE: 0
+
+INSTRUMENTATION_STATUS: stream=
+
+Test results for WatcherResultPrinter=.
+
+Time: 0.198
+
+
+
+OK (1 test)
+
+
+
+
+
+INSTRUMENTATION_STATUS_CODE: -1
+
+Updated file C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
+Buildfile: C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 22.6.2
+ [checkenv] Installed at G:\adt-bundle-windows-x86_64-20140321\adt-bundle-windows-x86_64-20140321\sdk
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 19.0.3
+     [echo] Resolving Build Target for TestBack...
+[getuitarget] Project Target:   Android 4.4.2
+[getuitarget] API level:        19
+     [echo] ----------
+     [echo] Creating output directories if needed...
+
+-pre-compile:
+
+compile:
+
+-post-compile:
+
+-dex:
+      [dex] input: C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
+      [dex] Found Deleted Target File
+      [dex] Converting compiled files and external libraries into C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes.dex...
+
+-post-dex:
+
+-jar:
+      [jar] Building jar: C:\Users\Administrator\workspace_201607\ContactUITest\bin\TestBack.jar
+
+-post-jar:
+
+build:
+
+BUILD SUCCESSFUL
+Total time: 3 seconds
+842 KB/s (39699 bytes in 0.046s)
+run PId: 8790
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact.testcase.TestBack
+
+INSTRUMENTATION_STATUS: stream=
+
+com.uitest.contact.testcase.TestBack:
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: test=testPull
+
+INSTRUMENTATION_STATUS_CODE: 1
+
+startTest: testPull(com.uitest.contact.testcase.TestBack)
+
+contact: �ò��:13086569660:2r2lT4@yahoo.com.cn2r2lT4@yahoo.com.cn
+
+contact: ���ʡ:13190208434:bqee0a@qq.combqee0a@qq.com
+
+contact: ������:13826009411:zhangzhiruo@aspirecn.com
+
+contact: �Ϻ�:13570529810:15616153328@139.com
+
+contact: ���ܹ�:13987691831:1eAvD6@sina.com.cn1eAvD6@sina.com.cn
+
+contact: ��242:13929000242:13929000002@174.com
+
+contact: ֹ�:13455495336:M51823@yahoo.com
+
+contact: �Ƶ��:13642157845:u5t2L4@126.com
+
+contact: ��139:13929000139:13929000002@160.com
+
+contact: �޿�:13913452528:Ig00F3@gmail.com
+
+contact: Ĥ����:13452658564:uL65U5@yahoo.com.cn
+
+contact: Ҳ��:13566808138:20E024@163.com
+
+contact: ��357:13929000357:13929000001@192.com
+
+contact: ����:13839297473:tU7Hp5@qq.com
+
+contact: ������:13408870475:2i28p5@sina.com.cn2i28p5@sina.com.cn
+
+contact: ����:13649976928:l41Lp4@qq.com
+
+contact: ����ϣ:13340702777:50Bv1V@sina.com.cn50Bv1V@sina.com.cn
+
+contact: ��328:13929000328:13929000002@187.com
+
+contact: �д̳�:13142838865:2v33X6@qq.com
+
+contact: ��ͬ����1:13990820664:hehe@qq.comhehe@qq.com
+
+contact: ��ƻ:13628021823:3J0G30@126.com
+
+contact: ��Ǻ�:13753198951:05270a@sina.com.cn
+
+contact: ���̨:13555743134:Txm22v@126.com
+
+contact: ��355:13929000355:13929000001@191.com
+
+contact: ����:13112024903:2j672T@qq.com
+
+contact: ��佾:13934958647:1hDRGH@qq.com
+
+contact: ����ȧ:13047165878:6vC5AK@sina.com.cn6vC5AK@sina.com.cn
+
+contact: �ڶ�:13216286525:E7MOl4@qq.com
+
+contact: �����:13682468986:FHfCh0@163.com
+
+contact: ��ɴ:13516795366:g21141@163.comg21141@163.com
+
+contact: ��243:13929000243:13929000001@175.com
+
+contact: ɧ���:13227196974:N7KML7@sina.com.cn
+
+contact: �����:13969704343:d1q0K4@qq.com
+
+contact: 脿ѭ��:13000789068:E6A1fy@126.com
+
+contact: ���ȸ�:13229937194:KkEkav@qq.com
+
+contact: �ֹ�:13021035158:Hbyi70@qq.com
+
+contact: ����ʡ:13960871562:11G4bt@126.com
+
+contact: �����:13756123612:O1G7s7@sina.com.cn
+
+contact: ����ɣ:13738460710:6sP6Bl@sina.com.cn
+
+contact: ��ʢӣ:13582268885:V5l4Vw@126.com
+
+contact: ����:13558500089:d2ajxI@qq.com
+
+contact: ������:13388776247:2uVJX1@gmail.com
+
+contact: ƻ��=:13918947267:2b6B3q@sina.com.cn2b6B3q@sina.com.cn
+
+contact: ����:13576787815:NFB42v@qq.com
+
+contact: ���:13579675296:Oi88R0@qq.com
+
+contact: ���ƴ:13225803448:2M6304@126.com
+
+contact: ����:13387191114:5Pm1gF@163.com
+
+contact: ������:13812297515:6KhIs4@sina.com.cn
+
+contact: ����:13106365664:58338a@qq.com
+
+contact: ����:13810822918:V13ja7@sina.com.cn
+
+contact: ��ͬ��ͬ�ֻ�:13057591877:75VA3H@qq.com75VA3H@qq.com
+
+contact: ���:13025522386:Kef58R@qq.com
+
+contact: ��ͬ����2:13475665097:hehe@qq.com
+
+contact: ����:13547490850:v4TSJd@sina.com.cn
+
+contact: ����:13944127828:424081@gmail.com
+
+contact: ������:13061222949:656840@126.com
+
+contact: ����:13141708509:Cc83o8@sina.com.cn
+
+contact: ��ǧ��:13233132343:G756P5@qq.com
+
+contact: ����:13153295176:2214A5@yahoo.com
+
+contact: ��Ĩ��:13826687637:63Yy17@sina.com.cn
+
+contact: ����:13719811793:6qBDa7@sina.com.cn
+
+contact: ��Ա��:13365530984:htQ50a@sina.com.cn
+
+contact: �����:13570568242:Q7Kb24@163.com
+
+contact: ��ơ��:13185235475:73xxd4@sina.com.cn
+
+contact: ����ӧ:13203332214:76E507@gmail.com
+
+contact: ������:13883867875:51j661@qq.com
+
+contact: ��������??�ղӹ����(2):18933994437:18933994437@189.cn18933994437@189.cn
+
+contact: �¹���Ժ�:13824457231:13824457231@139.com
+
+contact: ƻ��":13197363146:4Mh345@yahoo.com.cn4Mh345@yahoo.com.cn
+
+contact: ����:13315189279:5w50Qo@gmail.com
+
+contact: ���:13860925317:tLLM1e@qq.com
+
+contact: ���ҽ�:13410376055:lg51k3@163.com
+
+contact: ���ٺ�:13489667643:3qpoa7@sina.com.cn
+
+contact: ������:13181936768:ti72hq@163.com
+
+contact: ���ݼ�:13145136432:8h3216@qq.com
+
+contact: ��¢��:13278802325:32w0c6@sina.com.cn
+
+contact: ���:13373626863:M867pk@163.com
+
+contact: ��:13673146927:sG703e@sina.com.cn
+
+contact: ��Ȥ��:13365865610:6I51gY@qq.com6I51gY@qq.com
+
+contact: ������:13493174283:135cKo@sina.com.cn
+
+contact: ������:13816928335:u7qb25@gmail.com
+
+contact: �����:13607302739:W0561w@sina.com.cn
+
+contact: ����:13742992997:18Qn6e@sina.com.cn
+
+contact: տ��Ӿ��2��:13824452490:13824452490@139.com13824452490@139.com
+
+contact: ���޾�:13796610111:1IW48a@sina.com.cn
+
+contact: ������:13874044266:7srI64@yahoo.com
+
+contact: ���ſ�:13009464932:cV32G5@sina.com.cn
+
+contact: ��̲��:13310022321:1CMFg6@yahoo.com
+
+contact: ̿���:13098709307:08I2x4@126.com
+
+contact: ϵ̡Ҧ:13041787966:r5yoT2@126.com
+
+contact: ��ҡ:13682372125:G5PwO7@qq.com
+
+contact: ��ǫ��:13184817446:N2HaUC@gmail.com
+
+contact: ��Ԫ�в��Ժ�:13824452490:13824452490@139.com
+
+contact: �ö��:13600766208:PFJ2kE@163.com
+
+contact: ����:13968196575:N5d22s@yahoo.com
+
+contact: |ƻ��|:13692587288:3c571s@qq.com
+
+contact: �汱��:13305455096:32wN06@sina.com.cn
+
+contact: ɲ��ղ:13190916595:8E400E@163.com
+
+contact: �ƺͻ�:13197363382:4F5q58@yahoo.com.cn
+
+contact: ����:13063545137:762M3c@126.com
+
+contact: ����:13436515552:2157N5@gmail.com
+
+contact: �念:13438011056:0xA1D6@163.com
+
+contact: <ƻ��>:13297830883:N55bI5@qq.comN55bI5@qq.com
+
+contact: ƻ��:13382325471:547266@yahoo.com547266@yahoo.com
+
+contact: <<ƻ��:13444262927:eQ2Y76@126.com
+
+contact: ����:13040456265:L0G0mP@163.com
+
+contact: �ǽ���:13164524118:114y72@sina.com.cn
+
+contact: ����:13599144530:e35F3G@sina.com.cn
+
+contact: ������:13869645229:0C84a1@163.com
+
+contact: ��థ:13244329441:OoU5i5@qq.com
+
+contact: Vac:13533348571:13533348571@139.com
+
+contact: 脿Ũ��:13607845618:defs5i@qq.com
+
+contact: ����:13131327339:142VPd@gmail.com
+
+contact: �����:13465243402:iCQw5H@sina.com.cn
+
+contact: ����:13973314153:gUj5vm@sina.com.cn
+
+contact: �복��:13761180958:7v8131@sina.com.cn
+
+contact: ����:13956176143:dP100Y@gmail.com
+
+contact: �����:13568950137:3525k7@yahoo.com
+
+contact: ���:13107700072:Wf0UOR@126.com
+
+contact: ��ͬ����:13272108427:7FVAT0@sina.com.cn
+
+contact: ��粻��:13186677809:g422At@sina.com.cn
+
+contact: ��դ:13636256911:3xv22o@qq.com
+
+contact: ����Ҽ:13315994761:ku8S1t@sina.com.cn
+
+contact: ���:13090281430:NE51Wr@163.com
+
+contact: ��ԣ��:13918947267:2b6B3q@sina.com.cn
+
+contact: ���:13023017320:2b6o12@qq.com
+
+contact: �Ͼ���:13054703922:1YPs6v@sina.com.cn
+
+contact: �����:13267584783:Rx6cid@163.com
+
+contact: ��ϱ:13717916305:8D4K4Q@qq.com
+
+contact: �ϰ�:13010292909:J05B36@sina.com.cn
+
+contact: ���ݺ�:13557166002:ct4xE1@yahoo.com
+
+contact: ӧ���:13400717032:O0300X@126.com
+
+contact: ����:13030517399:2di203@gmail.com
+
+contact: ��íƽ:13354943751:Xj750f@163.com
+
+contact: ������:13390074895:MK2Db6@gmail.com
+
+contact: ɫ��ʮ:13207757035:JHf4C1@yahoo.com.cn
+
+contact: ����:13942613372:i01Pq3@qq.com
+
+contact: ������:13316436501:3xi01l@sina.com.cn
+
+contact: ������:13893957166:a3nN0N@sina.com.cn
+
+contact: �зŮ:13442227524:hV8ap7@yahoo.com
+
+contact: �����:13476029838:a1n857@163.com
+
+contact: ҧµ:13428081631:gv7cCY@qq.com
+
+contact: �����:13188636163:0C56fy@qq.com
+
+contact: ��ҧ:13041167543:d78o46@gmail.com
+
+contact: ����:13291958594:F75216@sina.com.cn
+
+contact: �ﺦ��:13572599743:f6uRxi@qq.com
+
+contact: �ó���:13246214564:4c7PAf@163.com
+
+contact: ��沽:13130349155:b0tpY1@sina.com.cn
+
+contact: �����:13002861223:4y4372@sina.com.cn
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact.testcase.TestBack
+
+INSTRUMENTATION_STATUS: stream=.
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: test=testPull
+
+INSTRUMENTATION_STATUS_CODE: 0
+
+INSTRUMENTATION_STATUS: stream=
+
+Test results for WatcherResultPrinter=.
+
+Time: 0.251
+
+
+
+OK (1 test)
+
+
+
+
+
+INSTRUMENTATION_STATUS_CODE: -1
+
+Updated file C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
+Buildfile: C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 22.6.2
+ [checkenv] Installed at G:\adt-bundle-windows-x86_64-20140321\adt-bundle-windows-x86_64-20140321\sdk
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 19.0.3
+     [echo] Resolving Build Target for TestBack...
+[getuitarget] Project Target:   Android 4.4.2
+[getuitarget] API level:        19
+     [echo] ----------
+     [echo] Creating output directories if needed...
+
+-pre-compile:
+
+compile:
+
+-post-compile:
+
+-dex:
+      [dex] input: C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
+      [dex] Found Deleted Target File
+      [dex] Converting compiled files and external libraries into C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes.dex...
+
+-post-dex:
+
+-jar:
+      [jar] Building jar: C:\Users\Administrator\workspace_201607\ContactUITest\bin\TestBack.jar
+
+-post-jar:
+
+build:
+
+BUILD SUCCESSFUL
+Total time: 3 seconds
+2280 KB/s (39699 bytes in 0.017s)
+run PId: 8896
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact.testcase.TestBack
+
+INSTRUMENTATION_STATUS: stream=
+
+com.uitest.contact.testcase.TestBack:
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: test=testPull
+
+INSTRUMENTATION_STATUS_CODE: 1
+
+startTest: testPull(com.uitest.contact.testcase.TestBack)
+
+contact: 睹谗磋:13086569660:2r2lT4@yahoo.com.cn2r2lT4@yahoo.com.cn
+
+contact: 沉颈省:13190208434:bqee0a@qq.combqee0a@qq.com
+
+contact: 张芷若:13826009411:zhangzhiruo@aspirecn.com
+
+contact: 严浩:13570529810:15616153328@139.com
+
+contact: 巢蛙国:13987691831:1eAvD6@sina.com.cn1eAvD6@sina.com.cn
+
+contact: 张242:13929000242:13929000002@174.com
+
+contact: 止深贩:13455495336:M51823@yahoo.com
+
+contact: 哑滇钙:13642157845:u5t2L4@126.com
+
+contact: 张139:13929000139:13929000002@160.com
+
+contact: 娃咖:13913452528:Ig00F3@gmail.com
+
+contact: 膜紊履:13452658564:uL65U5@yahoo.com.cn
+
+contact: 也桔:13566808138:20E024@163.com
+
+contact: 张357:13929000357:13929000001@192.com
+
+contact: 瑞谬:13839297473:tU7Hp5@qq.com
+
+contact: 定啼匿:13408870475:2i28p5@sina.com.cn2i28p5@sina.com.cn
+
+contact: 题速:13649976928:l41Lp4@qq.com
+
+contact: 淀戌希:13340702777:50Bv1V@sina.com.cn50Bv1V@sina.com.cn
+
+contact: 张328:13929000328:13929000002@187.com
+
+contact: 研刺齿:13142838865:2v33X6@qq.com
+
+contact: 艾同邮箱1:13990820664:hehe@qq.comhehe@qq.com
+
+contact: 扎苹:13628021823:3J0G30@126.com
+
+contact: 牙骨豪:13753198951:05270a@sina.com.cn
+
+contact: 随跟台:13555743134:Txm22v@126.com
+
+contact: 张355:13929000355:13929000001@191.com
+
+contact: 烷落:13112024903:2j672T@qq.com
+
+contact: 伊变骄:13934958647:1hDRGH@qq.com
+
+contact: 澈仅颧:13047165878:6vC5AK@sina.com.cn6vC5AK@sina.com.cn
+
+contact: 亿恶:13216286525:E7MOl4@qq.com
+
+contact: 莲箩普:13682468986:FHfCh0@163.com
+
+contact: 遏荡纱:13516795366:g21141@163.comg21141@163.com
+
+contact: 张243:13929000243:13929000001@175.com
+
+contact: 骚评读:13227196974:N7KML7@sina.com.cn
+
+contact: 蝶狂料:13969704343:d1q0K4@qq.com
+
+contact: 脿循艺:13000789068:E6A1fy@126.com
+
+contact: 订嗜蛤:13229937194:KkEkav@qq.com
+
+contact: 仓刽:13021035158:Hbyi70@qq.com
+
+contact: 闯甭省:13960871562:11G4bt@126.com
+
+contact: 迪涉彼:13756123612:O1G7s7@sina.com.cn
+
+contact: 惨胖桑:13738460710:6sP6Bl@sina.com.cn
+
+contact: 妒盛樱:13582268885:V5l4Vw@126.com
+
+contact: 倡炎:13558500089:d2ajxI@qq.com
+
+contact: 靛亮因:13388776247:2uVJX1@gmail.com
+
+contact: 苹果=:13918947267:2b6B3q@sina.com.cn2b6B3q@sina.com.cn
+
+contact: 查灵:13576787815:NFB42v@qq.com
+
+contact: 磋笆:13579675296:Oi88R0@qq.com
+
+contact: 存傍拼:13225803448:2M6304@126.com
+
+contact: 俄昂吕:13387191114:5Pm1gF@163.com
+
+contact: 当命描:13812297515:6KhIs4@sina.com.cn
+
+contact: 躇倡银:13106365664:58338a@qq.com
+
+contact: 薄紧:13810822918:V13ja7@sina.com.cn
+
+contact: 艾同名同手机:13057591877:75VA3H@qq.com75VA3H@qq.com
+
+contact: 曾躇:13025522386:Kef58R@qq.com
+
+contact: 艾同邮箱2:13475665097:hehe@qq.com
+
+contact: 豺灾:13547490850:v4TSJd@sina.com.cn
+
+contact: 丢褒:13944127828:424081@gmail.com
+
+contact: 存贞脐:13061222949:656840@126.com
+
+contact: 甭拭:13141708509:Cc83o8@sina.com.cn
+
+contact: 墩千届:13233132343:G756P5@qq.com
+
+contact: 肠刁淮:13153295176:2214A5@yahoo.com
+
+contact: 濒抹利:13826687637:63Yy17@sina.com.cn
+
+contact: 除喻:13719811793:6qBDa7@sina.com.cn
+
+contact: 搓员丢:13365530984:htQ50a@sina.com.cn
+
+contact: 惫淫舵:13570568242:Q7Kb24@163.com
+
+contact: 叠啤趟:13185235475:73xxd4@sina.com.cn
+
+contact: 忱遂缨:13203332214:76E507@gmail.com
+
+contact: 叮庶鸵:13883867875:51j661@qq.com
+
+contact: 麦麦麦提??苏灿哈尔灿(2):18933994437:18933994437@189.cn18933994437@189.cn
+
+contact: 陈国宝测试号:13824457231:13824457231@139.com
+
+contact: 苹果":13197363146:4Mh345@yahoo.com.cn4Mh345@yahoo.com.cn
+
+contact: 簿豹:13315189279:5w50Qo@gmail.com
+
+contact: 饼建杰:13860925317:tLLM1e@qq.com
+
+contact: 耽兑脚:13410376055:lg51k3@163.com
+
+contact: 洱钨翰:13489667643:3qpoa7@sina.com.cn
+
+contact: 蹭赔于:13181936768:ti72hq@163.com
+
+contact: 超泡计:13145136432:8h3216@qq.com
+
+contact: 蹦垄紫:13278802325:32w0c6@sina.com.cn
+
+contact: 盗脆:13373626863:M867pk@163.com
+
+contact: 锄搭订:13673146927:sG703e@sina.com.cn
+
+contact: 跺趣硒:13365865610:6I51gY@qq.com6I51gY@qq.com
+
+contact: 党封域:13493174283:135cKo@sina.com.cn
+
+contact: 埠窥年:13816928335:u7qb25@gmail.com
+
+contact: 翠蹿妙:13607302739:W0561w@sina.com.cn
+
+contact: 崩倚:13742992997:18Qn6e@sina.com.cn
+
+contact: 湛锦泳（2）:13824452490:13824452490@139.com13824452490@139.com
+
+contact: 丢罗掘:13796610111:1IW48a@sina.com.cn
+
+contact: 崔佬烃:13874044266:7srI64@yahoo.com
+
+contact: 垫琅亢:13009464932:cV32G5@sina.com.cn
+
+contact: 雕滩肛:13310022321:1CMFg6@yahoo.com
+
+contact: 炭轨铲:13098709307:08I2x4@126.com
+
+contact: 系獭姚:13041787966:r5yoT2@126.com
+
+contact: 擞摇:13682372125:G5PwO7@qq.com
+
+contact: 孟谦恐:13184817446:N2HaUC@gmail.com
+
+contact: 罗元中测试号:13824452490:13824452490@139.com
+
+contact: 彰鹅徽:13600766208:PFJ2kE@163.com
+
+contact: 拔输:13968196575:N5d22s@yahoo.com
+
+contact: |苹果|:13692587288:3c571s@qq.com
+
+contact: 益北蚕:13305455096:32wN06@sina.com.cn
+
+contact: 刹炙詹:13190916595:8E400E@163.com
+
+contact: 财和沪:13197363382:4F5q58@yahoo.com.cn
+
+contact: 顿释:13063545137:762M3c@126.com
+
+contact: 暴灰:13436515552:2157N5@gmail.com
+
+contact: 靛康:13438011056:0xA1D6@163.com
+
+contact: <苹果>:13297830883:N55bI5@qq.comN55bI5@qq.com
+
+contact: 苹果:13382325471:547266@yahoo.com547266@yahoo.com
+
+contact: <<苹果:13444262927:eQ2Y76@126.com
+
+contact: 岔储肇:13040456265:L0G0mP@163.com
+
+contact: 睬巾秋:13164524118:114y72@sina.com.cn
+
+contact: 旦芍:13599144530:e35F3G@sina.com.cn
+
+contact: 初拭秩:13869645229:0C84a1@163.com
+
+contact: 恩洁哎:13244329441:OoU5i5@qq.com
+
+contact: Vac:13533348571:13533348571@139.com
+
+contact: 脿浓翔:13607845618:defs5i@qq.com
+
+contact: 崩钦:13131327339:142VPd@gmail.com
+
+contact: 伯躯好:13465243402:iCQw5H@sina.com.cn
+
+contact: 递审:13973314153:gUj5vm@sina.com.cn
+
+contact: 措车蝉:13761180958:7v8131@sina.com.cn
+
+contact: 陡煎:13956176143:dP100Y@gmail.com
+
+contact: 靶造嘿:13568950137:3525k7@yahoo.com
+
+contact: 擦拂:13107700072:Wf0UOR@126.com
+
+contact: 艾同名人:13272108427:7FVAT0@sina.com.cn
+
+contact: 臣粻赋:13186677809:g422At@sina.com.cn
+
+contact: 朝栅:13636256911:3xv22o@qq.com
+
+contact: 多易壹:13315994761:ku8S1t@sina.com.cn
+
+contact: 道积:13090281430:NE51Wr@163.com
+
+contact: 遍裕岂:13918947267:2b6B3q@sina.com.cn
+
+contact: 朵佛:13023017320:2b6o12@qq.com
+
+contact: 拖境搪:13054703922:1YPs6v@sina.com.cn
+
+contact: 鄙披惑:13267584783:Rx6cid@163.com
+
+contact: 兴媳:13717916305:8D4K4Q@qq.com
+
+contact: 蚕扮:13010292909:J05B36@sina.com.cn
+
+contact: 碉垒横:13557166002:ct4xE1@yahoo.com
+
+contact: 缨光敌:13400717032:O0300X@126.com
+
+contact: 铂耿:13030517399:2di203@gmail.com
+
+contact: 撑铆平:13354943751:Xj750f@163.com
+
+contact: 贝排条:13390074895:MK2Db6@gmail.com
+
+contact: 色需十:13207757035:JHf4C1@yahoo.com.cn
+
+contact: 笆厌:13942613372:i01Pq3@qq.com
+
+contact: 曲蒸跑:13316436501:3xi01l@sina.com.cn
+
+contact: 帝渣吸:13893957166:a3nN0N@sina.com.cn
+
+contact: 痢蟹女:13442227524:hV8ap7@yahoo.com
+
+contact: 笼踩厌:13476029838:a1n857@163.com
+
+contact: 咬碌:13428081631:gv7cCY@qq.com
+
+contact: 陪而雁:13188636163:0C56fy@qq.com
+
+contact: 胚咬:13041167543:d78o46@gmail.com
+
+contact: 捻叔:13291958594:F75216@sina.com.cn
+
+contact: 讹害经:13572599743:f6uRxi@qq.com
+
+contact: 擅冲庶:13246214564:4c7PAf@163.com
+
+contact: 翅兼步:13130349155:b0tpY1@sina.com.cn
+
+contact: 裸戴淹:13002861223:4y4372@sina.com.cn
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact.testcase.TestBack
+
+INSTRUMENTATION_STATUS: stream=.
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: test=testPull
+
+INSTRUMENTATION_STATUS_CODE: 0
+
+INSTRUMENTATION_STATUS: stream=
+
+Test results for WatcherResultPrinter=.
+
+Time: 0.199
+
+
+
+OK (1 test)
+
+
+
+
+
+INSTRUMENTATION_STATUS_CODE: -1
+
+Updated file C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
+Buildfile: C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 22.6.2
+ [checkenv] Installed at G:\adt-bundle-windows-x86_64-20140321\adt-bundle-windows-x86_64-20140321\sdk
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 19.0.3
+     [echo] Resolving Build Target for TestBack...
+[getuitarget] Project Target:   Android 4.4.2
+[getuitarget] API level:        19
+     [echo] ----------
+     [echo] Creating output directories if needed...
+
+-pre-compile:
+
+compile:
+    [javac] Compiling 4 source files to C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
+    [javac] ����: [options] Դֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ŀ��ֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ҫ�����й��ѹ�ʱѡ��ľ���, ��ʹ�� -Xlint:-options��
+    [javac] 3 ������
+
+-post-compile:
+
+-dex:
+      [dex] input: C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
+      [dex] Found Deleted Target File
+      [dex] Converting compiled files and external libraries into C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes.dex...
+
+-post-dex:
+
+-jar:
+      [jar] Building jar: C:\Users\Administrator\workspace_201607\ContactUITest\bin\TestBack.jar
+
+-post-jar:
+
+build:
+
+BUILD SUCCESSFUL
+Total time: 4 seconds
+2307 KB/s (40178 bytes in 0.017s)
+run PId: 9779
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact.testcase.TestBack
+
+INSTRUMENTATION_STATUS: stream=
+
+com.uitest.contact.testcase.TestBack:
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: test=testPull
+
+INSTRUMENTATION_STATUS_CODE: 1
+
+startTest: testPull(com.uitest.contact.testcase.TestBack)
+
+contact: 睹谗磋:13086569660:2r2lT4@yahoo.com.cn2r2lT4@yahoo.com.cn
+
+contact: 沉颈省:13190208434:bqee0a@qq.combqee0a@qq.com
+
+contact: 张芷若:13826009411:zhangzhiruo@aspirecn.com
+
+contact: 严浩:13570529810:15616153328@139.com
+
+contact: 巢蛙国:13987691831:1eAvD6@sina.com.cn1eAvD6@sina.com.cn
+
+contact: 张242:13929000242:13929000002@174.com
+
+contact: 止深贩:13455495336:M51823@yahoo.com
+
+contact: 哑滇钙:13642157845:u5t2L4@126.com
+
+contact: 张139:13929000139:13929000002@160.com
+
+contact: 娃咖:13913452528:Ig00F3@gmail.com
+
+contact: 膜紊履:13452658564:uL65U5@yahoo.com.cn
+
+contact: 也桔:13566808138:20E024@163.com
+
+contact: 张357:13929000357:13929000001@192.com
+
+contact: 瑞谬:13839297473:tU7Hp5@qq.com
+
+contact: 定啼匿:13408870475:2i28p5@sina.com.cn2i28p5@sina.com.cn
+
+contact: 题速:13649976928:l41Lp4@qq.com
+
+contact: 淀戌希:13340702777:50Bv1V@sina.com.cn50Bv1V@sina.com.cn
+
+contact: 张328:13929000328:13929000002@187.com
+
+contact: 研刺齿:13142838865:2v33X6@qq.com
+
+contact: 艾同邮箱1:13990820664:hehe@qq.comhehe@qq.com
+
+contact: 扎苹:13628021823:3J0G30@126.com
+
+contact: 牙骨豪:13753198951:05270a@sina.com.cn
+
+contact: 随跟台:13555743134:Txm22v@126.com
+
+contact: 张355:13929000355:13929000001@191.com
+
+contact: 烷落:13112024903:2j672T@qq.com
+
+contact: 伊变骄:13934958647:1hDRGH@qq.com
+
+contact: 澈仅颧:13047165878:6vC5AK@sina.com.cn6vC5AK@sina.com.cn
+
+contact: 亿恶:13216286525:E7MOl4@qq.com
+
+contact: 莲箩普:13682468986:FHfCh0@163.com
+
+contact: 遏荡纱:13516795366:g21141@163.comg21141@163.com
+
+contact: 张243:13929000243:13929000001@175.com
+
+contact: 骚评读:13227196974:N7KML7@sina.com.cn
+
+contact: 蝶狂料:13969704343:d1q0K4@qq.com
+
+contact: 脿循艺:13000789068:E6A1fy@126.com
+
+contact: 订嗜蛤:13229937194:KkEkav@qq.com
+
+contact: 仓刽:13021035158:Hbyi70@qq.com
+
+contact: 闯甭省:13960871562:11G4bt@126.com
+
+contact: 迪涉彼:13756123612:O1G7s7@sina.com.cn
+
+contact: 惨胖桑:13738460710:6sP6Bl@sina.com.cn
+
+contact: 妒盛樱:13582268885:V5l4Vw@126.com
+
+contact: 倡炎:13558500089:d2ajxI@qq.com
+
+contact: 靛亮因:13388776247:2uVJX1@gmail.com
+
+contact: 苹果=:13918947267:2b6B3q@sina.com.cn2b6B3q@sina.com.cn
+
+contact: 查灵:13576787815:NFB42v@qq.com
+
+contact: 磋笆:13579675296:Oi88R0@qq.com
+
+contact: 存傍拼:13225803448:2M6304@126.com
+
+contact: 俄昂吕:13387191114:5Pm1gF@163.com
+
+contact: 当命描:13812297515:6KhIs4@sina.com.cn
+
+contact: 躇倡银:13106365664:58338a@qq.com
+
+contact: 薄紧:13810822918:V13ja7@sina.com.cn
+
+contact: 艾同名同手机:13057591877:75VA3H@qq.com75VA3H@qq.com
+
+contact: 曾躇:13025522386:Kef58R@qq.com
+
+contact: 艾同邮箱2:13475665097:hehe@qq.com
+
+contact: 豺灾:13547490850:v4TSJd@sina.com.cn
+
+contact: 丢褒:13944127828:424081@gmail.com
+
+contact: 存贞脐:13061222949:656840@126.com
+
+contact: 甭拭:13141708509:Cc83o8@sina.com.cn
+
+contact: 墩千届:13233132343:G756P5@qq.com
+
+contact: 肠刁淮:13153295176:2214A5@yahoo.com
+
+contact: 濒抹利:13826687637:63Yy17@sina.com.cn
+
+contact: 除喻:13719811793:6qBDa7@sina.com.cn
+
+contact: 搓员丢:13365530984:htQ50a@sina.com.cn
+
+contact: 惫淫舵:13570568242:Q7Kb24@163.com
+
+contact: 叠啤趟:13185235475:73xxd4@sina.com.cn
+
+contact: 忱遂缨:13203332214:76E507@gmail.com
+
+contact: 叮庶鸵:13883867875:51j661@qq.com
+
+contact: 麦麦麦提??苏灿哈尔灿(2):18933994437:18933994437@189.cn18933994437@189.cn
+
+contact: 陈国宝测试号:13824457231:13824457231@139.com
+
+contact: 苹果":13197363146:4Mh345@yahoo.com.cn4Mh345@yahoo.com.cn
+
+contact: 簿豹:13315189279:5w50Qo@gmail.com
+
+contact: 饼建杰:13860925317:tLLM1e@qq.com
+
+contact: 耽兑脚:13410376055:lg51k3@163.com
+
+contact: 洱钨翰:13489667643:3qpoa7@sina.com.cn
+
+contact: 蹭赔于:13181936768:ti72hq@163.com
+
+contact: 超泡计:13145136432:8h3216@qq.com
+
+contact: 蹦垄紫:13278802325:32w0c6@sina.com.cn
+
+contact: 盗脆:13373626863:M867pk@163.com
+
+contact: 锄搭订:13673146927:sG703e@sina.com.cn
+
+contact: 跺趣硒:13365865610:6I51gY@qq.com6I51gY@qq.com
+
+contact: 党封域:13493174283:135cKo@sina.com.cn
+
+contact: 埠窥年:13816928335:u7qb25@gmail.com
+
+contact: 翠蹿妙:13607302739:W0561w@sina.com.cn
+
+contact: 崩倚:13742992997:18Qn6e@sina.com.cn
+
+contact: 湛锦泳（2）:13824452490:13824452490@139.com13824452490@139.com
+
+contact: 丢罗掘:13796610111:1IW48a@sina.com.cn
+
+contact: 崔佬烃:13874044266:7srI64@yahoo.com
+
+contact: 垫琅亢:13009464932:cV32G5@sina.com.cn
+
+contact: 雕滩肛:13310022321:1CMFg6@yahoo.com
+
+contact: 炭轨铲:13098709307:08I2x4@126.com
+
+contact: 系獭姚:13041787966:r5yoT2@126.com
+
+contact: 擞摇:13682372125:G5PwO7@qq.com
+
+contact: 孟谦恐:13184817446:N2HaUC@gmail.com
+
+contact: 罗元中测试号:13824452490:13824452490@139.com
+
+contact: 彰鹅徽:13600766208:PFJ2kE@163.com
+
+contact: 拔输:13968196575:N5d22s@yahoo.com
+
+contact: |苹果|:13692587288:3c571s@qq.com
+
+contact: 益北蚕:13305455096:32wN06@sina.com.cn
+
+contact: 刹炙詹:13190916595:8E400E@163.com
+
+contact: 财和沪:13197363382:4F5q58@yahoo.com.cn
+
+contact: 顿释:13063545137:762M3c@126.com
+
+contact: 暴灰:13436515552:2157N5@gmail.com
+
+contact: 靛康:13438011056:0xA1D6@163.com
+
+contact: <苹果>:13297830883:N55bI5@qq.comN55bI5@qq.com
+
+contact: 苹果:13382325471:547266@yahoo.com547266@yahoo.com
+
+contact: <<苹果:13444262927:eQ2Y76@126.com
+
+contact: 岔储肇:13040456265:L0G0mP@163.com
+
+contact: 睬巾秋:13164524118:114y72@sina.com.cn
+
+contact: 旦芍:13599144530:e35F3G@sina.com.cn
+
+contact: 初拭秩:13869645229:0C84a1@163.com
+
+contact: 恩洁哎:13244329441:OoU5i5@qq.com
+
+contact: Vac:13533348571:13533348571@139.com
+
+contact: 脿浓翔:13607845618:defs5i@qq.com
+
+contact: 崩钦:13131327339:142VPd@gmail.com
+
+contact: 伯躯好:13465243402:iCQw5H@sina.com.cn
+
+contact: 递审:13973314153:gUj5vm@sina.com.cn
+
+contact: 措车蝉:13761180958:7v8131@sina.com.cn
+
+contact: 陡煎:13956176143:dP100Y@gmail.com
+
+contact: 靶造嘿:13568950137:3525k7@yahoo.com
+
+contact: 擦拂:13107700072:Wf0UOR@126.com
+
+contact: 艾同名人:13272108427:7FVAT0@sina.com.cn
+
+contact: 臣粻赋:13186677809:g422At@sina.com.cn
+
+contact: 朝栅:13636256911:3xv22o@qq.com
+
+contact: 多易壹:13315994761:ku8S1t@sina.com.cn
+
+contact: 道积:13090281430:NE51Wr@163.com
+
+contact: 遍裕岂:13918947267:2b6B3q@sina.com.cn
+
+contact: 朵佛:13023017320:2b6o12@qq.com
+
+contact: 拖境搪:13054703922:1YPs6v@sina.com.cn
+
+contact: 鄙披惑:13267584783:Rx6cid@163.com
+
+contact: 兴媳:13717916305:8D4K4Q@qq.com
+
+contact: 蚕扮:13010292909:J05B36@sina.com.cn
+
+contact: 碉垒横:13557166002:ct4xE1@yahoo.com
+
+contact: 缨光敌:13400717032:O0300X@126.com
+
+contact: 铂耿:13030517399:2di203@gmail.com
+
+contact: 撑铆平:13354943751:Xj750f@163.com
+
+contact: 贝排条:13390074895:MK2Db6@gmail.com
+
+contact: 色需十:13207757035:JHf4C1@yahoo.com.cn
+
+contact: 笆厌:13942613372:i01Pq3@qq.com
+
+contact: 曲蒸跑:13316436501:3xi01l@sina.com.cn
+
+contact: 帝渣吸:13893957166:a3nN0N@sina.com.cn
+
+contact: 痢蟹女:13442227524:hV8ap7@yahoo.com
+
+contact: 笼踩厌:13476029838:a1n857@163.com
+
+contact: 咬碌:13428081631:gv7cCY@qq.com
+
+contact: 陪而雁:13188636163:0C56fy@qq.com
+
+contact: 胚咬:13041167543:d78o46@gmail.com
+
+contact: 捻叔:13291958594:F75216@sina.com.cn
+
+contact: 讹害经:13572599743:f6uRxi@qq.com
+
+contact: 擅冲庶:13246214564:4c7PAf@163.com
+
+contact: 翅兼步:13130349155:b0tpY1@sina.com.cn
+
+contact: 裸戴淹:13002861223:4y4372@sina.com.cn
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact.testcase.TestBack
+
+INSTRUMENTATION_STATUS: stream=.
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: test=testPull
+
+INSTRUMENTATION_STATUS_CODE: 0
+
+INSTRUMENTATION_STATUS: stream=
+
+Test results for WatcherResultPrinter=.
+
+Time: 0.216
+
+
+
+OK (1 test)
+
+
+
+
+
+INSTRUMENTATION_STATUS_CODE: -1
+
+Updated file C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
+Buildfile: C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 22.6.2
+ [checkenv] Installed at G:\adt-bundle-windows-x86_64-20140321\adt-bundle-windows-x86_64-20140321\sdk
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 19.0.3
+     [echo] Resolving Build Target for TestBack...
+[getuitarget] Project Target:   Android 4.4.2
+[getuitarget] API level:        19
+     [echo] ----------
+     [echo] Creating output directories if needed...
+
+-pre-compile:
+
+compile:
+
+-post-compile:
+
+-dex:
+      [dex] input: C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
+      [dex] Found Deleted Target File
+      [dex] Converting compiled files and external libraries into C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes.dex...
+
+-post-dex:
+
+-jar:
+      [jar] Building jar: C:\Users\Administrator\workspace_201607\ContactUITest\bin\TestBack.jar
+
+-post-jar:
+
+build:
+
+BUILD SUCCESSFUL
+Total time: 3 seconds
+2179 KB/s (40178 bytes in 0.018s)
+run PId: 9951
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact.testcase.TestBack
+
+INSTRUMENTATION_STATUS: stream=
+
+com.uitest.contact.testcase.TestBack:
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: test=testPull
+
+INSTRUMENTATION_STATUS_CODE: 1
+
+startTest: testPull(com.uitest.contact.testcase.TestBack)
+
+contact: 睹谗磋:13086569660:2r2lT4@yahoo.com.cn
+
+contact: 沉颈省:13190208434:bqee0a@qq.combqee0a@qq.com
+
+contact: 张芷若:13826009411:zhangzhiruo@aspirecn.com
+
+contact: 严浩:13570529810:15616153328@139.com
+
+contact: 巢蛙国:13987691831:1eAvD6@sina.com.cn
+
+contact: 张242:13929000242:13929000002@174.com
+
+contact: 止深贩:13455495336:M51823@yahoo.com
+
+contact: 哑滇钙:13642157845:u5t2L4@126.com
+
+contact: 张139:13929000139:13929000002@160.com
+
+contact: 娃咖:13913452528:Ig00F3@gmail.com
+
+contact: 膜紊履:13452658564:uL65U5@yahoo.com.cn
+
+contact: 也桔:13566808138:20E024@163.com
+
+contact: 张357:13929000357:13929000001@192.com
+
+contact: 瑞谬:13839297473:tU7Hp5@qq.com
+
+contact: 定啼匿:13408870475:2i28p5@sina.com.cn
+
+contact: 题速:13649976928:l41Lp4@qq.com
+
+contact: 淀戌希:13340702777:50Bv1V@sina.com
+
+contact: 张328:13929000328:13929000002@187.com
+
+contact: 研刺齿:13142838865:2v33X6@qq.com
+
+contact: 艾同邮箱1:13990820664:hehe@qq.comhehe@qq.com
+
+contact: 扎苹:13628021823:3J0G30@126.com
+
+contact: 牙骨豪:13753198951:05270a@sina.com.cn
+
+contact: 随跟台:13555743134:Txm22v@126.com
+
+contact: 张355:13929000355:13929000001@191.com
+
+contact: 烷落:13112024903:2j672T@qq.com
+
+contact: 伊变骄:13934958647:1hDRGH@qq.com
+
+contact: 澈仅颧:13047165878:6vC5AK@sina.com.cn
+
+contact: 亿恶:13216286525:E7MOl4@qq.com
+
+contact: 莲箩普:13682468986:FHfCh0@163.com
+
+contact: 遏荡纱:13516795366:g21141@163.com
+
+contact: 张243:13929000243:13929000001@175.com
+
+contact: 骚评读:13227196974:N7KML7@sina.com.cn
+
+contact: 蝶狂料:13969704343:d1q0K4@qq.com
+
+contact: 循艺:13000789068:E6A1fy@126.com
+
+contact: 订嗜蛤:13229937194:KkEkav@qq.com
+
+contact: 仓刽:13021035158:Hbyi70@qq.com
+
+contact: 闯甭省:13960871562:11G4bt@126.com
+
+contact: 迪涉彼:13756123612:O1G7s7@sina.com.cn
+
+contact: 惨胖桑:13738460710:6sP6Bl@sina.com.cn
+
+contact: 妒盛樱:13582268885:V5l4Vw@126.com
+
+contact: 倡炎:13558500089:d2ajxI@qq.com
+
+contact: 靛亮因:13388776247:2uVJX1@gmail.com
+
+contact: 苹果=:13918947267:2b6B3q@sina.com.cn
+
+contact: 查灵:13576787815:NFB42v@qq.com
+
+contact: 磋笆:13579675296:Oi88R0@qq.com
+
+contact: 存傍拼:13225803448:2M6304@126.com
+
+contact: 俄昂吕:13387191114:5Pm1gF@163.com
+
+contact: 当命描:13812297515:6KhIs4@sina.com.cn
+
+contact: 躇倡银:13106365664:58338a@qq.com
+
+contact: 薄紧:13810822918:V13ja7@sina.com.cn
+
+contact: 艾同名同手机:13057591877:75VA3H@qq.com
+
+contact: 曾躇:13025522386:Kef58R@qq.com
+
+contact: 艾同邮箱2:13475665097:hehe@qq.com
+
+contact: 豺灾:13547490850:v4TSJd@sina.com.cn
+
+contact: 丢褒:13944127828:424081@gmail.com
+
+contact: 存贞脐:13061222949:656840@126.com
+
+contact: 甭拭:13141708509:Cc83o8@sina.com.cn
+
+contact: 墩千届:13233132343:G756P5@qq.com
+
+contact: 肠刁淮:13153295176:2214A5@yahoo.com
+
+contact: 濒抹利:13826687637:63Yy17@sina.com.cn
+
+contact: 除喻:13719811793:6qBDa7@sina.com.cn
+
+contact: 搓员丢:13365530984:htQ50a@sina.com.cn
+
+contact: 惫淫舵:13570568242:Q7Kb24@163.com
+
+contact: 叠啤趟:13185235475:73xxd4@sina.com.cn
+
+contact: 忱遂缨:13203332214:76E507@gmail.com
+
+contact: 叮庶鸵:13883867875:51j661@qq.com
+
+contact: 苏灿哈尔灿(2):18933994437:18933994437@189.cn
+
+contact: 宝测试号:13824457231:13824457231@139.com
+
+contact: 苹果":13197363146:4Mh345@yahoo.com.cn
+
+contact: 簿豹:13315189279:5w50Qo@gmail.com
+
+contact: 饼建杰:13860925317:tLLM1e@qq.com
+
+contact: 耽兑脚:13410376055:lg51k3@163.com
+
+contact: 洱钨翰:13489667643:3qpoa7@sina.com.cn
+
+contact: 蹭赔于:13181936768:ti72hq@163.com
+
+contact: 超泡计:13145136432:8h3216@qq.com
+
+contact: 蹦垄紫:13278802325:32w0c6@sina.com.cn
+
+contact: 盗脆:13373626863:M867pk@163.com
+
+contact: 锄搭订:13673146927:sG703e@sina.com.cn
+
+contact: 跺趣硒:13365865610:6I51gY@qq.com
+
+contact: 党封域:13493174283:135cKo@sina.com.cn
+
+contact: 埠窥年:13816928335:u7qb25@gmail.com
+
+contact: 翠蹿妙:13607302739:W0561w@sina.com.cn
+
+contact: 崩倚:13742992997:18Qn6e@sina.com.cn
+
+contact: 湛锦泳（2）:13824452490:13824452490@139.com
+
+contact: 丢罗掘:13796610111:1IW48a@sina.com.cn
+
+contact: 崔佬烃:13874044266:7srI64@yahoo.com
+
+contact: 垫琅亢:13009464932:cV32G5@sina.com.cn
+
+contact: 雕滩肛:13310022321:1CMFg6@yahoo.com
+
+contact: 炭轨铲:13098709307:08I2x4@126.com
+
+contact: 系獭姚:13041787966:r5yoT2@126.com
+
+contact: 擞摇:13682372125:G5PwO7@qq.com
+
+contact: 孟谦恐:13184817446:N2HaUC@gmail.com
+
+contact: 罗测试号:13824452490:13824452490@139.com
+
+contact: 彰鹅徽:13600766208:PFJ2kE@163.com
+
+contact: 拔输:13968196575:N5d22s@yahoo.com
+
+contact: |苹果|:13692587288:3c571s@qq.com
+
+contact: 益北蚕:13305455096:32wN06@sina.com.cn
+
+contact: 刹炙詹:13190916595:8E400E@163.com
+
+contact: 财和沪:13197363382:4F5q58@yahoo.com.cn
+
+contact: 顿释:13063545137:762M3c@126.com
+
+contact: 暴灰:13436515552:2157N5@gmail.com
+
+contact: 靛康:13438011056:0xA1D6@163.com
+
+contact: 苹果2:13297830883:N55bI5@qq.com
+
+contact: 苹果3:13382325471:547266@yahoo.com
+
+contact: 苹果4:13444262927:eQ2Y76@126.com
+
+contact: 岔储肇:13040456265:L0G0mP@163.com
+
+contact: 睬巾秋:13164524118:114y72@sina.com.cn
+
+contact: 旦芍:13599144530:e35F3G@sina.com.cn
+
+contact: 初拭秩:13869645229:0C84a1@163.com
+
+contact: 恩洁哎:13244329441:OoU5i5@qq.com
+
+contact: Vac:13533348571:13533348571@139.com
+
+contact: 浓翔:13607845618:defs5i@qq.com
+
+contact: 崩钦:13131327339:142VPd@gmail.com
+
+contact: 伯躯好:13465243402:iCQw5H@sina.com.cn
+
+contact: 递审:13973314153:gUj5vm@sina.com.cn
+
+contact: 措车蝉:13761180958:7v8131@sina.com.cn
+
+contact: 陡煎:13956176143:dP100Y@gmail.com
+
+contact: 靶造嘿:13568950137:3525k7@yahoo.com
+
+contact: 擦拂:13107700072:Wf0UOR@126.com
+
+contact: 艾同名人:13272108427:7FVAT0@sina.com.cn
+
+contact: 臣赋:13186677809:g422At@sina.com.cn
+
+contact: 朝栅:13636256911:3xv22o@qq.com
+
+contact: 多易壹:13315994761:ku8S1t@sina.com.cn
+
+contact: 道积:13090281430:NE51Wr@163.com
+
+contact: 遍裕岂:13918947267:2b6B3q@sina.com.cn
+
+contact: 朵佛:13023017320:2b6o12@qq.com
+
+contact: 拖境搪:13054703922:1YPs6v@sina.com.cn
+
+contact: 鄙披惑:13267584783:Rx6cid@163.com
+
+contact: 兴媳:13717916305:8D4K4Q@qq.com
+
+contact: 蚕扮:13010292909:J05B36@sina.com.cn
+
+contact: 碉垒横:13557166002:ct4xE1@yahoo.com
+
+contact: 缨光敌:13400717032:O0300X@126.com
+
+contact: 铂耿:13030517399:2di203@gmail.com
+
+contact: 撑铆平:13354943751:Xj750f@163.com
+
+contact: 贝排条:13390074895:MK2Db6@gmail.com
+
+contact: 色需十:13207757035:JHf4C1@yahoo.com.cn
+
+contact: 笆厌:13942613372:i01Pq3@qq.com
+
+contact: 曲蒸跑:13316436501:3xi01l@sina.com.cn
+
+contact: 帝渣吸:13893957166:a3nN0N@sina.com.cn
+
+contact: 痢蟹女:13442227524:hV8ap7@yahoo.com
+
+contact: 笼踩厌:13476029838:a1n857@163.com
+
+contact: 咬碌:13428081631:gv7cCY@qq.com
+
+contact: 陪而雁:13188636163:0C56fy@qq.com
+
+contact: 胚咬:13041167543:d78o46@gmail.com
+
+contact: 捻叔:13291958594:F75216@sina.com.cn
+
+contact: 讹害经:13572599743:f6uRxi@qq.com
+
+contact: 擅冲庶:13246214564:4c7PAf@163.com
+
+contact: 翅兼步:13130349155:b0tpY1@sina.com.cn
+
+contact: 裸戴淹:13002861223:4y4372@sina.com.cn
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact.testcase.TestBack
+
+INSTRUMENTATION_STATUS: stream=.
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: test=testPull
+
+INSTRUMENTATION_STATUS_CODE: 0
+
+INSTRUMENTATION_STATUS: stream=
+
+Test results for WatcherResultPrinter=.
+
+Time: 0.22
+
+
+
+OK (1 test)
+
+
+
+
+
+INSTRUMENTATION_STATUS_CODE: -1
+
+Updated file C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
+Buildfile: C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 22.6.2
+ [checkenv] Installed at G:\adt-bundle-windows-x86_64-20140321\adt-bundle-windows-x86_64-20140321\sdk
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 19.0.3
+     [echo] Resolving Build Target for ContactV4_2...
+[getuitarget] Project Target:   Android 4.4.2
+[getuitarget] API level:        19
+     [echo] ----------
+     [echo] Creating output directories if needed...
+
+-pre-compile:
+
+compile:
+    [javac] Compiling 3 source files to C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
+    [javac] ����: [options] Դֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ŀ��ֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ҫ�����й��ѹ�ʱѡ��ľ���, ��ʹ�� -Xlint:-options��
+    [javac] 3 ������
+
+-post-compile:
+
+-dex:
+      [dex] input: C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
+      [dex] Found Deleted Target File
+      [dex] Converting compiled files and external libraries into C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes.dex...
+
+-post-dex:
+
+-jar:
+      [jar] Building jar: C:\Users\Administrator\workspace_201607\ContactUITest\bin\ContactV4_2.jar
+
+-post-jar:
+
+build:
+
+BUILD SUCCESSFUL
+Total time: 5 seconds
+2456 KB/s (40256 bytes in 0.016s)
+run PId: 10349
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact4_2.ContactV4_2
+
+INSTRUMENTATION_STATUS: stream=
+
+com.uitest.contact4_2.ContactV4_2:
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: test=testCase_call_001
+
+INSTRUMENTATION_STATUS_CODE: 1
+
+startTest: testCase_call_001(com.uitest.contact4_2.ContactV4_2)
+
+wakeAndUnlock
+
+isScreenOn: false
+
+wakeUp
+
+swipe
+
+[ doing ] swipe 
+
+[start] findAndOpenApp和通讯录
+
+clickByName: 应用程序
+
+drag
+
+[ doing ] swipeToRight 
+
+click 和通讯录
+
+clickById: tab_contacts
+
+isExistById: btResolve
+
+elementExist: false
+
+collection: 1
+
+start long click
+
+end long click
+
+clickById: mca_delete_layout
+
+clickById: dialog_btn_positive
+
+clickById: tab_call
+
+isExistById: two
+
+elementExist: true
+
+clickById: tab_call
+
+clickByName: 清空通话记录
+
+clickById: dialog_btn_positive
+
+clickById: tab_call
+
+clickById: tab_call
+
+clickById: tab_contacts
+
+clickById: tab_call
+
+clickById: digits
+
+clickById: one
+
+clickById: three
+
+clickById: one
+
+clickById: nine
+
+clickById: zero
+
+clickById: two
+
+clickById: zero
+
+clickById: eight
+
+clickById: four
+
+clickById: three
+
+clickById: four
+
+clickByName: 添加为联系人
+
+clickByName: 新建联系人
+
+[start] inputTextByName: edit_contact_name , input: 沉颈省
+
+text len: 2
+
+clickByName: 完成
+
+clickById: tab_contacts
+
+clickById: contact_search_bar
+
+[start] inputTextByName: contact_search_bar , input: 13190208434
+
+text len: 0
+
+isExistById: 13190208434
+
+elementExist: false
+
+snapshot
+
+[start] close app
+
+点击关闭
+
+[end] close app
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact4_2.ContactV4_2
+
+INSTRUMENTATION_STATUS: stream=
+
+Failure in testCase_call_001:
+
+junit.framework.AssertionFailedError: 没有找到：13190208434 expected:<false> but was:<true>
+
+	at com.uitest.uiautomatorUtil.AssertUtil.Myassert(AssertUtil.java:35)
+
+	at com.uitest.contact4_2.SimpleCode420.assertId(SimpleCode420.java:57)
+
+	at com.uitest.contact4_2.ContactV4_2.testCase_call_001(ContactV4_2.java:89)
+
+	at java.lang.reflect.Method.invokeNative(Native Method)
+
+	at com.uitest.uiautomatorUtil.TestListenerManager.run(TestListenerManager.java:87)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.start(UiAutomatorTestRunner.java:160)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.run(UiAutomatorTestRunner.java:96)
+
+	at com.android.commands.uiautomator.RunTestCommand.run(RunTestCommand.java:91)
+
+	at com.android.commands.uiautomator.Launcher.main(Launcher.java:83)
+
+	at com.android.internal.os.RuntimeInit.nativeFinishInit(Native Method)
+
+	at com.android.internal.os.RuntimeInit.main(RuntimeInit.java:297)
+
+	at dalvik.system.NativeStart.main(Native Method)
+
+
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: stack=junit.framework.AssertionFailedError: 没有找到：13190208434 expected:<false> but was:<true>
+
+	at com.uitest.uiautomatorUtil.AssertUtil.Myassert(AssertUtil.java:35)
+
+	at com.uitest.contact4_2.SimpleCode420.assertId(SimpleCode420.java:57)
+
+	at com.uitest.contact4_2.ContactV4_2.testCase_call_001(ContactV4_2.java:89)
+
+	at java.lang.reflect.Method.invokeNative(Native Method)
+
+	at com.uitest.uiautomatorUtil.TestListenerManager.run(TestListenerManager.java:87)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.start(UiAutomatorTestRunner.java:160)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.run(UiAutomatorTestRunner.java:96)
+
+	at com.android.commands.uiautomator.RunTestCommand.run(RunTestCommand.java:91)
+
+	at com.android.commands.uiautomator.Launcher.main(Launcher.java:83)
+
+	at com.android.internal.os.RuntimeInit.nativeFinishInit(Native Method)
+
+	at com.android.internal.os.RuntimeInit.main(RuntimeInit.java:297)
+
+	at dalvik.system.NativeStart.main(Native Method)
+
+
+
+INSTRUMENTATION_STATUS: test=testCase_call_001
+
+INSTRUMENTATION_STATUS_CODE: -2
+
+INSTRUMENTATION_STATUS: stream=
+
+Test results for WatcherResultPrinter=.F
+
+Time: 67.501
+
+
+
+FAILURES!!!
+
+Tests run: 1,  Failures: 1,  Errors: 0
+
+
+
+
+
+INSTRUMENTATION_STATUS_CODE: -1
+
+Updated file C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
+Buildfile: C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 22.6.2
+ [checkenv] Installed at G:\adt-bundle-windows-x86_64-20140321\adt-bundle-windows-x86_64-20140321\sdk
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 19.0.3
+     [echo] Resolving Build Target for ContactV4_2...
+[getuitarget] Project Target:   Android 4.4.2
+[getuitarget] API level:        19
+     [echo] ----------
+     [echo] Creating output directories if needed...
+
+-pre-compile:
+
+compile:
+    [javac] Compiling 1 source file to C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
+    [javac] ����: [options] Դֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ŀ��ֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ҫ�����й��ѹ�ʱѡ��ľ���, ��ʹ�� -Xlint:-options��
+    [javac] 3 ������
+
+-post-compile:
+
+-dex:
+      [dex] input: C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
+      [dex] Found Deleted Target File
+      [dex] Converting compiled files and external libraries into C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes.dex...
+
+-post-dex:
+
+-jar:
+      [jar] Building jar: C:\Users\Administrator\workspace_201607\ContactUITest\bin\ContactV4_2.jar
+
+-post-jar:
+
+build:
+
+BUILD SUCCESSFUL
+Total time: 4 seconds
+2183 KB/s (40244 bytes in 0.018s)
+run PId: 11521
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact4_2.ContactV4_2
+
+INSTRUMENTATION_STATUS: stream=
+
+com.uitest.contact4_2.ContactV4_2:
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: test=testCase_call_001
+
+INSTRUMENTATION_STATUS_CODE: 1
+
+startTest: testCase_call_001(com.uitest.contact4_2.ContactV4_2)
+
+wakeAndUnlock
+
+isScreenOn: true
+
+[start] findAndOpenApp和通讯录
+
+clickByName: 应用程序
+
+click 和通讯录
+
+clickById: tab_contacts
+
+isExistById: btResolve
+
+elementExist: false
+
+collection: 1
+
+start long click
+
+end long click
+
+clickById: mca_delete_layout
+
+clickById: dialog_btn_positive
+
+clickById: tab_call
+
+isExistById: two
+
+elementExist: true
+
+clickById: tab_call
+
+clickByName: 清空通话记录
+
+clickById: dialog_btn_positive
+
+clickById: tab_call
+
+clickById: tab_call
+
+clickById: tab_contacts
+
+clickById: tab_call
+
+clickById: digits
+
+clickById: one
+
+clickById: three
+
+clickById: one
+
+clickById: nine
+
+clickById: zero
+
+clickById: two
+
+clickById: zero
+
+clickById: eight
+
+clickById: four
+
+clickById: three
+
+clickById: four
+
+clickByName: 添加为联系人
+
+clickByName: 新建联系人
+
+[start] inputTextByName: edit_contact_name , input: 沉颈省
+
+text len: 2
+
+clickByName: 完成
+
+clickById: tab_contacts
+
+clickById: contact_search_bar
+
+[start] inputTextByName: contact_search_bar , input: 13190208434
+
+text len: 0
+
+isExistById: contact_icon
+
+elementExist: true
+
+clickById: tab_contacts
+
+isExistById: btResolve
+
+elementExist: false
+
+collection: 1
+
+start long click
+
+end long click
+
+clickById: mca_delete_layout
+
+clickById: dialog_btn_positive
+
+clickById: tab_call
+
+isExistById: two
+
+elementExist: true
+
+clickById: tab_call
+
+clickByName: 清空通话记录
+
+clickById: dialog_btn_positive
+
+[start] close app
+
+点击关闭
+
+[end] close app
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact4_2.ContactV4_2
+
+INSTRUMENTATION_STATUS: stream=.
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: test=testCase_call_001
+
+INSTRUMENTATION_STATUS_CODE: 0
+
+INSTRUMENTATION_STATUS: stream=
+
+Test results for WatcherResultPrinter=.
+
+Time: 73.074
+
+
+
+OK (1 test)
+
+
+
+
+
+INSTRUMENTATION_STATUS_CODE: -1
+
+Updated file C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
+Buildfile: C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 22.6.2
+ [checkenv] Installed at G:\adt-bundle-windows-x86_64-20140321\adt-bundle-windows-x86_64-20140321\sdk
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 19.0.3
+     [echo] Resolving Build Target for ContactV4_2...
+[getuitarget] Project Target:   Android 4.4.2
+[getuitarget] API level:        19
+     [echo] ----------
+     [echo] Creating output directories if needed...
+
+-pre-compile:
+
+compile:
+    [javac] Compiling 2 source files to C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
+    [javac] ����: [options] Դֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ŀ��ֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ҫ�����й��ѹ�ʱѡ��ľ���, ��ʹ�� -Xlint:-options��
+    [javac] 3 ������
+
+-post-compile:
+
+-dex:
+      [dex] input: C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
+      [dex] Found Deleted Target File
+      [dex] Converting compiled files and external libraries into C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes.dex...
+
+-post-dex:
+
+-jar:
+      [jar] Building jar: C:\Users\Administrator\workspace_201607\ContactUITest\bin\ContactV4_2.jar
+
+-post-jar:
+
+build:
+
+BUILD SUCCESSFUL
+Total time: 5 seconds
+2827 KB/s (40540 bytes in 0.014s)
+run PId: 14031
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact4_2.ContactV4_2
+
+INSTRUMENTATION_STATUS: stream=
+
+com.uitest.contact4_2.ContactV4_2:
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: test=testCase_call_002
+
+INSTRUMENTATION_STATUS_CODE: 1
+
+startTest: testCase_call_002(com.uitest.contact4_2.ContactV4_2)
+
+wakeAndUnlock
+
+isScreenOn: true
+
+[start] findAndOpenApp和通讯录
+
+clickByName: 应用程序
+
+click 和通讯录
+
+clickById: tab_contacts
+
+isExistById: btResolve
+
+elementExist: false
+
+collection: 1
+
+start long click
+
+end long click
+
+clickById: mca_delete_layout
+
+clickById: dialog_btn_positive
+
+clickById: tab_call
+
+isExistById: two
+
+elementExist: true
+
+clickById: tab_call
+
+clickByName: 清空通话记录
+
+clickById: dialog_btn_positive
+
+clickById: tab_call
+
+clickById: tab_contacts
+
+clickById: contact_search_bar
+
+snapshot
+
+[start] inputTextByName: contact_search_bar , input: 13826009411
+
+snapshot
+
+isExistById: contact_name
+
+elementExist: false
+
+clickById: contact_search_del_btn
+
+snapshot
+
+clickById: iab_ib_action
+
+[start] inputTextByName: edit_contact_name , input: 张芷若
+
+text len: 2
+
+[start] inputTextByName: 电话号码 , input: 13826009411
+
+text len: 4
+
+clickByName: 完成
+
+clickById: tab_call
+
+clickById: tab_contacts
+
+clickById: tab_call
+
+clickById: digits
+
+clickById: eight
+
+clickById: four
+
+clickById: eight
+
+clickById: five
+
+clickById: zero
+
+clickById: nine
+
+clickById: two
+
+clickById: two
+
+clickByName: 添加为联系人
+
+clickByName: 添加到已有联系人
+
+clickById: contact_icon
+
+clickByName: 完成
+
+clickById: tab_contacts
+
+clickById: contact_search_bar
+
+[start] inputTextByName: contact_search_bar , input: 84850922
+
+text len: 0
+
+isExistById: contact_icon
+
+elementExist: true
+
+clickById: tab_contacts
+
+isExistById: btResolve
+
+elementExist: false
+
+collection: 0
+
+clickById: tab_call
+
+isExistById: two
+
+elementExist: false
+
+clickByName: 清空通话记录
+
+snapshot
+
+clickById: dialog_btn_positive
+
+snapshot
+
+[start] close app
+
+点击关闭
+
+[end] close app
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact4_2.ContactV4_2
+
+INSTRUMENTATION_STATUS: stream=.
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: test=testCase_call_002
+
+INSTRUMENTATION_STATUS_CODE: 0
+
+INSTRUMENTATION_STATUS: stream=
+
+Test results for WatcherResultPrinter=.
+
+Time: 81.728
+
+
+
+OK (1 test)
+
+
+
+
+
+INSTRUMENTATION_STATUS_CODE: -1
+
+Updated file C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
+Buildfile: C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 22.6.2
+ [checkenv] Installed at G:\adt-bundle-windows-x86_64-20140321\adt-bundle-windows-x86_64-20140321\sdk
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 19.0.3
+     [echo] Resolving Build Target for ContactV4_2...
+[getuitarget] Project Target:   Android 4.4.2
+[getuitarget] API level:        19
+     [echo] ----------
+     [echo] Creating output directories if needed...
+
+-pre-compile:
+
+compile:
+    [javac] Compiling 1 source file to C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
+    [javac] ����: [options] Դֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ŀ��ֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ҫ�����й��ѹ�ʱѡ��ľ���, ��ʹ�� -Xlint:-options��
+    [javac] 3 ������
+
+-post-compile:
+
+-dex:
+      [dex] input: C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
+      [dex] Found Deleted Target File
+      [dex] Converting compiled files and external libraries into C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes.dex...
+
+-post-dex:
+
+-jar:
+      [jar] Building jar: C:\Users\Administrator\workspace_201607\ContactUITest\bin\ContactV4_2.jar
+
+-post-jar:
+
+build:
+
+BUILD SUCCESSFUL
+Total time: 4 seconds
+1980 KB/s (40563 bytes in 0.020s)
+run PId: 15492
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact4_2.ContactV4_2
+
+INSTRUMENTATION_STATUS: stream=
+
+com.uitest.contact4_2.ContactV4_2:
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: test=testCase_call_003
+
+INSTRUMENTATION_STATUS_CODE: 1
+
+startTest: testCase_call_003(com.uitest.contact4_2.ContactV4_2)
+
+wakeAndUnlock
+
+isScreenOn: true
+
+[start] findAndOpenApp和通讯录
+
+clickByName: 应用程序
+
+drag
+
+[ doing ] swipeToRight 
+
+click 和通讯录
+
+clickById: tab_contacts
+
+isExistById: btResolve
+
+elementExist: false
+
+collection: 1
+
+start long click
+
+end long click
+
+clickById: mca_delete_layout
+
+clickById: dialog_btn_positive
+
+clickById: tab_call
+
+isExistById: two
+
+elementExist: true
+
+clickById: tab_call
+
+clickByName: 清空通话记录
+
+clickById: dialog_btn_positive
+
+clickById: tab_call
+
+clickById: tab_contacts
+
+clickById: contact_search_bar
+
+snapshot
+
+[start] inputTextByName: contact_search_bar , input: 13800138000
+
+snapshot
+
+isExistById: contact_name
+
+elementExist: false
+
+clickById: contact_search_del_btn
+
+snapshot
+
+clickById: iab_ib_action
+
+[start] inputTextByName: edit_contact_name , input: 通讯录
+
+text len: 2
+
+[start] inputTextByName: 电话号码 , input: 13800138000
+
+text len: 4
+
+clickByName: 完成
+
+[start] close app
+
+点击关闭
+
+[end] close app
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact4_2.ContactV4_2
+
+INSTRUMENTATION_STATUS: stream=.
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: test=testCase_call_003
+
+INSTRUMENTATION_STATUS_CODE: 0
+
+INSTRUMENTATION_STATUS: stream=
+
+Test results for WatcherResultPrinter=.
+
+Time: 46.804
+
+
+
+OK (1 test)
+
+
+
+
+
+INSTRUMENTATION_STATUS_CODE: -1
+
+Updated file C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
+Buildfile: C:\Users\Administrator\workspace_201607\ContactUITest\build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 22.6.2
+ [checkenv] Installed at G:\adt-bundle-windows-x86_64-20140321\adt-bundle-windows-x86_64-20140321\sdk
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 19.0.3
+     [echo] Resolving Build Target for ContactV4_2...
+[getuitarget] Project Target:   Android 4.4.2
+[getuitarget] API level:        19
+     [echo] ----------
+     [echo] Creating output directories if needed...
+
+-pre-compile:
+
+compile:
+    [javac] Compiling 1 source file to C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
+    [javac] ����: [options] Դֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ŀ��ֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ҫ�����й��ѹ�ʱѡ��ľ���, ��ʹ�� -Xlint:-options��
+    [javac] 3 ������
+
+-post-compile:
+
+-dex:
+      [dex] input: C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes
+      [dex] Found Deleted Target File
+      [dex] Converting compiled files and external libraries into C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes.dex...
+
+-post-dex:
+
+-jar:
+      [jar] Building jar: C:\Users\Administrator\workspace_201607\ContactUITest\bin\ContactV4_2.jar
+
+-post-jar:
+
+build:
+
+BUILD SUCCESSFUL
+Total time: 6 seconds
+1894 KB/s (40742 bytes in 0.021s)
+run PId: 16676
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact4_2.ContactV4_2
+
+INSTRUMENTATION_STATUS: stream=
+
+com.uitest.contact4_2.ContactV4_2:
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: test=testCase_call_003
+
+INSTRUMENTATION_STATUS_CODE: 1
+
+startTest: testCase_call_003(com.uitest.contact4_2.ContactV4_2)
+
+wakeAndUnlock
+
+isScreenOn: true
+
+[start] findAndOpenApp和通讯录
+
+clickByName: 应用程序
+
+click 和通讯录
+
+clickById: tab_contacts
+
+isExistById: btResolve
+
+elementExist: false
+
+collection: 1
+
+start long click
+
+end long click
+
+clickById: mca_delete_layout
+
+clickById: dialog_btn_positive
+
+clickById: tab_call
+
+isExistById: two
+
+elementExist: true
+
+clickById: tab_call
+
+clickByName: 清空通话记录
+
+clickById: dialog_btn_positive
+
+clickById: tab_call
+
+clickById: tab_contacts
+
+clickById: contact_search_bar
+
+snapshot
+
+[start] inputTextByName: contact_search_bar , input: 13800138000
+
+snapshot
+
+isExistById: contact_name
+
+elementExist: false
+
+clickById: contact_search_del_btn
+
+snapshot
+
+clickById: iab_ib_action
+
+[start] inputTextByName: edit_contact_name , input: 通讯录
+
+text len: 2
+
+[start] inputTextByName: 电话号码 , input: 13800138000
+
+text len: 4
+
+clickByName: 完成
+
+clickById: tab_call
+
+clickById: tab_contacts
+
+clickById: tab_call
+
+clickById: digits
+
+clickById: one
+
+clickById: three
+
+clickById: eight
+
+clickById: zero
+
+clickById: zero
+
+clickById: one
+
+isExistByName: 通讯录
+
+elementExist: true
+
+start long click
+
+end long click
+
+clickById: zero
+
+clickById: zero
+
+clickById: one
+
+clickById: three
+
+clickById: eight
+
+clickById: zero
+
+isExistByName: 通讯录
+
+elementExist: true
+
+start long click
+
+end long click
+
+clickById: one
+
+clickById: three
+
+clickById: eight
+
+clickById: zero
+
+clickById: zero
+
+clickById: zero
+
+isExistByName: 通讯录
+
+elementExist: true
+
+start long click
+
+end long click
+
+clickById: eight
+
+clickById: six
+
+clickById: six
+
+clickById: four
+
+clickById: nine
+
+isExistByName: 通讯录
+
+elementExist: true
+
+start long click
+
+end long click
+
+clickById: eight
+
+clickById: nine
+
+clickById: five
+
+isExistByName: 通讯录
+
+elementExist: true
+
+start long click
+
+end long click
+
+clickById: nine
+
+clickById: eight
+
+clickById: six
+
+clickById: five
+
+clickById: eight
+
+isExistByName: 通讯录
+
+elementExist: true
+
+start long click
+
+end long click
+
+clickById: tab_contacts
+
+isExistById: btResolve
+
+elementExist: false
+
+collection: 1
+
+start long click
+
+end long click
+
+clickById: mca_delete_layout
+
+clickById: dialog_btn_positive
+
+[start] close app
+
+点击关闭
+
+[end] close app
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: class=com.uitest.contact4_2.ContactV4_2
+
+INSTRUMENTATION_STATUS: stream=.
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: test=testCase_call_003
+
+INSTRUMENTATION_STATUS_CODE: 0
+
+INSTRUMENTATION_STATUS: stream=
+
+Test results for WatcherResultPrinter=.
+
+Time: 98.974
+
+
+
+OK (1 test)
+
+
+
+
+
+INSTRUMENTATION_STATUS_CODE: -1
+

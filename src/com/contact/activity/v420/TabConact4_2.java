@@ -2,12 +2,12 @@ package com.contact.activity.v420;
 
 import com.android.uiautomator.core.UiObject;
 import com.contact.activity.MainActivity_contact;
+import com.uitest.contact4_2.SimpleCode420;
 
 public class TabConact4_2 extends MainActivity_contact {
 
 	@Override
 	public  void newContact(String name, String phone) {
-		// TODO Auto-generated method stub
 		super.newContact(name, phone);
 	}
 
@@ -81,6 +81,45 @@ public class TabConact4_2 extends MainActivity_contact {
 	public UiObject getListViewFirstPhoneInSearch() {
 		// TODO Auto-generated method stub
 		return super.getListViewFirstPhoneInSearch();
+	}
+
+	/**
+	 * 创建联系人
+	 * @param name
+	 * @param phone
+	 */
+	public static void createContacts(String name, String phone) {
+
+		SimpleCode420 sc = new SimpleCode420();
+		
+		//进入联系人模块
+		sc.clickId("tab_contacts");
+		//点击搜索框
+		sc.clickId("contact_search_bar");
+		//搜索联系人
+		sc.inputTextById("contact_search_bar", phone);
+		//如果联系人存在，则删除，否则返回
+		if(sc.isExistId("contact_name")){
+			sc.longClickId("contact_icon");
+			sc.clickText("删除");
+			sc.clickText("删除");
+		}
+		else{
+			sc.clickId("contact_search_del_btn");
+		}
+
+		//点击创建
+		sc.clickId("iab_ib_action");
+		//输入姓名
+		sc.inputTextById("edit_contact_name", name);
+		//输入号码
+		sc.inputTextByText("电话号码", phone);
+		//点击完成
+		sc.clickText("完成");
+		sc.sleep(2000);
+		//返回主页
+		sc.back();
+		
 	}
 
 	

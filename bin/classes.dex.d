@@ -21,10 +21,14 @@ C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes\com\testCode\T
 C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes\com\uitest\cmp\EditText.class \
 C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes\com\uitest\cmp\Layout.class \
 C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes\com\uitest\cmp\ListView.class \
+C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes\com\uitest\contact\testcase\Book.class \
 C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes\com\uitest\contact\testcase\CardEditor.class \
 C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes\com\uitest\contact\testcase\CloudCard.class \
+C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes\com\uitest\contact\testcase\Contact.class \
 C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes\com\uitest\contact\testcase\ContactLoginTime.class \
+C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes\com\uitest\contact\testcase\PullParseService.class \
 C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes\com\uitest\contact\testcase\TestBack.class \
+C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes\com\uitest\contact\testcase\testPullParseService.class \
 C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes\com\uitest\contact\traversal\TraversalNoalgorithm.class \
 C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes\com\uitest\contact4_2\ContactV4_2.class \
 C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes\com\uitest\contact4_2\SimpleCode420.class \
@@ -33,6 +37,8 @@ C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes\com\uitest\dat
 C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes\com\uitest\log\MyLogcatHelper$LogDumper.class \
 C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes\com\uitest\log\MyLogcatHelper.class \
 C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes\com\uitest\log\UiautomatorAssistant.class \
+C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes\com\uitest\readxml\Contact.class \
+C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes\com\uitest\readxml\ReadXml.class \
 C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes\com\uitest\uiautomatorUtil\AssertUtil.class \
 C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes\com\uitest\uiautomatorUtil\DriverManager.class \
 C:\Users\Administrator\workspace_201607\ContactUITest\bin\classes\com\uitest\uiautomatorUtil\ElementManager.class \
