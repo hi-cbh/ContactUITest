@@ -66,8 +66,7 @@ public class UiautomatorAssistant extends UiAutomatorTestCase {
 			/**
 			 * 验证后，添加分隔行
 			 */
-			if (str.contains("成功") || str.contains("失败") || str.contains("通过")
-					|| str.contains("不通过") || str.contains("开始") || str.contains("结束")) {
+			if (str.contains("开始") || str.contains("结束")) {
 				fwlog.write("------------------" + "\r\n");
 			}
 			//System.out.println(str);

@@ -94,20 +94,23 @@ public class TabConact4_2 extends MainActivity_contact {
 		
 		//进入联系人模块
 		sc.clickId("tab_contacts");
-		//点击搜索框
-		sc.clickId("contact_search_bar");
-		//搜索联系人
-		sc.inputTextById("contact_search_bar", phone);
-		//如果联系人存在，则删除，否则返回
-		if(sc.isExistId("contact_name")){
-			sc.longClickId("contact_icon");
-			sc.clickText("删除");
-			sc.clickText("删除");
+		
+		if(!sc.isExistId("check_declaration")){
+			//点击搜索框
+			sc.clickId("contact_search_bar");
+			//搜索联系人
+			sc.inputTextById("contact_search_bar", phone);
+			//如果联系人存在，则删除，否则返回
+			if(sc.isExistId("contact_name")){
+				sc.longClickId("contact_icon");
+				sc.clickText("删除");
+				sc.clickText("删除");
+			}
+			else{
+				sc.clickId("contact_search_del_btn");
+			}
 		}
-		else{
-			sc.clickId("contact_search_del_btn");
-		}
-
+		
 		//点击创建
 		sc.clickId("iab_ib_action");
 		//输入姓名

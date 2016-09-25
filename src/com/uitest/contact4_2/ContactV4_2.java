@@ -1,4 +1,6 @@
 package com.uitest.contact4_2;
+
+import com.contact.activity.v420.Setting420;
 import com.contact.activity.v420.TabCall4_2;
 import com.contact.activity.v420.TabConact4_2;
 import com.uitest.data.UserConfig;
@@ -16,7 +18,7 @@ public class ContactV4_2 extends SimpleCode420 {
 	public static void main(String[] args) {
 		String jarName = "ContactV4_2";
 		String testClass = "com.uitest.contact4_2.ContactV4_2";
-		String testName = "testCase_call_003";
+		String testName = "testCase_call_004";
 		String androidId = UserConfig.androidId;
 		new UiAutomatorHelper(jarName, testClass, testName, androidId);
 	}
@@ -249,6 +251,93 @@ public class ContactV4_2 extends SimpleCode420 {
 		tco.clearContact();
 
 	}
+	
+	/**
+	 * 将拨号记录中一号码添加到黑名单 通话记录-陌生人-加入黑名单（详细页，选择加入黑名单）
+	 */
+	public void testCase_call_004() {
+		
+		String name = ReadXml.getContact().get(4).getName();
+		String phone = ReadXml.getContact().get(4).getPhone();
+		
+
+		TabConact4_2 tco = new TabConact4_2();
+		TabCall4_2 tca = new TabCall4_2(); 
+		Setting420 st = new Setting420();
+		
+		// 创建本地联系人
+		TabConact4_2.createContacts(name, phone);
+		// 清理
+		tco.clearContact();
+
+		clickId("tab_call");
+
+		// 进入管理黑名单
+		st.OpenTabMenu("防打扰", "黑名单");
+		
+		//是否存在
+		if (isExistId("iab_ib_action")) {
+			// 点击清空
+			clickId("iab_ib_action");
+
+			// 点击清空
+			clickText("清空");
+		}
+
+		// 返回主界面
+		back();
+		back();
+		back();
+		back();
+
+		clickId("tab_call");
+		
+		// 清空所有通话记录
+		tca.deleteAllCall();
+
+		// 添加数据
+		tca.touchCallNumber("13813881499");
+
+		// 点击拨号详细记录
+		clickId("call_detail");
+
+		// 点击加入黑名单
+		//clickMenuAndSelect(4);
+
+		// 返回主界面
+		back();
+		sleep(1000);
+
+//		// 进入管理黑名单
+//		st.OpenTabMenu("防打扰", "黑名单");
+//
+//		// 检测当前界面为防打扰页
+//		Myassert("没有进入黑名单管理页", driver.findElementByName("管理黑名单").isDisplayed());
+//
+//		boolean bl = searchContact("13813881499", 0);
+//
+//		// 检测当前是否存储骚扰电话
+//		// Assert.assertTrue(bl);
+//		Myassert("黑名单中，没有找到该联系人：13813881499", bl);
+//
+//		sleep(1000);
+//
+//		// 清空数据
+//		if (bl) {
+//			// 点击清空
+//			clickById("iab_ib_action");
+//
+//			// 点击清空
+//			clickById("dialog_btn_positive");
+//		}
+//		// 返回主界面
+//		back("tab_call");
+//
+//		// 清理
+//		tca.deleteAllCall();
+	}
+	
+	
 	
 	
 	/**
