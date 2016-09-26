@@ -4,6 +4,7 @@ import com.contact.activity.v420.Setting420;
 import com.contact.activity.v420.TabCall4_2;
 import com.contact.activity.v420.TabConact4_2;
 import com.uitest.data.UserConfig;
+import com.uitest.otherapk.OtherApk;
 import com.uitest.readxml.ReadXml;
 import com.uitest.util.UiAutomatorHelper;
 
@@ -264,49 +265,51 @@ public class ContactV4_2 extends SimpleCode420 {
 		TabConact4_2 tco = new TabConact4_2();
 		TabCall4_2 tca = new TabCall4_2(); 
 		Setting420 st = new Setting420();
-		
-		// 创建本地联系人
-		TabConact4_2.createContacts(name, phone);
-		// 清理
-		tco.clearContact();
-
-		clickId("tab_call");
-
-		// 进入管理黑名单
-		st.OpenTabMenu("防打扰", "黑名单");
-		
-		//是否存在
-		if (isExistId("iab_ib_action")) {
-			// 点击清空
-			clickId("iab_ib_action");
-
-			// 点击清空
-			clickText("清空");
-		}
-
-		// 返回主界面
-		back();
-		back();
-		back();
-		back();
-
-		clickId("tab_call");
-		
-		// 清空所有通话记录
-		tca.deleteAllCall();
+		OtherApk oa = new OtherApk();
+//		
+//		// 创建本地联系人
+//		TabConact4_2.createContacts(name, phone);
+//		// 清理
+//		tco.clearContact();
+//
+//		clickId("tab_call");
+//
+//		// 进入管理黑名单
+//		st.OpenTabMenu("防打扰", "黑名单");
+//		
+//		//是否存在
+//		if (isExistId("iab_ib_action")) {
+//			// 点击清空
+//			clickId("iab_ib_action");
+//
+//			// 点击清空
+//			clickText("清空");
+//		}
+//
+//		// 返回主界面
+//		back();
+//		back();
+//		back();
+//		back();
+//
+//		clickId("tab_call");
+//		
+//		// 清空所有通话记录
+//		tca.deleteAllCall();
 
 		// 添加数据
-		tca.touchCallNumber("13813881499");
-
-		// 点击拨号详细记录
-		clickId("call_detail");
-
-		// 点击加入黑名单
-		//clickMenuAndSelect(4);
-
-		// 返回主界面
-		back();
-		sleep(1000);
+		
+		oa.prepareUnreadCall(phone, 15, 3, 2);
+//
+//		// 点击拨号详细记录
+//		clickId("call_detail");
+//
+//		// 点击加入黑名单
+//		//clickMenuAndSelect(4);
+//
+//		// 返回主界面
+//		back();
+//		sleep(1000);
 
 //		// 进入管理黑名单
 //		st.OpenTabMenu("防打扰", "黑名单");

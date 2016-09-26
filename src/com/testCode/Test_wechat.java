@@ -1,10 +1,14 @@
 package com.testCode;
 
-import java.io.IOException;
-
 import com.android.uiautomator.core.UiDevice;
+import com.android.uiautomator.core.UiObject;
+import com.android.uiautomator.core.UiObjectNotFoundException;
+import com.android.uiautomator.core.UiSelector;
 import com.android.uiautomator.testrunner.UiAutomatorTestCase;
+import com.uitest.commandline.Command;
 import com.uitest.data.UserConfig;
+import com.uitest.error.WatcherError;
+import com.uitest.uiautomatorUtil.ElementManager;
 import com.uitest.util.UiAutomatorHelper;
 
 
@@ -13,29 +17,33 @@ public class Test_wechat extends UiAutomatorTestCase
 	public static void main(String[] args) {
 		String jarName = "Test_wechat";
 		String testClass = "com.testCode.Test_wechat";
-		String testName = "";
+		String testName = "testCmdLine";
 		String androidId = UserConfig.androidId;
 		new UiAutomatorHelper(jarName, testClass, testName, androidId);
 	}
 
 	
-	public void testCmdLine(){
-		cmdLine("am start -a android.intent.action.CALL -d tel:1008611");
+	public void testCmdLine() throws UiObjectNotFoundException{
 		
-		cmdLine("am stop -a android.intent.action.CALL");
+		 UiObject uo = ElementManager.getUiObjectByResourceId("com.sec.android.app.launcher:id/home_softkey_apps_button");
 		
-	}
-	
-	
-	
-    public void cmdLine(String cmd){
-    	try {
-			Runtime.getRuntime().exec(cmd);
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-    }
+		WatcherError.registerCall();
+		
+		Command.callPhone("10086");
+        //用例
+       
+        pressBack();
 
+        uo.click();
+        sleep(2000);
         
+        pressBack();
+        sleep(2000);
+        
+	}
+	   
+	
+	public void pressBack(){
+		UiDevice.getInstance().pressBack();
+	}
 }
