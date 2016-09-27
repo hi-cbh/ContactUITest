@@ -22,7 +22,7 @@ public class TabCall4_2 extends MainActivity_call {
 	/**
 	 * 显示拨号盘的输入键盘
 	 */
-	public static void displaykeyboardCall(){
+	public void displaykeyboardCall(){
 		if(ElementManagerLog.isExistById("two"))
 		{
 				

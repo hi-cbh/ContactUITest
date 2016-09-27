@@ -26,4 +26,34 @@ public class Setting420 {
 
 	}
 
+	/**
+	 * 清空黑名单内容
+	 */
+	public void ClearBackList(){
+		// 进入管理黑名单
+		OpenTabMenu("防打扰", "黑名单");
+		//iab_ib_action  /iab_ib_more
+		ClearBlack();
+	}
+	
+	
+	public void ClearBlack(){
+		SimpleCode420 sc = new SimpleCode420();
+		//是否存在
+		if (sc.isExistId("iab_ib_action")) {
+			// 点击清空
+			sc.clickId("iab_ib_action");
+
+			sc.sleep(1000);
+			// 点击清空
+			sc.clickId("dialog_btn_positive");
+		}
+		sc.sleep(1000);
+		// 返回主界面
+		sc.back();
+		sc.back();
+		sc.back();
+		sc.back();
+	}
+	
 }

@@ -114,7 +114,8 @@ public class TabConact4_2 extends MainActivity_contact {
 		//点击创建
 		sc.clickId("iab_ib_action");
 		//输入姓名
-		sc.inputTextById("edit_contact_name", name);
+		//sc.inputTextById("edit_contact_name", name);
+		sc.inputTextByText("姓名", name);
 		//输入号码
 		sc.inputTextByText("电话号码", phone);
 		//点击完成

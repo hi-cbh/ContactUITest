@@ -5,6 +5,8 @@ import com.android.uiautomator.core.UiObject;
 import com.android.uiautomator.core.UiObjectNotFoundException;
 import com.android.uiautomator.core.UiSelector;
 import com.android.uiautomator.testrunner.UiAutomatorTestCase;
+import com.contact.activity.v420.Setting420;
+import com.contact.activity.v420.TabConact4_2;
 import com.uitest.commandline.Command;
 import com.uitest.data.UserConfig;
 import com.uitest.error.WatcherError;
@@ -23,27 +25,9 @@ public class Test_wechat extends UiAutomatorTestCase
 	}
 
 	
-	public void testCmdLine() throws UiObjectNotFoundException{
-		
-		 UiObject uo = ElementManager.getUiObjectByResourceId("com.sec.android.app.launcher:id/home_softkey_apps_button");
-		
-		WatcherError.registerCall();
-		
-		Command.callPhone("10086");
-        //用例
-       
-        pressBack();
-
-        uo.click();
-        sleep(2000);
-        
-        pressBack();
-        sleep(2000);
-        
+	public void testCmdLine() {
+		Setting420 st = new Setting420();
+        st.ClearBackList();
 	}
 	   
-	
-	public void pressBack(){
-		UiDevice.getInstance().pressBack();
-	}
 }

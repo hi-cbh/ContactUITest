@@ -5,6 +5,7 @@ import com.android.uiautomator.testrunner.UiAutomatorTestCase;
 import com.contact.activity.MainActivity_contact;
 import com.uitest.uiautomatorUtil.AssertUtil;
 import com.uitest.uiautomatorUtil.DriverManager;
+import com.uitest.uiautomatorUtil.ElementManager;
 import com.uitest.uiautomatorUtil.ElementManagerLog;
 
 public class SimpleCode420 extends TestContactBaseV420{
@@ -60,6 +61,21 @@ public class SimpleCode420 extends TestContactBaseV420{
 	public void assertText(String text){
 		AssertUtil.Myassert("没有找到："+ text, ElementManagerLog.isExistByName(text), getTestCaseName());
 	}
+	
+	/**
+	 * 获取ID控件的txt，判断txt是否包含content
+	 * @param id
+	 * @param content
+	 */
+	public void assertMessage(String id, String content){
+		
+		String findstr = ElementManager.getViewTextById(id);
+		boolean bl = findstr.contains(content);
+		
+		AssertUtil.Myassert("没有找到："+ content + ";页面显示为:" + findstr, bl, getTestCaseName());
+
+	}
+
 	
 	
 	/**
@@ -168,5 +184,16 @@ public class SimpleCode420 extends TestContactBaseV420{
 	public boolean isExistText(String name){
 		return ElementManagerLog.isExistByName(name);
 	}
+	
+	/**
+	 * 获取Text
+	 * @param id
+	 * @return
+	 */
+	public String getTextById(String id){
+		return ElementManager.getViewTextById(id);
+	}
+	
+
 	
 }

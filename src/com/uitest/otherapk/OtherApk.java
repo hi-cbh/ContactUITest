@@ -37,32 +37,34 @@ public class OtherApk {
 		SimpleCode420 sc = new SimpleCode420();
 		String date = "";
 		
-		sc.sleep(2000);
+		sc.sleep(1000);
 		
 		//输入号码
-		sc.inputTextById("com.ktls.tonghuaweizao:id/etxMobileNum", phone);
+		sc.inputTextById("etxMobileNum", phone);
 		
 		//输入通话时间
-		sc.inputTextByText("com.ktls.tonghuaweizao:id/etxDuration", time+"");
+		sc.inputTextById("etxDuration", time+"");
 		
 		//点击未接来电(1/2/3)
-		sc.clickId("com.ktls.tonghuaweizao:id/rg_OutOrIn_"+type);
+		sc.clickId("rg_OutOrIn_"+type);
 		
 		if(type == 3){
 			//点击未读(1/2)
-			sc.clickId("com.ktls.tonghuaweizao:id/rg_IsRead_"+isRead);
+			sc.clickId("rg_IsRead_"+isRead);
 		}
 		
 		//点击生成记录
-		sc.clickId("com.ktls.tonghuaweizao:id/btnCreate");
+		sc.clickId("btnCreate");
 		
 		//点击确定
-		sc.clickId("android:id/button1");
+		sc.clickId("button1");
 		
-		sc.sleep(2000);
+		sc.sleep(1000);
 		
-		date = ElementManager.getViewTextById("com.ktls.tonghuaweizao:id/txtDate")
-				+ "_" + ElementManager.getViewTextById("com.ktls.tonghuaweizao:id/txtTime");
+//		date = ElementManager.getViewTextById("com.ktls.tonghuaweizao:id/txtDate")
+//				+ "_" + ElementManager.getViewTextById("com.ktls.tonghuaweizao:id/txtTime");
+//		
+		date = "";
 		
 		return date;
 	}
