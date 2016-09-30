@@ -506,6 +506,19 @@ public class ElementManager extends UiAutomatorTestCase{
 	}
 
 	/**
+	 * 获取根据父Id下，匹配className类型的控件数量
+	 * 
+	 * @param className
+	 * @return
+	 */
+	public static int getChildCountByIdClass(String id, String rootClass) {
+		UiCollection collection = new UiCollection(new UiSelector().resourceIdMatches(".*" + id));
+		int cnt = collection.getChildCount(new UiSelector().classNameMatches(".*" + rootClass));
+		return cnt;
+	}
+	
+	
+	/**
 	 * 获取根据父rootclas下，匹配subclass类型的控件数量
 	 * 
 	 * @param className

@@ -62,6 +62,12 @@ public class SimpleCode420 extends TestContactBaseV420{
 		AssertUtil.Myassert("没有找到："+ text, ElementManagerLog.isExistByName(text), getTestCaseName());
 	}
 	
+	public void assertBoolean(boolean bl){
+		AssertUtil.Myassert("验证结果失败", bl, getTestCaseName());
+	}
+	
+	
+	
 	/**
 	 * 获取ID控件的txt，判断txt是否包含content
 	 * @param id
@@ -195,5 +201,8 @@ public class SimpleCode420 extends TestContactBaseV420{
 	}
 	
 
+	public boolean isContainClassName(String id, String className){
+		return ElementManagerLog.isContaintUiObject(id, className);
+	}
 	
 }

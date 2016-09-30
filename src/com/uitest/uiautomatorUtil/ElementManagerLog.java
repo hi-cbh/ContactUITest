@@ -89,6 +89,34 @@ public class ElementManagerLog extends UiAutomatorTestCase{
 		return elementExist(uo);
 	}
 
+	/**
+	 *  获取ID控件下，是否包含某个类
+	 * 
+	 */
+	public static boolean isContaintUiObject(String id, String className){
+
+		UiCollection collection = new UiCollection(new UiSelector().resourceIdMatches(".*" + id).index(0));
+		UiObject CheckObject = null;
+		try {
+			int num = collection.getChildCount(new UiSelector().classNameMatches(".*" + className));
+			
+			
+			System.out.println("num " + num);
+			for (int i = 0; i < 6; i++) {
+				CheckObject = collection.getChildByInstance(
+						new UiSelector().classNameMatches(".*" + className), i);
+				System.out.println("run... " + i);
+				if(CheckObject.exists()){
+					return true;
+				}		
+			}
+		} catch (UiObjectNotFoundException e) {
+			e.printStackTrace();
+		}
+		return false;
+	}
+	
+	
 	// ///////////////////////获取通过各种途径获取页面元素////////////////////////////
 
 	/**
