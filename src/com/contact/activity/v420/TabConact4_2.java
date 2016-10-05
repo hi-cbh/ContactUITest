@@ -1,8 +1,10 @@
 package com.contact.activity.v420;
 
 import com.android.uiautomator.core.UiObject;
+import com.contact.activity.EditContactActivity;
 import com.contact.activity.MainActivity_contact;
 import com.uitest.contact4_2.SimpleCode420;
+import com.uitest.uiautomatorUtil.DriverManager;
 
 public class TabConact4_2 extends MainActivity_contact {
 
@@ -13,8 +15,14 @@ public class TabConact4_2 extends MainActivity_contact {
 
 	@Override
 	public void swipeDownNewContact(String name, String phone) {
-		// TODO Auto-generated method stub
-		super.swipeDownNewContact(name, phone);
+		SimpleCode420 sc = new SimpleCode420();
+		DriverManager.swipeToDown();
+		sc.sleep(2000);
+		EditContactActivity.setContactName(name);
+		sc.sleep(2000);
+		EditContactActivity.setPhone(phone);
+		sc.clickText("完成");
+		sc.sleep(2000);
 	}
 
 	@Override
@@ -83,6 +91,34 @@ public class TabConact4_2 extends MainActivity_contact {
 		return super.getListViewFirstPhoneInSearch();
 	}
 
+	/**
+	 * 添加联系人，不做任何检测
+	 * @param name
+	 * @param phone
+	 */
+	public static void addContacts(String name, String phone){
+
+		SimpleCode420 sc = new SimpleCode420();
+		
+		//进入联系人模块
+		sc.clickId("tab_contacts");
+
+		//点击创建
+		sc.clickId("iab_ib_action");
+		//输入姓名
+		//sc.inputTextById("edit_contact_name", name);
+		sc.inputTextByText("姓名", name);
+		//输入号码
+		sc.inputTextByText("电话号码", phone);
+		//点击完成
+		sc.clickText("完成");
+		sc.sleep(2000);
+		//返回主页
+		sc.back();
+		
+	}
+	
+	
 	/**
 	 * 创建联系人
 	 * @param name

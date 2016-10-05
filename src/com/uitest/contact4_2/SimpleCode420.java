@@ -132,7 +132,12 @@ public class SimpleCode420 extends TestContactBaseV420{
 		DriverManager.swipeToLeft();
 	}
 	
-	
+	/**
+	 * 下滑
+	 */
+	public void swipeToDown(){
+		DriverManager.swipeToDown();
+	}
 	
 
 	/**
