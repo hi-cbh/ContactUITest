@@ -32,6 +32,10 @@ C:\Users\Administrator\workspace_github\ContactUITest\bin\classes\com\uitest\con
 C:\Users\Administrator\workspace_github\ContactUITest\bin\classes\com\uitest\contact4_2\ContacContactV420.class \
 C:\Users\Administrator\workspace_github\ContactUITest\bin\classes\com\uitest\contact4_2\ContactCallV420.class \
 C:\Users\Administrator\workspace_github\ContactUITest\bin\classes\com\uitest\contact4_2\SimpleCode420.class \
+C:\Users\Administrator\workspace_github\ContactUITest\bin\classes\com\uitest\contact4_2\testcase\ContacContactV420.class \
+C:\Users\Administrator\workspace_github\ContactUITest\bin\classes\com\uitest\contact4_2\testcase\ContactCallV420.class \
+C:\Users\Administrator\workspace_github\ContactUITest\bin\classes\com\uitest\contact4_2\testcase\SimpleCode420.class \
+C:\Users\Administrator\workspace_github\ContactUITest\bin\classes\com\uitest\contact4_2\testcase\TestContactBaseV420.class \
 C:\Users\Administrator\workspace_github\ContactUITest\bin\classes\com\uitest\contact4_2\TestContactBaseV420.class \
 C:\Users\Administrator\workspace_github\ContactUITest\bin\classes\com\uitest\data\UserConfig.class \
 C:\Users\Administrator\workspace_github\ContactUITest\bin\classes\com\uitest\error\WatcherError$1.class \

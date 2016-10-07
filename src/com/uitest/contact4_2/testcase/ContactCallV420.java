@@ -1,4 +1,4 @@
-package com.uitest.contact4_2;
+package com.uitest.contact4_2.testcase;
 
 import com.contact.activity.v420.Setting420;
 import com.contact.activity.v420.TabCall4_2;
@@ -19,7 +19,7 @@ public class ContactCallV420 extends SimpleCode420 {
 
 	public static void main(String[] args) {
 		String jarName = "ContactCallV420";
-		String testClass = "com.uitest.contact4_2.ContactCallV420";
+		String testClass = "com.uitest.contact4_2.testcase.ContactCallV420";
 		String testName = "";
 		String androidId = UserConfig.androidId;
 		new UiAutomatorHelper(jarName, testClass, testName, androidId);

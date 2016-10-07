@@ -1,4 +1,4 @@
-package com.uitest.contact4_2;
+package com.uitest.contact4_2.testcase;
 
 import android.net.ParseException;
 import android.os.RemoteException;
@@ -11,7 +11,6 @@ import com.uitest.data.UserConfig;
 import com.uitest.log.UiautomatorAssistant;
 import com.uitest.uiautomatorUtil.DriverManager;
 import com.uitest.uiautomatorUtil.ElementManager;
-import com.uitest.uiautomatorUtil.ElementManagerLog;
 import com.uitest.uiautomatorUtil.FileManager;
 import com.uitest.uiautomatorUtil.TestListenerManager;
 import com.uitest.uiautomatorUtil.TimeUtil;

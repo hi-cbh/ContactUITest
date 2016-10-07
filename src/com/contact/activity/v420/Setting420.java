@@ -1,6 +1,6 @@
 package com.contact.activity.v420;
 
-import com.uitest.contact4_2.SimpleCode420;
+import com.uitest.contact4_2.testcase.SimpleCode420;
 
 public class Setting420 {
 	/**

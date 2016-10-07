@@ -3,7 +3,7 @@ package com.contact.activity.v420;
 import com.android.uiautomator.core.UiObject;
 import com.contact.activity.EditContactActivity;
 import com.contact.activity.MainActivity_contact;
-import com.uitest.contact4_2.SimpleCode420;
+import com.uitest.contact4_2.testcase.SimpleCode420;
 import com.uitest.uiautomatorUtil.DriverManager;
 
 public class TabConact4_2 extends MainActivity_contact {

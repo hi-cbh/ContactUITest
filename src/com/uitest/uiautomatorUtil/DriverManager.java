@@ -47,6 +47,11 @@ public class DriverManager{
 		System.out.println("[ doing ] swipe ");
 	}
 	
+	public static void swipe(int x1, int y1, int x2, int y2){
+		UiautomatorAssistant.UiAutomationLog("swipe");
+		UiDevice.getInstance().swipe(x1, y1, x2, y2, 15);
+	}
+	
 	
 	/**
 	 * 左滑

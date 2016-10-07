@@ -1,8 +1,7 @@
 package com.uitest.otherapk;
 
-
-import com.uitest.contact4_2.SimpleCode420;
-import com.uitest.contact4_2.TestContactBaseV420;
+import com.uitest.contact4_2.testcase.SimpleCode420;
+import com.uitest.contact4_2.testcase.TestContactBaseV420;
 import com.uitest.uiautomatorUtil.ElementManager;
 
 public class OtherApk {
@@ -70,7 +69,38 @@ public class OtherApk {
 	}
 	
 	
-	
-	
 
+	/**
+	 * 准备未读短信,创建含多条的短信
+	 */
+	public static void prepareUnreadMMS(String num1, String num2) {
+		TestContactBaseV420 tcb = new TestContactBaseV420();
+		// 创建未读短信数量
+		tcb.findAndOpenApp("SMSToolDemo");
+		setSmsToolDemo(num1, num2);
+		tcb.findAndOpenApp("和通讯录");
+
+	}
+	
+	
+	/**
+	 * 短信生成器，输入两个参数，分别是会话条数，信息数量。
+	 * 
+	 * @param cscnt
+	 * @param msscnt
+	 */
+	public static void setSmsToolDemo(String cscnt, String msscnt) {
+
+		// 输入数字		
+		ElementManager.inputTextById("com.er.zjj.demo.outbox:id/edit_create_input", cscnt);
+		ElementManager.inputTextById("com.er.zjj.demo.outbox:id/edit_sms_count", msscnt);
+
+		// 点击创建
+		ElementManager.clickById("com.er.zjj.demo.outbox:id/btn_create");
+		
+		// 清除
+		ElementManager.inputTextById("com.er.zjj.demo.outbox:id/edit_create_input", "");
+		ElementManager.inputTextById("com.er.zjj.demo.outbox:id/edit_sms_count", "");
+	}
+	
 }

@@ -1,7 +1,6 @@
-package com.uitest.contact4_2;
+package com.uitest.contact4_2.testcase;
 
 import com.android.uiautomator.core.UiObject;
-import com.android.uiautomator.testrunner.UiAutomatorTestCase;
 import com.contact.activity.MainActivity_contact;
 import com.uitest.uiautomatorUtil.AssertUtil;
 import com.uitest.uiautomatorUtil.DriverManager;

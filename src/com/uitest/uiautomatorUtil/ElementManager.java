@@ -458,9 +458,10 @@ public class ElementManager extends UiAutomatorTestCase{
 		UiObject CheckObject = null;
 		try {
 			r1 = srcObject.getBounds();
+			System.out.println("srcObject: "+r1);
 			int y0 = r1.top + upOffset;
 			int y1 = r1.bottom + dowmOffset;
-			for (int i = 0; i < 10; i++) {
+			for (int i = 0; i < 5; i++) {
 				CheckObject = collection.getChildByInstance(
 						new UiSelector().resourceId(id), i);
 				Rect rect = CheckObject.getBounds();
