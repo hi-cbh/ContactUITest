@@ -6,6 +6,13 @@ public class Contact {
 	private String name;
 	private String phone;
 	private String email;
+	private String mms;
+	public String getMms() {
+		return mms;
+	}
+	public void setMms(String mms) {
+		this.mms = mms;
+	}
 	public int getId() {
 		return id;
 	}

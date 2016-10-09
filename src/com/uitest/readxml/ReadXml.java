@@ -41,7 +41,7 @@ public class ReadXml {
         Contact contact = null;  
         XmlPullParser parser = Xml.newPullParser();  
         parser.setInput(inputStream, "UTF-8");  
-          
+        //读取xml文件，中文显示乱码时，将文件使用“记事本打开”，utf8格式另存为
         int event = parser.getEventType();//产生第一个事件  
         while(event!=XmlPullParser.END_DOCUMENT){  
             switch(event){  
@@ -66,6 +66,10 @@ public class ReadXml {
                     }else if("email".equals(parser.getName()))
                     {
                     	contact.setEmail(parser.nextText());
+                    }
+                    else if("mms".equals(parser.getName()))
+                    {
+                    	contact.setMms(parser.nextText());
                     }
                 }  
                 break;  

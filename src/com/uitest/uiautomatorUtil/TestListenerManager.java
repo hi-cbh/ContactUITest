@@ -33,7 +33,8 @@ public class TestListenerManager extends UiAutomatorTestCase{
 	
 	//protected static final String ROOT_PATH="/mnt/sdcard/AppTestReport/";
 	protected static final String ROOT_PATH= UserConfig.saveRootPath;
-	protected static final String DIR_NAME;//任务目录名
+	//protected static final String DIR_NAME;//任务目录名
+	protected static String DIR_NAME1;//任务目录名
 	protected static String sTestName;//测试用例名
 	protected static String filePath;//保存用例测试信息文件名
 	protected static String pngPath;//保存图像文件名
@@ -43,14 +44,19 @@ public class TestListenerManager extends UiAutomatorTestCase{
 	private static int runtime_local = 0;
 	MyLogcatHelper  mylog  = null;
 		
+	
+	//使用这里出现多个文件写入一个目录
+//
+//	//静态初始化目录  当然目录名可以从命令传入，保证每次任务结果在同一个目录下面
+//	static{
+//		SimpleDateFormat formattime1 = new SimpleDateFormat(
+//				"yyyyMMdd_HHmmss");
+//		long ctime = System.currentTimeMillis();
+//		DIR_NAME = formattime1.format(new Date(ctime));
+//	}
+//	
 
-	//静态初始化目录  当然目录名可以从命令传入，保证每次任务结果在同一个目录下面
-	static{
-		SimpleDateFormat formattime1 = new SimpleDateFormat(
-				"yyyyMMdd_HHmmss");
-		long ctime = System.currentTimeMillis();
-		DIR_NAME = formattime1.format(new Date(ctime));
-	}
+	
 
 	@Override
 	public void run(TestResult result) {
@@ -68,11 +74,21 @@ public class TestListenerManager extends UiAutomatorTestCase{
 				"MMdd_HHmmss");
 		long ctime = System.currentTimeMillis();
 		String time = formattime1.format(new Date(ctime));
-		String dirPath=ROOT_PATH+DIR_NAME;
+
+		//String dirPath=ROOT_PATH+DIR_NAME;
+		
+		//将每个case日志单独创建
+		SimpleDateFormat formattime2 = new SimpleDateFormat(
+				"yyyyMMdd_HHmmss");
+		long ctime2 = System.currentTimeMillis();
+		DIR_NAME1 = formattime2.format(new Date(ctime2));
+		String dirPath=ROOT_PATH+DIR_NAME1;
+		
+		
 		sTestName=testName+"_"+time;
-		filePath=dirPath+"/"+testName+"_"+time+".txt";
-		pngPath=dirPath+"/"+testName+"_"+time+".png";
-		logPath=dirPath+"/"+testName+"_"+time+"_runlog.txt";
+		filePath=dirPath+"/"+sTestName+".txt";
+		pngPath=dirPath+"/"+sTestName+".png";
+		logPath=dirPath+"/"+sTestName+"_runlog.txt";
 		try {
 			Runtime.getRuntime().exec("mkdir "+ROOT_PATH);
 			Runtime.getRuntime().exec("mkdir "+dirPath);

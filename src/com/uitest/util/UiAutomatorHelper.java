@@ -12,6 +12,11 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 
+/**
+ * 修改了输入编码格式，解决中文显示乱码
+ * @author Administrator
+ *
+ */
 public class UiAutomatorHelper {
 
 	// 以下参数需要配置，用例集id，用例id，安卓id
@@ -190,8 +195,9 @@ public class UiAutomatorHelper {
 			Process p = Runtime.getRuntime().exec(cmd);
 			//正确输出流
 			InputStream input = p.getInputStream();
+			//常见的有 ASCII、ISO-8859-1、GB2312、GBK、UTF-8、UTF-16 
 			BufferedReader reader = new BufferedReader(new InputStreamReader(
-					input));
+					input,"UTF-8"));
 			String line = "";
 			while ((line = reader.readLine()) != null) {
 				System.out.println(line);
@@ -200,7 +206,7 @@ public class UiAutomatorHelper {
 			//错误输出流
 			InputStream errorInput = p.getErrorStream();
 			BufferedReader errorReader = new BufferedReader(new InputStreamReader(
-					errorInput));
+					errorInput,"UTF-8"));
 			String eline = "";
 			while ((eline = errorReader.readLine()) != null) {
 				System.out.println(eline);

@@ -1,4 +1,4 @@
-package com.uitest.contact4_2.testcase;
+package com.uitest.contact430.testcase;
 
 import com.contact.activity.MainActivity_mms;
 import com.uitest.data.UserConfig;
@@ -12,12 +12,12 @@ import com.uitest.util.UiAutomatorHelper;
  * @author Administrator
  * 
  */
-public class ContactMMSV420 extends SimpleCode420 {
+public class ContactMMSV430 extends SimpleCode430 {
 
 	public static void main(String[] args) {
-		String jarName = "ContactMMSV420";
-		String testClass = "com.uitest.contact4_2.testcase.ContactMMSV420";
-		String testName = "testCase_mms_001";
+		String jarName = "ContactMMSV430";
+		String testClass = "com.uitest.contact430.testcase.ContactMMSV430";
+		String testName = "";
 		String androidId = UserConfig.androidId;
 		new UiAutomatorHelper(jarName, testClass, testName, androidId);
 	}
@@ -35,23 +35,30 @@ public class ContactMMSV420 extends SimpleCode420 {
 		exitApp();
 	}
 	
-	
-	
-	/**
-	 * 新建短信，发送
-	 */
-	public void testCase_mms_001() {
-		String name = ReadXml.getContact().get(1).getName();
-		String phone = ReadXml.getContact().get(1).getPhone();
-		String mms = ReadXml.getContact().get(1).getMms();
+	public void testDemo1(){
 		
-	//	OtherApk oa = new OtherApk();
-		OtherApk.prepareUnreadMMS(phone, mms);
+	}
+	
+	public void testDemo2(){
 		
-		System.out.println("name: " + name);
-		System.out.println("phone: " + phone);
-		System.out.println("mms: " + mms);
-		MainActivity_mms.createMMs(phone, mms);
+	}
+	
+//	
+//	/**
+//	 * 新建短信，发送
+//	 */
+//	public void testCase_mms_001() {
+//		String name = ReadXml.getContact().get(1).getName();
+//		String phone = ReadXml.getContact().get(1).getPhone();
+//		String mms = ReadXml.getContact().get(1).getMms();
+//		
+//	//	OtherApk oa = new OtherApk();
+//		OtherApk.prepareUnreadMMS(phone, mms);
+//		
+//		System.out.println("name: " + name);
+//		System.out.println("phone: " + phone);
+//		System.out.println("mms: " + mms);
+//		MainActivity_mms.createMMs(phone, mms);
 		
 //		startTestCase();
 //
@@ -65,7 +72,7 @@ public class ContactMMSV420 extends SimpleCode420 {
 //		deleteAllMMs();
 //		// 创建短信
 //		reportLog("新建短信，下拉创建短信");
-	}
+//	}
 //
 //	/**
 //	 * 创建联系人，点击新建，点击选择已有的联系人

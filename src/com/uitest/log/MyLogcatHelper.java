@@ -7,6 +7,8 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
+import com.uitest.data.UserConfig;
+
 
 /**
  * 系统运行日志截取（logcat）
@@ -85,11 +87,34 @@ public class MyLogcatHelper {
 			// cmds = "logcat  | grep \"(" + mPID + ")\"";//打印所有日志信息
 			// cmds = "logcat -s way";//打印标签过滤信息
 			
-			cmds = "logcat *:e *:i | grep \"(" + mPID + ")\"";
+			//cmds = "logcat *:e *:i | grep \"(" + mPID + ")\"";
 			
+			//cmds = "logcat *:w | grep \"(" + mPID + ")\"";
 			
+			cmds = "logcat *:"+getLevel()+" | grep \"(" + mPID + ")\"";
 			
-			
+		}
+		
+		private String getLevel(){
+			String level = "i";
+			switch(UserConfig.LOGCAT){
+			case 1:
+				level = "v";
+				break;
+			case 2:
+				level = "d";
+				break;
+			case 3:
+				level = "i";
+				break;
+			case 4:
+				level = "w";
+				break;
+			case 5:
+				level = "e";
+				break;
+			}
+			return level;
 		}
 
 		public void stopLogs() {
