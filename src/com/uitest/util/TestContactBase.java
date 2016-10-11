@@ -8,6 +8,7 @@ import com.android.uiautomator.core.UiObject;
 import com.android.uiautomator.core.UiObjectNotFoundException;
 import com.contact.activity.MainActivity_contact;
 import com.uitest.data.UserConfig;
+import com.uitest.log.UiautomatorAssistant;
 import com.uitest.uiautomatorUtil.DriverManager;
 import com.uitest.uiautomatorUtil.ElementManager;
 import com.uitest.uiautomatorUtil.FileManager;
@@ -15,23 +16,23 @@ import com.uitest.uiautomatorUtil.TestListenerManager;
 import com.uitest.uiautomatorUtil.TimeUtil;
 
 public class TestContactBase extends TestListenerManager {
-	
+
 	String packageName = UserConfig.packageName;
 
 	/**
 	 * 打开和通讯录
 	 */
 	public void openContact() {
-		 DriverManager.wakeAndUnlock();
-		 findAndOpenApp("和通讯录");
-		 sleep(2000);
-		 
-		 String curpackageName=UiDevice.getInstance().getCurrentPackageName();
-		 assertEquals("openContact error ",packageName, curpackageName);
-	}
-	
+		UiautomatorAssistant.UiAutomationLog("开始");
+		DriverManager.wakeAndUnlock();
+		findAndOpenApp("和通讯录");
+		sleep(2000);
 
-	
+		String curpackageName = UiDevice.getInstance().getCurrentPackageName();
+		assertEquals("openContact error ", packageName, curpackageName);
+
+	}
+
 	/**
 	 * 输入用户、密码，登录
 	 * 
@@ -53,32 +54,34 @@ public class TestContactBase extends TestListenerManager {
 			ElementManager.clickById("btn_login_dynamic");
 
 			// 输入用户名
-			ElementManager.inputTextById("setting_new_login_mobile_et_num", username);
+			ElementManager.inputTextById("setting_new_login_mobile_et_num",
+					username);
 
 			// 输入密码
-			ElementManager.inputTextById("setting_new_login_mobile_et_password",
-					password);
+			ElementManager.inputTextById(
+					"setting_new_login_mobile_et_password", password);
 
-			
 			String startime = TimeUtil.getCurrentSysTime();
 			System.out.println("startime: " + startime);
 			// 点击登录
 			ElementManager.clickById("setting_new_login_mobile_btn_login");
-			
-			if(!ElementManager.waitForExiststById("setting_item_login_logout_text")){
-				FileManager.saveToFile("LoginTime.txt","run time: 0 ms, Login failed!");
-				assertEquals("Login failed! login time more than 20s", true, false);
+
+			if (!ElementManager
+					.waitForExiststById("setting_item_login_logout_text")) {
+				FileManager.saveToFile("LoginTime.txt",
+						"run time: 0 ms, Login failed!");
+				assertEquals("Login failed! login time more than 20s", true,
+						false);
 			}
-			
+
 			String endtime = TimeUtil.getCurrentSysTime();
 			System.out.println("endtime: " + endtime);
 			try {
-				long runtime =  TimeUtil.getTimeDistance(endtime , startime);
-				FileManager.saveToFile("LoginTime.txt","runtime: " + runtime + "ms");
+				long runtime = TimeUtil.getTimeDistance(endtime, startime);
+				FileManager.saveToFile("LoginTime.txt", "runtime: " + runtime
+						+ "ms");
 				System.out.println("run time: " + runtime);
-				
-						
-				
+
 			} catch (ParseException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
@@ -86,18 +89,17 @@ public class TestContactBase extends TestListenerManager {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
-			
+
 			// 等待登录时间(根据网络状态)
-			//sleep(10000);
-			//ElementManager.waitForExiststById("setting_item_login_logout_text");
-			
+			// sleep(10000);
+			// ElementManager.waitForExiststById("setting_item_login_logout_text");
+
 		}
 
-		//MainActivity_contact.back("tab_contacts");
+		// MainActivity_contact.back("tab_contacts");
 		backHome(2);
 	}
 
-	
 	/**
 	 * 是否在登录状态，false为未登录状态，true为已登录
 	 * 
@@ -105,15 +107,16 @@ public class TestContactBase extends TestListenerManager {
 	 * @return
 	 */
 	public boolean isLoginState() {
-		int num = ElementManager.getChildCountByClassClass("ViewFlipper", "TextView");
-		//System.out.println("num2: " + num);
-		if(num == 2){
+		int num = ElementManager.getChildCountByClassClass("ViewFlipper",
+				"TextView");
+		// System.out.println("num2: " + num);
+		if (num == 2) {
 			return true;
 		}
 
 		return false;
 	}
-	
+
 	/**
 	 * 退出登录
 	 * 
@@ -134,41 +137,40 @@ public class TestContactBase extends TestListenerManager {
 		}
 
 		MainActivity_contact.back("tab_contacts");
-		//backHome(2);
-		//sleep(5000);
-	}	
-	
-	public void home(){
-		for(int i=0; i< 5; i++){
-			if(ElementManager.isExistByName("应用程序")){
+		// backHome(2);
+		// sleep(5000);
+	}
+
+	public void home() {
+		for (int i = 0; i < 5; i++) {
+			if (ElementManager.isExistByName("应用程序")) {
 				break;
-			}else{
+			} else {
 				UiDevice.getInstance().pressHome();
 			}
 			sleep(1000);
 		}
 		sleep(2000);
 	}
-	
-	
-	public void backHome(int num){
-		for(int i=0; i<num; i++){
+
+	public void backHome(int num) {
+		for (int i = 0; i < num; i++) {
 			UiDevice.getInstance().pressBack();
 			sleep(000);
 		}
-		
+
 	}
-	
-	
+
 	/**
 	 * 需求：根据name打开应用
+	 * 
 	 * @param name
 	 */
 	public void findAndOpenApp(String name) {
 		System.out.println("[start] findAndOpenApp" + name);
 
 		home();
-		
+
 		if (ElementManager.getUiObjectByText("应用程序").exists()) {
 			ElementManager.clickByName("应用程序");
 		}
@@ -190,50 +192,54 @@ public class TestContactBase extends TestListenerManager {
 		}
 	}
 
-	
 	/**
 	 * 关闭所有应用
+	 * 
 	 * @throws RemoteException
 	 * @throws UiObjectNotFoundException
 	 * @throws InterruptedException
 	 */
-	 public void exitApp() {
-		 System.out.println("[start] close app");
-	        try {
-	        	UiDevice.getInstance().pressHome();
-	        	
-	        	sleep(1000);
-				UiDevice.getInstance().pressRecentApps();
-				
-				//调出任务管理器
-				UiObject recentapp = ElementManager.getUiObjectByResourceId("com.android.systemui:id/recents_root");
-				
-				if(recentapp.exists()){
-					recentapp.waitForExists(2000); 
-			        System.out.println("调出任务管理器");
-				}
-		        
-		        sleep(2000);
-		  
-		        //点击关闭
-		        //UiObject close = getUiObjectByResourceId("com.android.systemui:id/recents_RemoveAll_button");
-		        UiObject close = ElementManager.getAllViewByClassName("android.widget.ImageButton", 1);
-		        if(close.exists()){
-		        	close.click();
-					System.out.println("点击关闭");
-				}
-		        //sleep(2000);
-		        
-		        //UiDevice.getInstance().pressHome();
-		        
-			} catch (RemoteException e) {
-				e.printStackTrace();
-			} catch (UiObjectNotFoundException e) {
-				e.printStackTrace();
+	public void exitApp() {
+		UiautomatorAssistant.UiAutomationLog("结束");
+		System.out.println("[start] close app");
+		try {
+			UiDevice.getInstance().pressHome();
+
+			sleep(1000);
+			UiDevice.getInstance().pressRecentApps();
+
+			// 调出任务管理器
+			UiObject recentapp = ElementManager
+					.getUiObjectByResourceId("com.android.systemui:id/recents_root");
+
+			if (recentapp.exists()) {
+				recentapp.waitForExists(2000);
+				System.out.println("调出任务管理器");
 			}
-	        System.out.println("[end] close app");
-	    }
-	
+
+			sleep(2000);
+
+			// 点击关闭
+			// UiObject close =
+			// getUiObjectByResourceId("com.android.systemui:id/recents_RemoveAll_button");
+			UiObject close = ElementManager.getAllViewByClassName(
+					"android.widget.ImageButton", 1);
+			if (close.exists()) {
+				close.click();
+				System.out.println("点击关闭");
+			}
+			// sleep(2000);
+
+			// UiDevice.getInstance().pressHome();
+
+		} catch (RemoteException e) {
+			e.printStackTrace();
+		} catch (UiObjectNotFoundException e) {
+			e.printStackTrace();
+		}
+		System.out.println("[end] close app");
+	}
+
 	public void openApp(String name) {
 		System.out.println("openApp");
 		UiObject uo;
@@ -248,5 +254,4 @@ public class TestContactBase extends TestListenerManager {
 			System.out.println("openApp error");
 		}
 	}
-
 }

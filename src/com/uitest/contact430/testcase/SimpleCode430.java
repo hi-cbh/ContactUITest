@@ -9,10 +9,6 @@ import com.uitest.uiautomatorUtil.ElementManagerLog;
 
 public class SimpleCode430 extends TestContactBaseV430{
 
-	
-	
-	
-	
 	/**
 	 * 点击资源ID
 	 * @param id
